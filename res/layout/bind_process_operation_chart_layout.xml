@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rel_e1_pro_hint" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_120">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_bind_top_hint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20">
+                    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/common_color_666666" android:id="@id/tv_bind_e1_hint" android:paddingLeft="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_10" android:text="@string/e1pro_bind_process_operation_one" />
+                    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/common_color_666666" android:id="@id/tv_bind_e1_one_hint" android:paddingLeft="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/e1pro_bind_process_operation_two" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:src="@drawable/ic_band_e1_oper_help" android:layout_below="@id/ll_bind_top_hint" android:layout_centerHorizontal="true" />
+                <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/iv_hint">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20">
+                        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/common_color_666666" android:paddingLeft="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_10" android:text="@string/vl0_ap_hint" />
+                    </LinearLayout>
+                    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:src="@mipmap/hint_ap_2" android:layout_below="@id/ll_bind_top_hint" android:layout_centerHorizontal="true" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/common_color_666666" android:gravity="center_horizontal" android:id="@id/tv_bind_smart_lock_two_hint" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_40" android:text="@string/smart_lock_bind_hint_2" android:layout_below="@id/iv_hint" />
+            </RelativeLayout>
+        </ScrollView>
+        <Button android:textSize="@dimen/sp_16" android:textColor="@color/white" android:id="@id/bind_process_operation_chart_confirm_btn" android:background="@drawable/nextstep_btn_shape_selector" android:layout_width="match_parent" android:layout_height="@dimen/dp_45" android:layout_marginLeft="@dimen/dp_50" android:layout_marginTop="@dimen/dp_35" android:layout_marginRight="@dimen/dp_50" android:layout_marginBottom="@dimen/dp_40" android:text="@string/next_step" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/lin_scan" android:padding="@dimen/dp_20" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img_scan" android:layout_width="@dimen/dp_250" android:layout_height="@dimen/dp_250" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:id="@id/tv_scan_hint" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/scan_hint1" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/scan_hint2" />
+        <ImageView android:background="@mipmap/img_scan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_30" />
+        <CheckBox android:textSize="@dimen/sp_16" android:textColor="@color/common_color_333333" android:id="@id/cb_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_40" android:text="@string/hear_voice" style="@style/AlarmCheckboxTheme" />
+        <Button android:textSize="@dimen/sp_16" android:textColor="@color/white" android:id="@id/bind_next_wait" android:background="@drawable/btn_style_gray_big_corner" android:layout_width="match_parent" android:layout_height="@dimen/dp_45" android:layout_margin="@dimen/dp_10" android:text="@string/next_step" android:layout_alignParentBottom="true" />
+    </LinearLayout>
+</RelativeLayout>

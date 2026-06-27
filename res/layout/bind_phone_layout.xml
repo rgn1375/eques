@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/iv_bg_register" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.eques.doorbell.ui.view.Navbar android:id="@id/phone_navar" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" />
+    <include layout="@layout/activity_add_notify_contact" />
+    <include layout="@layout/set_phone_pwd_layout" />
+    <include layout="@layout/set_phone_bind_layout" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/lin_agree" android:background="@drawable/btn_custom_info_style2" android:paddingLeft="@dimen/dp_10" android:paddingTop="@dimen/dp_30" android:paddingRight="@dimen/dp_10" android:paddingBottom="@dimen/dp_30" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_50" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/register_phone_agreen_hint" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/lin_sure_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:layout_marginBottom="@dimen/dp_20">
+            <TextView android:textSize="@dimen/sp_18" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_no_agree_agreement_hint" android:background="@drawable/agreement_btn_style_one" android:layout_width="0.0dp" android:layout_height="@dimen/dp_35" android:layout_marginRight="@dimen/dp_5" android:text="@string/no_agree_protocol" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/sp_18" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_agree_agreement_hint" android:background="@drawable/agreement_btn_style_two" android:layout_width="0.0dp" android:layout_height="@dimen/dp_35" android:layout_marginLeft="@dimen/dp_5" android:text="@string/agree_protocol" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

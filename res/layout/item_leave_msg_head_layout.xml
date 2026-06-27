@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingRight="@dimen/dp_5" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:id="@id/tv_title" android:background="@drawable/btn_style_read_orange" android:paddingTop="@dimen/dp_6" android:paddingBottom="@dimen/dp_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TEST" android:paddingStart="@dimen/dp_15" android:paddingEnd="@dimen/dp_15" />
+</LinearLayout>

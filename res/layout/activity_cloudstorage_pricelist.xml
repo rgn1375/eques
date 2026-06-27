@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_cloud_storage_root_parent" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/ll_face_service_status" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/activity_face_stub_base" />
+    </LinearLayout>
+    <ScrollView android:orientation="vertical" android:id="@id/sv_face_cloud_status" android:visibility="gone" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/include_cloud_storage_service_describe" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include layout="@layout/activity_cloud_storage_stub_base" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/include_face_service_describe" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include layout="@layout/activity_face_stub_base" />
+            </LinearLayout>
+            <View android:background="@color/settings_view_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_8" android:layout_marginTop="@dimen/dp_15" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/dp_28" android:layout_marginTop="@dimen/dp_5" android:layout_marginBottom="@dimen/dp_10">
+                <View android:background="@color/service_set_meal_hint" android:layout_width="@dimen/dp_10" android:layout_height="match_parent" />
+                <TextView android:textSize="@dimen/fontsize_eighteenth" android:textColor="@color/service_cloud_plan_one" android:gravity="center_vertical" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_10" android:text="选择服务套餐" style="@style/cloudStorageServicePlanTextStyleOne" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/rl_plan_details_describe" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10">
+                <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/service_cloud_plan_three" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="循环存储" />
+                <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/service_cloud_plan_three" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_60" android:text="收藏报警" />
+                <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/service_cloud_plan_three" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_120" android:text="购买时长" />
+            </RelativeLayout>
+            <com.eques.doorbell.ui.widget.MyListView android:id="@id/lv_cloud_set_meal_details" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10" android:divider="@null" />
+            <RelativeLayout android:id="@id/rl_show_more_plan" android:layout_width="match_parent" android:layout_height="@dimen/dialog_btn_height">
+                <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/service_cloud_plan_three" android:gravity="center_vertical" android:id="@id/tv_show_more_plan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/service_show_more_plan_hint" android:drawableRight="@drawable/more_set_meal_details_down" android:drawablePadding="@dimen/dp_5" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <View android:background="@color/settings_view_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_8" android:layout_marginTop="@dimen/dp_5" />
+            <RelativeLayout android:id="@id/rl_select_open_service_dev" android:layout_width="wrap_content" android:layout_height="@dimen/dp_28" android:layout_marginTop="@dimen/dp_5" android:layout_marginBottom="@dimen/dp_10">
+                <View android:background="@color/service_set_meal_hint" android:layout_width="@dimen/dp_10" android:layout_height="match_parent" />
+                <TextView android:textSize="@dimen/fontsize_eighteenth" android:textColor="@color/service_cloud_plan_one" android:gravity="center_vertical" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_10" android:text="选择设备" style="@style/cloudStorageServicePlanTextStyleOne" />
+                <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/service_cloud_plan_two" android:gravity="center_vertical" android:id="@id/tv_select_open_service_dev_nick" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/dp_10" android:text="我家的大门" android:drawableRight="@drawable/arrow_icon_press" android:drawablePadding="@dimen/dp_5" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_open_support_multi_device_parent" android:paddingLeft="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/rl_open_support_multi_device" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/service_cloud_plan_one" android:text="多设备" android:layout_centerVertical="true" style="@style/cloudStorageServicePlanTextStyleOne" />
+                    <CheckBox android:id="@id/cb_service_multi_dev" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_marginRight="@dimen/dp_10" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/MySwitchTheme" />
+                </RelativeLayout>
+                <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/service_open_status" android:id="@id/tv_multi_dev_des" android:background="@drawable/service_open_user_mode" android:paddingLeft="@dimen/dp_5" android:paddingRight="@dimen/dp_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:layout_marginBottom="@dimen/dp_10" android:text="该账号下的所有设备都支持此服务" android:layout_below="@id/rl_open_support_multi_device" />
+            </RelativeLayout>
+            <View android:background="@color/settings_view_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_8" />
+            <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/dp_5" android:paddingBottom="@dimen/dp_5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10">
+                <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/service_cloud_plan_two" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="已选择：" />
+                <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/service_cloud_plan_two" android:id="@id/rl_select_plan_details" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2" android:text="@string/service_select_plan_details" />
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/fontsize_eighteenth" android:textColor="@color/service_cloud_plan_one" android:id="@id/tv_cloud_set_meal_receipt_amount_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥12" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/fontsize_twelve" android:textColor="@color/service_cloud_plan_three" android:id="@id/tv_cloud_set_meal_total_amount_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_3" android:layout_marginBottom="@dimen/dp_2" android:text="¥24" android:layout_toRightOf="@id/tv_cloud_set_meal_receipt_amount_bottom" android:layout_alignBottom="@id/tv_cloud_set_meal_receipt_amount_bottom" />
+                    <TextView android:textSize="@dimen/fontsize_ten" android:textColor="@color/white" android:id="@id/tv_cloud_set_meal_promo_label" android:background="@drawable/service_promo_label_style" android:paddingLeft="@dimen/dp_5" android:paddingTop="@dimen/dp_2" android:paddingRight="@dimen/dp_5" android:paddingBottom="@dimen/dp_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:text="限时特惠" android:layout_toRightOf="@id/tv_cloud_set_meal_total_amount_bottom" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:background="@color/settings_view_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" />
+        </LinearLayout>
+    </ScrollView>
+    <Button android:textSize="@dimen/fontsize_eighteenth" android:textColor="@color/white" android:id="@id/btn_openNow" android:background="@drawable/service_open_btn_style" android:layout_width="match_parent" android:layout_height="@dimen/smart_home_btn_size" android:text="立即开通" android:layout_alignParentBottom="true" />
+</RelativeLayout>

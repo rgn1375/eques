@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:background="@drawable/loading_bg" android:padding="@dimen/dp_20" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sp_18" android:textColor="@android:color/white" android:id="@id/tv_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableTop="@drawable/edittext_register_ok" android:drawablePadding="@dimen/dp_10" />
+</LinearLayout>

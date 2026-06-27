@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layoutRoot" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_marginStart="@dimen/button_margin_start" android:layout_marginEnd="@dimen/button_margin_end">
+        <com.xm.ui.widget.XMEditText android:id="@id/et_account_username" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:hint="@string/input_account_username" app:hintAnimation="true" />
+        <com.xm.ui.widget.XMPwdEditText android:id="@id/et_account_pwd" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:hint="@string/input_account_pwd" app:hintAnimation="true" />
+        <com.xm.ui.widget.BtnColorBK android:textColor="@color/default_normal_text_color" android:id="@id/login_page_btn_login" android:layout_marginTop="@dimen/button_margin_top" android:layout_marginBottom="@dimen/button_margin_bottom" android:text="login" style="@style/defaultButtonStyle" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view_line" android:background="@color/interval_bg" android:layout_width="match_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/settings_left_tv_color" android:gravity="left" android:id="@id/header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_6" android:layout_weight="1.0" />
+    <com.xm.ui.widget.XImages.NoScrollGridView android:id="@id/gv_data" android:background="@android:color/transparent" android:paddingLeft="@dimen/dp_8" android:paddingRight="@dimen/dp_8" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:horizontalSpacing="@dimen/dp_8" android:verticalSpacing="@dimen/dp_8" android:numColumns="3" android:overScrollMode="never" />
+</LinearLayout>

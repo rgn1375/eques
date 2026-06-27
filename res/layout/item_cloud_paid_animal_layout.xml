@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sp_18" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_14" android:text="@string/vip_video" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/rounded_gradient_animal_back" android:padding="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_18">
+            <TextView android:textSize="@dimen/sp_14" android:textColor="#575c5d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/animal_paid_01" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:src="@mipmap/feed_animal_image" />
+        </LinearLayout>
+        <TextView android:textColor="@color/white" android:gravity="center" android:background="@drawable/rounded_gradient_button_blue" android:layout_width="@dimen/dp_100" android:layout_height="@dimen/dp_30" android:text="@string/animal_send_food_rec" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/rounded_gradient_animal_back" android:padding="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_18">
+            <TextView android:textSize="@dimen/sp_14" android:textColor="#575c5d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/animal_paid_02" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:src="@mipmap/feed_animal_icloud" />
+        </LinearLayout>
+        <TextView android:textColor="@color/white" android:gravity="center" android:background="@drawable/rounded_gradient_button_blue" android:layout_width="@dimen/dp_100" android:layout_height="@dimen/dp_30" android:text="@string/icloud_eapired_card_save" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/rounded_gradient_animal_back" android:padding="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_18">
+            <TextView android:textSize="@dimen/sp_14" android:textColor="#575c5d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/animal_paid_03" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:src="@mipmap/feed_animal_storage" />
+        </LinearLayout>
+        <TextView android:textColor="@color/white" android:gravity="center" android:background="@drawable/rounded_gradient_button_blue" android:layout_width="@dimen/dp_100" android:layout_height="@dimen/dp_30" android:text="@string/animal_storage_limit" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_14" android:text="@string/animal_paid_des" />
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/common_color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/animal_paid_des_hint" android:layout_marginStart="@dimen/dp_14" android:layout_marginEnd="@dimen/dp_14" />
+</LinearLayout>

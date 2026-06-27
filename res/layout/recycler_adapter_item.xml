@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:paddingLeft="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_3">
+        <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/shareDev_invitation_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dev_face_photo_show_four" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/login_btn_default_new" android:id="@id/tv_creat_group_btn" android:background="@drawable/btn_style_group_creat" android:paddingLeft="@dimen/dp_12" android:paddingTop="@dimen/dp_2" android:paddingRight="@dimen/dp_12" android:paddingBottom="@dimen/dp_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dev_face_photo_show_five" android:drawableLeft="@drawable/creat_group" android:drawablePadding="@dimen/dp_3" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ViewStub android:id="@id/viewStub" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" />
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_add_dev_parent" android:background="@drawable/ic_main_screen_bg" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/linear_auto_add_dev_layout_parent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/lin_bug_answer">
+        <RelativeLayout android:id="@id/rl_auto_add_dev_layout_head" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="@dimen/dp_50">
+            <RelativeLayout android:id="@id/left_menu_close_menu" android:padding="@dimen/dp_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_centerVertical="true">
+                <ImageView android:id="@id/iv_left_menu_close_menu" android:background="@drawable/menu_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/fontsize_eighteenth" android:textColor="@color/titlebar_tv_color" android:id="@id/tv_title_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mime_client_help_guide" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recyc_add_dev_type" android:paddingLeft="@dimen/dp_5" android:paddingRight="@dimen/dp_5" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/lin_bug_answer" android:background="@drawable/btn_style_white" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" android:layout_margin="@dimen/dp_14" android:layout_alignParentBottom="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_3" android:src="@mipmap/service_blue" />
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/login_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_buy_order" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="#4d7cfe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_buy_order_service" />
+    </LinearLayout>
+</RelativeLayout>

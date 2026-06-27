@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layoutRoot" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xm.ui.widget.XTitleBar android:id="@id/xb_set_dev_to_router" android:layout_width="match_parent" android:layout_height="wrap_content" app:TitleText="@string/set_dev_to_router_by_qr_code" style="@style/XM_Title_Bar" />
+    <ImageView android:id="@id/iv_qr_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="将设备镜头对准二维码进行扫描配网，等设备配网成功后等待服务器返回结果" android:layout_below="@id/iv_qr_code" />
+</RelativeLayout>

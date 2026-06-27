@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/realy_parent_h" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+        <com.eques.doorbell.ui.view.SingleLayoutListView android:id="@id/single_layout_listview" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:divider="@android:color/transparent" />
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_lock_msg_alarm_parent" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <include android:id="@id/empty_view" android:visibility="gone" layout="@layout/message_msglist_empty_view" />
+        <RelativeLayout android:id="@id/realy_alarm_info_delete" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_45" android:layout_alignParentBottom="true">
+            <View android:background="@color/gray_line" android:layout_width="match_parent" android:layout_height="1.0px" />
+            <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/settings_left_tv_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notify_delete" android:drawableLeft="@drawable/group_del_bottom" android:drawablePadding="@dimen/dp_5" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

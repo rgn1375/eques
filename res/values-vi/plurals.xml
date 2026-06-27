@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="error_over_count">
+        <item quantity="one">Chỉ có thể chọn tối đa %1$d tệp</item>
+        <item quantity="few">Chỉ có thể chọn tối đa %1$d tệp</item>
+        <item quantity="many">Chỉ có thể chọn tối đa %1$d tệp</item>
+        <item quantity="other">Chỉ có thể chọn tối đa %1$d tệp</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d thông báo mới</item>
+        <item quantity="other">%d thông báo mới</item>
+    </plurals>
+</resources>

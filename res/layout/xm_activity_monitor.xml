@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layoutRoot" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xm.ui.widget.XTitleBar android:id="@id/xb_monitor_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/title_height" app:IsShowBottomLine="true" app:TitleText="@string/title_monitor" app:TitleTextColor="@color/black" style="@style/XM_Title_Bar" />
+    <FrameLayout android:id="@id/fl_monitor_surface" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/xb_monitor_title" />
+</RelativeLayout>

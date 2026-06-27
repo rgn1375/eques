@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.eques.doorbell.ui.widget.HackyViewPager android:id="@id/pager" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/imageInfoActivityTitle" android:background="@color/titlebar_bg_color" android:layout_width="match_parent" android:layout_height="@dimen/dp_50">
+        <RelativeLayout android:id="@id/rl_nav_bar_left_btn_parent" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerVertical="true" android:onClick="onClick" android:layout_alignParentStart="true">
+            <TextView android:textSize="@dimen/navbar_tv_size" android:textColor="@color/group_photo_back_color" android:gravity="center_vertical" android:id="@id/tv_nav_bar_left_back" android:paddingLeft="@dimen/dp_15" android:paddingRight="@dimen/dp_15" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/back" android:drawableLeft="@drawable/login_tittle_left_btn" android:drawablePadding="@dimen/dp_5" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_nav_bar_right_btn_parent" android:paddingLeft="@dimen/dp_15" android:paddingRight="@dimen/dp_15" android:focusable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerVertical="true" android:onClick="onClick" android:layout_alignParentEnd="true">
+            <ImageView android:background="@drawable/icon_alarm_delete_press" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:contentDescription="@null" />
+        </RelativeLayout>
+        <TextView android:textColor="@color/main_dev_name_tv_color" android:id="@id/tv_nav_bar_title" android:padding="@dimen/dp_1" android:layout_width="wrap_content" android:layout_height="@dimen/dp_45" android:text="@string/dev_face_photo_show_title" android:layout_centerInParent="true" style="@style/info_btn_style" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/fiveteen" android:textColor="@color/photo_pager_contenttext_color" android:id="@id/tv_photopagerContentTextDate" android:layout_marginBottom="@dimen/dp_100" android:layout_alignParentBottom="true" style="@style/width_height_fw" />
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_cloud_storage_close_pop" android:padding="@dimen/dp_8" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30" android:layout_margin="@dimen/dp_5" android:src="@drawable/ic_scan_back" android:contentDescription="@null" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_20" android:layout_marginTop="@dimen/dp_2" android:layout_marginRight="@dimen/dp_20">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/fontsize_twenty_five" android:textColor="@color/service_cloud_plan_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="云存储" />
+            <TextView android:textSize="@dimen/fontsize_eighteenth" android:textColor="@color/service_cloud_plan_two" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="重要瞬间 值得长存" />
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_10" android:src="@drawable/icon_cloudstorage_serviceplan_one" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+    </RelativeLayout>
+    <LinearLayout style="@style/cloudStorageServicePlanLinearLayoutStyle">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_cloudstorage_serviceplan_two" android:contentDescription="@null" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16">
+            <TextView android:text="长久保存" style="@style/cloudStorageServicePlanTextStyleOne" />
+            <TextView android:text="被收藏的报警,长久保存在云端" style="@style/cloudStorageServicePlanTextStyleTwo" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout style="@style/cloudStorageServicePlanLinearLayoutStyle">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_cloudstorage_serviceplan_three" android:contentDescription="@null" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16">
+            <TextView android:text="延长循环存储" style="@style/cloudStorageServicePlanTextStyleOne" />
+            <TextView android:text="普通报警循环存储时间增长" style="@style/cloudStorageServicePlanTextStyleTwo" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout style="@style/cloudStorageServicePlanLinearLayoutStyle">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_cloudstorage_serviceplan_four" android:contentDescription="@null" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16">
+            <TextView android:text="不丢失" style="@style/cloudStorageServicePlanTextStyleOne" />
+            <TextView android:text="设备重新绑定后，报警不丢失" style="@style/cloudStorageServicePlanTextStyleTwo" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout style="@style/cloudStorageServicePlanLinearLayoutStyle">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_cloudstorage_serviceplan_five" android:contentDescription="@null" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16">
+            <TextView android:text="多用户共用" style="@style/cloudStorageServicePlanTextStyleOne" />
+            <TextView android:text="支持被分享的家庭成员共享" style="@style/cloudStorageServicePlanTextStyleTwo" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/face_service_pay_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_face_close_pop" android:padding="@dimen/dp_8" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30" android:layout_margin="@dimen/dp_5" android:src="@drawable/ic_scan_back" android:contentDescription="@null" />
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@id/iv_face_service_info" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <View android:layout_width="match_parent" android:layout_height="@dimen/dp_40" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

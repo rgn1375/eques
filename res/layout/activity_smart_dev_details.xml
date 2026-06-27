@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/lin_root" android:background="#f5f5f5" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:id="@id/sc_dev_info" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/dp_160">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/plug_set" />
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_device_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设备名称" android:drawableRight="@mipmap/animal_edit" android:drawablePadding="@dimen/dp_5" android:onClick="viewClick" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/img_device_icon" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/sp_13" android:textColor="#778ca2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alexa_third" android:layout_marginStart="@dimen/dp_14" />
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/btn_style_white_back" android:padding="@dimen/dp_5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_10">
+                <LinearLayout android:gravity="center" android:layout_width="0.0dp" android:layout_height="@dimen/dp_90" android:layout_weight="1.0">
+                    <ImageView android:id="@id/img_plug_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/alexa" android:onClick="viewClick" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:paddingTop="@dimen/dp_10" android:layout_width="0.0dp" android:layout_height="@dimen/dp_90" android:layout_weight="1.0">
+                    <ImageView android:id="@id/img_google_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/google" android:onClick="viewClick" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/sp_13" android:textColor="#778ca2" android:id="@id/tv_method" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smart_lock_method" android:layout_marginStart="@dimen/dp_14" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/btn_style_white_back" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_10" android:paddingStart="@dimen/dp_14" android:paddingEnd="@dimen/dp_14">
+                <RelativeLayout android:id="@id/rel_ele_status" android:layout_width="match_parent" android:layout_height="@dimen/dp_55" android:onClick="viewClick">
+                    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/plug_set_status" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/common_color_666666" android:id="@id/tv_ele_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/plug_disconnect" android:drawableRight="@drawable/arrow_icon_press" android:drawablePadding="@dimen/dp_5" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rel_light" android:layout_width="match_parent" android:layout_height="@dimen/dp_55" android:onClick="viewClick">
+                    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/plug_set_light_status" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/common_color_666666" android:id="@id/tv_light_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/plug_disconnect" android:drawableRight="@drawable/arrow_icon_press" android:drawablePadding="@dimen/dp_5" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_55">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/plug_set_protect" />
+                        <TextView android:textSize="@dimen/sp_13" android:textColor="@color/common_color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_3" android:text="@string/plug_set_protect_hint" />
+                    </LinearLayout>
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/button_switch_on" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rel_children" android:layout_width="match_parent" android:layout_height="@dimen/dp_55" android:onClick="viewClick">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/plug_set_children" />
+                        <TextView android:textSize="@dimen/sp_13" android:textColor="@color/common_color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_3" android:text="@string/plug_set_children_hint" />
+                    </LinearLayout>
+                    <ImageView android:id="@id/img_children" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/button_switch_on" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/sp_13" android:textColor="#778ca2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smart_lock_common" android:layout_marginStart="@dimen/dp_14" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/btn_style_white_back" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_10" android:paddingStart="@dimen/dp_14" android:paddingEnd="@dimen/dp_14">
+                <RelativeLayout android:id="@id/rel_info" android:layout_width="match_parent" android:layout_height="@dimen/dp_55" android:onClick="viewClick">
+                    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/animal_device_info" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/common_color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/arrow_icon_press" android:drawablePadding="@dimen/dp_5" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rel_share" android:layout_width="match_parent" android:layout_height="@dimen/dp_55" android:onClick="viewClick">
+                    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xm_dev_share" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/common_color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/arrow_icon_press" android:drawablePadding="@dimen/dp_5" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_55">
+                    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/plug_set_clear" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/common_color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/arrow_icon_press" android:drawablePadding="@dimen/dp_5" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rel_restore" android:layout_width="match_parent" android:layout_height="@dimen/dp_55" android:onClick="viewClick">
+                    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/factory_data_reset_settings" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/sp_14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/sp_18" android:textColor="@color/common_color_f63149" android:gravity="center" android:id="@id/tv_del_dev" android:background="@drawable/del_dev_bg_style" android:layout_width="match_parent" android:layout_height="@dimen/dp_45" android:layout_margin="@dimen/dp_30" android:text="@string/remove_equipment_settings" android:onClick="viewClick" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/lin_dev_detail" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/btn_style_white_back" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_10">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_55" android:paddingStart="@dimen/dp_14" android:paddingEnd="@dimen/dp_14">
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/e1pro_wifi_connect_model_set" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/common_color_666666" android:id="@id/tv_wifi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_55" android:paddingStart="@dimen/dp_14" android:paddingEnd="@dimen/dp_14">
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dev_mac" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/common_color_666666" android:id="@id/tv_mac" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rel_check_update" android:layout_width="match_parent" android:layout_height="@dimen/dp_55" android:onClick="viewClick" android:paddingStart="@dimen/dp_14" android:paddingEnd="@dimen/dp_14">
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/clock_update" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/common_color_666666" android:id="@id/tv_version_update" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/common_color_666666" android:id="@id/tv_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_14" android:text="1.00.00" />
+    </LinearLayout>
+</LinearLayout>

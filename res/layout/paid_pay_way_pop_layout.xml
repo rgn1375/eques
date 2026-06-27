@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/rel_root" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/btn_style_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:elevation="@dimen/dp_10">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/rel_pay_details" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/sp_20" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:text="@string/service_buy_mode_payment_title" />
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_20" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10">
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/login_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paid_plan_name" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:id="@id/tv_plan_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_20" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10">
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/login_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paid_plan_time" />
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:id="@id/tv_plan_limit_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rel_minus" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_20" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10">
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/login_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paid_plan_preferential" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/orange" android:id="@id/tv_plan_minus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rel_jf" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_20" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10">
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/login_666666" android:id="@id/tv_lable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paid_plan_point_deduction" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/login_666666" android:id="@id/tv_jf_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_8" android:drawableRight="@drawable/icloud_question_mark" android:layout_toRightOf="@id/tv_lable" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/cb_paid_pay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_alarm_checkbox" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="right|center" android:id="@id/tv_plan_receipt_mount_hint" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_10" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_14">
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/login_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_account_all" android:layout_marginEnd="@dimen/dp_5" />
+            <TextView android:textSize="@dimen/sp_30" android:textColor="@color/orange" android:id="@id/tv_plan_receipt_mount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_5" android:layout_alignParentEnd="true" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/common_color_4d7cfe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paid_details" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_5" android:layout_alignParentEnd="true" />
+            <ImageView android:id="@id/iv_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/blue_up" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@color/icloud_ffffff" android:padding="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/icloud_wechat_pay_btn" android:background="@drawable/icloud_wechat_pay_style" android:layout_width="0.0dp" android:layout_height="@dimen/dp_45" android:layout_margin="@dimen/dp_5" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/icloud_ffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/icloud_wechat_pay" android:drawablePadding="@dimen/dp_8" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/icloud_ali_pay_btn" android:background="@drawable/icloud_ali_pay_style" android:layout_width="0.0dp" android:layout_height="@dimen/dp_45" android:layout_margin="@dimen/dp_5" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/icloud_ffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/icloud_ali_pay" android:drawablePadding="@dimen/dp_8" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/dp_25" android:layout_marginBottom="@dimen/dp_14">
+            <CheckBox android:id="@id/cb_agree" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/AlarmCheckboxTheme" />
+            <TextView android:textSize="@dimen/sp_12" android:textColor="@color/login_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_phone_agreen" />
+            <TextView android:textSize="@dimen/sp_12" android:textColor="@color/login_1D66FF" android:id="@id/tv_user_pay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paid_pay_open_cloud" />
+            <TextView android:textSize="@dimen/sp_12" android:textColor="@color/login_1D66FF" android:id="@id/tv_auto_pay" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_pay_voice" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

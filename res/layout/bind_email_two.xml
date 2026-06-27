@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scroll_hide" android:paddingTop="@dimen/dp_50" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_20">
+            <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0px" android:layout_height="0.0px" />
+            <TextView android:textSize="@dimen/fontsize_eighteenth" android:textColor="@color/mail_tv_hint_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="@string/forgot_passwd_email_back" />
+            <TextView android:textSize="@dimen/fontsize_eighteenth" android:textColor="@color/mail_tv_hint_color" android:id="@id/tv_userInfo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" />
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_45" android:layout_marginTop="@dimen/dp_5">
+                <EditText android:textColor="@color/edit_register_send" android:id="@id/et_authInfo" android:background="@drawable/edit_style_registration_default" android:hint="@string/input_success_authinfo" android:maxLength="6" android:digits="@string/register_authcode" android:inputType="number" android:paddingStart="@dimen/dp_10" style="@style/register_ed_style" />
+                <RelativeLayout android:id="@id/rl_send_auth_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true">
+                    <View android:id="@id/view_line" android:background="@color/edit_register_divider" android:layout_width="@dimen/dp_1" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_7" android:layout_marginBottom="@dimen/dp_7" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_10" />
+                    <TextView android:textColor="@color/edit_register_send" android:id="@id/tv_sendAuthCode" android:padding="@dimen/dp_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/forgot_passwd_by_phone_hint_four" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_10" android:layout_toEndOf="@id/view_line" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/fontsize_twelve" android:textColor="@color/edit_register_error" android:id="@id/tv_authcode_error_hint" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/regis_by_phone_authcode_error" />
+            <Button android:id="@id/btn_email_update_pas_submit" android:layout_marginTop="@dimen/dp_20" android:layout_marginBottom="@dimen/dp_30" android:text="@string/save" style="@style/btn_style_lrfp_new" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

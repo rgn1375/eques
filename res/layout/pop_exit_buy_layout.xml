@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/btn_style_white" android:padding="@dimen/dp_20" android:layout_width="match_parent" android:layout_height="@dimen/dp_260" android:layout_margin="@dimen/dp_30">
+        <TextView android:textSize="@dimen/sp_20" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/exit_paid_buy_title" />
+        <TextView android:textSize="@dimen/sp_16" android:textColor="#915839" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:text="@string/exit_paid_buy_used" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10">
+            <TextView android:textSize="@dimen/sp_14" android:textColor="#915839" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_ui_cloud_collect" android:drawableTop="@mipmap/exit_buy_collect_popup" android:drawablePadding="@dimen/dp_3" android:layout_marginEnd="@dimen/dp_30" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="#915839" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icloud_eapired_card_save" android:drawableTop="@mipmap/exit_buy_save_popup" android:drawablePadding="@dimen/dp_3" android:layout_marginEnd="@dimen/dp_30" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="#915839" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icloud_eapired_card_safe" android:drawableTop="@mipmap/exit_buy_safe_popup" android:drawablePadding="@dimen/dp_3" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20">
+            <Button android:textColor="#778ca2" android:id="@id/btn_exit_paid_refuse" android:background="@drawable/rounded_gradient_button_gray_no_deep" android:layout_width="@dimen/dp_110" android:layout_height="@dimen/dp_40" android:text="@string/exit_paid_refuse" android:layout_marginEnd="@dimen/dp_30" />
+            <Button android:textColor="@color/white" android:id="@id/btn_exit_paid_pay" android:background="@drawable/icloud_gradient_open_btn_style" android:layout_width="@dimen/dp_110" android:layout_height="@dimen/dp_40" android:text="@string/exit_paid_pay" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

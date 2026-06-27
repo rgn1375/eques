@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/realy_pir_mode_picture" android:paddingLeft="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" android:layout_marginLeft="@dimen/dp_16" android:layout_marginTop="@dimen/dp_16" android:layout_marginRight="@dimen/dp_16" style="@style/secondary_menu_style_login">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/settings_left_tv_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/body_pir_mode_picture" />
+            <TextView android:textSize="@dimen/fontsize_ten" android:textColor="@color/settings_right_tv_color" android:id="@id/tv_capture_hint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_16" android:text="@string/capture_note" />
+        </LinearLayout>
+        <ImageView android:id="@id/ic_pir_mode_picture_select" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_alarm_checkbox_press" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/settings_left_tv_color" android:id="@id/tv_pir_mode_picture_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_25" android:layout_marginTop="@dimen/dp_16" android:text="@string/continuous_capture" />
+</LinearLayout>

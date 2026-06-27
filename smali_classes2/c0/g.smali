@@ -1,0 +1,111 @@
+.class public Lc0/g;
+.super Ljava/lang/Object;
+.source "UnitTranscoder.java"
+
+# interfaces
+.implements Lc0/e;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<Z:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Lc0/e<",
+        "TZ;TZ;>;"
+    }
+.end annotation
+
+
+# static fields
+.field private static final a:Lc0/g;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lc0/g<",
+            "*>;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lc0/g;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Lc0/g;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Lc0/g;->a:Lc0/g;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static b()Lc0/e;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<Z:",
+            "Ljava/lang/Object;",
+            ">()",
+            "Lc0/e<",
+            "TZ;TZ;>;"
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lc0/g;->a:Lc0/g;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public a(Lcom/bumptech/glide/load/engine/s;Lr/d;)Lcom/bumptech/glide/load/engine/s;
+    .locals 0
+    .param p1    # Lcom/bumptech/glide/load/engine/s;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Lr/d;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/bumptech/glide/load/engine/s<",
+            "TZ;>;",
+            "Lr/d;",
+            ")",
+            "Lcom/bumptech/glide/load/engine/s<",
+            "TZ;>;"
+        }
+    .end annotation
+
+    .line 1
+    return-object p1
+.end method

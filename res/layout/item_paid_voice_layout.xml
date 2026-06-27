@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/lin_plan_root" android:background="@drawable/btn_style_orange" android:padding="@dimen/dp_5" android:layout_width="@dimen/dp_110" android:layout_height="@dimen/dp_140" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_10" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10">
+        <TextView android:textSize="@dimen/sp_16" android:textStyle="bold" android:textColor="@color/black" android:ellipsize="end" android:id="@id/tv_plan_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="套餐名称" android:lines="1" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/login_666666" android:ellipsize="end" android:id="@id/tv_voice_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TEST" android:lines="1" />
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/dp_40" android:layout_marginTop="@dimen/dp_5">
+            <TextView android:textSize="@dimen/dp_14" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥" />
+            <TextView android:textSize="@dimen/sp_25" android:textColor="@color/black" android:id="@id/tv_pay_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5">
+            <TextView android:textSize="@dimen/sp_12" android:textColor="@color/login_666666" android:id="@id/tv_delete_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_10" android:text="¥1" android:lines="1" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/dp_12" android:textColor="@color/login_ff7316" android:id="@id/tv_next_price" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="next price" android:lines="1" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/dp_12" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tv_promolable" android:background="@drawable/paid_background_first_mouth" android:paddingLeft="@dimen/dp_5" android:paddingTop="@dimen/dp_3" android:paddingRight="@dimen/dp_5" android:paddingBottom="@dimen/dp_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paid_service_first_month" android:lines="1" android:maxEms="8" android:layout_marginStart="@dimen/dp_10" />
+</RelativeLayout>

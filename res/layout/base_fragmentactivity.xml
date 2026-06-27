@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.eques.doorbell.ui.view.Navbar android:id="@id/title_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" />
+    <RelativeLayout android:id="@id/relay_baseFragment" android:background="@color/home_bg_color" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

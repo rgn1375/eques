@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/shareDev_bg" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/ic_share_dev_bg" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shape_corner_white" android:paddingLeft="@dimen/dp_15" android:paddingTop="@dimen/dp_12" android:paddingBottom="@dimen/dp_12" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_15" android:layout_marginTop="@dimen/dp_10" android:layout_marginRight="@dimen/dp_15">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_redcircle" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/shareDev_invitation_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:text="@string/share_dev_describe_tv1" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_1">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_redcircle" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/shareDev_invitation_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:text="@string/share_dev_describe_tv2" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_1">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_redcircle" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/shareDev_invitation_tv" android:id="@id/tv_share_hint_two" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:text="@string/share_dev_describe_tv3" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_1">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_redcircle" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/shareDev_invitation_tv" android:id="@id/tv_share_hint_three" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:text="@string/share_dev_describe_tv4" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_15" android:layout_marginTop="@dimen/dp_25" android:layout_marginRight="@dimen/dp_15">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_leftline" />
+        <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/shareDev_invitation_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:layout_marginRight="@dimen/dp_5" android:text="@string/share_dev_qrcode_text1" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_rightline" />
+    </LinearLayout>
+    <Button android:textColor="@color/white" android:id="@id/btn_share_dev_family" android:layout_marginLeft="@dimen/dp_35" android:layout_marginTop="@dimen/dp_16" android:layout_marginRight="@dimen/dp_35" android:text="@string/share_dev_qrcode_share_btn" style="@style/btn_style_share_dev_qrcode" />
+    <Button android:textColor="@color/white" android:id="@id/btn_share_dev_friend" android:layout_marginLeft="@dimen/dp_35" android:layout_marginTop="@dimen/dp_15" android:layout_marginRight="@dimen/dp_35" android:text="@string/share_dev_qrcode_invite_btn" style="@style/btn_style_share_dev_qrcode" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/share_list_top_style" android:layout_width="match_parent" android:layout_height="@dimen/dp_40" android:layout_marginLeft="@dimen/dp_15" android:layout_marginTop="@dimen/dp_15" android:layout_marginRight="@dimen/dp_15">
+        <View android:background="@color/gray_line" android:layout_width="@dimen/dp_45" android:layout_height="@dimen/dp_1" />
+        <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/standard_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10" android:text="@string/share_dev_qrcode_text" />
+        <ImageView android:background="@color/gray_line" android:layout_width="@dimen/dp_45" android:layout_height="@dimen/dp_1" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/dp_10"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/black" android:id="@id/tv_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/five" android:text="@string/deletd_select_alarms" android:layout_toRightOf="@id/iv_delete" />
+    <CheckBox android:id="@id/iv_delete" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/five" android:button="@drawable/del_select_checkbox_style" android:layout_below="@id/tv_hint" />
+    <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/black" android:id="@id/tv_delete_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/five" android:layout_marginTop="@dimen/five" android:text="@string/deletd_local_folder" android:layout_toRightOf="@id/iv_delete" android:layout_below="@id/tv_hint" android:layout_alignBaseline="@id/iv_delete" />
+</RelativeLayout>

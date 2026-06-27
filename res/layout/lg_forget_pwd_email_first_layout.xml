@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_forget_pwd_parent" android:background="@color/login_ffffff" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/dp_28" android:layout_marginEnd="@dimen/dp_28">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_50">
+            <View android:background="@color/login_ff7316" android:layout_width="@dimen/dp_6" android:layout_height="@dimen/dp_32" />
+            <TextView android:textSize="@dimen/sp_20" android:textColor="@color/login_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_hint_email" android:layout_marginStart="@dimen/dp_12" />
+        </LinearLayout>
+        <EditText android:textColor="@color/edit_register_send" android:id="@id/et_account" android:background="@drawable/edit_style_registration_default" android:layout_marginTop="@dimen/dp_26" android:hint="@string/input_verification_email" style="@style/register_ed_style" />
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/edit_register_error" android:id="@id/tv_authcode_error_hint" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="@string/regis_by_phone_authcode_error" />
+        <RelativeLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_46" android:layout_marginTop="@dimen/dp_6">
+            <EditText android:textSize="@dimen/sp_14" android:textColor="@color/edit_register_send" android:textColorHint="@color/edTextColorHint" android:id="@id/et_captcha" android:background="@drawable/edit_style_registration_default" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/login_forget_img_auth_code" android:singleLine="true" android:maxLength="4" android:drawableStart="@drawable/iv_style_qrcode" android:paddingStart="@dimen/dp_10" />
+            <RelativeLayout android:id="@id/iv_captcha" android:layout_width="@dimen/dp_100" android:layout_height="@dimen/dp_45" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_10" android:layout_alignParentEnd="true">
+                <ProgressBar android:id="@id/progress_authCode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="false" android:indeterminateDrawable="@drawable/progress_inner_holo" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/edit_register_error" android:id="@id/tv_account_error_hint" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="@string/forgot_passwd_by_phone_hint_five" />
+        <Button android:id="@id/btn_forgot_passWd_submit" android:layout_marginTop="@dimen/dp_26" android:layout_marginBottom="@dimen/dp_30" android:text="@string/next_step" style="@style/btn_style_lrfp_new" />
+        <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/login_btn_default_new" android:layout_gravity="center" android:id="@id/tv_phone_retrieve_pas" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/forgot_passwd_phone_number_retrieval" android:drawablePadding="@dimen/dp_3" android:drawableEnd="@drawable/pass_arrow_icon" />
+    </LinearLayout>
+</RelativeLayout>

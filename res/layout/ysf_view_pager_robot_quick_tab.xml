@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ysf_ll_robot_quick_tab_title" android:background="@color/ysf_color_EBEDF0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/ysf_text_size_14" android:textColor="@color/ysf_black_222222" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/ysf_tv_robot_quick_tab_title" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="60.0dp" android:maxLines="1" android:maxEms="6" />
+        <View android:id="@id/ysf_view_tab_robot_quick__title_line" android:background="@drawable/ysf_btn_circle_back" android:layout_width="20.0dp" android:layout_height="2.0dp" />
+    </LinearLayout>
+    <View android:id="@id/ysf_view_robot_quick_tab_title_line" android:background="@color/ysf_grey_d9d9d9" android:layout_width="1.0dp" android:layout_height="14.0dp" />
+</LinearLayout>

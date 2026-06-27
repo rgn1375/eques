@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DevInfor>
+<SinaWeibo AppKey="2103863182" AppSecret="5301ea2f1ef40d89ac8e4c32231ce231" RedirectUrl="http://sns.whalecloud.com/sina2/callback" />
+<Wechat AppId="wxdacf276ee692483c" AppSecret="054be2c9d56b39e7cffe77772c5ef1c1" UserName="gh_afb25ac019c9" Path="pages/index/index.html?id=1" WithShareTicket="true" MiniprogramType="2" />
+<QQ AppId="1103300483" AppKey="k55QOhlJvwWYzMT4" />
+<Facebook ConsumerKey="353760388534344" ConsumerSecret="fdd1cec10a56a8d0deeb2915d45e24bc" RedirectUrl="https://www.baidu.com/" />
+<WechatMoments AppId="wxdacf276ee692483c" AppSecret="054be2c9d56b39e7cffe77772c5ef1c1" />
+<WechatFavorite AppId="wxdacf276ee692483c" AppSecret="054be2c9d56b39e7cffe77772c5ef1c1" />
+<QZone AppId="1103300483" AppKey="k55QOhlJvwWYzMT4" />
+</DevInfor>

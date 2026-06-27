@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/settings_view_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/linear_pic_resolution_parent" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" android:layout_marginTop="@dimen/dp_10" style="@style/LinearLayoutParent">
+        <TextView android:text="@string/doorbell_screen_reso" style="@style/textView_btn_style" />
+        <TextView android:id="@id/tv_pic_resolution_ratio" style="@style/setting_right_tv_color_style" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/icon_arrow_selector" android:contentDescription="@null" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/linear_screen_timeout_parent" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" style="@style/LinearLayoutParent">
+        <TextView android:text="@string/doorbell_screen_timeout" style="@style/textView_btn_style" />
+        <TextView android:id="@id/tv_screen_timeout_time" style="@style/setting_right_tv_color_style" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/icon_arrow_selector" android:contentDescription="@null" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/linear_screen_luminance_parent" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" style="@style/LinearLayoutParent">
+        <TextView android:text="@string/t1_screen_lum_title" style="@style/textView_btn_style" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/icon_arrow_selector" android:contentDescription="@null" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/ll_night_parent" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" style="@style/LinearLayoutParent">
+        <TextView android:text="@string/tv_t1_night_title" style="@style/textView_btn_style" />
+        <TextView android:id="@id/tv_night_mode" style="@style/setting_right_tv_color_style" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/icon_arrow_selector" android:contentDescription="@null" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/ll_backlight_improve_parent" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" style="@style/LinearLayoutParent">
+        <TextView android:text="@string/camera_effect" style="@style/textView_btn_style" />
+        <TextView android:id="@id/tv_backlight_mode" style="@style/setting_right_tv_color_style" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/icon_arrow_selector" android:contentDescription="@null" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/dp_10"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/add_r22_body_textsize" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reasons_for_binding_failure" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_10">
+            <TextView android:text="@string/band_device_wifi_check" android:drawableBottom="@drawable/img_add_device_failed_1" style="@style/add_device_failed_textview_style" />
+            <TextView android:text="@string/we_dont_support_network_encryption" android:drawableBottom="@drawable/img_add_device_failed_2" style="@style/add_device_failed_textview_style" />
+            <TextView android:text="@string/the_ip_dont_is_static" android:drawableBottom="@drawable/img_add_device_failed_3" style="@style/add_device_failed_textview_style" />
+            <TextView android:text="@string/wifi_password_cant_spaces" android:drawableBottom="@drawable/img_add_device_failed_4" style="@style/add_device_failed_textview_style" />
+            <TextView android:id="@id/tv_servicePhone" android:text="呜呜呜，如果您还是无法解决的话，请拨打我们的售后电话(4000180217)，与售后的MM、小哥联系，工作时间是：9:00-18:00" android:drawableBottom="@drawable/img_add_device_failed_5" style="@style/add_device_failed_textview_style" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

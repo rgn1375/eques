@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/dp_5" android:paddingBottom="@dimen/dp_5" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/lin_clock" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp_30" android:textColor="@color/black" android:id="@id/tv_timer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/common_color_666666" android:id="@id/tv_timer_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TEST" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/common_color_666666" android:id="@id/tv_timer_action" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/common_color_666666" android:id="@id/tv_time_long" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom" android:id="@id/lin_delay" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp_30" android:textColor="@color/black" android:id="@id/tv_delay_hour" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_clock_min" />
+        <TextView android:textSize="@dimen/sp_30" android:textColor="@color/black" android:id="@id/tv_delay_min" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_clock_second" />
+    </LinearLayout>
+</LinearLayout>

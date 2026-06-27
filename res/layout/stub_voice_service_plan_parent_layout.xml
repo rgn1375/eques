@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/include_plan" android:background="@color/settings_view_bg" android:paddingBottom="@dimen/dp_15" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/include_usage_scenario" android:paddingStart="@dimen/dp_15" android:paddingEnd="@dimen/dp_15"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/voice_usage_scenario_layout" android:paddingTop="@dimen/dp_5" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:background="@color/tv_sketch_map_bg" android:layout_width="@dimen/dp_80" android:layout_height="@dimen/dp_3" android:layout_alignBaseline="@id/tv_title_hint" android:layout_marginStart="@dimen/dp_2" />
+            <TextView android:textSize="@dimen/fontsize_eighteenth" android:textColor="@color/service_cloud_plan_one" android:id="@id/tv_title_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/service_show_plan_hint" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voice_call_plan_remind" android:layout_alignBaseline="@id/tv_title_hint" android:layout_marginStart="@dimen/dp_10" android:layout_toEndOf="@id/tv_title_hint" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:layout_marginStart="@dimen/dp_10">
+            <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/service_cloud_plan_three" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voice_call_service_time" />
+            <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/service_cloud_plan_three" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voice_call_service_times" android:layout_marginStart="@dimen/dp_60" />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_plan_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:layout_marginBottom="@dimen/dp_8" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_show_more_plan" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_10">
+            <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/service_cloud_plan_three" android:gravity="center_vertical" android:id="@id/tv_show_more_plan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/service_show_more_plan_hint" android:drawableRight="@drawable/down" android:drawablePadding="@dimen/dp_5" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ysf_card_subtitle_parent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/ysf_card_subtitle_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:ellipsize="end" android:id="@id/ysf_card_subtitle_tv" android:paddingLeft="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100.0dp" android:text="1111111111111111111111111111111111111111111111111111111111111111111" android:maxLines="1" />
+        <View android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:ellipsize="end" android:id="@id/ysf_card_subtitle_sub_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100.0dp" android:text="22222222222222222222" android:maxLines="1" />
+    </LinearLayout>
+</LinearLayout>

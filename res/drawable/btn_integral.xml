@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:topLeftRadius="@dimen/dp_80" android:topRightRadius="0.0dp" android:bottomLeftRadius="@dimen/dp_80" android:bottomRightRadius="0.0dp" />
+            <solid android:color="@color/service_open_status" />
+        </shape>
+    </item>
+</selector>

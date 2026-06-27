@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_forget_pwd_parent" android:background="@color/login_ffffff" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/dp_28" android:layout_marginEnd="@dimen/dp_28">
+        <ScrollView android:id="@id/scroll_hide" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_50">
+                <com.eques.doorbell.ui.widget.LineEditText android:textColor="@color/edit_register_send" android:id="@id/et_userName" android:hint="@string/register_input_username" android:maxLength="20" android:drawablePadding="@dimen/dp_10" android:inputType="textPersonName" android:drawableStart="@drawable/register_user_name" style="@style/registerEdtextStyle" />
+                <TextView android:id="@id/tv_userName_msg" android:visibility="gone" android:text="@string/register_notify_username_length_short" style="@style/register_message_style" />
+                <com.eques.doorbell.ui.widget.LineEditText android:textColor="@color/edit_register_send" android:id="@id/et_email" android:layout_marginTop="@dimen/dp_12" android:hint="@string/register_input_email" android:drawablePadding="@dimen/dp_10" android:drawableStart="@drawable/register_mail" style="@style/registerEdtextStyle" />
+                <TextView android:id="@id/tv_email_msg" android:visibility="gone" android:text="@string/register_notify_email_error" style="@style/register_message_style" />
+                <com.eques.doorbell.ui.widget.LineEditText android:textColor="@color/edit_register_send" android:id="@id/et_passWord" android:layout_marginTop="@dimen/dp_12" android:hint="@string/register_input_password" android:maxLength="16" android:drawablePadding="@dimen/dp_10" android:inputType="textPassword" android:drawableStart="@drawable/register_password" style="@style/registerEdtextStyle" />
+                <TextView android:id="@id/tv_password_msg" android:visibility="gone" android:text="@string/register_notify_ps_length_short" style="@style/register_message_style" />
+                <com.eques.doorbell.ui.widget.LineEditText android:textColor="@color/edit_register_send" android:id="@id/et_rePassword" android:layout_marginTop="@dimen/dp_12" android:hint="@string/register_input_repassword" android:maxLength="16" android:drawablePadding="@dimen/dp_10" android:inputType="textPassword" android:drawableStart="@drawable/register_password" style="@style/registerEdtextStyle" />
+                <TextView android:id="@id/tv_rePassword_msg" android:visibility="gone" android:text="@string/register_notify_ps_length_short" style="@style/register_message_style" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12">
+                    <com.eques.doorbell.ui.widget.LineEditText android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/edit_register_send" android:textColorHint="@color/edTextColorHint" android:id="@id/et_captcha" android:background="@null" android:paddingLeft="@dimen/dp_5" android:paddingRight="@dimen/dp_5" android:layout_width="0.0dp" android:layout_height="50.0dp" android:hint="@string/input_success_authinfo" android:singleLine="true" android:maxLength="4" android:digits="@string/email_register_authcode" android:drawablePadding="@dimen/dp_10" android:layout_weight="1.0" android:drawableStart="@drawable/register_security" />
+                    <RelativeLayout android:id="@id/iv_captcha" android:background="@drawable/iv_style_qrcode" android:layout_width="0.0dp" android:layout_height="@dimen/dp_45" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_5">
+                        <ProgressBar android:id="@id/progress_authCode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="false" android:indeterminateDrawable="@drawable/progress_inner_holo" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <Button android:id="@id/btn_register" android:layout_marginTop="@dimen/dp_26" android:text="@string/register_up" style="@style/btn_style_lrfp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

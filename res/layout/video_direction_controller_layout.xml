@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_direction_controller_parent" android:background="@color/xm_F1EFF0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@id/rl_bottom_parent" android:layout_below="@id/ll_controller_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="@dimen/dp_180" android:layout_height="@dimen/dp_180" android:layout_centerInParent="true">
+        <ImageView android:id="@id/direction_none_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_preview_direction_bg" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/direction_left_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_preview_direction_left_bg" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/direction_top_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_preview_direction_top_bg" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/direction_right_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_preview_direction_right_bg" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/direction_bottom_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_preview_direction_bottom_bg" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/iv_direction_top_btn" android:padding="@dimen/dp_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_23" android:src="@drawable/video_direction_top_style" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/iv_direction_down_btn" android:padding="@dimen/dp_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_23" android:src="@drawable/video_direction_down_style" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/iv_direction_left_btn" android:padding="@dimen/dp_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_direction_left_style" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_23" />
+        <ImageView android:id="@id/iv_direction_right_btn" android:padding="@dimen/dp_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_direction_right_style" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_23" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/realay_rootView" android:background="@color/cloud_storage_details_bg" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:orientation="vertical" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/dp_60" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/rl_close_pop" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:padding="@dimen/dp_8" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30" android:layout_marginLeft="@dimen/dp_5" android:layout_marginTop="@dimen/dp_5" android:layout_marginBottom="@dimen/dp_2" android:src="@drawable/ic_scan_back" />
+            </RelativeLayout>
+            <include android:id="@id/include_cloud_storage_details" android:visibility="gone" layout="@layout/cloud_storage_top_stub_base" />
+            <include android:id="@id/include_cloud_storage_details_describe" android:visibility="gone" layout="@layout/cloud_storage_body_stub_base" />
+            <include android:id="@id/include_face_details" android:visibility="visible" layout="@layout/activity_face_stub_base" />
+            <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_open_service_details" android:background="@drawable/service_details_title_style" android:layout_width="match_parent" android:layout_height="@dimen/smart_home_btn_size" android:layout_marginLeft="@dimen/dp_25" android:layout_marginTop="@dimen/dp_18" android:layout_marginRight="@dimen/dp_25" android:text="所购服务详情" />
+            <com.eques.doorbell.ui.widget.MyListView android:id="@id/lv_open_service_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_25" android:layout_marginRight="@dimen/dp_25" android:listSelector="@android:color/transparent" android:divider="@null" />
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_cloud_customer_service" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_30" android:text="@string/cloud_service_tel" android:layout_above="@id/ll_has_open_btn" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_has_open_btn" android:background="@drawable/service_open_btn_style" android:layout_width="match_parent" android:layout_height="@dimen/smart_home_btn_size" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/sp_18" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已开通" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:gravity="bottom" android:id="@id/tv_expiration_date" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_2" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

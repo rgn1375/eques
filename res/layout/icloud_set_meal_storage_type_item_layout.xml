@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/icloud_666666" android:id="@id/icloud_set_meal_tv_horizontal_title_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_4" android:text="@string/icloud_set_meal" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/icloud_set_meal_rv_parent_horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" />
+</LinearLayout>

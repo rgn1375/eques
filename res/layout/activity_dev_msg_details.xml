@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_msg_title_layout" />
+    <View android:background="@color/line_color" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/frame_root" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/rel_bottom" />
+        <RelativeLayout android:id="@id/rel_cancel" android:background="@color/gray_transparent_half" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.prolificinteractive.materialcalendarview.MaterialCalendarView android:id="@id/cv_messageCalendarView" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/img_video_integral" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/video_banner" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/rel_bottom" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_60" android:layout_alignParentBottom="true">
+            <View android:background="@color/line_color" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" />
+            <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/login_666666" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_main_msg_delete" android:drawableTop="@mipmap/new_msg_del" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

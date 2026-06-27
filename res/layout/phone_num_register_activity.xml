@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/login_ffffff" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/dp_28" android:layout_marginEnd="@dimen/dp_28">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_50">
+            <View android:background="@color/login_ff7316" android:layout_width="@dimen/dp_6" android:layout_height="@dimen/dp_32" />
+            <TextView android:textSize="@dimen/sp_20" android:textColor="@color/login_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/regis_by_phone_hint_one" android:layout_marginStart="@dimen/dp_12" />
+        </LinearLayout>
+        <EditText android:textColor="@color/edit_register_send" android:id="@id/et_phoneNum" android:background="@drawable/edit_style_registration_default" android:layout_marginTop="@dimen/dp_26" android:hint="@string/regis_by_phone_hint_two" android:maxLength="11" android:inputType="phone" style="@style/register_ed_style" />
+        <TextView android:textSize="@dimen/fontsize_twelve" android:textColor="@color/edit_register_error" android:id="@id/tv_phone_num_error_hint" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="@string/forgot_passwd_by_phone_hint_five" />
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_45" android:layout_marginTop="@dimen/dp_6">
+            <EditText android:textColor="@color/edit_register_send" android:id="@id/et_smsCode" android:background="@drawable/edit_style_registration_default" android:hint="@string/input_success_authinfo" android:maxLength="6" android:inputType="phone" style="@style/register_ed_style" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true">
+                <View android:id="@id/view_line" android:background="@color/edit_register_divider" android:layout_width="@dimen/dp_1" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_7" android:layout_marginBottom="@dimen/dp_7" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_10" />
+                <TextView android:textColor="@color/login_ff7316" android:id="@id/tv_sendAuthCode" android:padding="@dimen/dp_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/forgot_passwd_by_phone_hint_four" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_10" android:layout_toEndOf="@id/view_line" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/fontsize_twelve" android:textColor="@color/edit_register_error" android:id="@id/tv_authcode_error_hint" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="@string/regis_by_phone_authcode_error" />
+        <Button android:id="@id/btn_next" android:layout_marginTop="@dimen/dp_26" android:text="@string/next_step" style="@style/btn_style_lrfp_new" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_15" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <LinearLayout android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <CheckBox android:id="@id/cb_choose_agree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_10" android:text="@string/register_phone_agreen" style="@style/AlarmCheckboxTheme" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_5">
+            <TextView android:textSize="@dimen/fontsize_twelve" android:textColor="@color/login_btn_default_new" android:id="@id/tv_serviceAgreement" android:padding="@dimen/dp_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/regis_protocol_hint_one" />
+            <TextView android:textSize="@dimen/fontsize_twelve" android:textColor="@color/edit_register_send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/regis_protocol_hint_and" />
+            <TextView android:textSize="@dimen/fontsize_twelve" android:textColor="@color/login_btn_default_new" android:id="@id/tv_privacyAgreement" android:padding="@dimen/dp_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/regis_protocol_hint_two" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/lin_agree" android:background="@drawable/btn_custom_info_style2" android:paddingLeft="@dimen/dp_10" android:paddingTop="@dimen/dp_30" android:paddingRight="@dimen/dp_10" android:paddingBottom="@dimen/dp_30" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_50" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/register_phone_agreen_hint" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/lin_sure_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:layout_marginBottom="@dimen/dp_20">
+            <TextView android:textSize="@dimen/sp_18" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_no_agree_agreement_hint" android:background="@drawable/agreement_btn_style_one" android:layout_width="0.0dp" android:layout_height="@dimen/dp_35" android:layout_marginRight="@dimen/dp_5" android:text="@string/no_agree_protocol" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/sp_18" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_agree_agreement_hint" android:background="@drawable/agreement_btn_style_two" android:layout_width="0.0dp" android:layout_height="@dimen/dp_35" android:layout_marginLeft="@dimen/dp_5" android:text="@string/agree_protocol" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

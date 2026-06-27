@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/btn_style_protocol_white" android:padding="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sp_18" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_14" android:layout_marginRight="@dimen/dp_14" android:layout_marginBottom="@dimen/dp_14" android:text="@string/tv_video_duration" />
+    <ListView android:id="@id/lv_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@color/transparent" />
+</LinearLayout>

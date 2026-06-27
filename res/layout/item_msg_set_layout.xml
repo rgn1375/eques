@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/btn_style_white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:paddingLeft="@dimen/dp_14" android:paddingRight="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="@dimen/dp_50">
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/text_color" android:id="@id/tv_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/sp_18" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/supervisory_time" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/orange" android:id="@id/tv_sure" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dd_dialog_confirm_hint" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_200" android:paddingStart="@dimen/dp_20" android:paddingEnd="@dimen/dp_20">
+        <LinearLayout android:gravity="center" android:layout_width="0.0dp" android:layout_height="@dimen/dp_200" android:layout_weight="2.0">
+            <com.aigestudio.wheelpicker.WheelPicker android:id="@id/number_start_hour" android:background="#ffffff" android:layout_width="@dimen/dp_50" android:layout_height="match_parent" app:wheel_item_text_size="@dimen/sp_18" />
+            <com.aigestudio.wheelpicker.WheelPicker android:id="@id/number_start_min" android:background="#ffffff" android:layout_width="@dimen/dp_50" android:layout_height="match_parent" app:wheel_item_text_size="@dimen/sp_18" />
+        </LinearLayout>
+        <View android:background="@color/line_color" android:layout_width="0.0dp" android:layout_height="1.0dp" android:layout_margin="@dimen/dp_14" android:layout_weight="0.5" />
+        <LinearLayout android:gravity="center" android:layout_width="0.0dp" android:layout_height="@dimen/dp_200" android:layout_weight="2.0">
+            <com.aigestudio.wheelpicker.WheelPicker android:id="@id/number_end_hour" android:background="#ffffff" android:layout_width="@dimen/dp_50" android:layout_height="match_parent" app:wheel_item_text_size="@dimen/sp_18" />
+            <com.aigestudio.wheelpicker.WheelPicker android:id="@id/number_end_min" android:background="#ffffff" android:layout_width="@dimen/dp_50" android:layout_height="match_parent" app:wheel_item_text_size="@dimen/sp_18" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

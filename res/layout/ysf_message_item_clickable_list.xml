@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ysf_clickable_list_content" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ysf_clickable_list_normal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/ysf_clickable_list_header" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:layout_width="@dimen/ysf_bubble_content_max_width" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/ysf_text_size_16" android:textColor="@color/ysf_black_333333" android:id="@id/ysf_clickable_list_header_text" android:padding="12.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:lineSpacingExtra="3.0dp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/ysf_clickable_list_change_text" app:layout_constraintTop_toTopOf="parent" />
+                <LinearLayout android:orientation="vertical" android:id="@id/ysf_clickable_list_header_more_linear" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/ysf_clickable_list_header_text" app:layout_constraintLeft_toLeftOf="@id/ysf_clickable_list_header_text" app:layout_constraintRight_toRightOf="@id/ysf_clickable_list_header_text">
+                    <View android:background="@drawable/ysf_back_evaluator_gradient" android:layout_width="match_parent" android:layout_height="40.0dp" />
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/ysf_white" android:layout_width="match_parent" android:layout_height="30.0dp" android:layout_marginHorizontal="12.0dp">
+                        <TextView android:textSize="@dimen/ysf_text_size_14" android:textColor="@color/ysf_grey_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ysf_see_more" />
+                        <ImageView android:layout_width="15.0dp" android:layout_height="15.0dp" android:src="@drawable/ysf_ic_robot_arrow_right" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textSize="@dimen/ysf_text_size_14" android:textColor="@color/ysf_grey_999999" android:id="@id/ysf_clickable_list_change_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ysf_change" android:drawableLeft="@drawable/ysf_ic_change" android:drawablePadding="5.0dp" android:paddingHorizontal="10.0dp" android:paddingVertical="12.0dp" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <include android:id="@id/ysf_clickable_list_header_divider" android:layout_width="@dimen/ysf_bubble_content_max_width" android:layout_height="@dimen/ysf_divider_height" layout="@layout/ysf_include_divider" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ysf_clickable_list_container" android:layout_width="@dimen/ysf_bubble_content_max_width" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="12.0dp" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ysf_clickable_list_footer" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include android:id="@id/ysf_clickable_list_footer_divider" android:layout_width="@dimen/ysf_bubble_content_max_width" android:layout_height="@dimen/ysf_divider_height" layout="@layout/ysf_include_divider" />
+            <TextView android:textSize="@dimen/ysf_text_size_16" android:textColor="@color/ysf_black_333333" android:id="@id/ysf_clickable_list_footer_text" android:paddingLeft="12.0dp" android:paddingTop="10.0dp" android:paddingRight="12.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/ysf_bubble_content_max_width" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ysf_clickable_list_category" android:layout_width="@dimen/ysf_bubble_content_max_width" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/ysf_text_size_16" android:textColor="@color/ysf_black_333333" android:id="@id/ysf_clickable_list_header_category" android:padding="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <HorizontalScrollView android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.qiyukf.unicorn.widget.tabLayout.PagerTabLayout android:id="@id/ysf_robot_tab_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </HorizontalScrollView>
+        <include layout="@layout/ysf_include_divider" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ysf_ll_clickable_list_category" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

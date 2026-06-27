@@ -1,0 +1,137 @@
+.class final Lcom/ihsanbal/logging/d$c;
+.super Ljava/lang/Object;
+.source "LoggingInterceptor.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/ihsanbal/logging/d;->d(Lcom/ihsanbal/logging/d$e;JZILjava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Runnable;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lcom/ihsanbal/logging/d$e;
+
+.field final synthetic b:J
+
+.field final synthetic c:Z
+
+.field final synthetic d:I
+
+.field final synthetic e:Ljava/lang/String;
+
+.field final synthetic f:Ljava/lang/String;
+
+.field final synthetic g:Ljava/util/List;
+
+.field final synthetic h:Ljava/lang/String;
+
+.field final synthetic i:Ljava/lang/String;
+
+
+# direct methods
+.method constructor <init>(Lcom/ihsanbal/logging/d$e;JZILjava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/ihsanbal/logging/d$c;->a:Lcom/ihsanbal/logging/d$e;
+
+    .line 2
+    .line 3
+    iput-wide p2, p0, Lcom/ihsanbal/logging/d$c;->b:J
+
+    .line 4
+    .line 5
+    iput-boolean p4, p0, Lcom/ihsanbal/logging/d$c;->c:Z
+
+    .line 6
+    .line 7
+    iput p5, p0, Lcom/ihsanbal/logging/d$c;->d:I
+
+    .line 8
+    .line 9
+    iput-object p6, p0, Lcom/ihsanbal/logging/d$c;->e:Ljava/lang/String;
+
+    .line 10
+    .line 11
+    iput-object p7, p0, Lcom/ihsanbal/logging/d$c;->f:Ljava/lang/String;
+
+    .line 12
+    .line 13
+    iput-object p8, p0, Lcom/ihsanbal/logging/d$c;->g:Ljava/util/List;
+
+    .line 14
+    .line 15
+    iput-object p9, p0, Lcom/ihsanbal/logging/d$c;->h:Ljava/lang/String;
+
+    .line 16
+    .line 17
+    iput-object p10, p0, Lcom/ihsanbal/logging/d$c;->i:Ljava/lang/String;
+
+    .line 18
+    .line 19
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 20
+    .line 21
+    .line 22
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 10
+
+    .line 1
+    iget-object v0, p0, Lcom/ihsanbal/logging/d$c;->a:Lcom/ihsanbal/logging/d$e;
+
+    .line 2
+    .line 3
+    iget-wide v1, p0, Lcom/ihsanbal/logging/d$c;->b:J
+
+    .line 4
+    .line 5
+    iget-boolean v3, p0, Lcom/ihsanbal/logging/d$c;->c:Z
+
+    .line 6
+    .line 7
+    iget v4, p0, Lcom/ihsanbal/logging/d$c;->d:I
+
+    .line 8
+    .line 9
+    iget-object v5, p0, Lcom/ihsanbal/logging/d$c;->e:Ljava/lang/String;
+
+    .line 10
+    .line 11
+    iget-object v6, p0, Lcom/ihsanbal/logging/d$c;->f:Ljava/lang/String;
+
+    .line 12
+    .line 13
+    iget-object v7, p0, Lcom/ihsanbal/logging/d$c;->g:Ljava/util/List;
+
+    .line 14
+    .line 15
+    iget-object v8, p0, Lcom/ihsanbal/logging/d$c;->h:Ljava/lang/String;
+
+    .line 16
+    .line 17
+    iget-object v9, p0, Lcom/ihsanbal/logging/d$c;->i:Ljava/lang/String;
+
+    .line 18
+    .line 19
+    invoke-static/range {v0 .. v9}, Lcom/ihsanbal/logging/e;->k(Lcom/ihsanbal/logging/d$e;JZILjava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 20
+    .line 21
+    .line 22
+    return-void
+.end method

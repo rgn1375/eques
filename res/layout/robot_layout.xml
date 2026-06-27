@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3.0">
+        <Button android:textSize="@dimen/sp_16" android:textColor="@color/xm_000000" android:id="@id/login" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="登录" android:layout_weight="1.0" />
+        <Button android:textSize="@dimen/sp_16" android:textColor="@color/xm_000000" android:id="@id/logout" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="退出" android:layout_weight="1.0" />
+        <Button android:textSize="@dimen/sp_16" android:textColor="@color/xm_000000" android:id="@id/all_capability" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="所有能力集" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3.0">
+        <Button android:textSize="@dimen/sp_16" android:textColor="@color/xm_000000" android:id="@id/alone_capability" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="单项能力集" android:layout_weight="1.0" />
+        <Button android:textSize="@dimen/sp_16" android:textColor="@color/xm_000000" android:id="@id/blood_pressure" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="血压分析" android:layout_weight="1.0" />
+        <Button android:textSize="@dimen/sp_16" android:textColor="@color/xm_000000" android:id="@id/blood_sugar" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="血糖分析" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3.0">
+        <Button android:textSize="@dimen/sp_16" android:textColor="@color/xm_000000" android:id="@id/blood_oxygen" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="血氧分析" android:layout_weight="1.0" />
+        <Button android:textSize="@dimen/sp_16" android:textColor="@color/xm_000000" android:id="@id/temp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="体温分析" android:layout_weight="1.0" />
+        <Button android:textSize="@dimen/sp_16" android:textColor="@color/xm_000000" android:id="@id/ecg" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="心电分析" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3.0">
+        <Button android:textSize="@dimen/sp_16" android:textColor="@color/xm_000000" android:id="@id/whr" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="腰臀比分析" android:layout_weight="1.0" />
+        <Button android:textSize="@dimen/sp_16" android:textColor="@color/xm_000000" android:id="@id/uric_acid" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="尿酸分析" android:layout_weight="1.0" />
+        <Button android:textSize="@dimen/sp_16" android:textColor="@color/xm_000000" android:id="@id/cholesterol" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="总胆固醇分析" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3.0">
+        <Button android:textSize="@dimen/sp_16" android:textColor="@color/xm_000000" android:id="@id/inboby" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="体脂分析" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

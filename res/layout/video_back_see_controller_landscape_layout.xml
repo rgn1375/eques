@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_controller_parent_landscape" android:background="@android:color/transparent" android:layout_width="@dimen/dp_55" android:layout_height="match_parent" android:weightSum="4.0" android:layout_alignParentEnd="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_mute_btn_landscape" android:layout_width="wrap_content" android:layout_height="@dimen/dp_0" android:layout_weight="1.0">
+        <ImageView android:id="@id/iv_mute_landscape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/xm_mute_close" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_snap_btn_landscape" android:layout_width="wrap_content" android:layout_height="@dimen/dp_0" android:layout_weight="1.0">
+        <ImageView android:id="@id/iv_snap_landscape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/xm_snap" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_video_btn_landscape" android:layout_width="wrap_content" android:layout_height="@dimen/dp_0" android:layout_weight="1.0">
+        <ImageView android:id="@id/iv_video_landscape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/xm_video_close" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="@dimen/dp_0" android:layout_weight="1.0" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ysf_card_message_order_parent" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="12.0dp">
+            <TextView android:ellipsize="end" android:id="@id/ysf_card_message_order_item_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dp" android:maxLines="1" />
+            <TextView android:ellipsize="end" android:gravity="right" android:id="@id/ysf_card_message_order_item_time" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxWidth="100.0dp" android:maxLines="1" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ysf_card_message_order_item" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/common_color_f5f5f5" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rel_mode_switch" android:background="@drawable/btn_style_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_60" android:layout_marginLeft="@dimen/dp_14" android:layout_marginTop="@dimen/dp_20" android:layout_marginRight="@dimen/dp_14" android:layout_marginBottom="@dimen/dp_8">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <TextView android:textSize="14.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_14" android:text="@string/animal_food_switch" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_14" android:text="@string/animal_food_switch_hint" />
+        </LinearLayout>
+        <ImageView android:id="@id/img_mode_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_14" android:src="@mipmap/button_switch_off" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/lin_menu" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/rel_mode_pic" android:background="@drawable/btn_style_white" android:layout_width="match_parent" android:layout_height="@dimen/dp_60" android:layout_marginLeft="@dimen/dp_14" android:layout_marginTop="@dimen/dp_10" android:layout_marginRight="@dimen/dp_14" android:layout_marginBottom="@dimen/dp_8">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <TextView android:textSize="14.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_14" android:text="@string/capture" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_14" android:text="@string/pir_real_time_capture_hint" />
+            </LinearLayout>
+            <ImageView android:id="@id/img_mode_pic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_14" android:src="@mipmap/select_pay" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/sp_13" android:textColor="@color/common_color_666666" android:id="@id/tv_animal_hint1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_14" android:text="@string/animal_paid_alarm_capture" android:layout_marginStart="@dimen/dp_30" android:layout_marginEnd="@dimen/dp_30" />
+        <RelativeLayout android:id="@id/rel_mode_video" android:background="@drawable/btn_style_white" android:layout_width="match_parent" android:layout_height="@dimen/dp_60" android:layout_marginLeft="@dimen/dp_14" android:layout_marginTop="@dimen/dp_8" android:layout_marginRight="@dimen/dp_14" android:layout_marginBottom="@dimen/dp_8">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <TextView android:textSize="14.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_14" android:text="@string/vcr" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_14" android:text="@string/tv_pir_video_r27_hint_one" />
+            </LinearLayout>
+            <ImageView android:id="@id/img_mode_video" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_14" android:src="@mipmap/select_pay" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/orange" android:id="@id/tv_open_mode" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_14" android:text="@string/open_cloud_storage" android:drawableRight="@mipmap/new_main_next" android:drawablePadding="@dimen/dp_5" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/sp_13" android:textColor="@color/common_color_666666" android:id="@id/tv_animal_hint2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/animal_paid_alarm" android:layout_marginStart="@dimen/dp_30" android:layout_marginEnd="@dimen/dp_30" />
+        <LinearLayout android:orientation="vertical" android:id="@id/lin_video_time" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_14" android:layout_marginTop="@dimen/dp_8" android:layout_marginRight="@dimen/dp_14" android:layout_marginBottom="@dimen/dp_8">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rec_video_time" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

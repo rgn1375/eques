@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:id="@id/lin_choose_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_10">
+                <ImageView android:id="@id/img_choose" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/msg_unselect" />
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:id="@id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rec_msg_data" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rec_alarm_data" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rec_ring_data" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rec_leave_msg_data" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <RelativeLayout android:id="@id/rel_empty" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/sp_16" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/e1pro_none_alarm_msg_hint" android:drawableTop="@mipmap/lock_none" android:drawablePadding="@dimen/dp_5" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

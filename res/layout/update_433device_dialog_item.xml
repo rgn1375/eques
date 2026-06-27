@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/settings_left_tv_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_5" android:layout_marginTop="@dimen/dp_10" android:text="@string/update_device_name" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/et_dialog_bg_white_style" android:layout_width="match_parent" android:layout_height="@dimen/dp_48" android:layout_margin="@dimen/dp_5">
+        <EditText android:textColor="@color/edit_register_send" android:id="@id/et_dialogValue" android:background="@android:color/transparent" android:paddingLeft="@dimen/dp_5" android:paddingRight="@dimen/dp_5" android:hint="@string/check_device_name_length" android:singleLine="true" android:maxLength="10" style="@style/dev_nick_edittext_style" />
+    </LinearLayout>
+</LinearLayout>

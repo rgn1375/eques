@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/lin_root_back" android:background="@mipmap/bg_icloud" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/main_head_title_bar_v3_layout" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/dp_200" android:layout_width="match_parent" android:layout_height="match_parent">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/img_paid_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/newui_cloud_img_icloud" android:layout_alignParentRight="true" />
+                    <TextView android:textSize="@dimen/sp_30" android:textStyle="bold" android:textColor="@color/login_1661FF" android:id="@id/tv_head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_14" android:layout_marginTop="@dimen/dp_30" android:text="@string/new_ui_cloud" android:layout_marginStart="@dimen/dp_14" />
+                    <TextView android:textSize="@dimen/sp_18" android:textStyle="bold" android:textColor="@color/login_1661FF" android:id="@id/tv_head_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_14" android:layout_marginTop="@dimen/dp_10" android:text="@string/new_ui_cloud_hint" android:layout_below="@id/tv_head" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/sp_18" android:textColor="@color/Black" android:id="@id/tv_dev_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_14" android:text="@string/new_ui_cloud_dev" />
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/rec_dev" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_10" />
+                    <include layout="@layout/include_cloud_entry_values" />
+                    <include android:visibility="gone" layout="@layout/include_voice_layout" />
+                    <include android:visibility="gone" layout="@layout/include_video_entry_values" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <Button android:textSize="@dimen/sp_18" android:textColor="@color/white" android:id="@id/btn_buy" android:background="@drawable/cloud_gradient_rounded_corner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:layout_marginBottom="@dimen/dp_14" android:text="@string/new_ui_open_cloud" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/dp_14" android:layout_marginEnd="@dimen/dp_14" />
+    </RelativeLayout>
+</LinearLayout>

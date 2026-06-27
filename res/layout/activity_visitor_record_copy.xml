@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/linear_parent" android:layout_width="match_parent" android:layout_height="match_parent" xrefreshview:autoRefresh="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xrefreshview="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/lienar_visitorRecordPopwindown" android:background="@color/alarm_manager_tabitem_color_press" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" android:layout_weight="0.0">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linear_messageTypePopWindown" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/fontsize_twelve" android:textColor="@color/message_edit_font_color" android:gravity="center" android:id="@id/tv_visitorRecord_typeKey" android:padding="@dimen/dp_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_2" android:text="@string/visitor_record_tx" />
+            <ImageView android:id="@id/iv_visitor_type_pop_flag" android:background="@drawable/drop_down_btn_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_3" android:contentDescription="@null" />
+        </LinearLayout>
+        <View android:background="@color/interval_bg" android:layout_width="@dimen/dp_1" android:layout_height="match_parent" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linear_visitorDatePopWindown" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/fontsize_twelve" android:textColor="@color/message_edit_font_color" android:gravity="center" android:id="@id/tv_visitorDatePopWindown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="02-15" />
+            <ImageView android:background="@drawable/drop_down_btn_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:contentDescription="@null" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/interval_bg" android:layout_width="match_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:id="@id/realy_parent_h" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.eques.doorbell.ui.view.SingleLayoutListView android:id="@id/single_layout_listview" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:divider="@android:color/transparent" />
+        <include android:id="@id/empty_view" layout="@layout/visitor_record_empty_view" />
+        <RelativeLayout android:id="@id/realy_deleteSnapshotpic" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_alignParentBottom="true">
+            <View android:background="@color/gray_line" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+            <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/settings_left_tv_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notify_delete" android:drawableLeft="@drawable/group_del_bottom" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/lock_alarm_hint_tv_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unlocking" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/et_dialog_bg_white_style" android:layout_width="match_parent" android:layout_height="@dimen/dp_45" android:layout_marginLeft="@dimen/dp_5" android:layout_marginTop="@dimen/dp_10" android:layout_marginRight="@dimen/dp_5">
+        <EditText android:textColor="@color/edit_register_send" android:id="@id/et_open_lock_pas" android:background="@android:color/transparent" android:paddingLeft="@dimen/dp_5" android:paddingRight="@dimen/dp_5" android:layout_height="match_parent" android:hint="@string/input_pas_hint" android:singleLine="true" android:maxLength="6" android:layout_weight="1.0" android:inputType="number" style="@style/dev_nick_edittext_style" />
+    </LinearLayout>
+</LinearLayout>

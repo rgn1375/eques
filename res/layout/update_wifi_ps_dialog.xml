@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/settings_left_tv_color" android:layout_gravity="center" android:layout_margin="@dimen/dp_5" android:text="@string/input_pas_hint" style="@style/main_textview_style" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/et_dialog_bg_white_style" android:layout_width="match_parent" android:layout_height="@dimen/dp_48" android:layout_margin="@dimen/dp_5">
+        <EditText android:textColor="@color/edit_register_send" android:id="@id/ed_wifiPs" android:background="@android:color/transparent" android:paddingLeft="@dimen/dp_5" android:paddingRight="@dimen/dp_5" android:layout_height="match_parent" android:hint="@string/register_input_password" android:singleLine="true" android:layout_weight="1.0" style="@style/dev_nick_edittext_style" />
+    </LinearLayout>
+</LinearLayout>

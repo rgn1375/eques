@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/settings_view_bg" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.eques.doorbell.ui.view.Navbar android:id="@id/nav_bar_view" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_doorbell_lamp_parent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/titlebar_tv_color" android:gravity="center" android:id="@id/tv_doorbell_hint" android:layout_width="match_parent" android:layout_height="@dimen/dp_65" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10" android:text="@string/doorbell_t1_lamp_open_hint" />
+        <LinearLayout android:id="@id/linear_setLight" android:layout_width="match_parent" android:layout_height="@dimen/dp_48" android:layout_marginTop="@dimen/dp_10" style="@style/pir_page_layout_style">
+            <TextView android:id="@id/tv_light_status" android:text="@string/fragment_device_item_pir_open" style="@style/textView_btn_style" />
+            <CheckBox android:id="@id/cb_light" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_marginRight="@dimen/dp_15" style="@style/MySwitchTheme" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_distance_auto_bright_scr_parent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:id="@id/ll_distance_switch" android:layout_width="match_parent" android:layout_height="@dimen/dp_48" android:layout_marginTop="@dimen/dp_10" style="@style/pir_page_layout_style">
+            <TextView android:id="@id/tv_distance_switch_status" android:text="@string/fragment_device_item_pir_open" style="@style/textView_btn_style" />
+            <CheckBox android:id="@id/cb_distance_switch" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_marginRight="@dimen/dp_15" style="@style/MySwitchTheme" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/titlebar_tv_color" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_10" android:text="@string/doorbell_t1_distance_induction_hint" />
+        <LinearLayout android:id="@id/ll_auto_bright_scr_switch" android:layout_width="match_parent" android:layout_height="@dimen/dp_48" android:layout_marginTop="@dimen/dp_10" style="@style/pir_page_layout_style">
+            <TextView android:id="@id/tv_auto_bright_scr_switch_status" android:text="@string/t1_auto_bright_src_hint" style="@style/textView_btn_style" />
+            <CheckBox android:id="@id/cb_auto_bright_scr_switch" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_marginRight="@dimen/dp_15" style="@style/MySwitchTheme" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/titlebar_tv_color" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_10" android:text="@string/doorbell_t1_auto_bright_screen_hint" />
+    </LinearLayout>
+</LinearLayout>

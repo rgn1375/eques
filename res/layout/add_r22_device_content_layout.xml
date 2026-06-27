@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_add_r22_parent" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@id/include_band_m1_ready" android:visibility="gone" layout="@layout/activity_add_m1_one" />
+        <include android:id="@id/include_one" android:visibility="gone" layout="@layout/bind_process_select_network_layout" />
+        <include android:id="@id/include_two" android:visibility="gone" layout="@layout/bing_process_nocon_wifi_layout" />
+        <include android:id="@id/include_three" android:visibility="gone" layout="@layout/bind_process_network_check_5g_layout" />
+        <include android:id="@id/include_four" android:visibility="gone" layout="@layout/activity_add_r22_four" />
+        <include android:id="@id/include_five" android:visibility="gone" layout="@layout/bind_process_binding_waiting_layout" />
+        <include android:id="@id/include_six" android:visibility="gone" layout="@layout/activity_add_r22_failed" />
+        <include android:id="@id/include_seven" android:visibility="gone" layout="@layout/bind_process_bind_dev_success_layout" />
+        <include android:id="@id/include_eight" android:visibility="gone" layout="@layout/d1_bind_failed_layout" />
+        <include android:id="@id/include_nine" android:visibility="gone" layout="@layout/bind_process_bind_failed_layout" />
+    </RelativeLayout>
+</LinearLayout>

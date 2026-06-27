@@ -1,0 +1,141 @@
+.class public abstract Lcn/sharesdk/framework/f;
+.super Ljava/lang/Object;
+.source "PlatformHelper.java"
+
+# interfaces
+.implements Lcn/sharesdk/framework/authorize/AuthorizeHelper;
+
+
+# instance fields
+.field protected a:Lcn/sharesdk/framework/Platform;
+
+.field private b:Lcn/sharesdk/framework/authorize/AuthorizeListener;
+
+.field private c:Lcn/sharesdk/framework/authorize/SSOListener;
+
+
+# direct methods
+.method public constructor <init>(Lcn/sharesdk/framework/Platform;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcn/sharesdk/framework/f;->a:Lcn/sharesdk/framework/Platform;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method protected a(Lcn/sharesdk/framework/authorize/SSOListener;)V
+    .locals 1
+
+    .line 1
+    iput-object p1, p0, Lcn/sharesdk/framework/f;->c:Lcn/sharesdk/framework/authorize/SSOListener;
+
+    .line 2
+    .line 3
+    new-instance v0, Lcn/sharesdk/framework/authorize/SSOAuthorizeActivity;
+
+    .line 4
+    .line 5
+    invoke-direct {v0}, Lcn/sharesdk/framework/authorize/SSOAuthorizeActivity;-><init>()V
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-virtual {v0, p1}, Lcn/sharesdk/framework/authorize/SSOAuthorizeActivity;->setSSOListener(Lcn/sharesdk/framework/authorize/SSOListener;)V
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-virtual {v0, p0}, Lcn/sharesdk/framework/authorize/AbstractAuthorizeActivity;->show(Lcn/sharesdk/framework/authorize/AuthorizeHelper;)V
+
+    .line 12
+    .line 13
+    .line 14
+    return-void
+.end method
+
+.method public b()I
+    .locals 1
+
+    iget-object v0, p0, Lcn/sharesdk/framework/f;->a:Lcn/sharesdk/framework/Platform;
+
+    .line 1
+    invoke-virtual {v0}, Lcn/sharesdk/framework/Platform;->getPlatformId()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method protected b(Lcn/sharesdk/framework/authorize/AuthorizeListener;)V
+    .locals 1
+
+    iput-object p1, p0, Lcn/sharesdk/framework/f;->b:Lcn/sharesdk/framework/authorize/AuthorizeListener;
+
+    .line 2
+    new-instance p1, Lcn/sharesdk/framework/authorize/WebAuthorizeActivity;
+
+    invoke-direct {p1}, Lcn/sharesdk/framework/authorize/WebAuthorizeActivity;-><init>()V
+
+    iget-object v0, p0, Lcn/sharesdk/framework/f;->b:Lcn/sharesdk/framework/authorize/AuthorizeListener;
+
+    .line 3
+    invoke-virtual {p1, v0}, Lcn/sharesdk/framework/authorize/WebAuthorizeActivity;->setAuthorizeListener(Lcn/sharesdk/framework/authorize/AuthorizeListener;)V
+
+    .line 4
+    invoke-virtual {p1, p0}, Lcn/sharesdk/framework/authorize/AbstractAuthorizeActivity;->show(Lcn/sharesdk/framework/authorize/AuthorizeHelper;)V
+
+    return-void
+.end method
+
+.method public getAuthorizeListener()Lcn/sharesdk/framework/authorize/AuthorizeListener;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcn/sharesdk/framework/f;->b:Lcn/sharesdk/framework/authorize/AuthorizeListener;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getPlatform()Lcn/sharesdk/framework/Platform;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcn/sharesdk/framework/f;->a:Lcn/sharesdk/framework/Platform;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getSSOListener()Lcn/sharesdk/framework/authorize/SSOListener;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcn/sharesdk/framework/f;->c:Lcn/sharesdk/framework/authorize/SSOListener;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getSSOProcessor(Lcn/sharesdk/framework/authorize/SSOAuthorizeActivity;)Lcn/sharesdk/framework/authorize/c;
+    .locals 0
+
+    .line 1
+    const/4 p1, 0x0
+
+    .line 2
+    return-object p1
+.end method

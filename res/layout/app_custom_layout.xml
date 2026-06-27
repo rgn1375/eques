@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="@dimen/dp_35" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/warning_trumpet_style" android:paddingLeft="@dimen/dp_5" android:paddingRight="@dimen/dp_5" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dp_1" android:elevation="1.0px" android:stateListAnimator="@null">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_35" android:layout_centerInParent="true">
+            <com.eques.doorbell.tools.marqueeview.MarqueeView android:id="@id/tv_arqueeView" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_11" android:layout_marginRight="@dimen/dp_20" android:layout_centerVertical="true" app:mvInterval="3000" app:mvSingleLine="true" app:mvTextColor="@color/white" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_centerInParent="true">
+                <com.eques.doorbell.tools.marqueeview.MarqueeView android:id="@id/tv_describe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_5" app:mvInterval="3000" app:mvSingleLine="true" app:mvTextColor="@color/white" />
+                <com.eques.doorbell.tools.marqueeview.MarqueeView android:id="@id/iv_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_11" app:mvInterval="3000" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

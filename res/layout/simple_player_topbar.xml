@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/app_video_top_box" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="top" android:id="@id/course_surfaceview_layout_title" android:layout_alignParentTop="true" style="@style/width_height_fw">
+        <TextView android:textSize="14.0sp" android:textColor="#4c4c4c" android:id="@id/app_video_finish_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.0dp" android:text="返回" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/app_video_finish" android:background="@drawable/video_tab_back_off" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@null" style="@style/width_height_ww" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffffff" android:id="@id/app_video_title" android:text="叮咚" android:singleLine="true" android:layout_centerInParent="true" style="@style/width_height_ww" />
+        <ImageView android:id="@id/app_video_del_info" android:background="@drawable/icon_alarm_delete_press" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/app_video_save_album" android:background="@drawable/save_album_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

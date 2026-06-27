@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/spinner_item_textsize" android:textColor="@color/black" android:gravity="center" android:layout_width="match_parent" android:layout_height="@dimen/dp_30"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

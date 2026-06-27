@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/add_r22_help_textcolor" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_snapshot_pictures_image" android:background="@drawable/empty_photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" />
+    <CheckBox android:id="@id/cb_snapshot_pictures_delete" android:focusable="false" android:focusableInTouchMode="false" android:visibility="visible" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_3" android:layout_marginBottom="@dimen/dp_3" android:layout_alignRight="@id/iv_snapshot_pictures_image" android:layout_alignBottom="@id/iv_snapshot_pictures_image" style="@style/CustomCheckboxTheme" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="2.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.1">
+        <ImageView android:background="@drawable/e1pro_bing_process_5g" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/group_photo_back_color" android:id="@id/tv_network_5g_hint" android:layout_marginLeft="@dimen/dp_20" android:layout_marginTop="@dimen/dp_35" android:layout_marginRight="@dimen/dp_20" android:text="@string/e1pro_bind_process_hint_five" style="@style/menu_left_tv_style" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="0.9">
+        <Button android:textSize="@dimen/sp_16" android:textColor="@color/custom_notify_style_bg" android:id="@id/bind_process_switch_net_btn" android:background="@drawable/btn_style_switch_network" android:layout_width="match_parent" android:layout_height="@dimen/dp_45" android:layout_marginLeft="@dimen/dp_50" android:layout_marginTop="@dimen/dp_25" android:layout_marginRight="@dimen/dp_50" android:text="@string/got_it" />
+    </LinearLayout>
+</LinearLayout>

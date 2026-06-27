@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/common_color_333333" android:gravity="center" android:id="@id/tv_hint_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_14" android:drawableRight="@drawable/arrow_icon_press" android:drawablePadding="@dimen/dp_5" />
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/common_color_333333" android:gravity="center" android:id="@id/tv_hint_title_free_video" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_14" android:text="@string/free_video_hint6" android:drawableRight="@drawable/arrow_icon_press" android:drawablePadding="@dimen/dp_5" />
+    <TextView android:textSize="@dimen/sp_18" android:textColor="@color/black" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/paid_cloud_upload_hint" />
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/common_color_666666" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:text="@string/paid_cloud_upload_hint2" />
+    <TextView android:textSize="@dimen/sp_12" android:textColor="#ff7316" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/paid_cloud_unsupport_hint" />
+    <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:src="@mipmap/img_l" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/lin_free_video" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp_18" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:text="@string/free_paid_hint7" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/common_color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/free_paid_hint7_hint" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:src="@mipmap/img_free_video" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/sp_18" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:text="@string/paid_cloud_offline_hint" />
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/common_color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/paid_cloud_offline_hint2" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:src="@mipmap/img_ll" />
+    <TextView android:textSize="@dimen/sp_18" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:text="@string/paid_cloud_storage_hint" />
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/common_color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/paid_cloud_storage_hint2" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:src="@mipmap/img_lll" />
+    <TextView android:textSize="@dimen/sp_18" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_14" android:text="@string/vip_video" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:background="@drawable/paid_gradient_privilege" android:padding="@dimen/dp_5" android:layout_width="0.0dp" android:layout_height="@dimen/dp_80" android:layout_margin="@dimen/dp_5" android:layout_weight="1.0">
+            <ImageView android:id="@id/img_lable1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/paid_save" android:layout_centerVertical="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_5" android:layout_toEndOf="@id/img_lable1">
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icloud_eapired_card_collect" />
+                <TextView android:textSize="@dimen/sp_12" android:textColor="@color/login_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/icloud_exclusive_privilege_alarm_collect_des" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:background="@drawable/paid_gradient_privilege" android:padding="@dimen/dp_5" android:layout_width="0.0dp" android:layout_height="@dimen/dp_80" android:layout_margin="@dimen/dp_5" android:layout_weight="1.0">
+            <ImageView android:id="@id/img_lable2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/paid_storage" android:layout_centerVertical="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_5" android:layout_toEndOf="@id/img_lable2">
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icloud_eapired_card_save" />
+                <TextView android:textSize="@dimen/sp_12" android:textColor="@color/login_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/icloud_exclusive_privilege_alarm_save_des" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:background="@drawable/paid_gradient_privilege" android:padding="@dimen/dp_5" android:layout_width="0.0dp" android:layout_height="@dimen/dp_80" android:layout_margin="@dimen/dp_5" android:layout_weight="1.0">
+            <ImageView android:id="@id/img_lable3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/paid_safe" android:layout_centerVertical="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_5" android:layout_toEndOf="@id/img_lable3">
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icloud_eapired_card_safe" />
+                <TextView android:textSize="@dimen/sp_12" android:textColor="@color/login_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/icloud_exclusive_privilege_alarm_safe_des" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:background="@drawable/paid_gradient_privilege" android:padding="@dimen/dp_5" android:layout_width="0.0dp" android:layout_height="@dimen/dp_80" android:layout_margin="@dimen/dp_5" android:layout_weight="1.0">
+            <ImageView android:id="@id/img_lable4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/infinity" android:layout_centerVertical="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_5" android:layout_toEndOf="@id/img_lable4">
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/storage_cloud" />
+                <TextView android:textSize="@dimen/sp_12" android:textColor="@color/login_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/storage_cloud_hint" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

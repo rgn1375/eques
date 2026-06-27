@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_community_group_qrcode_parent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linear_qrcode_parent" android:background="@drawable/sd_card_capacity" android:paddingLeft="@dimen/dp_20" android:paddingRight="@dimen/dp_20" android:layout_width="wrap_content" android:layout_height="@dimen/dp_280" android:layout_marginTop="@dimen/dp_30" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/iv_qr_code" android:layout_width="@dimen/dp_220" android:layout_height="@dimen/dp_220" android:src="@drawable/app_logo" />
+        <TextView android:enabled="false" android:textSize="@dimen/sp_15" android:textColor="@color/service_cloud_plan_two" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="@string/community_group_qrcode_hint" />
+    </LinearLayout>
+</RelativeLayout>

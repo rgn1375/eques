@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/layoutPlayWnd" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="center" android:id="@id/default_bg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/llPlay0" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/btnPlay0" android:visibility="invisible" android:layout_width="80.0dp" android:layout_height="80.0dp" android:src="@drawable/icon_play" />
+        <TextView android:textSize="9.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tvPlay0" android:visibility="invisible" android:layout_width="80.0dp" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout android:layout_gravity="center" android:id="@id/layoutState" android:background="@color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <com.ui.controls.CircularProgressView android:layout_gravity="center" android:id="@id/pb" android:background="@android:color/transparent" android:visibility="visible" android:layout_width="45.0dp" android:layout_height="45.0dp" app:cpv_animAutostart="true" app:cpv_color="@android:color/white" app:cpv_indeterminate="true" app:cpv_thickness="2.0dp" />
+            <TextView android:textSize="9.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/tvChnState" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_gravity="right|bottom" android:id="@id/playStream" android:background="#56f0f0f0" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/too_small_text_size" android:textColor="@color/white" android:layout_gravity="left|top" android:id="@id/wnd_chn_name_tv" android:background="#55000000" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp" />
+    <LinearLayout android:layout_gravity="right|top" android:orientation="horizontal" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/too_small_text_size" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/wnd_chn_time_tv" android:background="#55000000" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:text="20:39:00" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/device_wifi_signal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@null" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="left|bottom" android:id="@id/wnd_media_file_thumbnail_ll" android:background="@color/wnd_cover_gray" android:visibility="gone" android:clickable="true" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/wnd_media_file_thumbnail_iv" android:layout_width="80.0dp" android:layout_height="50.0dp" android:layout_marginRight="10.0dp" />
+        <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/white" android:id="@id/wnd_media_file_thumbnail_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

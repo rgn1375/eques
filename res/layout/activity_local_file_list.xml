@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/btn_orange_slide" android:layout_width="match_parent" android:layout_height="@dimen/dp_40">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/orange" android:gravity="center" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/animal_photo_rec" android:layout_weight="1.0" />
+        <View android:background="@color/orange" android:layout_width="0.5dp" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_5" android:layout_marginBottom="@dimen/dp_5" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:gravity="center" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/animal_video_rec" android:layout_weight="1.0" />
+    </LinearLayout>
+    <GridView android:id="@id/gv_data" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_14" android:numColumns="2" />
+</LinearLayout>

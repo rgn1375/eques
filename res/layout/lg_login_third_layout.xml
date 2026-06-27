@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/dp_20" android:paddingRight="@dimen/dp_20" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:layout_marginBottom="@dimen/dp_35"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/ll_username_parent" android:visibility="visible" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:background="@mipmap/account_login" android:layout_width="@dimen/dp_45" android:layout_height="@dimen/dp_45" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/ll_wechat_parent" android:visibility="visible" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/iv_lg_wechat" android:background="@drawable/lg_login_wechat" android:layout_width="@dimen/dp_45" android:layout_height="@dimen/dp_45" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/ll_qq_parent" android:visibility="visible" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/iv_lg_qq" android:background="@drawable/lg_login_qq" android:layout_width="@dimen/dp_45" android:layout_height="@dimen/dp_45" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/ll_sina_parent" android:visibility="visible" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/iv_lg_sina" android:background="@drawable/lg_login_sina" android:layout_width="@dimen/dp_45" android:layout_height="@dimen/dp_45" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/ll_facebook_parent" android:visibility="visible" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/iv_lg_facebook" android:background="@drawable/lg_login_facebook" android:layout_width="@dimen/dp_45" android:layout_height="@dimen/dp_45" />
+    </LinearLayout>
+</LinearLayout>

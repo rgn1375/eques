@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_permission" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/e1pro_lock_hint_dialog_halg" android:padding="@dimen/dp_20" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/sp_18" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/permission_sys_ask" />
+            <TextView android:textSize="@dimen/sp_12" android:textColor="@color/common_color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/permission_sys_ask_hint" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_60" android:layout_marginTop="@dimen/dp_14">
+                <ImageView android:id="@id/img_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_14" android:src="@mipmap/p_location" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/permission_sys_ask_location" />
+                    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/common_color_666666" android:id="@id/tv_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/permission_sys_ask_location_hint" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14">
+                <LinearLayout android:gravity="center" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <Button android:textSize="@dimen/sp_16" android:textColor="@color/common_color_666666" android:id="@id/btn_again" android:background="@drawable/btn_style_gray_border" android:layout_width="@dimen/dp_120" android:layout_height="@dimen/dp_45" android:text="@string/permission_sys_ask_cancle" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <Button android:textSize="@dimen/sp_16" android:textColor="@color/white" android:id="@id/btn_know" android:background="@drawable/btn_style_orange_big_corner" android:layout_width="@dimen/dp_120" android:layout_height="@dimen/dp_45" android:text="@string/permission_sys_ask_sure" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:background="@color/settings_view_bg" android:fitsSystemWindows="true" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/linear_details_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/m1_rl_online" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/rl_online" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_r700_details_set_parent" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@id/linear_updateDevName" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" android:layout_marginTop="@dimen/dp_15" style="@style/LinearLayoutParent">
+                        <TextView android:text="@string/equipment_nickname_settings" style="@style/textView_btn_style" />
+                        <TextView android:id="@id/tv_dev_detailsName" style="@style/setting_right_tv_color_style" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/icon_arrow_selector" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/linear_NetworkSettings" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" style="@style/LinearLayoutParent">
+                        <TextView android:text="@string/device_signal_settings" style="@style/textView_btn_style" />
+                        <TextView android:ellipsize="marquee" android:id="@id/tv_wifiConfig" android:focusable="true" android:focusableInTouchMode="true" android:scrollHorizontally="true" android:marqueeRepeatLimit="marquee_forever" style="@style/setting_right_tv_color_style" />
+                        <ImageView android:id="@id/signal_icon" android:background="@drawable/signal_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/linear_r700_power_rating" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <View android:background="@color/settings_view_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_5" />
+                        <LinearLayout android:background="@drawable/dev_details_page_btn_style" android:visibility="gone" style="@style/LinearLayoutParent">
+                            <TextView android:text="@string/set_r700_battery_hint" style="@style/textView_btn_style" />
+                            <ImageView android:id="@id/iv_power_rating" android:background="@drawable/e1pro_battery_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/linear_temp" android:background="@drawable/dev_details_page_btn_style" android:visibility="gone" android:layout_marginTop="@dimen/dp_10" style="@style/LinearLayoutParent">
+                        <TextView android:text="@string/temp_pwd" style="@style/textView_btn_style" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/icon_arrow_selector" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/linear_setAlarm" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" android:layout_marginTop="@dimen/dp_10" style="@style/LinearLayoutParent">
+                        <TextView android:text="@string/intelligent_body_detection_settings" style="@style/textView_btn_style" />
+                        <TextView android:id="@id/tv_alarm_status" style="@style/setting_right_tv_color_style" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/icon_arrow_selector" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/linear_doorbell_ring" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" style="@style/LinearLayoutParent">
+                        <TextView android:text="@string/door_ring_tone_settings" style="@style/textView_btn_style" />
+                        <TextView android:id="@id/tv_doorbell_ring" style="@style/setting_right_tv_color_style" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/icon_arrow_selector" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/linear_doorbell_volume" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" style="@style/LinearLayoutParent">
+                        <TextView android:id="@id/tv_ring_volume" android:text="@string/the_doorbell_of_volume_settings" style="@style/textView_btn_style" />
+                        <TextView android:id="@id/tv_doorbell_volume" style="@style/setting_right_tv_color_style" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/icon_arrow_selector" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/linear_t1_display_setup" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" android:layout_marginBottom="@dimen/dp_10" style="@style/LinearLayoutParent">
+                        <TextView android:text="@string/display_settings_settings" style="@style/textView_btn_style" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/icon_arrow_selector" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/ll_e6_lock_about_parent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:id="@id/linear_e6_share_parent" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" android:layout_marginTop="@dimen/dp_10" style="@style/LinearLayoutParent">
+                            <TextView android:text="@string/equipment_sharing_settings" style="@style/textView_btn_style" />
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/icon_arrow_selector" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/ll_e6_temporary_pass_parent" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" style="@style/LinearLayoutParent">
+                            <TextView android:text="@string/temporary_password_settings" android:drawablePadding="@dimen/dp_5" style="@style/textView_btn_style" />
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/icon_arrow_selector" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/ll_e6_unlock_remind_parent" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" style="@style/LinearLayoutParent">
+                            <TextView android:text="@string/open_door_reminder_settings" android:drawablePadding="@dimen/dp_5" style="@style/textView_btn_style" />
+                            <TextView android:id="@id/tv_e6_unlock_time" android:text="30秒" style="@style/setting_right_tv_color_style" />
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/icon_arrow_selector" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/linear_no_t1_setting" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:id="@id/linear_doorbell_resolution" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" style="@style/LinearLayoutParent">
+                            <TextView android:text="@string/resolution_settings" style="@style/textView_btn_style" />
+                            <TextView android:id="@id/tv_doorbell_resolution" style="@style/setting_right_tv_color_style" />
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/icon_arrow_selector" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/linear_doorbell_angle" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" style="@style/LinearLayoutParent">
+                            <TextView android:text="@string/camera_angle_settings" style="@style/textView_btn_style" />
+                            <TextView android:id="@id/tv_doorbell_angle" style="@style/setting_right_tv_color_style" />
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/icon_arrow_selector" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/linear_t1_auto_bright_screen" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" style="@style/LinearLayoutParent">
+                        <TextView android:text="@string/bright_screen_automatically_settings" style="@style/textView_btn_style" />
+                        <TextView android:id="@id/tv_distance_induction_switch" style="@style/setting_right_tv_color_style" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/icon_arrow_selector" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/linear_t1_storage" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" style="@style/LinearLayoutParent">
+                        <TextView android:text="@string/storage_settings" style="@style/textView_btn_style" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/icon_arrow_selector" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/ll_work_mode_parent" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" android:layout_marginBottom="@dimen/dp_10" style="@style/LinearLayoutParent">
+                        <TextView android:text="@string/working_mode_settings" style="@style/textView_btn_style" />
+                        <TextView android:id="@id/tv_work_mode_value" android:text="@string/t1_work_mode_power_saving" style="@style/setting_right_tv_color_style" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/icon_arrow_selector" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/linear_tmall_parent_line" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:id="@id/ll_tmall_about_parent" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:id="@id/linear_tmall_parent" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" style="@style/LinearLayoutParent">
+                                <TextView android:text="@string/tmall_sprite_voice_alert_settings" style="@style/textView_btn_style" />
+                                <TextView android:id="@id/tv_tmall_authorization" android:text="@string/tmall_menu_auth_hint" style="@style/setting_right_tv_color_style" />
+                                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/icon_arrow_selector" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@id/linear_door_remind_parent" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" style="@style/LinearLayoutParent">
+                                <TextView android:text="@string/t1_sprite_voice_remind" style="@style/textView_btn_style" />
+                                <TextView android:text="@string/settings" style="@style/setting_right_tv_color_style" />
+                                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/icon_arrow_selector" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/linear_bind_wechat_qrcode_parent" android:background="@drawable/dev_details_page_btn_style" style="@style/LinearLayoutParent">
+                            <TextView android:text="@string/wechat_remind_settings" style="@style/textView_btn_style" />
+                            <TextView android:text="@string/settings" style="@style/setting_right_tv_color_style" />
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/icon_arrow_selector" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/ll_face_parent" android:background="@drawable/dev_details_page_btn_style" style="@style/LinearLayoutParent">
+                            <TextView android:text="@string/mime_face_recognition_hint" style="@style/textView_btn_style" />
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/icon_arrow_selector" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/ll_infrared_night_vision_parent" android:background="@drawable/dev_details_page_btn_style" android:visibility="gone" android:layout_marginBottom="@dimen/dp_10" style="@style/LinearLayoutParent">
+                            <TextView android:text="@string/infrared_night_vision_settings" style="@style/textView_btn_style" />
+                            <TextView android:id="@id/tv_infrared_night_vision" android:text="@string/tv_t1_night_auto" style="@style/setting_right_tv_color_style" />
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/icon_arrow_selector" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/ll_debug_log_parent" android:background="@drawable/dev_details_page_btn_style" android:visibility="gone" style="@style/LinearLayoutParent">
+                        <TextView android:text="@string/the_log_switch_settings" style="@style/textView_btn_style" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/icon_arrow_selector" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/ll_bind_tmall_parent" android:background="@drawable/dev_details_page_btn_style" android:visibility="gone" style="@style/LinearLayoutParent">
+                        <TextView android:text="@string/tmall_sprite_bind_settings" style="@style/textView_btn_style" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/icon_arrow_selector" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/ll_operating_manual_parent" android:background="@drawable/dev_details_page_btn_style" android:layout_marginBottom="@dimen/dp_0_5" style="@style/LinearLayoutParent">
+                        <TextView android:text="@string/use_the_help_settings" style="@style/textView_btn_style" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/icon_arrow_selector" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/linear_doorbell_upgrade" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" android:layout_marginTop="@dimen/dp_10" style="@style/LinearLayoutParent">
+                        <TextView android:text="@string/system_upgrade_settings" style="@style/textView_btn_style" />
+                        <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/settings_right_tv_color" android:gravity="right" android:id="@id/tv_devNotUpdate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_10" />
+                        <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/white" android:gravity="right" android:id="@id/tv_updateSatusStyle" android:background="@drawable/update_btn" android:paddingLeft="@dimen/dp_8" android:paddingRight="@dimen/dp_8" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_10" android:text="@string/device_need_update" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/icon_arrow_selector" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="@color/settings_view_bg" android:paddingTop="@dimen/dp_10" android:paddingBottom="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/loading_device_textcolor" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_20" android:text="@string/mars_version" />
+                        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/loading_device_textcolor" android:id="@id/tv_doorbell_versions" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/linear_doorbell_recover" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" style="@style/LinearLayoutParent">
+                        <TextView android:text="@string/factory_data_reset_settings" style="@style/textView_btn_style" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/icon_arrow_selector" />
+                    </LinearLayout>
+                </LinearLayout>
+                <Button android:id="@id/btn_restart_t1_dev" android:layout_marginTop="@dimen/dp_20" android:text="@string/restart_btn" android:layout_below="@id/ll_r700_details_set_parent" style="@style/btn_style_setting_restart" />
+            </RelativeLayout>
+            <ImageView android:id="@id/dev_notonline_bg" android:background="@drawable/camera_tab_bar_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:alpha="0.7" />
+        </RelativeLayout>
+        <Button android:id="@id/btn_delete_device" android:layout_marginTop="@dimen/dp_20" android:layout_alignParentBottom="true" style="@style/btn_style_setting_delete" />
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/settings_bottom_tv_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dev_mac" />
+                <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/settings_bottom_tv_color" android:id="@id/tv_devId" android:layout_width="match_parent" android:layout_height="wrap_content" android:textIsSelectable="true" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:layout_width="match_parent" android:layout_height="@dimen/dp_30" android:text="@string/remove_equipment_settings" />
+    </LinearLayout>
+</ScrollView>

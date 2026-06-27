@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/video_parent" android:background="@color/black" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/video_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_60" android:layout_centerHorizontal="true" android:alpha="0.5" />
+    <FrameLayout android:id="@id/fl_surface_parent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/linera_surfaceViewFilling">
+        <SurfaceView android:id="@id/onTouchSurfaceView" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:layout_gravity="top" android:id="@id/horizontalScrollView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <com.eques.doorbell.ui.widget.CustomSurfaceView android:layout_gravity="center_horizontal" android:id="@id/surface_view" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linear_devNameAndCallTime" android:background="@android:color/transparent" android:paddingTop="@dimen/dp_20" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_20">
+        <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/white" android:id="@id/tv_devName" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/call_history_ringing" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5">
+            <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/white" android:id="@id/tv_call_duration_one" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/call_duration_hint_one" />
+            <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/white" android:id="@id/tv_callTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00:00" />
+            <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/white" android:id="@id/tv_call_duration_two" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/call_duration_hint_one" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/linera_surfaceViewFilling" android:layout_width="match_parent" android:layout_height="@dimen/dp_120" />
+    <com.eques.doorbell.tools.CustomMonitorMenu android:id="@id/customMM" android:layout_width="match_parent" android:layout_height="@dimen/dp_100" android:layout_below="@id/linera_surfaceViewFilling" />
+    <include android:visibility="gone" layout="@layout/videocall_calltimeout_view" />
+    <ImageView android:id="@id/iv_devcamera_switch" android:background="@drawable/videocall_devcamera_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_8" android:layout_alignBottom="@id/fl_surface_parent" android:layout_alignParentRight="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_weight="0.0" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:id="@id/linear_OperationMenuDefault" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_20">
+                <RelativeLayout android:id="@id/rl_snapshot_parent" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_snapshot" android:paddingLeft="@dimen/dp_5" android:paddingRight="@dimen/dp_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/capture" android:drawableTop="@drawable/videocall_snapshot_selector" android:drawablePadding="@dimen/dp_5" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rl_phone_camera_parent" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_phoneCamera" android:paddingLeft="@dimen/dp_5" android:paddingRight="@dimen/dp_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/open_phone" android:drawableTop="@drawable/videocall_phonecamera_selector" android:drawablePadding="@dimen/dp_5" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linear_remoteUnLock" android:visibility="visible" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:id="@id/iv_remoteUnLock" android:background="@drawable/image_remote_unlock" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/white" android:id="@id/tv_remoteUnLock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/remote_unlock" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_reply_voice_parent" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:background="@drawable/button_reply_voice_selector" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" />
+                    <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/h5_reply_voice" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_change_sound_parent" android:visibility="visible" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:id="@id/iv_change_sound" android:background="@drawable/button_original_sound" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" />
+                    <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/h5_change_sound_reply" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/linear_muteAndHangupMenu" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_muteSwitch" android:background="@drawable/videocall_mute_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10" />
+            <RelativeLayout android:id="@id/relaylayout_mic" android:background="@drawable/btn_voice_style" android:layout_width="match_parent" android:layout_height="@dimen/dp_40" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/main_text_size" android:textColor="@color/gray" android:id="@id/tv_mic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_3" android:text="@string/hold_down_the_talk" android:layout_toRightOf="@id/voice_animation" android:layout_centerInParent="true" />
+                <com.eques.doorbell.ui.widget.AudioBarGraph android:id="@id/voice_animation" android:visibility="gone" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_32" android:layout_marginLeft="@dimen/dp_10" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:id="@id/iv_hangup" android:background="@drawable/videocall_hang_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10" />
+        </LinearLayout>
+        <View android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="@dimen/dp_10" android:layout_alignParentBottom="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linear_devNameAndCallTimeHorizontal" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_15" android:layout_centerHorizontal="true">
+        <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/white" android:id="@id/tv_devNameHorizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/call_history_ringing" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5">
+            <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/white" android:id="@id/tv_call_duration_one_horizontal" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/call_duration_hint_one" />
+            <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/white" android:id="@id/tv_callTimeHorizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00:00" />
+            <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/white" android:id="@id/tv_call_duration_two_horizontal" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/call_duration_hint_one" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/linear_OperationMenuHorizontal" android:paddingRight="@dimen/dp_10" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:textColor="@color/white" android:id="@id/iv_phoneCameraHorizontal" android:background="@drawable/videocall_phonecamera_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:textColor="@color/white" android:id="@id/iv_snapshot_Horizontal" android:background="@drawable/videocall_snapshot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" />
+    </LinearLayout>
+    <include android:visibility="visible" layout="@layout/videocall_loading_view" />
+    <ImageView android:id="@id/iv_remoteUnLockHorizontal" android:background="@drawable/image_remote_unlock" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_centerVertical="true" />
+</RelativeLayout>

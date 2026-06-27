@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:paddingTop="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/main_head_title_bar_v3_layout" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_main_add_dev_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_centerInParent="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dev_list_add_device" android:elevation="@dimen/dp_15" />
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/white" android:gravity="center" android:background="@drawable/btn_style_read_orange" android:layout_width="match_parent" android:layout_height="@dimen/dp_45" android:layout_marginLeft="@dimen/dp_50" android:layout_marginTop="@dimen/dp_90" android:layout_marginRight="@dimen/dp_50" android:text="@string/add_device" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/rl_main_head_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/lin_notify" android:background="@color/DarkOrange" android:paddingTop="@dimen/dp_14" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" android:paddingStart="@dimen/dp_14">
+            <TextView android:textColor="@color/white" android:ellipsize="marquee" android:gravity="center" android:id="@id/tv_server_notify" android:focusable="true" android:focusableInTouchMode="true" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:drawableLeft="@drawable/ic_notify" android:drawablePadding="@dimen/dp_3" android:marqueeRepeatLimit="marquee_forever" />
+        </LinearLayout>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_main_dev_layout" android:paddingTop="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_main_dev_parent" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rl_main_add_dev_adver_parent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_15" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10">
+        <ImageView android:id="@id/iv_main_adver_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/main_adv_banner" android:scaleType="fitXY" android:adjustViewBounds="true" />
+        <ImageView android:id="@id/view_main_add_dev_close_ad" android:layout_width="@dimen/dp_15" android:layout_height="@dimen/dp_15" android:layout_marginTop="@dimen/dp_5" android:src="@drawable/notify_et_delete" android:layout_marginEnd="@dimen/dp_5" android:layout_alignEnd="@id/iv_main_adver_content" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <FrameLayout android:id="@id/fra_root" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/view_csj_close_ad" android:visibility="gone" android:layout_width="@dimen/dp_15" android:layout_height="@dimen/dp_15" android:layout_margin="@dimen/dp_5" android:layout_marginBottom="@dimen/dp_8" android:src="@mipmap/vip_video_close" android:layout_alignParentRight="true" android:layout_marginStart="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_8" />
+    </RelativeLayout>
+</RelativeLayout>

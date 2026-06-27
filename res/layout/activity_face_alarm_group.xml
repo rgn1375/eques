@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_parent_group" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/group_empty_view" android:visibility="gone" layout="@layout/face_group_empty" />
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@id/group_data_view" android:visibility="gone" layout="@layout/photo_group_flow_layout" />
+    </ScrollView>
+</RelativeLayout>

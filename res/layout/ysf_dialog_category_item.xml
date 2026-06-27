@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/ysf_dialog_item_middle_selector" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/ysf_dialog_category_item_parent" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/ysf_text_size_16" android:textColor="@color/ysf_dark_d9000000" android:id="@id/ysf_dialog_category_item_name" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingHorizontal="20.0dp" android:paddingVertical="10.0dp" />
+            <ImageView android:id="@id/ysf_dialog_category_item_img" android:padding="10.0dp" android:visibility="visible" android:layout_width="30.0dp" android:layout_height="35.0dp" android:src="@drawable/ysf_ic_arrow_right" android:rotation="90.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ysf_dialog_category_item_ll" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:id="@id/ysf_dialog_category_item_divider" android:background="@color/ysf_grey_f1f1f1" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginLeft="20.0dp" />
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/ysf_card_flow_item_iv" android:background="@drawable/ysf_card_message_flow_item_circle" android:layout_width="10.0dp" android:layout_height="10.0dp" />
+        <View android:id="@id/ysf_card_flow_item_sub_view" android:background="#1a000000" android:layout_width="1.0dp" android:layout_height="match_parent" android:layout_marginLeft="4.0dp" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp">
+        <TextView android:textSize="14.0sp" android:textColor="@color/ysf_black_222222" android:id="@id/ysf_card_flow_item_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:id="@id/ysf_card_flow_item_sub_tv" android:paddingTop="2.0dp" android:paddingBottom="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

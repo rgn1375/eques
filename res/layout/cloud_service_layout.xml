@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/cl_parent" android:background="@color/icloud_ffffff" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:collapsedTitleGravity="center" app:collapsedTitleTextAppearance="@style/Toolbar.CollapsedTitleText" app:contentScrim="?colorPrimary" app:expandedTitleGravity="left" app:expandedTitleTextAppearance="@style/Toolbar.ExpandedTitleText" app:layout_scrollFlags="scroll|exitUntilCollapsed" app:statusBarScrim="?colorPrimary" app:title=" ">
+            <ImageView android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/icloud_top_bg" android:scaleType="centerCrop" app:layout_collapseMode="pin" app:layout_collapseParallaxMultiplier="0.8" />
+            <androidx.appcompat.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.Light" android:id="@id/tb_toolbar" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" app:layout_collapseMode="pin" app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:id="@id/nested_scroll_view" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="-95.0dp" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <RelativeLayout android:paddingBottom="@dimen/dp_130" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:nestedScrollingEnabled="false">
+            <include layout="@layout/icloud_card_content_layout" />
+            <include layout="@layout/icloud_card_middle_content_layout" />
+            <include layout="@layout/icloud_card_bottom_content_layout" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_anchor="@id/nested_scroll_view" app:layout_anchorGravity="bottom">
+        <RelativeLayout android:id="@id/rl_integral_deduction_pay_parent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" android:layout_marginTop="@dimen/dp_10" android:paddingStart="@dimen/dp_15" android:paddingEnd="@dimen/dp_15">
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/service_cloud_plan_one" android:id="@id/tv_integral_deduction_pay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icloud_set_meal_points_deduction" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/iv_integral_deduction_help" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/icloud_question_mark" android:layout_centerVertical="true" android:paddingStart="@dimen/dp_5" android:paddingEnd="@dimen/dp_5" android:layout_toEndOf="@id/tv_integral_deduction_pay" />
+            <CheckBox android:id="@id/cb_integral_deduction_pay" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/service_pay_ways_selected_cb_style" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_immediate_payment_parent" android:background="@drawable/icloud_gradient_open_btn_style" android:layout_width="match_parent" android:layout_height="@dimen/dp_45" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_15" android:layout_marginStart="@dimen/dp_15" android:layout_marginEnd="@dimen/dp_15">
+            <TextView android:textSize="@dimen/sp_18" android:textColor="@color/icloud_ffffff" android:id="@id/tv_immediate_payment_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icloud_immediately_payment" />
+            <TextView android:textSize="@dimen/sp_18" android:textColor="@color/icloud_ffffff" android:id="@id/tv_immediate_payment_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icloud_set_meal_yuan" android:layout_marginStart="@dimen/dp_20" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

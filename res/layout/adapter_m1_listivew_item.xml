@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/secondary_menu_border_style" android:paddingBottom="@dimen/dp_5" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_5"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_m1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_15" android:layout_marginTop="@dimen/dp_8" android:layout_marginBottom="@dimen/dp_5" android:src="@drawable/iv_m1_item" android:layout_centerVertical="true" android:contentDescription="@null" />
+    <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/settings_left_tv_color" android:id="@id/tv_m1_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:layout_marginTop="@dimen/dp_5" android:text="@string/buddy_type_m1" android:layout_toRightOf="@id/iv_m1" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:layout_toRightOf="@id/iv_m1" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/band_m1_list_tv_color_1" android:id="@id/tv_m1_sn_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_m1_sn_hint" />
+        <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/band_m1_list_tv_color_1" android:id="@id/tv_m1_sn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="erffa3434" android:layout_toRightOf="@id/tv_m1_sn_hint" />
+    </RelativeLayout>
+    <CheckBox android:id="@id/cb_switch_m1" android:focusable="false" android:focusableInTouchMode="false" android:visibility="invisible" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/AlarmCheckboxTheme" />
+</RelativeLayout>

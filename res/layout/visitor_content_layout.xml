@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:src="@drawable/visitor_record_empty" android:layout_centerHorizontal="true" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <RelativeLayout android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_alignParentBottom="true">
+        <View android:background="@color/gray_line" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_5" android:layout_alignParentTop="true" />
+        <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/settings_left_tv_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notify_delete" android:drawablePadding="@dimen/dp_3" android:layout_centerInParent="true" android:drawableStart="@drawable/group_del_bottom" />
+    </RelativeLayout>
+</RelativeLayout>

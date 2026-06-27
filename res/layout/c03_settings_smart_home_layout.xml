@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/xm_F5F5F5" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.eques.doorbell.ui.view.Navbar android:id="@id/nav_bar_view" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_30" android:layout_below="@id/nav_bar_view" android:paddingStart="@dimen/dp_15" android:paddingEnd="@dimen/dp_15">
+        <LinearLayout android:id="@id/ll_smart_home_alarm" android:background="@drawable/child_menu_style_bg" android:visibility="visible" style="@style/settings_menu_style">
+            <TextView android:text="@string/xm_dev_smart_home_alarm" style="@style/settings_tv_left_hint_style" />
+            <CheckBox android:id="@id/cb_smart_home_alarm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_15" style="@style/switch_style" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/xm_666666" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_10" android:text="@string/xm_dev_smart_home_alarm_head_hint" android:layout_marginStart="@dimen/dp_15" />
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_pir_child_parent" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/child_menu_style_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@id/ll_smart_home_interval" android:background="@android:color/transparent" android:visibility="visible" style="@style/settings_menu_style">
+                        <TextView android:text="@string/xm_dev_smart_home_interval" style="@style/settings_tv_left_hint_style" />
+                        <TextView android:id="@id/tv_interval_value" android:text="@string/xm_dev_smart_home_interval_value_30" style="@style/settings_child_menu_right_status_value_style" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow_selector" android:layout_marginEnd="@dimen/dp_15" />
+                    </LinearLayout>
+                    <View android:background="@color/xm_E1E1E1" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_1" />
+                    <LinearLayout android:id="@id/ll_smart_home_sensitivity" android:background="@android:color/transparent" android:visibility="visible" android:layout_marginTop="@dimen/dp_0_5" style="@style/settings_menu_style">
+                        <TextView android:text="@string/xm_dev_smart_home_sensitivity" style="@style/settings_tv_left_hint_style" />
+                        <TextView android:id="@id/tv_sensitivity_value" android:text="@string/xm_dev_smart_home_sensitivity_high" style="@style/settings_child_menu_right_status_value_style" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow_selector" android:layout_marginEnd="@dimen/dp_15" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@id/ll_smart_home_human_detection" android:background="@drawable/child_menu_style_bg" android:visibility="visible" android:layout_marginTop="@dimen/dp_15" style="@style/settings_menu_style">
+                    <TextView android:text="@string/xm_dev_smart_home_human_detection" style="@style/settings_tv_left_hint_style" />
+                    <CheckBox android:id="@id/cb_smart_home_human_detection" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_15" style="@style/switch_style" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/xm_666666" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_15" android:text="@string/xm_dev_smart_home_human_detection_hint" android:layout_marginStart="@dimen/dp_15" />
+                <LinearLayout android:orientation="vertical" android:background="@drawable/child_menu_style_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@id/ll_smart_home_app_push" android:background="@android:color/transparent" android:visibility="visible" style="@style/settings_menu_style">
+                        <TextView android:text="@string/xm_dev_smart_home_app_push" style="@style/settings_tv_left_hint_style" />
+                        <CheckBox android:id="@id/cb_app_push_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_15" style="@style/switch_style" />
+                    </LinearLayout>
+                    <View android:background="@color/xm_E1E1E1" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_1" />
+                    <LinearLayout android:id="@id/ll_smart_home_wechat_push" android:background="@android:color/transparent" android:visibility="visible" android:layout_marginTop="@dimen/dp_0_5" style="@style/settings_menu_style">
+                        <TextView android:text="@string/xm_dev_smart_home_wechat_push" style="@style/settings_tv_left_hint_style" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow_selector" android:layout_marginEnd="@dimen/dp_15" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:id="@id/view_bg_none_click" android:background="@drawable/c03_pir_child_none_click_layout" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:alpha="0.2" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

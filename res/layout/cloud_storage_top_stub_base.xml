@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/set_meal_describe_color" android:paddingLeft="@dimen/dp_20" android:paddingRight="@dimen/dp_20" android:paddingBottom="@dimen/dp_15" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/sp_25" android:textColor="@color/service_cloud_plan_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="云存储" />
+            <TextView android:textSize="@dimen/sp_12" android:textColor="@color/service_cloud_plan_three" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="·云端长久存 ·安全不丢失 ·支持多设备" />
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_10" android:src="@drawable/icon_cloudstorage_serviceplan_one" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+    </RelativeLayout>
+    <View android:background="@color/settings_view_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_8" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_cloud_dev_list_parent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/dp_28" android:layout_marginTop="@dimen/dp_5" android:layout_marginBottom="@dimen/dp_10">
+            <View android:background="@color/service_set_meal_hint" android:layout_width="@dimen/dp_5" android:layout_height="match_parent" />
+            <TextView android:textSize="@dimen/fontsize_eighteenth" android:textColor="@color/service_cloud_plan_one" android:gravity="center_vertical" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_10" android:text="@string/main_dev_add_left_top_hint" style="@style/cloudStorageServicePlanTextStyleOne" />
+        </LinearLayout>
+        <com.eques.doorbell.ui.widget.MyListView android:id="@id/lv_cloud_set_meal_dev_details" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10" android:divider="@null" android:overScrollMode="never" />
+        <RelativeLayout android:id="@id/rl_show_more_dev_plan" android:layout_width="match_parent" android:layout_height="@dimen/sp_30" android:layout_marginBottom="@dimen/dp_5">
+            <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/service_cloud_plan_three" android:gravity="center_vertical" android:id="@id/tv_show_more_dev_plan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/service_show_dev_more" android:drawableRight="@drawable/more_set_meal_details_down" android:drawablePadding="@dimen/dp_5" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <View android:background="@color/settings_view_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_8" />
+    </LinearLayout>
+</LinearLayout>

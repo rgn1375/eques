@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/settings_view_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/linear_network_set" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" android:layout_marginTop="@dimen/fiveteen" style="@style/LinearLayoutParent">
+        <TextView android:text="@string/the_wireless_network_settings" style="@style/textView_btn_style" />
+        <CheckBox android:id="@id/cb_network_switch" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_marginRight="@dimen/dp_5" style="@style/MySwitchTheme" />
+    </LinearLayout>
+    <View android:background="@color/interval_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" />
+    <LinearLayout android:orientation="vertical" android:id="@id/linear_network_close_status" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@id/current_network" android:visibility="gone" layout="@layout/wifi_list_item_style" />
+        <TextView android:id="@id/tv_current_network_hint" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_12" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_10" android:text="@string/network_connect_wireles_hint" />
+        <ListView android:id="@id/list_wifi_list" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@color/interval_bg" android:dividerHeight="@dimen/dp_1" />
+    </LinearLayout>
+</LinearLayout>

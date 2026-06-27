@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_35">
+        <ImageView android:id="@id/iv_loading_anim" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/e1_bind_loading" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/sp_24" android:textColor="@color/settings_delete_dev_tv_color" android:id="@id/tv_loading_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/e1_bind_process_time_hint" />
+            <TextView android:textSize="@dimen/sp_12" android:textColor="@color/textCauseColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/e1_bind_process_load_hint" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/sp_20" android:textColor="@color/settings_left_tv_color" android:gravity="center" android:id="@id/tv_bind_loading_time_hint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:text="@string/bind_e1pro_loading_hint" />
+</LinearLayout>

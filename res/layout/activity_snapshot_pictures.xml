@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_dev_select_pop" android:background="@color/white" android:paddingLeft="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="@dimen/dp_35">
+        <TextView android:textSize="@dimen/fontsize_twelve" android:textColor="@color/message_edit_font_color" android:gravity="center" android:id="@id/tv_pic_type_hint_pop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/visitor_record_tx" />
+        <ImageView android:id="@id/iv_pic_type_pop_flag" android:background="@drawable/drop_down_btn_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:contentDescription="@null" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rl_pic_content" android:background="@color/white" style="@style/width_height_ff">
+        <com.eques.doorbell.ui.widget.MyListView android:id="@id/lv_catch_pic" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <include android:id="@id/empty_view" android:visibility="gone" layout="@layout/layout_listgridview_empty" />
+        <RelativeLayout android:id="@id/rl_del_snap_pic" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_alignParentBottom="true">
+            <View android:background="@color/gray_line" android:layout_width="match_parent" android:layout_height="1.0px" />
+            <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/settings_left_tv_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notify_delete" android:drawableLeft="@drawable/group_del_bottom" android:drawablePadding="@dimen/dp_5" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

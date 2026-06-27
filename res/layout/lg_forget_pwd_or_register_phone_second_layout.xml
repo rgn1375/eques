@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_forget_pwd_parent" android:background="@color/login_ffffff" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/dp_28" android:layout_marginEnd="@dimen/dp_28">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/dp_28" android:layout_marginTop="@dimen/dp_50">
+            <View android:background="@color/login_ff7316" android:layout_width="@dimen/dp_5" android:layout_height="match_parent" />
+            <TextView android:textSize="@dimen/sp_22" android:textColor="@color/login_333333" android:gravity="center_vertical" android:id="@id/tv_phone_num_hint" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/regis_by_phone_pas_hint" android:layout_marginStart="@dimen/dp_12" />
+        </LinearLayout>
+        <ScrollView android:id="@id/scroll_hide" android:background="@android:color/transparent" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_26">
+                <EditText android:textColor="@color/edit_register_send" android:id="@id/et_phoneNum_regis_pas" android:background="@drawable/edit_style_registration_default" android:hint="@string/input_pas_hint" android:maxLength="16" android:inputType="textPassword" style="@style/register_ed_style" />
+                <TextView android:textSize="@dimen/fontsize_twelve" android:textColor="@color/edit_register_error" android:id="@id/tv_pas_error_hint" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="@string/forgot_passwd_by_phone_hint_five" />
+                <EditText android:textColor="@color/edit_register_send" android:id="@id/et_phoneNum_regis_pas_again" android:background="@drawable/edit_style_registration_default" android:layout_marginTop="@dimen/dp_5" android:hint="@string/input_again_pas_hint" android:maxLength="16" android:inputType="textPassword" style="@style/register_ed_style" />
+                <TextView android:textSize="@dimen/fontsize_twelve" android:textColor="@color/edit_register_error" android:id="@id/tv_again_pas_error_hint" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="@string/regis_by_phone_authcode_error" />
+                <Button android:id="@id/btn_sign_up" android:layout_marginTop="@dimen/dp_26" android:text="@string/save" style="@style/btn_style_lrfp_new" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

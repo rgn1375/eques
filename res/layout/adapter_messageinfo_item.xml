@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/relative_item" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/dove_gray" android:layout_width="@dimen/dp_1" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:layout_marginTop="@dimen/dp_33" android:layout_toRightOf="@id/left_view" android:layout_alignBottom="@id/relay_messageContentView" android:layout_alignParentTop="true" />
+    <View android:id="@id/left_view" android:layout_width="@dimen/dp_32" android:layout_height="0.0dp" />
+    <RelativeLayout android:id="@id/relay_messageTitleView" android:background="@android:color/transparent" android:layout_width="@dimen/dp_32" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10">
+        <TextView android:gravity="center" android:id="@id/tv_messageTitleDate" android:layout_marginLeft="@dimen/dp_3" android:text="21月07" android:layout_centerVertical="true" style="@style/message_lockmsg_date_textstyle" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/relay_messageContentView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:layout_marginTop="@dimen/dp_1" android:layout_toRightOf="@id/left_view">
+        <RelativeLayout android:id="@id/relayLayout_pirIcon" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_pirIcon" android:background="@drawable/pir_icon_unread" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/dp_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:layout_marginTop="@dimen/dp_3" android:layout_marginRight="@dimen/dp_1" android:layout_toLeftOf="@id/linear_img_parent" android:layout_toRightOf="@id/relayLayout_pirIcon">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:id="@id/tv_messageContentTime" android:text="16:55" style="@style/message_alarm_time_style" />
+                <TextView android:textColor="@color/shareDev_refresh_font" android:id="@id/tv_messageContentGroupNick" android:visibility="gone" android:layout_marginLeft="@dimen/dp_8" style="@style/message_alarm_time_style" />
+            </LinearLayout>
+            <TextView android:id="@id/tv_messageContentText" android:layout_marginTop="@dimen/third" android:text="人体侦测报警" style="@style/message_alarm_content_style" />
+            <TextView android:id="@id/tv_messageContentNickName" android:layout_marginTop="@dimen/third" android:text="我家小叮当" style="@style/message_alarm_nick_style" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/linear_img_parent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <RelativeLayout android:layout_margin="@dimen/dp_5" style="@style/width_height_ww">
+                <ImageView android:id="@id/iv_messageImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/empty_photo" android:scaleType="fitXY" android:adjustViewBounds="true" />
+                <ImageView android:layout_gravity="center" android:id="@id/iv_messageTypeImg" android:visibility="invisible" android:src="@drawable/icon_message_pir_video" android:layout_centerInParent="true" android:contentDescription="@null" style="@style/width_height_ww" />
+                <ImageView android:id="@id/iv_messageTypeIcon" android:visibility="invisible" android:layout_marginRight="@dimen/dp_3" android:layout_marginBottom="@dimen/dp_1" android:src="@drawable/continuous_shooting" android:layout_alignRight="@id/iv_messageImage" android:layout_alignBottom="@id/iv_messageImage" android:contentDescription="@null" style="@style/width_height_ww" />
+            </RelativeLayout>
+            <CheckBox android:layout_gravity="center_vertical" android:id="@id/cb_messageDelete" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:clickable="false" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" style="@style/AlarmCheckboxTheme" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

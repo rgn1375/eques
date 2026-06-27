@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/btn_style_protocol_white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sp_16" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_14" android:text="@string/bind_has_no_host_wifi" />
+    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/band_m1_interface_tv_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_14" android:layout_marginRight="@dimen/dp_14" android:text="@string/e1_ap_hint5" />
+    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/band_m1_interface_tv_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_14" android:layout_marginTop="@dimen/dp_14" android:layout_marginRight="@dimen/dp_14" android:text="@string/e1_ap_hint8" />
+    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/band_m1_interface_tv_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_14" android:layout_marginTop="@dimen/dp_14" android:layout_marginRight="@dimen/dp_14" android:text="@string/e1_ap_hint9" />
+    <View android:background="@color/line_color" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:layout_marginTop="@dimen/dp_14" />
+    <Button android:textSize="@dimen/sp_20" android:textColor="@color/common_color_ff7316" android:id="@id/btn_know" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" android:text="@string/ssdk_sms_dialog_btn_sure" />
+</LinearLayout>

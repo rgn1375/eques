@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_lock_msg_alarm_parent" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_head_date_item_parent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_30">
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/service_cloud_plan_two" android:gravity="center_vertical" android:id="@id/tv_d1_info_date" android:paddingLeft="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/e1pro_has_alarm_msg_hint" />
+    </RelativeLayout>
+    <RelativeLayout android:paddingLeft="@dimen/dp_10" android:paddingTop="@dimen/dp_8" android:paddingRight="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="@dimen/dp_80" android:layout_below="@id/rl_head_date_item_parent">
+        <RelativeLayout android:id="@id/rl_d1_info_pic_parent" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <com.makeramen.roundedimageview.RoundedImageView android:id="@id/iv_d1_info_pic" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:src="@drawable/eques_head_logo" android:scaleType="fitCenter" app:riv_oval="true" />
+            <View android:background="@color/e1pro_info_line_color" android:layout_width="@dimen/dp_1" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_5" android:layout_below="@id/iv_d1_info_pic" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/dp_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:layout_toRightOf="@id/rl_d1_info_pic_parent">
+            <TextView android:textSize="@dimen/sp_12" android:textColor="@color/service_cloud_plan_two" android:id="@id/tv_d1_info_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12:22:36" />
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_3">
+                <TextView android:textSize="@dimen/sp_15" android:textColor="@color/praise_item_default" android:id="@id/tv_d1_info_nick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="【弟弟】" />
+                <TextView android:textSize="@dimen/sp_15" android:textColor="@color/e1pro_info_hint_color" android:gravity="center_vertical" android:id="@id/tv_d1_info_hint" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="用指纹打开门" android:layout_toRightOf="@id/tv_d1_info_nick" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/settings_right_tv_color_two" android:id="@id/tv_d1_nick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_3" android:text="设备昵称" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentEnd="true">
+            <ImageView android:id="@id/iv_msg_alarm" android:visibility="gone" android:layout_width="@dimen/dp_120" android:layout_height="@dimen/dp_60" />
+            <ImageView android:id="@id/iv_msg_select" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/dp_80" android:src="@drawable/ic_alarm_checkbox" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_change_msg_nick" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/e1pro_change_nick" android:layout_marginStart="@dimen/dp_40" />
+</RelativeLayout>

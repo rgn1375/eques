@@ -1,0 +1,515 @@
+.class public Lcom/bytedance/sdk/gromore/aq/aq/k/aq/hh;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lcom/bytedance/sdk/gromore/aq/aq/fz/p;
+
+
+# instance fields
+.field private aq:Lcom/bytedance/msdk/ue/fz/c;
+
+
+# direct methods
+.method public constructor <init>(Lcom/bytedance/msdk/ue/fz/c;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/bytedance/sdk/gromore/aq/aq/k/aq/hh;->aq:Lcom/bytedance/msdk/ue/fz/c;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public aq(Lcom/bytedance/sdk/gromore/aq/aq/fz/ui;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public aq(Z)V
+    .locals 0
+
+    .line 2
+    return-void
+.end method
+
+.method public aq()Z
+    .locals 1
+
+    iget-object v0, p0, Lcom/bytedance/sdk/gromore/aq/aq/k/aq/hh;->aq:Lcom/bytedance/msdk/ue/fz/c;
+
+    if-eqz v0, :cond_0
+
+    .line 3
+    invoke-virtual {v0}, Lcom/bytedance/msdk/ue/fz/c;->fz()Z
+
+    move-result v0
+
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public fz()Lcom/bytedance/sdk/gromore/aq/aq/hh;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/bytedance/sdk/gromore/aq/aq/k/aq/hh;->aq:Lcom/bytedance/msdk/ue/fz/c;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    new-instance v1, Lcom/bytedance/sdk/gromore/aq/aq/fz/ti;
+
+    .line 6
+    .line 7
+    invoke-virtual {v0}, Lcom/bytedance/msdk/ue/fz/c;->te()Lcom/bytedance/msdk/api/ue;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    invoke-direct {v1, v0}, Lcom/bytedance/sdk/gromore/aq/aq/fz/ti;-><init>(Lcom/bytedance/msdk/api/ue;)V
+
+    .line 12
+    .line 13
+    .line 14
+    return-object v1
+
+    .line 15
+    :cond_0
+    new-instance v0, Lcom/bytedance/sdk/gromore/aq/aq/fz/wp;
+
+    .line 16
+    .line 17
+    invoke-direct {v0}, Lcom/bytedance/sdk/gromore/aq/aq/fz/wp;-><init>()V
+
+    .line 18
+    .line 19
+    .line 20
+    return-object v0
+.end method
+
+.method public hf()Z
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    return v0
+.end method
+
+.method public hh()Ljava/util/List;
+    .locals 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lcom/bytedance/sdk/gromore/aq/aq/fz;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v1, p0, Lcom/bytedance/sdk/gromore/aq/aq/k/aq/hh;->aq:Lcom/bytedance/msdk/ue/fz/c;
+
+    .line 7
+    .line 8
+    if-eqz v1, :cond_1
+
+    .line 9
+    .line 10
+    invoke-virtual {v1}, Lcom/bytedance/msdk/ue/fz/c;->hf()Ljava/util/List;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v1
+
+    .line 14
+    if-eqz v1, :cond_1
+
+    .line 15
+    .line 16
+    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v1
+
+    .line 20
+    :cond_0
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 21
+    .line 22
+    .line 23
+    move-result v2
+
+    .line 24
+    if-eqz v2, :cond_1
+
+    .line 25
+    .line 26
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v2
+
+    .line 30
+    check-cast v2, Lcom/bytedance/msdk/api/hh;
+
+    .line 31
+    .line 32
+    if-eqz v2, :cond_0
+
+    .line 33
+    .line 34
+    new-instance v3, Lcom/bytedance/sdk/gromore/aq/aq/fz/aq;
+
+    .line 35
+    .line 36
+    invoke-direct {v3, v2}, Lcom/bytedance/sdk/gromore/aq/aq/fz/aq;-><init>(Lcom/bytedance/msdk/api/hh;)V
+
+    .line 37
+    .line 38
+    .line 39
+    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 40
+    .line 41
+    .line 42
+    goto :goto_0
+
+    .line 43
+    :cond_1
+    return-object v0
+.end method
+
+.method public k()Z
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    return v0
+.end method
+
+.method public m()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bytedance/sdk/gromore/aq/aq/k/aq/hh;->aq:Lcom/bytedance/msdk/ue/fz/c;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bytedance/msdk/ue/fz/c;->aq()V
+
+    .line 6
+    .line 7
+    .line 8
+    :cond_0
+    return-void
+.end method
+
+.method public te()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/bytedance/sdk/gromore/aq/aq/k/aq/hh;->aq:Lcom/bytedance/msdk/ue/fz/c;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/bytedance/msdk/ue/fz/c;->hh()V
+
+    .line 6
+    .line 7
+    .line 8
+    :cond_0
+    return-void
+.end method
+
+.method public ti()Lcom/bytedance/sdk/gromore/aq/aq/hh;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/bytedance/sdk/gromore/aq/aq/k/aq/hh;->aq:Lcom/bytedance/msdk/ue/fz/c;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    new-instance v1, Lcom/bytedance/sdk/gromore/aq/aq/fz/ti;
+
+    .line 6
+    .line 7
+    invoke-virtual {v0}, Lcom/bytedance/msdk/ue/fz/c;->j()Lcom/bytedance/msdk/api/ue;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    invoke-direct {v1, v0}, Lcom/bytedance/sdk/gromore/aq/aq/fz/ti;-><init>(Lcom/bytedance/msdk/api/ue;)V
+
+    .line 12
+    .line 13
+    .line 14
+    return-object v1
+
+    .line 15
+    :cond_0
+    new-instance v0, Lcom/bytedance/sdk/gromore/aq/aq/fz/wp;
+
+    .line 16
+    .line 17
+    invoke-direct {v0}, Lcom/bytedance/sdk/gromore/aq/aq/fz/wp;-><init>()V
+
+    .line 18
+    .line 19
+    .line 20
+    return-object v0
+.end method
+
+.method public ue()Ljava/util/List;
+    .locals 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lcom/bytedance/sdk/gromore/aq/aq/hh;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v1, p0, Lcom/bytedance/sdk/gromore/aq/aq/k/aq/hh;->aq:Lcom/bytedance/msdk/ue/fz/c;
+
+    .line 7
+    .line 8
+    if-eqz v1, :cond_1
+
+    .line 9
+    .line 10
+    invoke-virtual {v1}, Lcom/bytedance/msdk/ue/fz/c;->m()Ljava/util/List;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v1
+
+    .line 14
+    if-eqz v1, :cond_1
+
+    .line 15
+    .line 16
+    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v1
+
+    .line 20
+    :cond_0
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 21
+    .line 22
+    .line 23
+    move-result v2
+
+    .line 24
+    if-eqz v2, :cond_1
+
+    .line 25
+    .line 26
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v2
+
+    .line 30
+    check-cast v2, Lcom/bytedance/msdk/api/ue;
+
+    .line 31
+    .line 32
+    if-eqz v2, :cond_0
+
+    .line 33
+    .line 34
+    new-instance v3, Lcom/bytedance/sdk/gromore/aq/aq/fz/ti;
+
+    .line 35
+    .line 36
+    invoke-direct {v3, v2}, Lcom/bytedance/sdk/gromore/aq/aq/fz/ti;-><init>(Lcom/bytedance/msdk/api/ue;)V
+
+    .line 37
+    .line 38
+    .line 39
+    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 40
+    .line 41
+    .line 42
+    goto :goto_0
+
+    .line 43
+    :cond_1
+    return-object v0
+.end method
+
+.method public wp()Ljava/util/List;
+    .locals 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lcom/bytedance/sdk/gromore/aq/aq/hh;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v1, p0, Lcom/bytedance/sdk/gromore/aq/aq/k/aq/hh;->aq:Lcom/bytedance/msdk/ue/fz/c;
+
+    .line 7
+    .line 8
+    if-eqz v1, :cond_1
+
+    .line 9
+    .line 10
+    invoke-virtual {v1}, Lcom/bytedance/msdk/ue/fz/c;->c()Ljava/util/List;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v1
+
+    .line 14
+    if-eqz v1, :cond_1
+
+    .line 15
+    .line 16
+    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v1
+
+    .line 20
+    :cond_0
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 21
+    .line 22
+    .line 23
+    move-result v2
+
+    .line 24
+    if-eqz v2, :cond_1
+
+    .line 25
+    .line 26
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v2
+
+    .line 30
+    check-cast v2, Lcom/bytedance/msdk/api/ue;
+
+    .line 31
+    .line 32
+    if-eqz v2, :cond_0
+
+    .line 33
+    .line 34
+    new-instance v3, Lcom/bytedance/sdk/gromore/aq/aq/fz/ti;
+
+    .line 35
+    .line 36
+    invoke-direct {v3, v2}, Lcom/bytedance/sdk/gromore/aq/aq/fz/ti;-><init>(Lcom/bytedance/msdk/api/ue;)V
+
+    .line 37
+    .line 38
+    .line 39
+    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 40
+    .line 41
+    .line 42
+    goto :goto_0
+
+    .line 43
+    :cond_1
+    return-object v0
+.end method

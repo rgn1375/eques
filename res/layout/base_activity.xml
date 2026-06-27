@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.eques.doorbell.ui.view.Navbar android:id="@id/nav_bar_view" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" />
+    <RelativeLayout android:id="@id/content_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/nav_bar_view" />
+    <ImageView android:id="@id/iv_right_logo_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lg_logo_bg" android:layout_alignParentEnd="true" />
+</RelativeLayout>

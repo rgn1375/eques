@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/icloud_expire_pop" android:layout_width="match_parent" android:layout_height="@dimen/dp_320">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_30" android:layout_marginStart="@dimen/dp_40" android:layout_marginEnd="@dimen/dp_40">
+            <TextView android:textSize="@dimen/sp_20" android:textColor="@color/icloud_915839" android:ellipsize="end" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/icloud_open_card_title" android:singleLine="true" />
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/icloud_915839" android:ellipsize="end" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_15" android:text="@string/icloud_open_card_des" android:singleLine="true" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:weightSum="3.0">
+                <TextView android:textSize="@dimen/sp_13" android:textColor="@color/icloud_915839" android:gravity="center" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:text="@string/icloud_eapired_card_collect" android:drawableTop="@drawable/icloud_collect_pop" android:drawablePadding="@dimen/dp_5" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/sp_13" android:textColor="@color/icloud_915839" android:gravity="center" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:text="@string/icloud_eapired_card_save" android:drawableTop="@drawable/icloud_save_pop" android:drawablePadding="@dimen/dp_5" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/sp_13" android:textColor="@color/icloud_915839" android:gravity="center" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:text="@string/icloud_eapired_card_safe" android:drawableTop="@drawable/icloud_safe_pop" android:drawablePadding="@dimen/dp_5" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/sp_18" android:textColor="@color/icloud_ffffff" android:gravity="center" android:id="@id/icloud_renew_btn" android:background="@drawable/icloud_gradient_open_btn_style" android:layout_width="match_parent" android:layout_height="@dimen/dp_45" android:layout_marginBottom="@dimen/dp_25" android:text="@string/icloud_go_open" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/dp_45" android:layout_marginEnd="@dimen/dp_45" />
+    </RelativeLayout>
+    <ImageView android:id="@id/close_pop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:src="@drawable/e1pro_close_dialog" />
+</LinearLayout>

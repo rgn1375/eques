@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_lock_msg_alarm_parent" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/rel_img">
+        <RelativeLayout android:id="@id/rl_head_item_parent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_30">
+            <TextView android:textSize="@dimen/sp_12" android:textColor="@color/service_cloud_plan_two" android:gravity="left|center" android:id="@id/tv_e1pro_info_date" android:paddingLeft="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/e1pro_has_alarm_msg_hint" />
+            <TextView android:textSize="@dimen/sp_12" android:textColor="@color/service_cloud_plan_two" android:gravity="left|center" android:id="@id/tv_e1pro_info_more" android:paddingLeft="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/p2refresh_end_load_more" android:drawableRight="@drawable/ic_share_member_arrow" android:drawablePadding="@dimen/dp_5" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rel_msg_info" android:paddingLeft="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="@dimen/dp_100" android:layout_below="@id/rl_head_item_parent">
+            <RelativeLayout android:id="@id/rl_e1pro_info_pic_parent" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <com.makeramen.roundedimageview.RoundedImageView android:id="@id/iv_e1pro_info_pic" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30" android:src="@drawable/eques_head_logo" android:scaleType="fitCenter" app:riv_oval="true" />
+                <View android:background="@color/e1pro_info_line_color" android:layout_width="@dimen/dp_1" android:layout_height="match_parent" android:layout_below="@id/iv_e1pro_info_pic" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/dp_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:layout_toRightOf="@id/rl_e1pro_info_pic_parent">
+                <TextView android:textSize="@dimen/sp_12" android:textColor="@color/service_cloud_plan_two" android:id="@id/tv_e1pro_info_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="12:22:36" />
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_1">
+                    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/praise_item_default" android:id="@id/tv_e1pro_info_nick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="【弟弟】" />
+                    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/e1pro_info_hint_color" android:gravity="center_vertical" android:id="@id/tv_e1pro_info_hint" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="用指纹打开门" android:layout_toRightOf="@id/tv_e1pro_info_nick" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView android:id="@id/iv_change_msg_nick" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_20" android:src="@drawable/e1pro_change_nick" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rel_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/iv_msg_select">
+        <ImageView android:id="@id/iv_alarm_img" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_90" android:src="@drawable/empty_photo" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+        <ImageView android:id="@id/iv_alarm_type" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_message_pir_video" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_msg_select" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_10" android:src="@drawable/ic_alarm_checkbox" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

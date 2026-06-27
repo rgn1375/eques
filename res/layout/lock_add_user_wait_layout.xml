@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_20" android:src="@drawable/lock_manage_img_add" />
+    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:id="@id/tv_wait" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_24" />
+    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:id="@id/tv_wait_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_24" />
+    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/blue" android:id="@id/tv_time_wait" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_24" android:text="15s" />
+</LinearLayout>

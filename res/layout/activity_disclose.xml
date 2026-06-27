@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/disclose_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textSize="@dimen/sp_16" android:textColor="@color/edit_register_send" android:textColorHint="@color/edTextColorHint" android:gravity="start" android:id="@id/et_disclose" android:background="@drawable/shape_corner_white" android:padding="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="@dimen/dp_180" android:layout_margin="@dimen/dp_14" android:hint="@string/disclose_hint" android:maxLength="200" />
+    <Button android:textSize="@dimen/sp_18" android:textColor="@color/white" android:id="@id/btn_submit" android:background="@drawable/shape_corner_disclose" android:padding="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_14" android:layout_marginTop="@dimen/dp_25" android:layout_marginRight="@dimen/dp_14" android:text="@string/submit" />
+</LinearLayout>

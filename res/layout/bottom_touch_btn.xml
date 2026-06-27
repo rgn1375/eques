@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:id="@id/rl_button_touch" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <RelativeLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/btn_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/red_second_tip" android:visibility="gone" android:layout_width="6.0dp" android:layout_height="6.0dp" android:src="@drawable/right_top_red" android:layout_marginStart="8.0dp" android:layout_toEndOf="@id/btn_iv" />
+            </RelativeLayout>
+            <TextView android:id="@id/btn_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:paddingStart="2.0dp" android:paddingEnd="2.0dp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:layout_gravity="end|top" android:id="@id/red_tip" android:visibility="gone" android:layout_width="8.0dp" android:layout_height="8.0dp" android:src="@drawable/right_top_red" android:layout_marginStart="5.0dp" />
+</FrameLayout>

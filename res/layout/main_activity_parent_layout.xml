@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/ic_main_screen_default_bg" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/linearlayout_mainView" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="3.0">
+        <include android:visibility="gone" layout="@layout/main_auto_add_dev_layout" />
+        <include android:layout_width="match_parent" android:layout_height="@dimen/dp_50" layout="@layout/main_title_bar_layout" />
+        <RelativeLayout android:id="@id/rl_main_body_parent" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="2.5">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.eques.doorbell.ui.view.NoScrollViewPager android:id="@id/viewPager_deviceList" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+            </FrameLayout>
+            <RelativeLayout android:gravity="center" android:id="@id/realy_custom" android:layout_width="match_parent" android:layout_height="@dimen/dp_35">
+                <include android:id="@id/custom_view" android:visibility="gone" layout="@layout/app_custom_layout" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/lienar_all_news_parent" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="0.0dp" android:weightSum="2.0" android:layout_weight="0.5">
+            <View android:id="@id/v_line" android:background="@color/main_item_halving_line_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_5" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_lock_msg_alarm_parent" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="2.0" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linear_e1pro_none_alarm_msg_show" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="2.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/e1pro_alarm_msg_empty" />
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/settings_right_hint_tv_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="@string/e1pro_none_alarm_msg_hint" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/lienar_news_parent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="2.0">
+                <include android:id="@id/layout_lock_alarm_mune" android:layout_width="wrap_content" android:layout_height="match_parent" layout="@layout/main_menu_m1lock_alarm_sub_layout" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/lienar_default_news_parent" android:visibility="visible" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="2.0">
+                <include android:id="@id/in_rl_alarm_msg" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" layout="@layout/main_menu_alarm_sub_layout" />
+                <include android:id="@id/in_rl_visitors_records" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" layout="@layout/main_menu_visitor_sub_layout" />
+                <include android:id="@id/in_rl_capture_records" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" layout="@layout/main_menu_capture_sub_layout" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/e1_open_lock_btn" android:background="@drawable/key_submit_style" android:paddingLeft="@dimen/dp_30" android:paddingTop="@dimen/dp_8" android:paddingRight="@dimen/dp_30" android:paddingBottom="@dimen/dp_8" android:layout_width="130.0dp" android:layout_height="40.0dp" android:layout_marginBottom="@dimen/dp_35" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/e1_open_lock_btn" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unlocking" android:singleLine="true" android:layout_marginStart="@dimen/dp_6" />
+    </LinearLayout>
+</RelativeLayout>

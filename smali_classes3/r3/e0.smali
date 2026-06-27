@@ -1,0 +1,154 @@
+.class public Lr3/e0;
+.super Ljava/lang/Object;
+.source "NoDoubleClickUtils.java"
+
+
+# static fields
+.field private static a:J
+
+
+# direct methods
+.method public static declared-synchronized a()Z
+    .locals 7
+
+    .line 1
+    const-class v0, Lr3/e0;
+
+    .line 2
+    .line 3
+    monitor-enter v0
+
+    .line 4
+    :try_start_0
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-wide v1
+
+    .line 8
+    sget-wide v3, Lr3/e0;->a:J
+
+    .line 9
+    .line 10
+    sub-long v3, v1, v3
+
+    .line 11
+    .line 12
+    const-wide/16 v5, 0x3e8
+
+    .line 13
+    .line 14
+    cmp-long v3, v3, v5
+
+    .line 15
+    .line 16
+    if-gtz v3, :cond_0
+
+    .line 17
+    .line 18
+    const/4 v3, 0x1
+
+    .line 19
+    goto :goto_0
+
+    .line 20
+    :cond_0
+    const/4 v3, 0x0
+
+    .line 21
+    :goto_0
+    sput-wide v1, Lr3/e0;->a:J
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 22
+    .line 23
+    monitor-exit v0
+
+    .line 24
+    return v3
+
+    .line 25
+    :catchall_0
+    move-exception v1
+
+    .line 26
+    monitor-exit v0
+
+    .line 27
+    throw v1
+.end method
+
+.method public static declared-synchronized b(I)Z
+    .locals 7
+
+    .line 1
+    const-class v0, Lr3/e0;
+
+    .line 2
+    .line 3
+    monitor-enter v0
+
+    .line 4
+    :try_start_0
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-wide v1
+
+    .line 8
+    sget-wide v3, Lr3/e0;->a:J
+
+    .line 9
+    .line 10
+    sub-long v3, v1, v3
+
+    .line 11
+    .line 12
+    int-to-long v5, p0
+
+    .line 13
+    cmp-long p0, v3, v5
+
+    .line 14
+    .line 15
+    if-gtz p0, :cond_0
+
+    .line 16
+    .line 17
+    const/4 p0, 0x1
+
+    .line 18
+    goto :goto_0
+
+    .line 19
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 20
+    :goto_0
+    sput-wide v1, Lr3/e0;->a:J
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 21
+    .line 22
+    monitor-exit v0
+
+    .line 23
+    return p0
+
+    .line 24
+    :catchall_0
+    move-exception p0
+
+    .line 25
+    monitor-exit v0
+
+    .line 26
+    throw p0
+.end method

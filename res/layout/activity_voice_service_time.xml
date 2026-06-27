@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#f5f5f5" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/top_nav_bar_layout" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/rel_all_time" android:background="@drawable/btn_style_white" android:paddingLeft="@dimen/dp_14" android:paddingRight="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="@dimen/dp_60" android:layout_margin="@dimen/dp_14">
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voice_service_all_day" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/img_all_day" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/select_pay" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/btn_style_white" android:paddingBottom="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_14" android:layout_marginRight="@dimen/dp_14">
+        <RelativeLayout android:id="@id/rel_custom_time" android:padding="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="@dimen/dp_60">
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voice_service_custom_time" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/img_custom_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/select_pay" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/lin_custom_time" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="@color/line_color" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" />
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/rel_voice_set_start_time" android:background="@drawable/btn_style_white" android:paddingLeft="@dimen/dp_14" android:paddingRight="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="@dimen/dp_60">
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voice_service_start_time" android:layout_centerVertical="true" />
+                <TextView android:id="@id/tv_voice_set_start_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voice_service_no_set" android:drawableRight="@drawable/arrow_icon_default" android:drawablePadding="@dimen/dp_5" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/rel_voice_set_end_time" android:background="@drawable/btn_style_white" android:paddingLeft="@dimen/dp_14" android:paddingRight="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="@dimen/dp_60">
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voice_service_end_time" android:layout_centerVertical="true" />
+                <TextView android:id="@id/tv_voice_set_end_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voice_service_no_set" android:drawableRight="@drawable/arrow_icon_default" android:drawablePadding="@dimen/dp_5" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:paddingLeft="@dimen/dp_14" android:paddingRight="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="@dimen/dp_60">
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voice_service_week" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="@dimen/dp_14" android:paddingRight="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="@dimen/dp_40">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rec_week" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

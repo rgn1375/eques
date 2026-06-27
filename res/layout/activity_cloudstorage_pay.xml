@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.2" />
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:background="@color/pop_bg" android:layout_width="match_parent" android:layout_height="@dimen/smart_home_btn_size">
+            <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/service_cloud_plan_two" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:text="选择支付方式" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/iv_close_pop_window" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_16" android:src="@drawable/icon_cloudstorage_close_pop" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_ali_pay_parent" android:layout_width="match_parent" android:layout_height="@dimen/dp_40" android:layout_marginTop="@dimen/dp_16">
+            <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/service_cloud_plan_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:text="支付宝支付" android:drawableLeft="@drawable/icon_cloudstorage_pay_alipay" android:drawablePadding="@dimen/dp_5" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/iv_ali_pay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_16" android:src="@drawable/service_pay_ways_selected_cb_style" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_wechat_pay_parent" android:layout_width="match_parent" android:layout_height="@dimen/dp_40">
+            <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/service_cloud_plan_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:text="微信支付" android:drawableLeft="@drawable/icon_cloudstorage_pay_wechat" android:drawablePadding="@dimen/dp_5" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/iv_wechat_pay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_16" android:src="@drawable/service_pay_ways_selected_cb_style" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+        </RelativeLayout>
+        <View android:background="@color/pop_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_10" />
+        <RelativeLayout android:id="@id/rl_discount_coupon_parent" android:layout_width="match_parent" android:layout_height="@dimen/dp_40">
+            <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/service_cloud_plan_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:text="优惠券" android:drawablePadding="@dimen/dp_5" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/service_open_details_color" android:textColorHint="@color/service_cloud_plan_two" android:gravity="right|center" android:id="@id/tv_discount_coupon_parent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:hint="填写抵扣劵码" android:drawableRight="@drawable/arrow_icon_default" android:drawablePadding="@dimen/dp_5" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/pop_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_15" />
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/smart_home_btn_size">
+            <TextView android:textSize="@dimen/fontsize_twenty_four" android:textColor="@color/service_open_details_color" android:id="@id/tv_receipt_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:text="¥12" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/service_cloud_plan_three" android:id="@id/tv_total_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_2" android:text="¥12" android:layout_toRightOf="@id/tv_receipt_amount" android:layout_alignBottom="@id/tv_receipt_amount" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/fontsize_eighteenth" android:textColor="@color/cloud_storage_go_pay" android:gravity="center" android:id="@id/tv_to_buy_service" android:background="@drawable/service_open_btn_style" android:paddingLeft="@dimen/dp_30" android:paddingRight="@dimen/dp_30" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="去支付" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

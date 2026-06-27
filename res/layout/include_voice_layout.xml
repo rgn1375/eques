@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/linear_voice_include" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sp_18" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_voice_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="@string/paid_voice_service" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10" />
+    <RelativeLayout android:background="@drawable/rounded_gradient_button_voice" android:padding="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10">
+        <ImageView android:id="@id/img_icon1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/multiscene" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_14" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/img_icon1">
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paid_voice_one" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/login_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/paid_voice_one_hint" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rel_voice_muti" android:background="@drawable/rounded_gradient_button_voice" android:padding="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10">
+        <ImageView android:id="@id/img_icon2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/multidevice" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_14" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/img_icon2">
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paid_voice_two" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/login_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/paid_voice_two_hint" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/rounded_gradient_button_voice" android:padding="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10">
+        <ImageView android:id="@id/img_icon3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/multiuser" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_14" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/img_icon3">
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paid_voice_three" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/login_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/paid_voice_three_hint" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/rounded_gradient_button_voice" android:padding="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10">
+        <ImageView android:id="@id/img_icon4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/userdefined" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_14" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/img_icon4">
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paid_voice_four" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/login_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/paid_voice_four_hint" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

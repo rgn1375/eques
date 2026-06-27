@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/robot_round_corner_white" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:layout_marginBottom="@dimen/dp_8" android:layout_marginStart="@dimen/dp_20">
+        <TextView android:textSize="@dimen/sp_18" android:textStyle="bold" android:textColor="@color/robot_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/robot_health_report" />
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/robot_999999" android:id="@id/tv_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_3" android:layout_marginBottom="@dimen/dp_3" android:text="@string/robot_username" />
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/robot_999999" android:id="@id/tv_sex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/robot_sex" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/robot_3b86dd" android:id="@id/tv_all_report_details" android:background="@drawable/robot_data_details_btn_style" android:paddingTop="@dimen/dp_2" android:paddingBottom="@dimen/dp_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_3" android:text="@string/robot_all_health_report" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10" />
+    </LinearLayout>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/robot_report_top_bg" android:layout_alignParentEnd="true" />
+</RelativeLayout>

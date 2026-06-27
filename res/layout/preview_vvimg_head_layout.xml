@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_preview_head_parent" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="@dimen/dp_50"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_preview_back" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/back" android:drawablePadding="@dimen/dp_6" android:drawableStart="@drawable/back_icon_white" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10" />
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:id="@id/tv_preview_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/photo_info_title" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/tv_preview_download" android:paddingLeft="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/save_album_btn" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/tv_preview_collect" android:paddingLeft="@dimen/dp_2" android:paddingRight="@dimen/dp_10" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/alarm_collect" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/help_problem_classify" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dialog_btn_height">
+        <ImageView android:id="@id/iv_help_classify" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:src="@drawable/help_hot_problem" android:contentDescription="@null" />
+        <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/service_cloud_plan_one" android:id="@id/tv_help_classify" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10" android:text="热门问题" />
+        <TextView android:textSize="@dimen/fontsize_twelve" android:textColor="@color/tv_cancel_color" android:id="@id/tv_help_classify_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="让我们变得更好！" />
+    </LinearLayout>
+</RelativeLayout>

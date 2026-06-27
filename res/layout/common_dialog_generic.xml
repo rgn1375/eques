@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/dp_15"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/dialog_generic_layout_root" android:background="@drawable/et_dialog_bg_white_style" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_60">
+        <LinearLayout android:orientation="vertical" android:id="@id/dialog_generic_layout_top" android:padding="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:id="@id/dialog_generic_layout_title" android:paddingLeft="@dimen/teen" android:paddingRight="@dimen/teen" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.eques.doorbell.ui.view.HandyTextView android:textSize="@dimen/fontsize_eighteenth" android:textColor="@color/settings_left_tv_color" android:gravity="left" android:id="@id/dialog_generic_htv_title" android:paddingLeft="2.0dp" android:paddingRight="2.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/prompt" android:shadowDx="0.0" android:shadowDy="-1.0" android:shadowRadius="1.0" android:soundEffectsEnabled="true" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/dialog_generic_layout_content" android:padding="@dimen/teen" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ScrollView android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:paddingTop="4.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.eques.doorbell.ui.view.HandyTextView android:textSize="@dimen/sp_15" android:textColor="@color/text_color" android:id="@id/dialog_generic_htv_message" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@id/view_bottom_dividerLine" android:background="@color/view_divider_color" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/dialog_generic_layout_bottom" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_50">
+            <TextView android:gravity="center" android:id="@id/dialog_generic_btn_button1" android:visibility="visible" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="Button" android:layout_weight="1.0" style="@style/Style_Dialog_Button" />
+            <View android:id="@id/divider_view_one" android:background="@color/view_divider_color" android:visibility="gone" android:layout_width="@dimen/dp_1" android:layout_height="match_parent" />
+            <TextView android:gravity="center" android:id="@id/dialog_generic_btn_button2" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="Button" android:layout_weight="1.0" style="@style/Style_Dialog_Button" />
+            <View android:id="@id/divider_view_two" android:background="@color/view_divider_color" android:visibility="gone" android:layout_width="@dimen/dp_1" android:layout_height="match_parent" />
+            <TextView android:gravity="center" android:id="@id/dialog_generic_btn_button3" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="Button" android:layout_weight="1.0" style="@style/Style_Dialog_Button" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

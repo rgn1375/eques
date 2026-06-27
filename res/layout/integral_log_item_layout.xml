@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="@color/white" android:paddingLeft="@dimen/dp_12" android:paddingRight="@dimen/dp_12" android:layout_width="match_parent" android:layout_height="@dimen/dp_45"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/integral_tag_iv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/integral_log_ic" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/settings_left_tv_color" android:id="@id/integral_hint_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="积分日志" />
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/default_clickable_color" android:id="@id/integral_time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2019-12-4" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/settings_delete_dev_tv_color" android:id="@id/integral_value_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_30" android:text="+1000" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

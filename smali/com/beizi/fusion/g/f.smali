@@ -1,0 +1,50 @@
+.class public Lcom/beizi/fusion/g/f;
+.super Ljava/lang/Object;
+.source "Base64Util.java"
+
+
+# direct methods
+.method public static a(Ljava/lang/String;)Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    :try_start_0
+    new-instance v0, Ljava/lang/String;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    invoke-static {p0, v1}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p0
+
+    .line 8
+    invoke-direct {v0, p0}, Ljava/lang/String;-><init>([B)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 9
+    .line 10
+    .line 11
+    return-object v0
+
+    .line 12
+    :catch_0
+    move-exception p0
+
+    .line 13
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 14
+    .line 15
+    .line 16
+    const/4 p0, 0x0
+
+    .line 17
+    return-object p0
+.end method

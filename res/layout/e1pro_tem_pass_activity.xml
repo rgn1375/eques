@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_tem_pwd_parent" android:background="@color/e1pro_interface_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_55" android:layout_marginStart="@dimen/dp_15" android:layout_marginEnd="@dimen/dp_15">
+        <EditText android:textColor="@color/edit_register_send" android:id="@id/et_e1pro_tem_pass" android:background="@drawable/edit_style_registration_default" android:paddingLeft="@dimen/dp_10" android:hint="@string/e1pro_temporary_pass_amend_hint_one" android:maxLength="6" android:digits="@string/register_authcode" android:inputType="number" android:layout_marginStart="@dimen/dp_15" android:layout_marginEnd="@dimen/dp_15" style="@style/register_ed_style" />
+        <ImageView android:id="@id/iv_clear_pwd" android:padding="@dimen/dp_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clear_tem_pwd" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_25" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <Button android:id="@id/btn_amend_tem_pass" android:layout_marginTop="@dimen/dp_60" android:text="@string/e1pro_temporary_pass_amend_btn" style="@style/btn_style_amend_new" />
+    <TextView android:textSize="@dimen/fontsize_twelve" android:textColor="@color/custom_notify_style_bg" android:gravity="center" android:id="@id/tv_tem_pwd_aging" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_12" android:layout_marginTop="@dimen/dp_10" android:layout_marginRight="@dimen/dp_12" android:text="@string/e1pro_temporary_pass_amend_hint_three" />
+</LinearLayout>

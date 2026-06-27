@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/fontsize_eighteenth" android:textColor="@color/settings_left_tv_color" android:gravity="center" android:id="@id/tv_taking_pictures" android:layout_width="match_parent" android:layout_height="@dimen/share_dev_btn_size" android:text="@string/body_pir_mode_picture" />
+            <View android:background="@color/edit_register_divider" android:layout_width="match_parent" android:layout_height="1.0px" />
+            <TextView android:textSize="@dimen/fontsize_eighteenth" android:textColor="@color/settings_left_tv_color" android:gravity="center" android:id="@id/tv_local_select_photos" android:layout_width="match_parent" android:layout_height="@dimen/share_dev_btn_size" android:text="@string/personal_data_local_select_photo" />
+        </LinearLayout>
+        <Button android:textSize="@dimen/sp_18" android:textColor="@color/edit_register_send" android:id="@id/cancel" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" android:layout_marginTop="@dimen/dp_8" android:text="@string/cancel" />
+    </LinearLayout>
+</RelativeLayout>

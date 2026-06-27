@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/ysf_dialog_item_middle_selector" android:paddingLeft="40.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ysf_text_size_16" android:textColor="@color/ysf_dark_d9000000" android:id="@id/ysf_category_dialog_clickable_item_text" android:paddingRight="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="7.0dp" android:paddingVertical="10.0dp" />
+    <View android:layout_gravity="top" android:id="@id/ysf_category_dialog_clickable_item_text_line" android:background="@color/ysf_grey_f1f1f1" android:layout_width="match_parent" android:layout_height="@dimen/ysf_divider_height" />
+</FrameLayout>

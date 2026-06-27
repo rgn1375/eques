@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@mipmap/bg_top" android:layout_width="match_parent" android:layout_height="@dimen/dp_180" android:layout_marginTop="@dimen/dp_20">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_50">
+            <ImageView android:id="@id/img_back" android:padding="@dimen/dp_14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_icon_white" />
+            <TextView android:textSize="@dimen/sp_20" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mine_integral" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_14">
+            <TextView android:textSize="@dimen/sp_18" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mine_integral" />
+            <LinearLayout android:gravity="center" android:id="@id/lin_integral_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_14" android:layout_marginTop="@dimen/dp_14">
+                <TextView android:textSize="@dimen/sp_30" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/tv_integral_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_14" android:text="0" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_8" android:src="@drawable/ic_scan_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_integral_rule" android:background="@drawable/btn_integral" android:layout_width="@dimen/dp_80" android:layout_height="@dimen/dp_35" android:layout_marginTop="@dimen/dp_80" android:text="@string/mine_integral_rule" android:layout_alignParentRight="true" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/btn_style_white" android:padding="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_210">
+        <TextView android:textSize="@dimen/sp_18" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/task_get_integral" />
+        <RelativeLayout android:gravity="center_vertical" android:padding="@dimen/dp_5" android:layout_width="match_parent" android:layout_height="@dimen/dp_60" android:layout_marginTop="@dimen/dp_10">
+            <ImageView android:id="@id/img_sign_in" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_10" android:src="@mipmap/sign_in" />
+            <TextView android:textSize="@dimen/sp_16" android:textColor="#666666" android:id="@id/tv_sign_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sign_in_day_integral" android:layout_toRightOf="@id/img_sign_in" />
+            <TextView android:textColor="#fb8d31" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+10积分" android:layout_toRightOf="@id/img_sign_in" android:layout_below="@id/tv_sign_title" />
+            <TextView android:enabled="false" android:textSize="@dimen/sp_12" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_sign_in" android:background="@drawable/nextstep_btn_shape_selector_deep_gray" android:layout_width="@dimen/dp_80" android:layout_height="@dimen/dp_30" android:text="@string/finish_integral" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/rel_watch_video" android:padding="@dimen/dp_5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_60" android:layout_marginTop="@dimen/dp_10">
+            <ImageView android:id="@id/img_watch_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_10" android:src="@mipmap/share_video" />
+            <TextView android:textSize="@dimen/sp_16" android:textColor="#666666" android:id="@id/tv_watch_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/watch_video_integral" android:layout_toRightOf="@id/img_watch_tv" />
+            <TextView android:textColor="#fb8d31" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+1~100积分" android:layout_toRightOf="@id/img_watch_tv" android:layout_below="@id/tv_watch_tv" />
+            <TextView android:textSize="@dimen/sp_12" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_watch_ad" android:background="@drawable/nextstep_btn_shape_selector" android:layout_width="@dimen/dp_80" android:layout_height="@dimen/dp_30" android:text="@string/unfinish_integral" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:padding="@dimen/dp_5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_60" android:layout_marginTop="@dimen/dp_10">
+            <ImageView android:id="@id/img_share_dev" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_10" android:src="@mipmap/share_device_a" />
+            <TextView android:textSize="@dimen/sp_16" android:textColor="#666666" android:id="@id/tv_share_dev" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_device_integral" android:layout_toRightOf="@id/img_share_dev" />
+            <TextView android:textColor="#fb8d31" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+20积分" android:layout_toRightOf="@id/img_share_dev" android:layout_below="@id/tv_share_dev" />
+            <TextView android:textSize="@dimen/sp_12" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_share_device" android:background="@drawable/nextstep_btn_shape_selector" android:layout_width="@dimen/dp_80" android:layout_height="@dimen/dp_30" android:text="@string/unfinish_integral" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:padding="@dimen/dp_5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_60" android:layout_marginTop="@dimen/dp_10">
+            <ImageView android:id="@id/img_share_warn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_10" android:src="@mipmap/share_msg" />
+            <TextView android:textSize="@dimen/sp_16" android:textColor="#666666" android:id="@id/tv_share_warn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_warning_integral" android:layout_toRightOf="@id/img_share_warn" />
+            <TextView android:textColor="#fb8d31" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+10积分" android:layout_toRightOf="@id/img_share_warn" android:layout_below="@id/tv_share_warn" />
+            <TextView android:textSize="@dimen/sp_12" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_share_msg" android:background="@drawable/nextstep_btn_shape_selector" android:layout_width="@dimen/dp_80" android:layout_height="@dimen/dp_30" android:text="@string/unfinish_integral" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

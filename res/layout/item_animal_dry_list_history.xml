@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/btn_style_white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_50">
+        <TextView android:textSize="@dimen/sp_18" android:textColor="@color/common_color_333333" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/anim_dry_change_his" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/iv_close" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_marginRight="@dimen/dp_20" android:src="@mipmap/close_popup" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/sp_13" android:textColor="@color/common_color_666666" android:id="@id/tv_times" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_370" android:paddingStart="@dimen/dp_20" android:paddingEnd="@dimen/dp_20">
+        <TextView android:gravity="center" android:id="@id/tv_none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/anim_dry_change_none" android:drawableTop="@mipmap/plan_none_v" android:drawablePadding="@dimen/dp_5" android:layout_centerInParent="true" />
+        <ListView android:id="@id/lv_history" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/dp_10" />
+    </RelativeLayout>
+</LinearLayout>

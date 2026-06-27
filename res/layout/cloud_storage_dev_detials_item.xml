@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dp_20" android:paddingRight="@dimen/dp_20" android:paddingBottom="@dimen/dp_8" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/cloudstorage_serviceplan_one" android:gravity="left" android:id="@id/tv_cloud_dev_nick" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:text="@string/service_show_dev_nice" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/cloudstorage_serviceplan_one" android:gravity="left" android:id="@id/tv_cloud_dev_type" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:text="@string/service_show_dev_type" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_3">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/cloudstorage_serviceplan_one" android:id="@id/tv_cloud_dev_storage_time" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:text="@string/service_show_dev_storage_days" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/cloudstorage_serviceplan_one" android:id="@id/tv_cloud_dev_storage_size" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:text="@string/service_show_dev_collect" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_3">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/cloudstorage_serviceplan_one" android:id="@id/tv_cloud_retention_time" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:text="@string/service_show_dev_collect_save" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

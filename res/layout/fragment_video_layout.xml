@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/lin_paid_root" android:background="@drawable/btn_style_white_big_radius" android:padding="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rec_voice_data" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" />
+    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/login_666666" android:id="@id/tv_auto_pay_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_14" android:layout_marginEnd="@dimen/dp_14" />
+    <TextView android:textSize="@dimen/sp_12" android:textColor="#915839" android:gravity="center" android:id="@id/tv_exprese" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/buy_exprese_hint" android:drawablePadding="@dimen/dp_3" android:drawableStart="@drawable/alarm_error" android:layout_marginStart="@dimen/dp_14" android:layout_marginEnd="@dimen/dp_14" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/common_color_333333" android:gravity="center" android:id="@id/tv_hint_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_14" android:drawableRight="@drawable/arrow_icon_press" android:drawablePadding="@dimen/dp_5" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/sp_18" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_10" android:text="@string/paid_video" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/login_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paid_video_hint" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10" />
+        <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_10" android:src="@mipmap/img_video" />
+    </LinearLayout>
+    <include layout="@layout/include_paid_agree" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:padding="@dimen/dp_6" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:background="@drawable/btn_style_white_gray_slide" android:layout_width="match_parent" android:layout_height="@dimen/dp_100" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10">
+        <RelativeLayout android:id="@id/rl_user_name" android:layout_width="match_parent" android:layout_height="@dimen/dp_50">
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/common_color_333333" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/leave_msg_add_user_name" />
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/common_color_666666" android:gravity="center" android:id="@id/tv_user_name" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableRight="@drawable/smart_lock_msg_next" android:drawablePadding="@dimen/dp_3" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <View android:background="@color/line_color" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" />
+        <RelativeLayout android:id="@id/rl_user_number" android:layout_width="match_parent" android:layout_height="@dimen/dp_50">
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/common_color_333333" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/leave_msg_add_user_number" />
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/common_color_666666" android:ellipsize="end" android:gravity="right|center" android:id="@id/tv_user_number" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:ems="8" android:drawableRight="@drawable/smart_lock_msg_next" android:drawablePadding="@dimen/dp_3" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

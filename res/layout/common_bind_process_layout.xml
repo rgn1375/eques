@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/linear_bind_parent" android:background="@color/e1pro_interface_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/bind_process_no_wifi_con_parent" android:visibility="gone" layout="@layout/bing_process_nocon_wifi_layout" />
+    <include android:id="@id/bind_process_scan_choose_model_parent" android:visibility="gone" layout="@layout/bind_process_scan_choose_model" />
+    <include android:id="@id/bind_process_wifi_con_parent" android:visibility="gone" layout="@layout/bind_process_select_network_layout" />
+    <include android:id="@id/bind_process_5g_wifi_con_parent" android:visibility="gone" layout="@layout/bind_process_network_check_5g_layout" />
+    <include android:id="@id/bind_process_operation_chart_parent" android:visibility="gone" layout="@layout/bind_process_operation_chart_layout" />
+    <include android:id="@id/bind_process_operation_chart_xm_parent" android:visibility="gone" layout="@layout/bind_xm_c03_guide_layout" />
+    <include android:id="@id/bind_process_operation_chart_xm_scan_parent" android:visibility="gone" layout="@layout/bind_xm_c03_scan_way_layout" />
+    <include android:id="@id/bind_process_binding_waiting_parent" android:visibility="gone" layout="@layout/bind_process_binding_waiting_e1_layout" />
+    <include android:id="@id/bind_process_bind_dev_success_parent" android:visibility="gone" layout="@layout/bind_process_bind_dev_success_layout" />
+    <include android:id="@id/bind_process_bind_dev_failed_parent" android:visibility="gone" layout="@layout/bind_process_bind_failed_layout" />
+    <include android:id="@id/bind_process_bind_dev_failed_has_bound_parent" android:visibility="gone" layout="@layout/d1_bind_failed_layout" />
+    <include android:id="@id/bind_process_ap_bind_operation_chart_parent" android:visibility="gone" layout="@layout/bind_process_ap_bind_operation_chart_layout" />
+</LinearLayout>

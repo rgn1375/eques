@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/main_mime_top_style" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_2" android:layout_marginEnd="@dimen/dp_2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_40">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/xm_333333" android:id="@id/tv_xm_dev_nick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xm_c03" android:drawablePadding="@dimen/dp_5" android:drawableStart="@drawable/xm_dev_camera" android:layout_marginStart="@dimen/dp_10" />
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/xm_666666" android:id="@id/tv_xm_dev_smart_home_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xm_c03" android:layout_marginStart="@dimen/dp_10" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rl_xm_live_streaming_play_parent" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_xm_live_streaming_play_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/xm_dev_bg" android:scaleType="fitXY" />
+        <ImageView android:id="@id/iv_xm_live_streaming_play_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/xm_dev_play" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <include layout="@layout/video_dev_list_a_key_cover_layout" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_50" android:src="@drawable/e1pro_bing_process_wifi" />
+    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/praise_item_default" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_20" android:layout_marginRight="@dimen/dp_10" android:text="@string/bind_process_wifi_not_open" />
+    <Button android:textSize="@dimen/sp_18" android:id="@id/btn_setting_wifi" android:layout_width="match_parent" android:layout_height="@dimen/dp_45" android:layout_marginLeft="@dimen/dp_50" android:layout_marginTop="@dimen/dp_100" android:layout_marginRight="@dimen/dp_50" android:text="@string/dialog_permission_set_up" style="@style/nextStep_btn_style" />
+    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/praise_item_default" android:id="@id/tv_refresh_network" android:padding="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:text="@string/refresh" />
+</LinearLayout>

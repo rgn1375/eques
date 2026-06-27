@@ -1,0 +1,73 @@
+.class final Lcn/sharesdk/framework/utils/l$a;
+.super Ljava/lang/ThreadLocal;
+.source "UnicodeEscaper.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcn/sharesdk/framework/utils/l;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1a
+    name = "a"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/ThreadLocal<",
+        "[C>;"
+    }
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/ThreadLocal;-><init>()V
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lcn/sharesdk/framework/utils/l$1;)V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0}, Lcn/sharesdk/framework/utils/l$a;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method protected a()[C
+    .locals 1
+
+    .line 1
+    const/16 v0, 0x400
+
+    .line 2
+    .line 3
+    new-array v0, v0, [C
+
+    .line 4
+    .line 5
+    return-object v0
+.end method
+
+.method protected synthetic initialValue()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcn/sharesdk/framework/utils/l$a;->a()[C
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method

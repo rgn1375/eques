@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/linear_hideInputMethod" android:background="@color/login_ffffff" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/dp_28" android:layout_marginEnd="@dimen/dp_28">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_50">
+            <View android:background="@color/login_ff7316" android:layout_width="@dimen/dp_5" android:layout_height="@dimen/dp_32" />
+            <TextView android:textSize="@dimen/sp_20" android:textColor="@color/login_333333" android:id="@id/tv_title_pwd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/forgot_passwd_by_phone_hint_one" android:layout_marginStart="@dimen/dp_12" />
+        </LinearLayout>
+        <EditText android:textColor="@color/edit_register_send" android:id="@id/et_phone_account" android:background="@drawable/edit_style_registration_default" android:layout_marginTop="@dimen/dp_26" android:hint="@string/forgot_passwd_by_phone_hint_two" android:maxLength="11" android:inputType="phone" style="@style/register_ed_style" />
+        <TextView android:textSize="@dimen/fontsize_twelve" android:textColor="@color/edit_register_error" android:id="@id/tv_phone_num_error_hint" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="@string/forgot_passwd_by_phone_hint_five" />
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_45" android:layout_marginTop="@dimen/dp_6">
+            <EditText android:textColor="@color/edit_register_send" android:id="@id/et_phone_captcha" android:background="@drawable/edit_style_registration_default" android:hint="@string/input_success_authinfo" android:maxLength="6" android:inputType="phone" style="@style/register_ed_style" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true">
+                <View android:id="@id/view_line" android:background="@color/edit_register_divider" android:layout_width="@dimen/dp_1" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_7" android:layout_marginBottom="@dimen/dp_7" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_10" />
+                <TextView android:textColor="@color/login_ff7316" android:id="@id/tv_sendAuthCode" android:padding="@dimen/dp_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/forgot_passwd_by_phone_hint_four" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_10" android:layout_toEndOf="@id/view_line" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/fontsize_twelve" android:textColor="@color/edit_register_error" android:id="@id/tv_authcode_error_hint" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="@string/regis_by_phone_authcode_error" />
+        <Button android:id="@id/btn_next" android:layout_marginTop="@dimen/dp_26" android:layout_marginBottom="@dimen/dp_30" android:text="@string/next_step" style="@style/btn_style_lrfp_new" />
+        <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/login_btn_default_new" android:layout_gravity="center" android:id="@id/tv_email_retrieve_pas" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/forgot_passwd_by_phone_hint_three" android:drawablePadding="@dimen/dp_3" android:drawableEnd="@drawable/pass_arrow_icon" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/linear_add_magnetic_door" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/add433device_activity" />
+        <include android:id="@id/add433dev_voice_prompts" android:visibility="gone" layout="@layout/add433dev_voice_prompts" />
+        <include android:id="@id/add433dev_triggering_device" android:visibility="gone" layout="@layout/add433dev_triggering_device" />
+    </FrameLayout>
+</LinearLayout>

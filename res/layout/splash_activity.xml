@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_splash_parent" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_appStartLogo" android:background="@drawable/image_loading_logo" android:visibility="visible" android:layout_width="@dimen/dp_240" android:layout_height="@dimen/dp_180" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/relay_appStartBg" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/sp_13" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_countDown" android:background="@drawable/splash_ad_btn_style" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_25" android:layout_marginLeft="@dimen/dp_15" android:layout_marginTop="25.0dp" android:layout_marginBottom="@dimen/dp_10" />
+        <Button android:textSize="@dimen/sp_13" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_skipped_advert" android:background="@drawable/splash_ad_btn_style" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_25" android:layout_marginTop="25.0dp" android:layout_marginRight="@dimen/dp_15" android:layout_marginBottom="@dimen/dp_10" android:text="@string/btn_ad_judge_hint" android:layout_alignParentRight="true" android:onClick="onClick" />
+    </RelativeLayout>
+</RelativeLayout>

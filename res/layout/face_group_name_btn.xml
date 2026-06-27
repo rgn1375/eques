@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/fontsize_thirteen" android:textColor="@color/edit_register_send" android:ellipsize="end" android:background="@drawable/btn_group_name_default" android:paddingLeft="@dimen/dp_8" android:paddingTop="@dimen/dp_3" android:paddingRight="@dimen/dp_8" android:paddingBottom="@dimen/dp_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="分组名称" android:singleLine="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

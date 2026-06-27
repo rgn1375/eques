@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/messageActivityBottomLayout" android:background="@color/ysf_white" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ysf_message_quote_layout" android:background="@color/ysf_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/ysf_message_quote_close" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginLeft="8.0dp" android:layout_marginTop="8.0dp" android:src="@drawable/ysf_ic_dialog_close" android:scaleType="centerInside" />
+        <View android:background="#d9d9db" android:layout_width="1.0dp" android:layout_height="14.0dp" android:layout_marginLeft="4.0dp" android:layout_marginTop="13.0dp" android:layout_marginBottom="5.0dp" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/ysf_grey_999999" android:ellipsize="end" android:id="@id/ysf_message_quote_text" android:paddingLeft="8.0dp" android:paddingTop="13.0dp" android:paddingRight="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dp" android:text="@string/ysf_message_reference" android:singleLine="true" android:includeFontPadding="false" />
+        <ImageView android:id="@id/ysf_message_quote_iv" android:visibility="gone" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginTop="13.0dp" android:layout_marginBottom="5.0dp" android:scaleType="centerCrop" />
+    </LinearLayout>
+    <include layout="@layout/ysf_message_activity_text_layout" />
+    <com.qiyukf.uikit.session.module.input.MessageBottomContainer android:id="@id/nim_message_emoticon_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.qiyukf.uikit.session.emoji.EmoticonPickerView android:id="@id/emoticon_picker_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </com.qiyukf.uikit.session.module.input.MessageBottomContainer>
+</LinearLayout>

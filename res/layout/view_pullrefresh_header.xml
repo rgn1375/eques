@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/xlistview_header_content" android:layout_width="match_parent" android:layout_height="@dimen/pullrefresh_head_content_height" android:layout_marginTop="480.0dp">
+        <com.xm.ui.widget.icseelogoview.ICSeeLogoView android:id="@id/loading_icsee" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginTop="@dimen/half_of_normal_padding" android:layout_marginBottom="@dimen/half_of_normal_padding" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

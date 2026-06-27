@@ -1,0 +1,46 @@
+.class public final synthetic Lf6/f;
+.super Ljava/lang/Object;
+.source "R8$$SyntheticClass"
+
+# interfaces
+.implements Lr3/m0$a;
+
+
+# instance fields
+.field public final synthetic a:Lcom/eques/doorbell/ui/activity/devicemain/DevMainActivity;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/eques/doorbell/ui/activity/devicemain/DevMainActivity;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lf6/f;->a:Lcom/eques/doorbell/ui/activity/devicemain/DevMainActivity;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Z)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lf6/f;->a:Lcom/eques/doorbell/ui/activity/devicemain/DevMainActivity;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p1}, Lcom/eques/doorbell/ui/activity/devicemain/DevMainActivity;->F1(Lcom/eques/doorbell/ui/activity/devicemain/DevMainActivity;Z)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method

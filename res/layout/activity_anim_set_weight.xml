@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#f5f5f5" android:padding="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sp_13" android:textColor="#778ca2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_14" android:layout_marginTop="@dimen/dp_14" android:text="@string/anim_left" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/btn_style_white_gray_slide" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/rl_weight_2" android:layout_width="match_parent" android:layout_height="@dimen/dp_60" android:onClick="viewClick" android:paddingStart="@dimen/dp_14" android:paddingEnd="@dimen/dp_14">
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/eq100_weight_2" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/iv_arrow_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_alarm_checkbox_press" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_weight" android:layout_width="match_parent" android:layout_height="@dimen/dp_60" android:onClick="viewClick" android:paddingStart="@dimen/dp_14" android:paddingEnd="@dimen/dp_14">
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/eq100_weight_1" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/iv_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_alarm_checkbox_press" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rel_left_weight" android:background="@drawable/btn_style_white_gray_slide" android:layout_width="match_parent" android:layout_height="@dimen/dp_60" android:layout_marginTop="@dimen/dp_14" android:paddingStart="@dimen/dp_14" android:paddingEnd="@dimen/dp_14">
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/eq100_weight_3" android:layout_centerVertical="true" />
+        <EditText android:gravity="right|center" android:id="@id/et_weight" android:background="@color/transparent" android:layout_width="@dimen/dp_150" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:inputType="number" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/sp_13" android:textColor="@color/common_color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:text="@string/eq100_weight_3_hint" android:layout_marginStart="@dimen/dp_14" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_weight_2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp_13" android:textColor="#778ca2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_14" android:layout_marginTop="@dimen/dp_14" android:text="@string/anim_right" android:layout_marginStart="@dimen/dp_14" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/btn_style_white_gray_slide" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/rl_weight_right" android:layout_width="match_parent" android:layout_height="@dimen/dp_60" android:onClick="viewClick" android:paddingStart="@dimen/dp_14" android:paddingEnd="@dimen/dp_14">
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/eq100_weight_2" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/iv_arrow_right_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_alarm_checkbox_press" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rl_right_weight" android:layout_width="match_parent" android:layout_height="@dimen/dp_60" android:onClick="viewClick" android:paddingStart="@dimen/dp_14" android:paddingEnd="@dimen/dp_14">
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/eq100_weight_1" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/iv_right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_alarm_checkbox_press" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/rel_right_weight" android:background="@drawable/btn_style_white_gray_slide" android:layout_width="match_parent" android:layout_height="@dimen/dp_60" android:layout_marginTop="@dimen/dp_14" android:paddingStart="@dimen/dp_14" android:paddingEnd="@dimen/dp_14">
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/eq100_weight_3" android:layout_centerVertical="true" />
+            <EditText android:gravity="right|center" android:id="@id/et_right_weight" android:background="@color/transparent" android:layout_width="@dimen/dp_150" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:inputType="number" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/sp_13" android:textColor="@color/common_color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:text="@string/eq100_weight_3_hint" android:layout_marginStart="@dimen/dp_14" />
+    </LinearLayout>
+</LinearLayout>

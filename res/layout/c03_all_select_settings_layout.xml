@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/xm_F5F5F5" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_only_smart_home_interval_head_hint" android:text="@string/xm_dev_smart_home_interval_head_hint" style="@style/settings_head_hint_style" />
+    <ListView android:id="@id/lv_all_select" android:background="@drawable/child_menu_style_bg" android:visibility="visible" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_30" android:divider="@color/xm_E1E1E1" android:dividerHeight="@dimen/dp_0_1" android:layout_marginStart="@dimen/dp_15" android:layout_marginEnd="@dimen/dp_15" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_speaker_volume_parent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_48" android:layout_marginTop="@dimen/dp_20" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10" android:layout_marginStart="@dimen/dp_15" android:layout_marginEnd="@dimen/dp_15" style="@style/pir_page_layout_style">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/device_alarmsetting_volume" />
+        <SeekBar android:id="@id/sb_speaker_volume" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxHeight="@dimen/dp_6" android:max="100" android:progress="2" android:progressDrawable="@drawable/sb_style" android:minHeight="@dimen/dp_6" android:thumb="@drawable/thumb" android:layout_weight="1.0" android:paddingStart="@dimen/dp_8" android:paddingEnd="@dimen/dp_8" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/device_alarmsetting_volume_1" />
+    </LinearLayout>
+</LinearLayout>

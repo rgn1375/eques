@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sp_20" android:textColor="@color/Black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_60" android:text="@string/lock_add_user_u_type" />
+    <RelativeLayout android:id="@id/rel_add_user_level_one" android:background="@drawable/btn_style_white" android:layout_width="match_parent" android:layout_height="@dimen/dp_80" android:layout_margin="@dimen/dp_14">
+        <ImageView android:id="@id/img_addmin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_14" android:layout_marginRight="@dimen/dp_14" android:src="@mipmap/lock_manage_admin" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/Black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:text="@string/lock_manage_admin" android:layout_toRightOf="@id/img_addmin" />
+        <TextView android:textSize="@dimen/sp_13" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_40" android:text="@string/lock_manage_admin_hint" android:layout_toRightOf="@id/img_addmin" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rel_add_user_level_zero" android:background="@drawable/btn_style_white" android:layout_width="match_parent" android:layout_height="@dimen/dp_80" android:layout_margin="@dimen/dp_14">
+        <ImageView android:id="@id/img_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_14" android:layout_marginRight="@dimen/dp_14" android:src="@mipmap/lock_manage_normal_user" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/Black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:text="@string/lock_manage_user" android:layout_toRightOf="@id/img_user" />
+        <TextView android:textSize="@dimen/sp_13" android:textColor="@color/text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_40" android:text="@string/lock_manage_user_hint" android:layout_toRightOf="@id/img_user" />
+    </RelativeLayout>
+</LinearLayout>

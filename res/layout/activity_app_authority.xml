@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#f5f5f5" android:padding="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/lin_notify_authority" android:background="@drawable/btn_style_white" android:padding="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_80">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginEnd="@dimen/dp_10" android:layout_toStartOf="@id/tv_open_notify_state">
+                        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_authority_nofify" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/app_authority_nofify_hint" />
+                    </LinearLayout>
+                    <TextView android:gravity="center" android:id="@id/tv_open_notify_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/socket_switch_on" android:drawablePadding="@dimen/dp_5" android:layout_centerVertical="true" android:drawableEnd="@drawable/arrow_icon_press" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <View android:background="@color/line_color" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" />
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/login_1D66FF" android:id="@id/tv_pop_notify_op" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="@string/app_authority_how_to_do" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/lin_pop_page_authority" android:background="@drawable/btn_style_white" android:padding="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_80">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginEnd="@dimen/dp_10" android:layout_toStartOf="@id/tv_open_page_state">
+                        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_authority_pop_page" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/app_authority_pop_page_hint" />
+                    </LinearLayout>
+                    <TextView android:gravity="center" android:id="@id/tv_open_page_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/socket_switch_on" android:drawablePadding="@dimen/dp_5" android:layout_centerVertical="true" android:drawableEnd="@drawable/arrow_icon_press" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <View android:background="@color/line_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" />
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/login_1D66FF" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="@string/app_authority_how_to_do" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/rel_open_authority" android:background="@drawable/btn_style_white" android:padding="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginEnd="@dimen/dp_10" android:layout_toStartOf="@id/tv_open_authority_state">
+                    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_authority_device" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/app_authority_device_hint" />
+                </LinearLayout>
+                <TextView android:gravity="center" android:id="@id/tv_open_authority_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/socket_switch_on" android:drawableRight="@drawable/arrow_icon_press" android:drawablePadding="@dimen/dp_5" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rel_auto_start" android:background="@drawable/btn_style_white" android:padding="@dimen/dp_14" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginEnd="@dimen/dp_10" android:layout_toStartOf="@id/tv_auto_start_state">
+                    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_authority_auto_start" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/app_authority_voice_auto_start_hint" />
+                </LinearLayout>
+                <TextView android:gravity="center" android:id="@id/tv_auto_start_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/socket_switch_on" android:drawableRight="@drawable/arrow_icon_press" android:drawablePadding="@dimen/dp_5" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rel_location_authority" android:background="@drawable/btn_style_white" android:padding="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginEnd="@dimen/dp_10" android:layout_toStartOf="@id/tv_open_location_state">
+                    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_authority_location" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/app_authority_location_hint" />
+                </LinearLayout>
+                <TextView android:gravity="center" android:id="@id/tv_open_location_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/socket_switch_on" android:drawableRight="@drawable/arrow_icon_press" android:drawablePadding="@dimen/dp_5" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rel_storage_authority" android:background="@drawable/btn_style_white" android:padding="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginEnd="@dimen/dp_10" android:layout_toStartOf="@id/tv_open_storage_state">
+                    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_authority_storate" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/app_authority_storate_hint" />
+                </LinearLayout>
+                <TextView android:gravity="center" android:id="@id/tv_open_storage_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/socket_switch_on" android:drawableRight="@drawable/arrow_icon_press" android:drawablePadding="@dimen/dp_5" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rel_camera_authority" android:background="@drawable/btn_style_white" android:padding="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginEnd="@dimen/dp_10" android:layout_toStartOf="@id/tv_open_camera_state">
+                    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_authority_camera" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/app_authority_camera_hint" />
+                </LinearLayout>
+                <TextView android:gravity="center" android:id="@id/tv_open_camera_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/socket_switch_on" android:drawableRight="@drawable/arrow_icon_press" android:drawablePadding="@dimen/dp_5" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rel_voice_authority" android:background="@drawable/btn_style_white" android:padding="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginEnd="@dimen/dp_10" android:layout_toStartOf="@id/tv_open_voice_state">
+                    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_authority_voice" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/app_authority_voice_hint" />
+                </LinearLayout>
+                <TextView android:gravity="center" android:id="@id/tv_open_voice_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/socket_switch_on" android:drawableRight="@drawable/arrow_icon_press" android:drawablePadding="@dimen/dp_5" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

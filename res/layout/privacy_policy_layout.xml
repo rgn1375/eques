@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_privacy_policy_parent" android:background="@color/login_f5f5f5" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_settings_warranty_clause" android:background="@color/white" android:layout_marginTop="@dimen/dp_15" style="@style/menu_layout_style">
+        <TextView android:text="@string/warranty_clause" android:layout_marginStart="@dimen/dp_15" style="@style/menu_left_tv_style" />
+        <ImageView android:background="@drawable/arrow_icon_press" android:layout_marginEnd="@dimen/dp_14" style="@style/menu_right_arrows" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_server_agreement_menu" android:background="@color/white" android:layout_marginTop="@dimen/dp_15" style="@style/menu_layout_style">
+        <TextView android:text="@string/regis_protocol_title_one" android:layout_marginStart="@dimen/dp_14" style="@style/menu_left_tv_style" />
+        <ImageView android:background="@drawable/arrow_icon_press" android:layout_marginEnd="@dimen/dp_14" style="@style/menu_right_arrows" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_privacy_policy_menu" android:background="@color/white" android:layout_marginTop="@dimen/dp_15" style="@style/menu_layout_style">
+        <TextView android:text="@string/regis_protocol_title_two" android:layout_marginStart="@dimen/dp_14" style="@style/menu_left_tv_style" />
+        <ImageView android:background="@drawable/arrow_icon_press" android:layout_marginEnd="@dimen/dp_14" style="@style/menu_right_arrows" />
+    </RelativeLayout>
+</LinearLayout>

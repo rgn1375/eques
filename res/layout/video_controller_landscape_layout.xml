@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_controller_parent_landscape" android:background="@android:color/transparent" android:layout_width="@dimen/dp_55" android:layout_height="match_parent" android:weightSum="5.0" android:layout_alignParentEnd="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_mute_btn_landscape" android:layout_width="wrap_content" android:layout_height="@dimen/dp_0" android:layout_weight="1.0">
+        <ImageView android:id="@id/iv_mute_landscape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/xm_mute_close" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_snap_btn_landscape" android:layout_width="wrap_content" android:layout_height="@dimen/dp_0" android:layout_weight="1.0">
+        <ImageView android:id="@id/iv_snap_landscape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/xm_snap" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_voice_btn_landscape" android:layout_width="wrap_content" android:layout_height="@dimen/dp_0" android:layout_weight="1.0">
+        <ImageView android:id="@id/iv_voice_landscape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_voice_landscape_style" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_video_btn_landscape" android:layout_width="wrap_content" android:layout_height="@dimen/dp_0" android:layout_weight="1.0">
+        <ImageView android:id="@id/iv_video_landscape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/xm_video_close" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="@dimen/dp_0" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/xm_ffffff" android:gravity="center" android:id="@id/tv_video_resolution_btn_landscape" android:background="@drawable/resolution_sw_btn_style" android:paddingTop="@dimen/dp_3" android:paddingBottom="@dimen/dp_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xm_video_high" android:layout_centerVertical="true" android:paddingStart="@dimen/dp_12" android:paddingEnd="@dimen/dp_12" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

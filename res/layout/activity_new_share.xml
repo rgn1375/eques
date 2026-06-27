@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/lin_root" android:background="@color/login_f5f5f5" android:padding="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/lin_user_root" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@id/rel_user" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/sp_13" android:textColor="#778ca2" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_new_version_user" />
+            <TextView android:textSize="@dimen/sp_18" android:textColor="@color/common_color_666666" android:gravity="center" android:id="@id/tv_no_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_new_version_no_user" android:drawableTop="@mipmap/share_none" android:drawablePadding="@dimen/dp_5" android:layout_centerInParent="true" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rec_user_data" android:background="@drawable/btn_style_white_gray_slide" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:layout_marginBottom="@dimen/dp_100" android:layout_below="@id/tv_title" />
+            <Button android:textColor="@color/white" android:id="@id/btn_share" android:background="@drawable/btn_style_read_orange" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" android:layout_marginTop="@dimen/dp_30" android:layout_marginBottom="@dimen/dp_30" android:text="@string/xm_dev_share" android:layout_alignParentBottom="true" android:onClick="viewClick" android:layout_marginStart="@dimen/dp_30" android:layout_marginEnd="@dimen/dp_30" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/lin_share" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/btn_style_white" android:padding="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/img_scan" android:layout_width="@dimen/dp_200" android:layout_height="@dimen/dp_200" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="#3b86dd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_14" android:text="@string/sharecard_tv1" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/lin_save_photo" android:background="@drawable/btn_style_read_orange" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" android:layout_marginLeft="@dimen/dp_14" android:layout_marginRight="@dimen/dp_14" android:layout_marginBottom="@dimen/dp_14" android:onClick="viewClick">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/share_pic_download" />
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/save_file_album_hint" android:layout_marginStart="@dimen/dp_14" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_14">
+            <View android:background="@color/line_color" android:layout_width="@dimen/dp_90" android:layout_height="@dimen/dp_1" />
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_new_version_step_title" android:layout_marginStart="@dimen/dp_14" />
+            <View android:background="@color/line_color" android:layout_width="@dimen/dp_90" android:layout_height="@dimen/dp_1" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_50">
+            <LinearLayout android:gravity="center" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="2.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/share_download" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/share_arrow" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="2.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/share_follow" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/share_arrow" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="2.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/share_scan" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_50">
+            <LinearLayout android:gravity="center" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="3.0">
+                <TextView android:textSize="@dimen/sp_12" android:textColor="@color/login_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wx_save_pic_to_local" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="3.0">
+                <TextView android:textSize="@dimen/sp_12" android:textColor="@color/login_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_new_version_hint1" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="3.0">
+                <TextView android:textSize="@dimen/sp_12" android:textColor="@color/login_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_new_version_hint2" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rel_share_detail" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@id/rel_head" android:background="@drawable/btn_style_white_gray_slide" android:paddingLeft="@dimen/dp_14" android:paddingRight="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="@dimen/dp_60">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_new_version_head" android:layout_centerVertical="true" />
+            <com.makeramen.roundedimageview.RoundedImageView android:id="@id/round_head" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@drawable/btn_style_white_gray_slide" android:paddingLeft="@dimen/dp_14" android:paddingRight="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="@dimen/dp_60" android:layout_marginTop="@dimen/dp_14" android:layout_below="@id/rel_head">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/personal_data_nick" android:layout_centerVertical="true" />
+            <EditText android:gravity="right" android:id="@id/edt_input_nick" android:background="@color/transparent" android:layout_width="@dimen/dp_150" android:layout_height="wrap_content" android:hint="@string/temp_pwd_nick_input" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <Button android:textColor="@color/white" android:id="@id/btn_save" android:background="@drawable/btn_style_read_orange" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" android:layout_marginLeft="@dimen/dp_30" android:layout_marginBottom="@dimen/dp_14" android:text="@string/save_share_dev_nickname_bt" android:layout_above="@id/btn_share_delete" android:onClick="viewClick" android:layout_marginEnd="@dimen/dp_30" />
+        <Button android:textColor="@color/next_step_btn_bgcolor_pressed" android:id="@id/btn_share_delete" android:background="@drawable/btn_orange_slide_big_corner" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" android:layout_marginLeft="@dimen/dp_30" android:text="@string/share_new_version_delete_share" android:layout_alignParentBottom="true" android:onClick="viewClick" android:layout_marginEnd="@dimen/dp_30" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sp_10" android:textColor="@color/white" android:gravity="center_vertical" android:background="@color/black" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_30" android:text="@string/choose_city_hot" android:drawableLeft="@drawable/ic_hot" android:drawablePadding="5.0dp" />
+    <com.eques.doorbell.ui.view.ScrollWithGridView android:id="@id/recent_city_gv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="30.0dp" android:layout_marginBottom="10.0dp" android:listSelector="@android:color/transparent" android:horizontalSpacing="10.0dp" android:verticalSpacing="10.0dp" android:numColumns="3" />
+</LinearLayout>

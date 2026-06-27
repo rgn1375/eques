@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_settings_grandfather" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.eques.doorbell.ui.view.Navbar android:id="@id/c03_nav_bar" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" />
+    <ScrollView android:id="@id/sv_settings_father" android:background="@color/xm_F5F5F5" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/c03_nav_bar">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_settings" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/ll_dev_nick" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" android:layout_marginTop="@dimen/dp_15" style="@style/settings_menu_style">
+                <TextView android:text="@string/equipment_nickname_settings" style="@style/settings_tv_left_hint_style" />
+                <TextView android:id="@id/tv_dev_nick" style="@style/settings_right_status_value_style" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow_selector" android:layout_marginEnd="@dimen/dp_15" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_smart_home_settings" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" style="@style/settings_menu_style">
+                <TextView android:text="@string/xm_dev_smart_home_settings" style="@style/settings_tv_left_hint_style" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow_selector" android:layout_marginEnd="@dimen/dp_15" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_basic_setup" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" style="@style/settings_menu_style">
+                <TextView android:text="@string/xm_dev_basic_setup" style="@style/settings_tv_left_hint_style" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow_selector" android:layout_marginEnd="@dimen/dp_15" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_high_function" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" android:layout_marginTop="@dimen/dp_15" style="@style/settings_menu_style">
+                <TextView android:text="@string/xm_dev_high_function" style="@style/settings_tv_left_hint_style" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow_selector" android:layout_marginEnd="@dimen/dp_15" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_dev_linkage" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" style="@style/settings_menu_style">
+                <TextView android:text="@string/xm_dev_linkage" style="@style/settings_tv_left_hint_style" />
+                <CheckBox android:id="@id/cb_dev_linkage" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_15" style="@style/switch_style" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/xm_666666" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="@string/xm_dev_linkage_hint" android:layout_marginStart="@dimen/dp_15" />
+            <LinearLayout android:id="@id/ll_dev_share" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" android:layout_marginTop="@dimen/dp_10" style="@style/settings_menu_style">
+                <TextView android:text="@string/xm_dev_share" style="@style/settings_tv_left_hint_style" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow_selector" android:layout_marginEnd="@dimen/dp_15" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_sd_manager" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" style="@style/settings_menu_style">
+                <TextView android:text="@string/xm_dev_sd_manager" style="@style/settings_tv_left_hint_style" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow_selector" android:layout_marginEnd="@dimen/dp_15" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_dev_use_help" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" android:layout_marginTop="@dimen/dp_15" style="@style/settings_menu_style">
+                <TextView android:text="@string/xm_dev_use_help" style="@style/settings_tv_left_hint_style" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow_selector" android:layout_marginEnd="@dimen/dp_15" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_dev_about" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" android:layout_marginTop="@dimen/dp_15" style="@style/settings_menu_style">
+                <TextView android:text="@string/xm_dev_about" style="@style/settings_tv_left_hint_style" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow_selector" android:layout_marginEnd="@dimen/dp_15" />
+            </LinearLayout>
+            <Button android:id="@id/btn_dev_restart" android:layout_marginTop="@dimen/dp_15" android:text="@string/restart_btn" style="@style/btn_style_settings_restart" />
+            <Button android:id="@id/btn_delete_device" android:layout_marginTop="@dimen/dp_20" android:layout_marginBottom="@dimen/dp_20" style="@style/btn_style_setting_delete" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

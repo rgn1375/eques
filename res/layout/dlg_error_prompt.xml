@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@id/layoutRoot" android:background="#00ffffff" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/error_inside_ll" android:background="@drawable/bg_dialog_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp">
+        <TextView android:textSize="20.0sp" android:textColor="@color/dlg_color" android:gravity="center_horizontal" android:id="@id/error_title_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/Error_Prompt" />
+        <View android:background="#ccced4" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" />
+        <TextView android:textSize="16.0sp" android:textColor="#4c4c4c" android:gravity="center" android:id="@id/error_info_tv" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="13.0sp" android:textColor="#4c4c4c" android:layout_gravity="center_horizontal" android:id="@id/error_detail_info_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Detail_Info" android:drawableBottom="@drawable/pop_nor" />
+        <View android:id="@id/error_detail_top_line_v" android:background="#ccced4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="10.0dp" />
+        <TextView android:textSize="16.0sp" android:textColor="#4c4c4c" android:gravity="center_horizontal" android:id="@id/error_detail_info_text_tv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="@string/Detail_Info" />
+        <View android:background="#ccced4" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="5.0dp" android:layout_marginBottom="5.0dp" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/dlg_color" android:gravity="center" android:id="@id/ok_tv" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dp" android:text="@string/Sure" />
+    </LinearLayout>
+</LinearLayout>

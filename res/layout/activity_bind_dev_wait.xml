@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/dp_25" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/sp_18" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:layout_marginBottom="@dimen/dp_14" android:text="@string/bind_process_scan_hint6" />
+        <TextView android:textSize="@dimen/sp_18" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/r300_bind_hint" />
+        <RelativeLayout android:background="@drawable/shape_corner_gray_deep" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:layout_marginBottom="@dimen/dp_14">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_14" android:src="@mipmap/img1_network" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@drawable/shape_corner_gray_deep" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:layout_marginBottom="@dimen/dp_14">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_14" android:src="@mipmap/img2_network" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/sp_18" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_wifi_info_save" android:layout_marginLeft="@dimen/dp_25" android:layout_marginRight="@dimen/dp_25" android:layout_marginBottom="@dimen/dp_14" android:text="@string/next_step" android:layout_alignParentBottom="true" android:onClick="viewClick" style="@style/nextStep_btn_style" />
+</RelativeLayout>

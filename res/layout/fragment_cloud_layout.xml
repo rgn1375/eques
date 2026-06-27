@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/lin_paid_root" android:background="@drawable/btn_style_white_big_radius" android:padding="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rec_cloud_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:layout_marginStart="@dimen/dp_14" android:layout_marginEnd="@dimen/dp_14" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rec_cloud_data" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_14" android:layout_marginEnd="@dimen/dp_14" />
+    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/common_color_4d7cfe" android:id="@id/tv_auto_pay_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_14" android:layout_marginEnd="@dimen/dp_14" />
+    <LinearLayout android:orientation="vertical" android:id="@id/lin_paid_normal_cloud" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/include_paid_privilege" />
+        <Button android:textSize="@dimen/sp_16" android:textColor="@color/common_color_333333" android:id="@id/btn_paid_cloud" android:background="@drawable/btn_style_white_gray_slide_big_corner" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" android:layout_margin="@dimen/dp_10" android:text="@string/paid_cloud_compare" />
+        <include layout="@layout/include_paid_agree" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/lin_paid_unnormal_cloud" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/item_cloud_paid_animal_layout" />
+    </LinearLayout>
+</LinearLayout>

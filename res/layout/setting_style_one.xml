@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_item_parent" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/set_top_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_15" />
+    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/dp_50">
+        <LinearLayout android:gravity="right|center" android:id="@id/set_left_iv_parent" android:layout_width="@dimen/dp_30" android:layout_height="match_parent">
+            <ImageView android:id="@id/set_left_iv" android:src="@drawable/d1_edit_nick_set" style="@style/SetLeftIndicatorIcon" />
+        </LinearLayout>
+        <LinearLayout android:layout_toRightOf="@id/set_left_iv_parent" android:layout_marginStart="@dimen/dp_12" style="@style/DevSetLlParent">
+            <TextView android:id="@id/set_menu_nick_tv" android:text="@string/equipment_nickname_settings" style="@style/SetLeftTvStyle" />
+            <TextView android:id="@id/set_status_current_tv" style="@style/SetRightTvStyle" />
+            <ImageView android:id="@id/set_arrow_iv" style="@style/SetRightIndicatorIcon" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:layout_width="match_parent" android:layout_height="@dimen/dp_0_5" />
+</LinearLayout>

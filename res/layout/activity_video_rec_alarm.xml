@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/common_color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:text="@string/user_send_food_rec_time_hint" android:layout_marginStart="@dimen/dp_14" />
+    <LinearLayout android:orientation="vertical" android:id="@id/lin_video_time" android:background="@drawable/btn_style_white_gray_slide" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_14">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rec_video_time" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

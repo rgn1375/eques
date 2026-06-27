@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/loading_bg" android:layout_width="@dimen/dp_100" android:layout_height="@dimen/dp_100">
+        <ProgressBar android:layout_gravity="center_horizontal" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30" android:indeterminate="true" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/dialog_loading" android:indeterminateBehavior="repeat" />
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/white" android:id="@id/loading_tip_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:text="@string/loading" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/lin_cloud_entry" android:padding="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/btn_style_white" android:padding="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10">
+        <ImageView android:id="@id/img_lable1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/newui_cloud_icoud" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/sp_18" android:textColor="@color/Black" android:id="@id/tv_lable1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_14" android:layout_marginTop="@dimen/dp_14" android:text="@string/new_ui_cloud_storage" android:layout_toRightOf="@id/img_lable1" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/icloud_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_14" android:layout_marginTop="@dimen/dp_10" android:text="@string/new_ui_cloud_storage_hint" android:layout_toRightOf="@id/img_lable1" android:layout_below="@id/tv_lable1" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rel_face" android:background="@drawable/btn_style_white" android:padding="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10">
+        <ImageView android:id="@id/img_lable2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/safe" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/sp_18" android:textColor="@color/Black" android:id="@id/tv_lable2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_14" android:layout_marginTop="@dimen/dp_14" android:text="@string/safe_cloud" android:layout_toRightOf="@id/img_lable2" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/icloud_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_14" android:layout_marginTop="@dimen/dp_10" android:text="@string/safe_cloud_hint" android:layout_toRightOf="@id/img_lable2" android:layout_below="@id/tv_lable2" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/btn_style_white" android:padding="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10">
+        <ImageView android:id="@id/img_lable3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/newui_cloud_collect" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/sp_18" android:textColor="@color/Black" android:id="@id/tv_lable3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_14" android:layout_marginTop="@dimen/dp_14" android:text="@string/new_ui_cloud_collect" android:layout_toRightOf="@id/img_lable3" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/icloud_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_14" android:layout_marginTop="@dimen/dp_10" android:text="@string/new_ui_cloud_collect_hint" android:layout_toRightOf="@id/img_lable3" android:layout_below="@id/tv_lable3" />
+    </RelativeLayout>
+</LinearLayout>

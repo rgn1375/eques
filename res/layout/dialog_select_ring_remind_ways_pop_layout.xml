@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/btn_style_cuswall_pop_bg" android:paddingTop="@dimen/dp_5" android:paddingBottom="@dimen/dp_5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@id/btn_cancel">
+        <TextView android:textSize="@dimen/sp_13" android:textColor="@color/group_push_hint_color" android:gravity="center" android:layout_width="match_parent" android:layout_height="@dimen/dp_40" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10" android:text="@string/voice_tel_ring_alarm_select_remind_ways" />
+        <View android:background="@color/gray_line" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_1" />
+        <TextView android:textSize="@dimen/sp_20" android:textColor="@color/newmsg_prompt_bgcolor" android:gravity="center" android:id="@id/tv_app_remind" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10" android:text="@string/voice_tel_ring_alarm_app_response" />
+        <View android:background="@color/gray_line" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_1" />
+        <TextView android:textSize="@dimen/sp_20" android:textColor="@color/newmsg_prompt_bgcolor" android:gravity="center" android:id="@id/tv_voice_tel_remind" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10" android:text="@string/voice_tel_ring_alarm_self_response" />
+    </LinearLayout>
+    <Button android:textSize="@dimen/sp_20" android:textColor="@color/group_push_cancel_hint_color" android:id="@id/btn_cancel" android:background="@drawable/btn_style_cuswall_pop_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" android:layout_marginTop="@dimen/dp_15" android:text="@string/cancel" android:layout_alignParentBottom="true" />
+</RelativeLayout>

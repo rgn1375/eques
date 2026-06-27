@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/ysf_black_333333" android:id="@id/ysf_tv_work_sheet_annex_label_other" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dp" android:layout_marginTop="10.0dp" />
+    <com.qiyukf.unicorn.widget.ScrollGridView android:gravity="center" android:id="@id/ysf_gv_work_sheet_annex_list_other" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:listSelector="@android:color/transparent" android:verticalSpacing="10.0dp" android:numColumns="3" />
+</LinearLayout>

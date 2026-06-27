@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/robot_round_corner_white_border" android:paddingTop="@dimen/dp_15" android:paddingBottom="@dimen/dp_15" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/robot_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/robot_data_report" android:drawablePadding="@dimen/dp_8" android:drawableStart="@drawable/robot_data" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_15">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3.0">
+            <RelativeLayout android:id="@id/rl_blood_pressure_parent" android:background="@drawable/robot_blood_pressure" android:padding="@dimen/dp_5" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/sp_15" android:textColor="@color/robot_ffffff" android:id="@id/tv_blood_pressure" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/robot_blood_pressure" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/sp_13" android:textColor="@color/robot_ffffff" android:id="@id/tv_blood_pressure_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2" android:text="@string/robot_no_data" android:layout_below="@id/tv_blood_pressure" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rl_ecg_parent" android:background="@drawable/robot_ecg" android:padding="@dimen/dp_5" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_8">
+                <TextView android:textSize="@dimen/sp_15" android:textColor="@color/robot_ffffff" android:id="@id/tv_ecg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/robot_ecg" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/sp_13" android:textColor="@color/robot_ffffff" android:id="@id/tv_ecg_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2" android:text="@string/robot_no_data" android:layout_below="@id/tv_ecg" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rl_blood_sugar_parent" android:background="@drawable/robot_blood_glucose" android:padding="@dimen/dp_5" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/sp_15" android:textColor="@color/robot_ffffff" android:id="@id/tv_blood_sugar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/robot_blood_sugar" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/sp_13" android:textColor="@color/robot_ffffff" android:id="@id/tv_blood_sugar_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2" android:text="@string/robot_no_data" android:layout_below="@id/tv_blood_sugar" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:weightSum="3.0">
+            <RelativeLayout android:id="@id/rl_uric_acid_parent" android:background="@drawable/robot_uric_acid" android:padding="@dimen/dp_5" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/sp_15" android:textColor="@color/robot_ffffff" android:id="@id/tv_uric_acid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/robot_uric_acid" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/sp_13" android:textColor="@color/robot_ffffff" android:id="@id/tv_uric_acid_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2" android:text="@string/robot_no_data" android:layout_below="@id/tv_uric_acid" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rl_cholesterol_parent" android:background="@drawable/robot_cholestenone" android:padding="@dimen/dp_5" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_8">
+                <TextView android:textSize="@dimen/sp_15" android:textColor="@color/robot_ffffff" android:id="@id/tv_cholesterol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/robot_cholesterol" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/sp_13" android:textColor="@color/robot_ffffff" android:id="@id/tv_cholesterol_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2" android:text="@string/robot_no_data" android:layout_below="@id/tv_cholesterol" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rl_temperature_parent" android:background="@drawable/robot_temperature" android:padding="@dimen/dp_5" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/sp_15" android:textColor="@color/robot_ffffff" android:id="@id/tv_temperature" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/robot_temperature" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/sp_13" android:textColor="@color/robot_ffffff" android:id="@id/tv_temperature_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2" android:text="@string/robot_no_data" android:layout_below="@id/tv_temperature" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:weightSum="3.0">
+            <RelativeLayout android:id="@id/rl_blood_oxygen_parent" android:background="@drawable/robot_blood_oxygen" android:padding="@dimen/dp_5" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/sp_15" android:textColor="@color/robot_ffffff" android:id="@id/tv_blood_oxygen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/robot_blood_oxygen" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/sp_13" android:textColor="@color/robot_ffffff" android:id="@id/tv_blood_oxygen_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2" android:text="@string/robot_no_data" android:layout_below="@id/tv_blood_oxygen" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rl_inbody_parent" android:background="@drawable/robot_body_fat" android:padding="@dimen/dp_5" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_8">
+                <TextView android:textSize="@dimen/sp_15" android:textColor="@color/robot_ffffff" android:id="@id/tv_inbody" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/robot_inbody" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/sp_13" android:textColor="@color/robot_ffffff" android:id="@id/tv_inbody_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2" android:text="@string/robot_no_data" android:layout_below="@id/tv_inbody" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rl_whr_parent" android:background="@drawable/robot_whr" android:padding="@dimen/dp_5" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/sp_15" android:textColor="@color/robot_ffffff" android:id="@id/tv_whr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/robot_whr" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/sp_13" android:textColor="@color/robot_ffffff" android:id="@id/tv_whr_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2" android:text="@string/robot_no_data" android:layout_below="@id/tv_whr" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="@string/bind_process_scan_hint6" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="@string/bind_process_scan_hint1" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="@string/bind_process_scan_hint2" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/lin_show_qr_scan" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:background="@drawable/shape_corner_gray_deep" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_26" android:src="@mipmap/img_qr" />
+                        <TextView android:textSize="@dimen/sp_18" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_8" android:text="@string/bind_process_scan_hint3" android:drawableRight="@mipmap/next_three" android:drawablePadding="@dimen/dp_8" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/lin_show_str" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14">
+                    <RelativeLayout android:background="@drawable/shape_corner_gray_deep" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_26" android:src="@mipmap/img_word" />
+                        <TextView android:textSize="@dimen/sp_18" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_8" android:text="@string/bind_process_scan_hint4" android:drawableRight="@mipmap/next_three" android:drawablePadding="@dimen/dp_8" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/lin_none_str" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14">
+                    <RelativeLayout android:background="@drawable/shape_corner_gray_deep" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_26" android:src="@mipmap/img_none" />
+                        <TextView android:textSize="@dimen/sp_18" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_8" android:text="@string/bind_process_scan_hint5" android:drawableRight="@mipmap/next_three" android:drawablePadding="@dimen/dp_8" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

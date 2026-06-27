@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/rim" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="15.0sp" android:textColor="#ffffff" android:id="@id/tv_hint_result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" android:text="@string/scan_text" android:layout_above="@id/scan_area" android:layout_centerHorizontal="true" android:textAllCaps="false" />
+        <ImageView android:id="@id/scan_area" android:background="@drawable/cloors" android:layout_width="240.0dp" android:layout_height="240.0dp" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_Flash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="165.0dp" android:src="@drawable/flash_selected_selector" custom:layout_constraintBottom_toBottomOf="parent" custom:layout_constraintLeft_toLeftOf="parent" custom:layout_constraintRight_toRightOf="parent" custom:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_select_path_parent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_40" custom:layout_constraintBottom_toBottomOf="parent" custom:layout_constraintLeft_toLeftOf="parent" custom:layout_constraintRight_toRightOf="parent" custom:layout_constraintTop_toBottomOf="@id/iv_Flash">
+        <TextView android:ellipsize="end" android:gravity="center" android:id="@id/tv_album" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_20" android:text="@string/album_qrcode_text" android:singleLine="true" style="@style/tv_style_alalbum_qrcode" />
+        <TextView android:ellipsize="end" android:gravity="center" android:id="@id/tv_invitationCode" android:layout_height="wrap_content" android:text="@string/invitationCode_text" android:singleLine="true" style="@style/tv_style_alalbum_qrcode" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/white" android:id="@id/tv_search_m1" android:background="@drawable/tv_style_search_m1" android:paddingLeft="@dimen/dp_20" android:paddingTop="@dimen/dp_6" android:paddingRight="@dimen/dp_20" android:paddingBottom="@dimen/dp_6" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_m1_band_search_hint" android:drawablePadding="@dimen/dp_5" android:drawableEnd="@drawable/search_m1_right_arrow" custom:layout_constraintBottom_toBottomOf="parent" custom:layout_constraintLeft_toLeftOf="parent" custom:layout_constraintRight_toRightOf="parent" custom:layout_constraintTop_toBottomOf="@id/iv_Flash" />
+    <include layout="@layout/navbar_view" />
+</androidx.constraintlayout.widget.ConstraintLayout>

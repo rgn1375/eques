@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/lin_paid_root" android:background="@drawable/btn_style_white_big_radius" android:padding="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rec_voice_data" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" />
+    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/login_666666" android:id="@id/tv_auto_pay_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_14" android:layout_marginEnd="@dimen/dp_14" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp_18" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_14" android:text="@string/paid_voice_title" />
+        <RelativeLayout android:id="@id/rel_play_voice" android:background="@mipmap/bg_video_voicecall" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_14">
+            <TextView android:textSize="@dimen/sp_18" android:textColor="#8b4afc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paid_voice_video_hint" android:layout_centerVertical="true" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/xm_dev_play" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <include layout="@layout/include_voice_layout" />
+    <include layout="@layout/voice_compare_phone_layout" />
+    <include layout="@layout/include_paid_agree" />
+</LinearLayout>

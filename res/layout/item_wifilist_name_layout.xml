@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:padding="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_wifi_rssi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_10" android:src="@drawable/wifi_full_d" />
+    <TextView android:textSize="@dimen/sp_16" android:textColor="#333333" android:id="@id/tv_wifi_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_10" />
+    <ImageView android:id="@id/img_recommend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/recommend" />
+</LinearLayout>

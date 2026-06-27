@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/include" layout="@layout/main_head_title_bar_v3_layout" />
+    <RelativeLayout android:id="@id/relativeLayout" android:background="@mipmap/bg_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/include">
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_11" android:text="@string/temp_pwd" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/sp_30" android:textColor="@color/white" android:id="@id/tv_temp_details_pwd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_50" android:layout_centerHorizontal="true" android:letterSpacing="0.2" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayout2" android:padding="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/include">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_50">
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/temp_pwd_detail_nick" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/sp_16" android:textColor="#808080" android:id="@id/tv_temp_detail_nick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/line_color" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" />
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_50">
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/temp_pwd_detail_times" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/sp_16" android:textColor="#808080" android:id="@id/tv_temp_detail_user_times" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/line_color" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" />
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_50">
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/temp_pwd_detail_available_date" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/sp_16" android:textColor="#808080" android:id="@id/tv_temp_detail_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/line_color" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" />
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_50">
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/temp_pwd_detail_available_time" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/sp_16" android:textColor="#808080" android:id="@id/tv_temp_detail_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/line_color" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" />
+        <RelativeLayout android:id="@id/rel_temp_detail_week" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_50">
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/temp_pwd_detail_available_time" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/sp_16" android:textColor="#808080" android:id="@id/tv_temp_detail_week" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:id="@id/v_line_bottom" android:background="@color/line_color" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" />
+    </LinearLayout>
+    <Button android:textColor="@color/orange" android:id="@id/btn_delete_temp_pwd" android:background="@drawable/btn_orange_slide" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_43" android:layout_marginRight="@dimen/dp_43" android:text="@string/notify_delete" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/linearLayout2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

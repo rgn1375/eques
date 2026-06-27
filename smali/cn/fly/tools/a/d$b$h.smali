@@ -1,0 +1,71 @@
+.class public Lcn/fly/tools/a/d$b$h;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcn/fly/tools/a/d$b;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "h"
+.end annotation
+
+
+# static fields
+.field private static a:I
+
+.field private static b:I
+
+
+# instance fields
+.field private c:I
+
+.field private d:I
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method static synthetic a()I
+    .locals 1
+
+    .line 1
+    sget v0, Lcn/fly/tools/a/d$b$h;->a:I
+
+    return v0
+.end method
+
+.method static synthetic a(Lcn/fly/tools/a/d$b$h;)I
+    .locals 0
+
+    .line 2
+    iget p0, p0, Lcn/fly/tools/a/d$b$h;->c:I
+
+    return p0
+.end method
+
+.method static synthetic b()I
+    .locals 1
+
+    .line 1
+    sget v0, Lcn/fly/tools/a/d$b$h;->b:I
+
+    return v0
+.end method
+
+.method static synthetic b(Lcn/fly/tools/a/d$b$h;)I
+    .locals 0
+
+    .line 2
+    iget p0, p0, Lcn/fly/tools/a/d$b$h;->d:I
+
+    return p0
+.end method

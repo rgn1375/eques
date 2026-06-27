@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.4" />
+    <include layout="@layout/dialog_no_body_layout" />
+    <include layout="@layout/dialog_change_open_lock_nick_layout" />
+    <include layout="@layout/dialog_tem_pwd_create_success_layout" />
+    <include layout="@layout/dialog_not_close_layout" />
+    <include layout="@layout/dialog_main_spring_bolt_lock_gif_layout" />
+    <include layout="@layout/dialog_indoor_dev_bind_prompt_layout" />
+    <include layout="@layout/dialog_usage_scene_mp4_layout" />
+    <include layout="@layout/community_more_bottom_pop_layout" />
+    <include layout="@layout/comment_del_pop_layout" />
+</RelativeLayout>

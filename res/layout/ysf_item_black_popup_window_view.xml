@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="center_horizontal" android:id="@id/ysf_popup_item_arrow_top" android:background="@drawable/ysf_item_black_popup_window_arrow_up" android:visibility="gone" android:layout_width="18.0dp" android:layout_height="18.0dp" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/ysf_popup_item_container" android:background="@drawable/ysf_item_black_popup_window_bg" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:layout_width="wrap_content" android:layout_height="45.0dp" android:minWidth="76.0dp" />
+    <View android:layout_gravity="right" android:id="@id/ysf_popup_item_arrow_bottom_right" android:background="@drawable/ysf_item_black_popup_window_arrow_down" android:visibility="gone" android:layout_width="18.0dp" android:layout_height="18.0dp" />
+    <View android:layout_gravity="left" android:id="@id/ysf_popup_item_arrow_bottom_left" android:background="@drawable/ysf_item_black_popup_window_arrow_down" android:visibility="gone" android:layout_width="18.0dp" android:layout_height="18.0dp" />
+</LinearLayout>

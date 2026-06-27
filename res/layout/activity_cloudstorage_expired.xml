@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/rl_news_expired_none_parent" android:background="@color/settings_view_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.eques.doorbell.ui.view.Navbar android:id="@id/info_details_nav_bar" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:layout_below="@id/info_details_nav_bar">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_cloudstorage_expired" android:contentDescription="@null" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/cloudstorage_serviceplan_two" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_15" android:text="@string/cloud_storage_expired_info_del" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_open_cloud_storage_bg" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/white" android:id="@id/tv_text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:text="@string/open_service_prompt_title" android:layout_centerHorizontal="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/linear_temp1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_40" android:layout_below="@id/tv_text1" android:layout_centerHorizontal="true">
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/cloudstorage_serviceplan_one" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/open_service_prompt_describe" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/cloudstorage_serviceplan_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="@string/open_service_prompt_one" android:drawableLeft="@drawable/icon_open_cloud_storage_oval" android:drawablePadding="@dimen/dp_3" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/cloudstorage_serviceplan_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="@string/open_service_prompt_two" android:drawableLeft="@drawable/icon_open_cloud_storage_oval" android:drawablePadding="@dimen/dp_3" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/cloudstorage_serviceplan_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="@string/open_service_prompt_three" android:drawableLeft="@drawable/icon_open_cloud_storage_oval" android:drawablePadding="@dimen/dp_3" />
+        </LinearLayout>
+        <Button android:textSize="@dimen/sp_18" android:id="@id/btn_openCloudStorage" android:layout_width="@dimen/dp_200" android:layout_height="@dimen/dp_40" android:layout_marginTop="@dimen/dp_25" android:text="@string/open_service_prompt_skip" android:layout_below="@id/linear_temp1" android:layout_centerHorizontal="true" style="@style/btn_style_login2" />
+    </RelativeLayout>
+</RelativeLayout>

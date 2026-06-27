@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/text_color" android:id="@id/tv_lock_reason" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lock_manage_hint1" android:layout_centerInParent="true" />
+    <TextView android:textSize="@dimen/sp_20" android:textColor="@color/Black" android:gravity="center" android:id="@id/tv_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_30" android:layout_marginBottom="@dimen/dp_30" android:text="@string/lock_manage_add_success" android:drawableTop="@mipmap/lock_manage_add_done" android:drawablePadding="@dimen/dp_10" android:layout_above="@id/tv_lock_reason" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/dp_30" android:layout_marginEnd="@dimen/dp_30" />
+    <Button android:textSize="@dimen/sp_18" android:textColor="@color/white" android:id="@id/btn_finish" android:background="@drawable/btn_style_orange_big_corner" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" android:layout_marginTop="@dimen/dp_30" android:layout_marginBottom="@dimen/dp_30" android:text="@string/complete" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/dp_30" android:layout_marginEnd="@dimen/dp_30" />
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/linear_parent" android:layout_width="match_parent" android:layout_height="match_parent" xrefreshview:autoRefresh="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xrefreshview="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@id/realy_parent_h" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.eques.doorbell.ui.view.SingleLayoutListView android:id="@id/single_layout_listview" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:divider="@android:color/transparent" />
+            <include android:id="@id/empty_view" layout="@layout/message_msglist_empty_view" />
+            <RelativeLayout android:id="@id/linear_edit_mode" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_alignParentBottom="true">
+                <View android:background="@color/gray_line" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="2.0">
+                    <RelativeLayout android:id="@id/realy_alarm_info_read" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/settings_left_tv_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notify_read" android:drawableLeft="@drawable/icon_alarm_read_press" android:drawablePadding="@dimen/dp_5" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                    <View android:background="@color/gray_line" android:layout_width="1.0px" android:layout_height="match_parent" />
+                    <RelativeLayout android:id="@id/realy_alarm_info_delete" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/settings_left_tv_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notify_delete" android:drawableLeft="@drawable/group_del_bottom" android:drawablePadding="@dimen/dp_5" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <include layout="@layout/icloud_alarm_enter_layout" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

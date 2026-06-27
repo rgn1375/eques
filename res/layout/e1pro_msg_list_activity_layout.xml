@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_e1pro_msg_list_parent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/realy_alarm_info_delete">
+            <LinearLayout android:orientation="horizontal" android:id="@id/lienar_popwindown" android:background="@color/alarm_manager_tabitem_color_press" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" android:layout_weight="0.0">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linear_messageMenuPopWindown" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="vertical" android:padding="@dimen/dp_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_2">
+                        <TextView android:textSize="@dimen/fontsize_twelve" android:textColor="@color/message_edit_font_color" android:gravity="center" android:id="@id/tv_messageMenu_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smart_lock_main_lock_msg" />
+                        <TextView android:textSize="@dimen/fontsize_twelve" android:textColor="@color/message_edit_font_color" android:gravity="center" android:id="@id/tv_messageMenu_childText" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pir_alarm" />
+                    </LinearLayout>
+                    <ImageView android:id="@id/iv_news_type_pop_flag" android:background="@drawable/drop_down_btn_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_3" android:contentDescription="@null" />
+                </LinearLayout>
+                <View android:background="@color/interval_bg" android:layout_width="@dimen/dp_1" android:layout_height="match_parent" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linear_messageDatePopWindown" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/fontsize_twelve" android:textColor="@color/message_edit_font_color" android:gravity="center" android:id="@id/tv_messageDatePopWindown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="02-15" />
+                    <ImageView android:background="@drawable/drop_down_btn_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:contentDescription="@null" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/interval_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" />
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_lock_msg_alarm_parent" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linear_e1pro_none_alarm_msg_show" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/e1pro_alarm_msg_empty" />
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/settings_right_hint_tv_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="@string/e1pro_none_alarm_msg_hint" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/realy_alarm_info_delete" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/settings_left_tv_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notify_delete" android:drawableLeft="@drawable/group_del_bottom" android:drawablePadding="@dimen/dp_5" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <include layout="@layout/icloud_alarm_enter_layout" />
+        <RelativeLayout android:id="@id/rel_alarm_hint" android:background="@drawable/img_alarm_back" android:paddingLeft="@dimen/dp_5" android:paddingRight="@dimen/dp_5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/dp_50" android:layout_marginLeft="@dimen/dp_80" android:layout_marginTop="@dimen/dp_50">
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_10" android:text="@string/click_see_alarm" android:layout_alignParentBottom="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

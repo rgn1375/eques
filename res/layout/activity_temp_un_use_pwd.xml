@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/include" layout="@layout/main_head_title_bar_v3_layout" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_lock_msg_alarm_parent" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/include" />
+    <TextView android:textSize="@dimen/sp_18" android:textColor="@color/text_color" android:id="@id/tv_temp_pwd_no" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/temp_pwd_out_of_date_list" android:drawableTop="@mipmap/img_codenone" android:drawablePadding="@dimen/dp_10" android:layout_centerInParent="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/include" />
+</androidx.constraintlayout.widget.ConstraintLayout>

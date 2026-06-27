@@ -1,0 +1,540 @@
+.class public Lcn/jpush/android/webview/bridge/HostJsScope;
+.super Ljava/lang/Object;
+
+
+# static fields
+.field private static a:Lcn/jpush/android/webview/bridge/d;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static click(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    sget-object p0, Lcn/jpush/android/webview/bridge/HostJsScope;->a:Lcn/jpush/android/webview/bridge/d;
+
+    .line 2
+    .line 3
+    if-nez p0, :cond_0
+
+    .line 4
+    .line 5
+    return-void
+
+    .line 6
+    :cond_0
+    invoke-virtual {p0, p1, p2, p3}, Lcn/jpush/android/webview/bridge/d;->click(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method public static close(Landroid/webkit/WebView;)V
+    .locals 0
+
+    .line 1
+    sget-object p0, Lcn/jpush/android/webview/bridge/HostJsScope;->a:Lcn/jpush/android/webview/bridge/d;
+
+    .line 2
+    .line 3
+    if-nez p0, :cond_0
+
+    .line 4
+    .line 5
+    return-void
+
+    .line 6
+    :cond_0
+    invoke-virtual {p0}, Lcn/jpush/android/webview/bridge/d;->close()V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method public static createShortcut(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    sget-object p0, Lcn/jpush/android/webview/bridge/HostJsScope;->a:Lcn/jpush/android/webview/bridge/d;
+
+    .line 2
+    .line 3
+    if-nez p0, :cond_0
+
+    .line 4
+    .line 5
+    return-void
+
+    .line 6
+    :cond_0
+    invoke-virtual {p0, p1, p2, p3}, Lcn/jpush/android/webview/bridge/d;->createShortcut(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method public static download(Landroid/webkit/WebView;Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    sget-object p0, Lcn/jpush/android/webview/bridge/HostJsScope;->a:Lcn/jpush/android/webview/bridge/d;
+
+    if-nez p0, :cond_0
+
+    return-void
+
+    :cond_0
+    invoke-virtual {p0, p1}, Lcn/jpush/android/webview/bridge/d;->download(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public static download(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
+    .line 2
+    sget-object p0, Lcn/jpush/android/webview/bridge/HostJsScope;->a:Lcn/jpush/android/webview/bridge/d;
+
+    if-nez p0, :cond_0
+
+    return-void
+
+    :cond_0
+    invoke-virtual {p0, p1, p2}, Lcn/jpush/android/webview/bridge/d;->download(Ljava/lang/String;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public static download(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
+    .line 3
+    sget-object p0, Lcn/jpush/android/webview/bridge/HostJsScope;->a:Lcn/jpush/android/webview/bridge/d;
+
+    if-nez p0, :cond_0
+
+    return-void
+
+    :cond_0
+    invoke-virtual {p0, p1, p2, p3}, Lcn/jpush/android/webview/bridge/d;->download(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public static executeMsgMessage(Landroid/webkit/WebView;Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    sget-object p0, Lcn/jpush/android/webview/bridge/HostJsScope;->a:Lcn/jpush/android/webview/bridge/d;
+
+    .line 2
+    .line 3
+    if-nez p0, :cond_0
+
+    .line 4
+    .line 5
+    return-void
+
+    .line 6
+    :cond_0
+    invoke-virtual {p0, p1}, Lcn/jpush/android/webview/bridge/d;->executeMsgMessage(Ljava/lang/String;)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method public static getDevInfo(Landroid/webkit/WebView;)Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    sget-object p0, Lcn/jpush/android/webview/bridge/HostJsScope;->a:Lcn/jpush/android/webview/bridge/d;
+
+    .line 2
+    .line 3
+    if-eqz p0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-virtual {p0}, Lcn/jpush/android/webview/bridge/d;->getDevInfo()Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p0
+
+    .line 9
+    return-object p0
+
+    .line 10
+    :cond_0
+    const-string p0, ""
+
+    .line 11
+    .line 12
+    return-object p0
+.end method
+
+.method public static getNotificationInfo(Landroid/webkit/WebView;)Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    sget-object p0, Lcn/jpush/android/webview/bridge/HostJsScope;->a:Lcn/jpush/android/webview/bridge/d;
+
+    .line 2
+    .line 3
+    if-eqz p0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-virtual {p0}, Lcn/jpush/android/webview/bridge/d;->getNotificationInfo()Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p0
+
+    .line 9
+    return-object p0
+
+    .line 10
+    :cond_0
+    const-string p0, ""
+
+    .line 11
+    .line 12
+    return-object p0
+.end method
+
+.method public static getTplData(Landroid/webkit/WebView;)Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    sget-object p0, Lcn/jpush/android/webview/bridge/HostJsScope;->a:Lcn/jpush/android/webview/bridge/d;
+
+    .line 2
+    .line 3
+    if-eqz p0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-virtual {p0}, Lcn/jpush/android/webview/bridge/d;->getTplData()Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p0
+
+    .line 9
+    return-object p0
+
+    .line 10
+    :cond_0
+    const-string p0, ""
+
+    .line 11
+    .line 12
+    return-object p0
+.end method
+
+.method public static getTplExtraData(Landroid/webkit/WebView;)Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    sget-object p0, Lcn/jpush/android/webview/bridge/HostJsScope;->a:Lcn/jpush/android/webview/bridge/d;
+
+    .line 2
+    .line 3
+    if-eqz p0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-virtual {p0}, Lcn/jpush/android/webview/bridge/d;->getTplExtraData()Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p0
+
+    .line 9
+    return-object p0
+
+    .line 10
+    :cond_0
+    const-string p0, ""
+
+    .line 11
+    .line 12
+    return-object p0
+.end method
+
+.method public static inAppClick(Landroid/webkit/WebView;Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    sget-object p0, Lcn/jpush/android/webview/bridge/HostJsScope;->a:Lcn/jpush/android/webview/bridge/d;
+
+    .line 2
+    .line 3
+    if-eqz p0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-virtual {p0, p1}, Lcn/jpush/android/webview/bridge/d;->inAppClick(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    :cond_0
+    return-void
+.end method
+
+.method public static onLoadCallback(Landroid/webkit/WebView;Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    sget-object p0, Lcn/jpush/android/webview/bridge/HostJsScope;->a:Lcn/jpush/android/webview/bridge/d;
+
+    .line 2
+    .line 3
+    if-eqz p0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-virtual {p0, p1}, Lcn/jpush/android/webview/bridge/d;->onLoadCallback(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    :cond_0
+    return-void
+.end method
+
+.method public static reportData(Landroid/webkit/WebView;Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    sget-object p0, Lcn/jpush/android/webview/bridge/HostJsScope;->a:Lcn/jpush/android/webview/bridge/d;
+
+    .line 2
+    .line 3
+    if-eqz p0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-virtual {p0, p1}, Lcn/jpush/android/webview/bridge/d;->reportData(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    :cond_0
+    return-void
+.end method
+
+.method public static setWebViewHelper(Lcn/jpush/android/webview/bridge/d;)V
+    .locals 0
+
+    .line 1
+    if-nez p0, :cond_0
+
+    .line 2
+    .line 3
+    return-void
+
+    .line 4
+    :cond_0
+    sput-object p0, Lcn/jpush/android/webview/bridge/HostJsScope;->a:Lcn/jpush/android/webview/bridge/d;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public static showTitleBar(Landroid/webkit/WebView;)V
+    .locals 0
+
+    .line 1
+    sget-object p0, Lcn/jpush/android/webview/bridge/HostJsScope;->a:Lcn/jpush/android/webview/bridge/d;
+
+    .line 2
+    .line 3
+    if-eqz p0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-virtual {p0}, Lcn/jpush/android/webview/bridge/d;->showTitleBar()V
+
+    .line 6
+    .line 7
+    .line 8
+    :cond_0
+    return-void
+.end method
+
+.method public static showToast(Landroid/webkit/WebView;Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    sget-object p0, Lcn/jpush/android/webview/bridge/HostJsScope;->a:Lcn/jpush/android/webview/bridge/d;
+
+    .line 2
+    .line 3
+    if-nez p0, :cond_0
+
+    .line 4
+    .line 5
+    return-void
+
+    .line 6
+    :cond_0
+    invoke-virtual {p0, p1}, Lcn/jpush/android/webview/bridge/d;->showToast(Ljava/lang/String;)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method public static startActivityByIntent(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    sget-object p0, Lcn/jpush/android/webview/bridge/HostJsScope;->a:Lcn/jpush/android/webview/bridge/d;
+
+    .line 2
+    .line 3
+    if-nez p0, :cond_0
+
+    .line 4
+    .line 5
+    return-void
+
+    .line 6
+    :cond_0
+    invoke-virtual {p0, p1, p2}, Lcn/jpush/android/webview/bridge/d;->startActivityByIntent(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method public static startActivityByName(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    sget-object p0, Lcn/jpush/android/webview/bridge/HostJsScope;->a:Lcn/jpush/android/webview/bridge/d;
+
+    .line 2
+    .line 3
+    if-nez p0, :cond_0
+
+    .line 4
+    .line 5
+    return-void
+
+    .line 6
+    :cond_0
+    invoke-virtual {p0, p1, p2}, Lcn/jpush/android/webview/bridge/d;->startActivityByName(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method public static startActivityByNameWithSystemAlert(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1, p2}, Lcn/jpush/android/api/SystemAlertHelper;->startActivityByName(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public static startMainActivity(Landroid/webkit/WebView;Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    sget-object p0, Lcn/jpush/android/webview/bridge/HostJsScope;->a:Lcn/jpush/android/webview/bridge/d;
+
+    .line 2
+    .line 3
+    if-nez p0, :cond_0
+
+    .line 4
+    .line 5
+    return-void
+
+    .line 6
+    :cond_0
+    invoke-virtual {p0, p1}, Lcn/jpush/android/webview/bridge/d;->startMainActivity(Ljava/lang/String;)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method public static startPushActivity(Landroid/webkit/WebView;Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    sget-object p0, Lcn/jpush/android/webview/bridge/HostJsScope;->a:Lcn/jpush/android/webview/bridge/d;
+
+    .line 2
+    .line 3
+    if-eqz p0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-virtual {p0, p1}, Lcn/jpush/android/webview/bridge/d;->startPushActivity(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    :cond_0
+    return-void
+.end method
+
+.method public static triggerNativeAction(Landroid/webkit/WebView;Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    sget-object p0, Lcn/jpush/android/webview/bridge/HostJsScope;->a:Lcn/jpush/android/webview/bridge/d;
+
+    .line 2
+    .line 3
+    if-nez p0, :cond_0
+
+    .line 4
+    .line 5
+    return-void
+
+    .line 6
+    :cond_0
+    invoke-virtual {p0, p1}, Lcn/jpush/android/webview/bridge/d;->triggerNativeAction(Ljava/lang/String;)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method

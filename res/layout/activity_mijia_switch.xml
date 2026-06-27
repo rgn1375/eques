@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/common_color_f5f5f5" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/sp_16" android:textColor="#754c24" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:text="@string/mijia_connect_hint" />
+    <RelativeLayout android:id="@id/rl_check" android:background="@drawable/btn_style_white" android:padding="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="@dimen/dp_70" android:layout_margin="@dimen/dp_20">
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mijia_connect_back" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/button_switch_on" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/common_color_333333" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_30" android:text="@string/mijia_connect_back_hint" />
+</LinearLayout>

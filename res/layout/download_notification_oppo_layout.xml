@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="@color/white" android:paddingLeft="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_title_icon_parent" android:paddingTop="@dimen/dp_7" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:background="@drawable/app_logo" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:contentDescription="@null" />
+        <TextView android:textSize="@dimen/fontsize_twelve" android:textColor="@color/service_cloud_plan_two" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_6" android:text="叮咚 · 现在" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/ll_title_icon_parent">
+        <RelativeLayout android:paddingTop="@dimen/dp_15" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/sp_38" android:textColor="@color/black" android:id="@id/tv_title_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/downloading_dingdong_oppo" />
+            <TextView android:textSize="@dimen/sp_38" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_progressInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:layout_alignParentRight="true" android:alpha="0.8" />
+        </RelativeLayout>
+        <ProgressBar android:id="@id/progressbar_update" android:layout_width="match_parent" android:layout_height="@dimen/dp_3" android:layout_marginTop="@dimen/dp_10" android:max="100" android:progressDrawable="@drawable/progressbar_style" style="?android:progressBarStyleHorizontal" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_40" android:weightSum="2.0">
+            <TextView android:textSize="@dimen/sp_22" android:textColor="#30c674" android:gravity="center" android:id="@id/tv_cancel_notify" android:paddingTop="@dimen/dp_1" android:paddingBottom="@dimen/dp_5" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="取消" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

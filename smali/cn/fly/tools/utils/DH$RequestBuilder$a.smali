@@ -1,0 +1,43 @@
+.class Lcn/fly/tools/utils/DH$RequestBuilder$a;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcn/fly/tools/utils/DH$RequestBuilder;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0xa
+    name = "a"
+.end annotation
+
+
+# instance fields
+.field public final a:Ljava/lang/String;
+
+.field public final b:[Ljava/lang/Object;
+
+
+# direct methods
+.method private varargs constructor <init>(Ljava/lang/String;[Ljava/lang/Object;)V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcn/fly/tools/utils/DH$RequestBuilder$a;->a:Ljava/lang/String;
+
+    iput-object p2, p0, Lcn/fly/tools/utils/DH$RequestBuilder$a;->b:[Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Ljava/lang/String;[Ljava/lang/Object;Lcn/fly/tools/utils/DH$1;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1, p2}, Lcn/fly/tools/utils/DH$RequestBuilder$a;-><init>(Ljava/lang/String;[Ljava/lang/Object;)V
+
+    return-void
+.end method

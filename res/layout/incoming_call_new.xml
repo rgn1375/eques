@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ll_incoming_parent" android:background="@android:color/black" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/video_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:alpha="0.5" />
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/iv_visitor_placeholder" android:background="@drawable/ic_incoming_calls_bg" android:layout_width="@dimen/dp_150" android:layout_height="@dimen/dp_150" android:layout_marginTop="@dimen/dp_50" android:layout_below="@id/tv_incoming_type" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/iv_visitor_img_def" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_30" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/iv_visitor_img_e6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:id="@id/tv_incoming_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_below="@id/tv_incoming_type" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/white" android:id="@id/tv_incoming_dev_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:text="@string/buddy_type_r26" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:id="@id/tv_incoming_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="@string/call_history_ringing_hint" android:layout_below="@id/tv_incoming_dev_name" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_30" android:layout_above="@id/lin_menu">
+        <View android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/white" android:gravity="center|top" android:id="@id/tv_video_service" android:background="@mipmap/vip_video_shape" android:visibility="invisible" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/vip_open_video_service" android:layout_weight="1.0" />
+        <View android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/lin_menu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_30" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_hang_up" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/end_call" android:drawableTop="@drawable/button_hang_up_selector" android:drawablePadding="@dimen/dp_10" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_voice_call" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/voice_calls" android:drawableTop="@drawable/button_answer_selector" android:drawablePadding="@dimen/dp_10" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_video_call" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/video_call" android:drawableTop="@drawable/button_video_selector" android:drawablePadding="@dimen/dp_10" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_reply_voice" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/h5_reply_voice" android:drawableTop="@drawable/button_reply_voice_selector" android:drawablePadding="@dimen/dp_10" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_remote_unlock" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/remote_unlock" android:drawableTop="@drawable/button_remote_unlock_selector" android:drawablePadding="@dimen/dp_10" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_remote_unlock_small" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/open_small_door" android:drawableTop="@drawable/small_door_close_big" android:drawablePadding="@dimen/dp_10" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rel_input_code" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/bind_lock_layout_type" android:paddingBottom="@dimen/dp_35" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="@dimen/dp_340" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <RelativeLayout android:layout_width="@dimen/dp_340" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/sp_22" android:textColor="@color/orange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_120" android:layout_marginTop="@dimen/dp_35" android:layout_marginBottom="@dimen/dp_30" android:text="@string/input_safe_pwd" />
+                <ImageView android:id="@id/img_close" android:padding="@dimen/dp_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/top_close" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_30" android:layout_marginBottom="@dimen/dp_30" android:text="@string/set_safe_pwd_hint2" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/lin_parent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.eques.doorbell.ui.view.PwdEditText android:id="@id/ped_pwd" android:layout_width="@dimen/dp_290" android:layout_height="wrap_content" android:maxLength="6" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

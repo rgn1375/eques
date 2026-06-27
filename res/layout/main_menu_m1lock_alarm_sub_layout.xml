@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:gravity="center" android:id="@id/rl_lock_alarm_parent" android:layout_width="wrap_content" android:layout_height="@dimen/dp_35" android:layout_marginBottom="@dimen/dp_3" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/iv_lock_alarm_zero" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_pir_alarm_new" android:layout_centerInParent="true" android:contentDescription="@null" />
+            <TextView android:textSize="@dimen/sp_thirty_two" android:textColor="@color/alarm_tv_color_one" android:id="@id/tv_lock_alarm_info_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textColor="@color/alarm_tv_color_two" android:text="@string/alarm_info_tx" android:layout_below="@id/rl_lock_alarm_parent" android:layout_centerHorizontal="true" style="@style/info_tv_style" />
+        <ImageView android:id="@id/iv_lock_alarm_info_unread_flag" android:background="@drawable/unread_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/rl_lock_alarm_parent" android:contentDescription="@null" />
+    </RelativeLayout>
+</RelativeLayout>

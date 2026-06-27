@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_landscape_parent" android:background="@android:color/transparent" android:padding="@dimen/dp_20" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_video_back_landscape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/xm_live_video_back" />
+    <TextView android:textSize="@dimen/sp_20" android:textColor="@color/xm_ffffff" android:id="@id/tv_head_dev_nick_landscape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+    <Chronometer android:textSize="@dimen/sp_14" android:textColor="@color/xm_ffffff" android:id="@id/timer_landscape" android:background="@drawable/video_timer_task_style" android:paddingTop="@dimen/dp_3" android:paddingBottom="@dimen/dp_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_8" android:drawablePadding="@dimen/dp_5" android:layout_below="@id/tv_head_dev_nick_landscape" android:layout_centerHorizontal="true" android:alpha="0.6" android:drawableStart="@drawable/video_begin_tag" android:paddingStart="@dimen/dp_12" android:paddingEnd="@dimen/dp_12" />
+    <include layout="@layout/video_controller_landscape_layout" />
+</RelativeLayout>

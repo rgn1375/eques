@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#f5f5f5" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/rel_press">
+        <RelativeLayout android:id="@id/rel_animal_voice" android:background="@drawable/btn_style_white_gray_slide" android:paddingLeft="@dimen/dp_14" android:paddingRight="@dimen/dp_14" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_60" android:layout_marginLeft="@dimen/dp_14" android:layout_marginTop="@dimen/dp_14" android:layout_marginRight="@dimen/dp_14">
+            <TextView android:id="@id/tv_leave_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/animal_user_default_voice" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/img_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_14" android:src="@mipmap/leavemsg_play" android:layout_toRightOf="@id/tv_leave_title" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/img_choose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_14" android:src="@drawable/icon_alarm_checkbox_press" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/sp_16" android:textColor="#999999" android:gravity="center" android:id="@id/tv_no_leave_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_msg_leave" android:drawableTop="@mipmap/leave_msg_none" android:drawablePadding="@dimen/dp_8" android:layout_centerInParent="true" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rec_leave_msg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/rel_animal_voice" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rel_press" android:background="@drawable/btn_custom_info_style" android:layout_width="match_parent" android:layout_height="@dimen/dp_220" android:layout_marginTop="@dimen/dp_14" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_leave_press" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/leave_msg_press" android:drawableTop="@mipmap/leave_voice" android:drawablePadding="@dimen/dp_8" android:layout_centerInParent="true" />
+        <TextView android:textSize="20.0sp" android:textColor="#666666" android:id="@id/tv_rec_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:layout_marginBottom="@dimen/dp_14" android:text="00:00" android:layout_above="@id/tv_leave_press" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/dp_14" android:layout_marginEnd="@dimen/dp_14" />
+        <ImageView android:id="@id/img_leave_cancle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_80" android:layout_marginRight="@dimen/dp_40" android:src="@mipmap/leavemsg_cancel" android:layout_toLeftOf="@id/tv_leave_press" />
+        <ImageView android:id="@id/img_leave_ok" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_40" android:layout_marginTop="@dimen/dp_80" android:src="@mipmap/leavemsg_done" android:layout_toRightOf="@id/tv_leave_press" />
+    </RelativeLayout>
+</RelativeLayout>

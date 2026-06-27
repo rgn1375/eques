@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_controller_parent" android:background="@color/xm_171717" android:layout_width="match_parent" android:layout_height="@dimen/dp_45" android:weightSum="5.0" android:layout_below="@id/rl_video_surf_view_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_mute_btn" android:layout_width="@dimen/dp_0" android:layout_height="match_parent" android:layout_weight="0.9">
+        <ImageView android:id="@id/iv_mute" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/xm_mute_close_def" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_snap_btn" android:layout_width="@dimen/dp_0" android:layout_height="match_parent" android:layout_weight="0.9">
+        <ImageView android:id="@id/iv_snap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/xm_snap_def" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_voice_btn" android:layout_width="@dimen/dp_0" android:layout_height="match_parent" android:layout_weight="1.2">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/xm_cccccc" android:gravity="center" android:id="@id/tv_voice" android:background="@drawable/c03_voice_btn_def_bg_style" android:layout_width="match_parent" android:layout_height="@dimen/dp_30" android:text="@string/xm_video_long_press_start_speak" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_video_btn" android:layout_width="@dimen/dp_0" android:layout_height="match_parent" android:layout_weight="0.9">
+        <ImageView android:id="@id/iv_video" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/xm_video_close_def" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="@dimen/dp_0" android:layout_height="match_parent" android:layout_weight="1.1">
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/xm_ffffff" android:gravity="center" android:id="@id/tv_video_resolution_btn" android:background="@drawable/resolution_sw_btn_style" android:paddingTop="@dimen/dp_3" android:paddingBottom="@dimen/dp_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xm_video_high" android:layout_centerInParent="true" android:paddingStart="@dimen/dp_12" android:paddingEnd="@dimen/dp_12" />
+    </RelativeLayout>
+</LinearLayout>

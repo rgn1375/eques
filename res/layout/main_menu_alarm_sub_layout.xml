@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingTop="@dimen/dp_2" android:paddingBottom="@dimen/dp_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:gravity="center" android:id="@id/rl_alarm_parent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_2" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/iv_newAlarm_zero" android:paddingTop="@dimen/dp_5" android:paddingBottom="@dimen/dp_5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_pir_alarm_new" android:layout_centerInParent="true" android:contentDescription="@null" />
+            <TextView android:textSize="@dimen/sp_thirty_two" android:textColor="@color/alarm_tv_color_one" android:id="@id/tv_alarmInfoCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textColor="@color/alarm_tv_color_two" android:background="@android:color/transparent" android:text="@string/alarm_info_tx" android:layout_below="@id/rl_alarm_parent" android:layout_centerHorizontal="true" style="@style/info_tv_style" />
+        <ImageView android:id="@id/iv_alarmInfoUnReadFlag" android:background="@drawable/unread_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" android:layout_toEndOf="@id/rl_alarm_parent" />
+    </RelativeLayout>
+</RelativeLayout>

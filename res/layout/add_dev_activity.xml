@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_add_dev_parent" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="@dimen/dp_45">
+        <RelativeLayout android:id="@id/rl_add_dev_back" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingStart="@dimen/dp_15" android:paddingEnd="@dimen/dp_10">
+            <ImageView android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_invitation_menu" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/sp_18" android:textColor="@color/settings_left_tv_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_new_equip" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/iv_scan_btn" android:paddingLeft="50.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/scan" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_10" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View android:background="@color/add_group_name_color" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_5" />
+    <RelativeLayout android:id="@id/rel_search" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_blue_hint" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_14" />
+        <com.eques.doorbell.ui.view.RadarView android:id="@id/rv" android:layout_width="@dimen/dp_50" android:layout_height="@dimen/dp_50" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_14" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_20">
+        <View android:background="@color/gray_line" android:layout_width="0.0dp" android:layout_height="@dimen/dp_1" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/text_color" android:gravity="center" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/user_add_dev" android:layout_weight="1.0" />
+        <View android:background="@color/gray_line" android:layout_width="0.0dp" android:layout_height="@dimen/dp_1" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_dev_type" android:scrollbars="none" android:layout_width="@dimen/dp_100" android:layout_height="match_parent" android:overScrollMode="never" />
+        <View android:background="@color/add_group_name_color" android:layout_width="@dimen/dp_0_5" android:layout_height="match_parent" />
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_dev_type_list" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" />
+            <ImageView android:id="@id/iv_empty_list" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_160" android:src="@drawable/enpty_dev_list" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,34 @@
+.class public Lcom/eques/doorbell/ui/view/RecycleViewBanSliding;
+.super Landroidx/recyclerview/widget/RecyclerView;
+.source "RecycleViewBanSliding.java"
+
+
+# virtual methods
+.method protected onMeasure(II)V
+    .locals 1
+
+    .line 1
+    const p2, 0x1fffffff
+
+    .line 2
+    .line 3
+    .line 4
+    const/high16 v0, -0x80000000
+
+    .line 5
+    .line 6
+    invoke-static {p2, v0}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
+
+    .line 7
+    .line 8
+    .line 9
+    move-result p2
+
+    .line 10
+    invoke-super {p0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView;->onMeasure(II)V
+
+    .line 11
+    .line 12
+    .line 13
+    return-void
+.end method

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/wallpaper_preview_bg_color" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:layout_marginBottom="@dimen/dp_16">
+        <ImageView android:id="@id/iv_preview_wallpaper" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_16" android:layout_marginRight="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_16" android:src="@drawable/wallpaper_default" android:scaleType="fitXY" android:layout_below="@id/tv_current_wallp" android:layout_centerHorizontal="true" />
+        <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_16" android:layout_marginRight="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_16" android:src="@drawable/wallpaper_mask" android:scaleType="fitXY" android:layout_below="@id/tv_current_wallp" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <Button android:textSize="@dimen/fontsize_eighteenth" android:textColor="@color/settings_delete_dev_tv_color" android:id="@id/btn_wallpaper" android:background="@drawable/btn_style_detials_delete" android:layout_width="match_parent" android:layout_height="@dimen/dp_45" android:layout_marginLeft="@dimen/dp_45" android:layout_marginTop="@dimen/dp_50" android:layout_marginRight="@dimen/dp_45" android:text="@string/dev_details_wallpaper_preview_hint_two" />
+</LinearLayout>

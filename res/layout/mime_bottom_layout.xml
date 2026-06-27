@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/btn_style_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_20" android:layout_below="@id/rl_other_advertising_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_mine_share_manager_parent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout style="@style/mine_menu_layout_style">
+            <TextView android:text="@string/mine_sharing_management" android:drawablePadding="@dimen/dp_10" android:drawableStart="@drawable/mine_sharing_management" android:paddingStart="@dimen/dp_14" style="@style/menu_left_tv_style" />
+            <ImageView android:background="@drawable/arrow_icon_press" android:layout_marginEnd="@dimen/dp_14" style="@style/menu_right_arrows" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rl_mine_setting_parent" style="@style/mine_menu_layout_style">
+        <TextView android:text="@string/mime_app_settings" android:drawablePadding="@dimen/dp_10" android:drawableStart="@drawable/mine_set" android:paddingStart="@dimen/dp_14" style="@style/menu_left_tv_style" />
+        <ImageView android:background="@drawable/arrow_icon_press" android:layout_marginEnd="@dimen/dp_14" style="@style/menu_right_arrows" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_mine_tototial_parent" style="@style/mine_menu_layout_style">
+        <TextView android:text="@string/main_mine_fragment_totorial" android:drawablePadding="@dimen/dp_10" android:drawableStart="@drawable/tutorial" android:paddingStart="@dimen/dp_14" style="@style/menu_left_tv_style" />
+        <ImageView android:background="@drawable/arrow_icon_press" android:layout_marginEnd="@dimen/dp_14" style="@style/menu_right_arrows" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_mine_collect_parent" style="@style/mine_menu_layout_style">
+        <TextView android:text="@string/mime_collect_hint" android:drawablePadding="@dimen/dp_10" android:drawableStart="@drawable/mine_collect" android:paddingStart="@dimen/dp_14" style="@style/menu_left_tv_style" />
+        <ImageView android:background="@drawable/arrow_icon_press" android:layout_marginEnd="@dimen/dp_14" style="@style/menu_right_arrows" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_mine_help_guide_parent" style="@style/mine_menu_layout_style">
+        <TextView android:text="@string/mime_client_help_guide" android:drawablePadding="@dimen/dp_10" android:drawableStart="@drawable/mine_help_center" android:paddingStart="@dimen/dp_14" style="@style/menu_left_tv_style" />
+        <ImageView android:background="@drawable/arrow_icon_press" android:layout_marginEnd="@dimen/dp_14" style="@style/menu_right_arrows" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_mine_feedback_parent" style="@style/mine_menu_layout_style">
+        <TextView android:text="@string/mine_feedback" android:drawablePadding="@dimen/dp_10" android:drawableStart="@drawable/mine_feedback" android:paddingStart="@dimen/dp_14" style="@style/menu_left_tv_style" />
+        <ImageView android:background="@drawable/arrow_icon_press" android:layout_marginEnd="@dimen/dp_14" style="@style/menu_right_arrows" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/xm_F5F5F5" android:padding="@dimen/dp_15" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/child_menu_style_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@id/ll_basic_setup_video_mode" android:background="@android:color/transparent" android:visibility="visible" style="@style/settings_menu_style">
+            <TextView android:text="@string/xm_dev_basic_setup_video_mode" style="@style/settings_tv_left_hint_style" />
+            <TextView android:id="@id/tv_basic_setup_video_mode_value" android:text="@string/xm_dev_basic_setup_video_mode_all_day_long" style="@style/settings_child_menu_right_status_value_style" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow_selector" android:layout_marginEnd="@dimen/dp_15" />
+        </LinearLayout>
+        <View android:background="@color/xm_E1E1E1" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_1" />
+        <LinearLayout android:id="@id/ll_basic_setup_video_quality" android:background="@android:color/transparent" android:visibility="visible" android:layout_marginTop="@dimen/dp_0_5" style="@style/settings_menu_style">
+            <TextView android:text="@string/xm_dev_basic_setup_video_quality" style="@style/settings_tv_left_hint_style" />
+            <TextView android:id="@id/tv_basic_setup_video_quality_value" android:text="@string/xm_dev_basic_setup_video_quality_best" style="@style/settings_child_menu_right_status_value_style" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow_selector" android:layout_marginEnd="@dimen/dp_15" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/child_menu_style_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_15">
+        <LinearLayout android:id="@id/ll_basic_setup_status_lamp" android:background="@android:color/transparent" android:visibility="visible" style="@style/settings_menu_style">
+            <TextView android:text="@string/xm_dev_basic_setup_status_lamp" style="@style/settings_tv_left_hint_style" />
+            <CheckBox android:id="@id/cb_basic_setup_status_lamp" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_15" style="@style/switch_style" />
+        </LinearLayout>
+        <View android:background="@color/xm_E1E1E1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_1" />
+        <LinearLayout android:id="@id/ll_basic_setup_warning_tone" android:background="@android:color/transparent" android:visibility="gone" style="@style/settings_menu_style">
+            <TextView android:text="@string/xm_dev_basic_setup_warning_tone" style="@style/settings_tv_left_hint_style" />
+            <CheckBox android:id="@id/cb_basic_setup_warning_tone" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_15" style="@style/switch_style" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/child_menu_style_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_15">
+        <LinearLayout android:id="@id/ll_basic_setup_img_left_right_flip" android:background="@android:color/transparent" android:visibility="visible" style="@style/settings_menu_style">
+            <TextView android:text="@string/xm_dev_basic_setup_img_left_right_flip" style="@style/settings_tv_left_hint_style" />
+            <CheckBox android:id="@id/cb_basic_setup_img_left_right_flip" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_15" style="@style/switch_style" />
+        </LinearLayout>
+        <View android:background="@color/xm_E1E1E1" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_1" />
+        <LinearLayout android:id="@id/ll_basic_setup_img_up_down_flip" android:background="@android:color/transparent" android:visibility="visible" style="@style/settings_menu_style">
+            <TextView android:text="@string/xm_dev_basic_setup_img_up_down_flip" style="@style/settings_tv_left_hint_style" />
+            <CheckBox android:id="@id/cb_basic_setup_img_up_down_flip" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_15" style="@style/switch_style" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/child_menu_style_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_15">
+        <LinearLayout android:id="@id/ll_basic_setup_shake_head_speed" android:background="@android:color/transparent" android:visibility="visible" style="@style/settings_menu_style">
+            <TextView android:text="@string/xm_dev_basic_setup_shake_head_speed" style="@style/settings_tv_left_hint_style" />
+            <TextView android:id="@id/tv_basic_setup_shake_head_speed_value" android:text="@string/xm_dev_basic_setup_shake_head_speed_fast" style="@style/settings_child_menu_right_status_value_style" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow_selector" android:layout_marginEnd="@dimen/dp_15" />
+        </LinearLayout>
+        <View android:background="@color/xm_E1E1E1" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_1" />
+        <LinearLayout android:id="@id/ll_basic_setup_speaker_volume" android:background="@android:color/transparent" android:visibility="visible" android:layout_marginTop="@dimen/dp_0_5" style="@style/settings_menu_style">
+            <TextView android:text="@string/xm_dev_basic_setup_speaker_volume" style="@style/settings_tv_left_hint_style" />
+            <TextView android:id="@id/tv_basic_setup_speaker_volume_value" android:text="@string/xm_dev_basic_setup_speaker_volume_value" style="@style/settings_child_menu_right_status_value_style" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow_selector" android:layout_marginEnd="@dimen/dp_15" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:background="@android:color/transparent" android:paddingLeft="@dimen/dp_10" android:paddingTop="@dimen/dp_15" android:paddingRight="@dimen/dp_10" android:paddingBottom="@dimen/dp_15" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/image" android:background="@drawable/app_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_15" android:layout_marginRight="@dimen/dp_10" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/black" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/fontsize_twelve" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_progressInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" />
+        </LinearLayout>
+        <ProgressBar android:id="@id/progressbar_update" android:layout_width="match_parent" android:layout_height="@dimen/dp_3" android:layout_marginTop="@dimen/dp_3" android:max="100" android:progressDrawable="@drawable/progressbar_style" style="?android:progressBarStyleHorizontal" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_cancelNotify" android:background="@drawable/ic_edittext_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" />
+</LinearLayout>

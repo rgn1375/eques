@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sp_18" android:textColor="@color/remind_color" android:id="@id/tv_last_time_str" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_14" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rec_voice_tc" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <Button android:textSize="@dimen/sp_18" android:textColor="@color/white" android:id="@id/btn_reopen" android:background="@mipmap/bg_button_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_40" android:layout_marginTop="@dimen/dp_14" android:layout_marginRight="@dimen/dp_40" android:layout_marginBottom="@dimen/dp_14" android:text="@string/icloud_immediately_renew" />
+</LinearLayout>

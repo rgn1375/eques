@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_30"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/set_del_dev_btn" style="@style/btn_style_setting_delete" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/ll_main_home_parent" android:background="@drawable/dev_list_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.eques.doorbell.ui.view.NoScrollViewPager android:id="@id/vp_fragment_content" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/tab_main_bottom_area_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/tab_main_bottom_area_parent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.google.android.material.tabs.TabLayout android:id="@id/tab_main_bottom_area" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/dp_65" app:tabBackground="@color/white" app:tabIndicatorColor="@color/white" app:tabIndicatorHeight="@dimen/dp_0_1" app:tabRippleColor="@color/white" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/xm_F5F5F5" android:padding="@dimen/dp_15" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/ll_video_mode_all_day_long" android:background="@drawable/child_menu_style_bg" android:visibility="visible" android:layout_marginTop="@dimen/dp_15" style="@style/settings_menu_style">
+        <TextView android:text="@string/xm_dev_basic_setup_video_mode_all_day_long" style="@style/settings_tv_left_hint_style" />
+        <CheckBox android:id="@id/cb_video_mode_all_day_long" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_15" style="@style/select_style" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/xm_666666" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_15" android:text="@string/xm_dev_basic_setup_video_mode_all_day_long_hint" android:lineSpacingExtra="@dimen/dp_1" />
+    <LinearLayout android:id="@id/ll_video_mode_only_alarm_video" android:background="@drawable/child_menu_style_bg" android:visibility="visible" style="@style/settings_menu_style">
+        <TextView android:text="@string/xm_dev_basic_setup_video_mode_only_alarm_video" style="@style/settings_tv_left_hint_style" />
+        <CheckBox android:id="@id/cb_video_mode_only_alarm_video" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_15" style="@style/select_style" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/xm_666666" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="@string/xm_dev_basic_setup_video_mode_only_alarm_video_hint" android:layout_marginStart="@dimen/dp_15" />
+</LinearLayout>

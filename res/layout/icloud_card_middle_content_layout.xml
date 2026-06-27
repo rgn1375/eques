@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/middle_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_25" android:layout_marginBottom="@dimen/dp_20" android:layout_below="@id/card_top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sp_18" android:textColor="@color/icloud_333333" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icloud_exclusive_privilege" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:weightSum="2.0" android:layout_marginStart="@dimen/dp_14" android:layout_marginEnd="@dimen/dp_14">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/icloud_alarm_buy_enter_btn_style" android:padding="@dimen/dp_12" android:layout_width="0.0dp" android:layout_height="@dimen/dp_66" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icloud_save" android:layout_marginEnd="@dimen/dp_8" />
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/icloud_915839" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icloud_exclusive_privilege_alarm_collect" />
+                <TextView android:textSize="@dimen/sp_11" android:textColor="@color/icloud_b58d6a" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2" android:text="@string/icloud_exclusive_privilege_alarm_collect_des" android:lines="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/icloud_alarm_buy_enter_btn_style" android:padding="@dimen/dp_12" android:layout_width="0.0dp" android:layout_height="@dimen/dp_66" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_7">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icloud_storage" android:layout_marginEnd="@dimen/dp_8" />
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/icloud_915839" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icloud_exclusive_privilege_alarm_save" />
+                <TextView android:textSize="@dimen/sp_11" android:textColor="@color/icloud_b58d6a" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2" android:text="@string/icloud_exclusive_privilege_alarm_save_des" android:lines="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:weightSum="2.0" android:layout_marginStart="@dimen/dp_14" android:layout_marginEnd="@dimen/dp_14">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/icloud_alarm_buy_enter_btn_style" android:padding="@dimen/dp_12" android:layout_width="0.0dp" android:layout_height="@dimen/dp_66" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icloud_safe" android:layout_marginEnd="@dimen/dp_8" />
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/icloud_915839" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icloud_exclusive_privilege_alarm_safe" />
+                <TextView android:textSize="@dimen/sp_11" android:textColor="@color/icloud_b58d6a" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2" android:text="@string/icloud_exclusive_privilege_alarm_safe_des" android:lines="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/icloud_alarm_buy_enter_btn_style" android:padding="@dimen/dp_12" android:layout_width="0.0dp" android:layout_height="@dimen/dp_66" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_7">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icloud_face" android:layout_marginEnd="@dimen/dp_8" />
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/icloud_915839" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icloud_exclusive_privilege_alarm_face_recognition" />
+                <TextView android:textSize="@dimen/sp_11" android:textColor="@color/icloud_b58d6a" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2" android:text="@string/icloud_exclusive_privilege_alarm_face_recognition_des" android:lines="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

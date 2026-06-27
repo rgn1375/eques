@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_live_parent" android:background="@android:color/transparent" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_video_top_head" android:background="@color/xm_ffffff" android:layout_width="match_parent" android:layout_height="@dimen/dp_45">
+        <RelativeLayout android:id="@id/rl_video_back" android:layout_width="@dimen/dp_45" android:layout_height="match_parent" android:layout_alignParentStart="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_back" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/sp_20" android:textColor="@color/xm_333333" android:gravity="center" android:id="@id/tv_head_dev_nick" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/app_name" android:layout_toStartOf="@id/rl_video_set" android:layout_toEndOf="@id/rl_video_back" />
+        <RelativeLayout android:id="@id/rl_video_set" android:layout_width="@dimen/dp_45" android:layout_height="match_parent" android:layout_alignParentEnd="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_set" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_video_surf_view_parent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/rl_video_top_head">
+        <RelativeLayout android:id="@id/rl_video_surf_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/rl_video_top_head" />
+        <include layout="@layout/video_live_a_key_cover_layout" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/xm_ffffff" android:id="@id/tv_video_waiting" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_120" android:text="@string/xm_video_waiting" android:layout_centerHorizontal="true" />
+    <Chronometer android:textSize="@dimen/sp_12" android:textColor="@color/xm_ffffff" android:id="@id/timer" android:background="@drawable/video_timer_task_style" android:paddingTop="@dimen/dp_3" android:paddingBottom="@dimen/dp_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_8" android:drawablePadding="@dimen/dp_5" android:layout_above="@id/ll_controller_parent" android:layout_centerHorizontal="true" android:alpha="0.6" android:drawableStart="@drawable/video_begin_tag" android:paddingStart="@dimen/dp_12" android:paddingEnd="@dimen/dp_12" />
+    <RelativeLayout android:id="@id/rl_full_screen_parent" android:padding="@dimen/dp_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_10" android:layout_above="@id/ll_controller_parent" android:layout_marginEnd="@dimen/dp_10" android:layout_alignParentEnd="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_full_screen" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_a_key_parent" android:padding="@dimen/dp_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_5" android:layout_above="@id/ll_controller_parent" android:layout_marginStart="@dimen/dp_5" android:layout_alignParentStart="true">
+        <ImageView android:id="@id/iv_a_key" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/a_key_closed" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <include layout="@layout/video_controller_layout" />
+    <include layout="@layout/video_direction_controller_layout" />
+    <include layout="@layout/video_bottom_layout" />
+    <include layout="@layout/video_landscape_view_layout" />
+</RelativeLayout>

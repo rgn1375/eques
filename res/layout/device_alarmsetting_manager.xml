@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/settings_view_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/settings_view_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/titlebar_tv_color" android:gravity="center" android:id="@id/menu_hint" android:layout_width="match_parent" android:layout_height="@dimen/dp_65" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10" android:text="@string/body_pir_close_hint" />
+        <LinearLayout android:id="@id/smart_monitor_switch" android:paddingLeft="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="@dimen/dp_48" android:layout_marginTop="@dimen/dp_10" style="@style/pir_page_layout_style">
+            <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/forgot_password_btn" android:id="@id/pir_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fragment_device_item_pir_open" android:layout_weight="1.0" />
+            <CheckBox android:id="@id/cb_alarm" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" style="@style/MySwitchTheme" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/relay_alarmDackgrount" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_16">
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_pir_about_set_parent" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/pir_page_layout_style">
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/linear_alarmDisabled" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_48">
+                        <TextView android:textSize="@dimen/sp_15" android:textColor="@color/gray" android:paddingLeft="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_does_not_support_this_feature" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/linear_pirTime" android:paddingLeft="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="@dimen/dp_48">
+                        <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/forgot_password_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alarm_pir_time" />
+                        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/gray" android:gravity="right" android:id="@id/tv_pirTime" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:layout_weight="1.0" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow_selector" android:contentDescription="@null" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/linear_sensitivity" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <View android:background="@color/interval_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_5" />
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="@dimen/dp_48">
+                            <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/forgot_password_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alarm_sensitivity" />
+                            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/gray" android:gravity="right" android:id="@id/tv_sensitivity" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:layout_weight="1.0" />
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow_selector" android:contentDescription="@null" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/ll_d1_pir_mode" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <View android:background="@color/interval_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_5" />
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="@dimen/dp_48">
+                            <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/forgot_password_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alarm_mode" />
+                            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/gray" android:gravity="right" android:id="@id/tv_d1_pir_mode" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:layout_weight="1.0" />
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow_selector" android:contentDescription="@null" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" style="@style/pir_page_layout_style">
+                    <LinearLayout android:orientation="vertical" android:id="@id/linear_pir_mode_parent" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:id="@id/linear_pirMode" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="@dimen/dp_48">
+                                <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/forgot_password_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alarm_mode" />
+                                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/gray" android:gravity="right" android:id="@id/tv_pirMode" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:layout_weight="1.0" />
+                                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow_selector" android:contentDescription="@null" />
+                            </LinearLayout>
+                            <View android:background="@color/interval_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_5" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/linear_pirRingtone" android:paddingLeft="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="@dimen/dp_48">
+                        <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/forgot_password_btn" android:id="@id/tv_alarm_ring" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alarm_ringing" />
+                        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/gray" android:gravity="right" android:id="@id/tv_pirRingtone" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:layout_weight="1.0" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow_selector" android:contentDescription="@null" />
+                    </LinearLayout>
+                    <View android:background="@color/interval_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_5" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/linear_stay_time" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="@dimen/dp_48">
+                            <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/forgot_password_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tv_stay_time_hint" />
+                            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/gray" android:gravity="right" android:id="@id/tv_stay_time" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:layout_weight="1.0" />
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow_selector" android:contentDescription="@null" />
+                        </LinearLayout>
+                        <View android:background="@color/interval_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_5" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/linear_set_light_layout" android:paddingLeft="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="@dimen/dp_48">
+                        <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/forgot_password_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enable_doorbell_light" />
+                        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/gray" android:gravity="right" android:id="@id/tv_light_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:layout_weight="1.0" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow_selector" android:contentDescription="@null" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_d1_set_light" android:paddingLeft="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="@dimen/dp_48" android:layout_marginTop="@dimen/dp_20" android:layout_below="@id/ll_pir_about_set_parent" style="@style/pir_page_layout_style">
+                <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/forgot_password_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enable_doorbell_light" />
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/gray" android:gravity="right" android:id="@id/tv_d1_light_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:layout_weight="1.0" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow_selector" android:contentDescription="@null" />
+            </LinearLayout>
+            <ImageView android:id="@id/dev_offlineState" android:background="@drawable/camera_tab_bar_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:contentDescription="@null" android:alpha="0.7" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

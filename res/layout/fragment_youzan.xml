@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/main_head_title_bar_v3_layout" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/rl_main_head_parent">
+        <com.web.library.groups.webviewsdk.core.WMWebView android:id="@id/view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>

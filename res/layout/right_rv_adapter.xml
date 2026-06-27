@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/rl_add_enter_parent" android:layout_width="match_parent" android:layout_height="@dimen/dp_110"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/right_iv_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/add_dev_enter_r22_ic" android:layout_centerInParent="true" />
+    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/service_cloud_plan_two" android:gravity="center" android:id="@id/right_tv_type_nick" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_3" android:text="@string/buddy_type_r22" android:layout_alignParentBottom="true" />
+</RelativeLayout>

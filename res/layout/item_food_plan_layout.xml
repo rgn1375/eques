@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:padding="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/btn_style_white" android:padding="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/sp_24" android:textColor="#333333" android:id="@id/tv_food_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" />
+                <TextView android:textSize="@dimen/sp_14" android:textColor="#4d7cfe" android:id="@id/tv_state" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:text="设置中" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/sp_14" android:textColor="#666666" android:id="@id/tv_food_week" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="00:00" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_double_dev" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5">
+                <TextView android:textColor="#4d7cfe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:layout_marginRight="@dimen/dp_5" android:text="@string/anim_left" />
+                <TextView android:textColor="#666666" android:id="@id/tv_anim_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:layout_marginRight="@dimen/dp_10" android:text="0" />
+                <TextView android:textColor="#4d7cfe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:layout_marginRight="@dimen/dp_5" android:text="@string/anim_right" />
+                <TextView android:textColor="#666666" android:id="@id/tv_anim_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/img_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/button_switch_on" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

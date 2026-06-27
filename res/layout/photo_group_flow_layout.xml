@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10">
+        <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/settings_left_tv_color" android:id="@id/tv_group_hint_one" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dev_face_photo_show_six" />
+        <com.eques.doorbell.ui.widget.MyGridView android:id="@id/grid_created_group_data" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@null" android:numColumns="3" android:layout_below="@id/tv_group_hint_one" />
+    </RelativeLayout>
+    <View android:background="@color/settings_view_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_10" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10">
+        <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/settings_left_tv_color" android:id="@id/tv_group_hint_two" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dev_face_photo_show_three" />
+        <com.eques.doorbell.ui.widget.MyListView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@null" android:divider="@null" android:layout_below="@id/tv_group_hint_two" />
+    </RelativeLayout>
+</LinearLayout>

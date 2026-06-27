@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_mime_bind_phone_parent" android:background="@color/common_color_ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_45" android:layout_below="@id/sv_mime_menu"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_close_bind_phone_hint" android:padding="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mine_close_bind_hint" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_4" />
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/common_color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mime_bind_phone_hint" android:layout_centerVertical="true" android:layout_toEndOf="@id/iv_close_bind_phone_hint" />
+    <Button android:textSize="@dimen/sp_14" android:textColor="@color/common_color_ffffff" android:id="@id/btn_go_bind_phone" android:background="@drawable/mime_go_bind_phone_btn_style" android:layout_width="wrap_content" android:layout_height="@dimen/dp_30" android:text="@string/mime_go_bind_phone" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_14" android:layout_alignParentEnd="true" android:stateListAnimator="@null" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_key_cover_parent" android:background="@color/xm_3f3f3f" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/c03_live_key_cover_invisible" />
+    <TextView android:textSize="@dimen/sp_18" android:textColor="@color/xm_ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_15" android:text="@string/xm_dev_open_a_key_cover_video_hint" />
+</LinearLayout>

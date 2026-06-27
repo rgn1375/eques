@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="error_over_count">
+        <item quantity="one">Se pueden seleccionar hasta %1$d archivos</item>
+        <item quantity="few">Se pueden seleccionar hasta %1$d archivos</item>
+        <item quantity="many">Se pueden seleccionar hasta %1$d archivos</item>
+        <item quantity="other">Se pueden seleccionar hasta %1$d archivos</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d notificación nueva</item>
+        <item quantity="other">%d notificaciones nuevas</item>
+    </plurals>
+</resources>

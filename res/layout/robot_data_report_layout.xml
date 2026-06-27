@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/robot_ffffff" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/robot_detection_details_bg" android:padding="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp_25" android:textColor="@color/robot_ffffff" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/robot_health_synthesize_report" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:layout_marginBottom="@dimen/dp_12">
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/robot_ffffff" android:id="@id/userName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/robot_username" />
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/robot_ffffff" android:id="@id/sex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/robot_sex" />
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/robot_ffffff" android:id="@id/age" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/robot_age" />
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/robot_ffffff" android:id="@id/number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/robot_number" />
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/robot_ffffff" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/robot_date" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/robot_ffffff" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="@string/robot_health_synthesize_report_statement" android:layout_marginStart="@dimen/dp_40" android:layout_marginEnd="@dimen/dp_40" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/robot_43b4fe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="@string/robot_health_medical_report" android:layout_marginStart="@dimen/dp_14" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_medical_report_parent" android:background="@drawable/robot_round_corner_f9f9f9" android:paddingTop="@dimen/dp_15" android:paddingBottom="@dimen/dp_15" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/dp_14" android:paddingStart="@dimen/dp_5" android:paddingEnd="@dimen/dp_5" />
+</LinearLayout>

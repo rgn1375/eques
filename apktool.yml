@@ -1,0 +1,26 @@
+version: 3.0.2
+apkFileName: Eques_3.10.74.apk
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: 26
+  targetSdkVersion: 36
+versionInfo:
+  versionCode: 310740
+  versionName: 3.10.74
+resourcesInfo:
+  packageId: 127
+doNotCompress:
+- arsc
+- gif
+- jpeg
+- jpg
+- mp3
+- mp4
+- png
+- so
+- wav
+- webp
+- assets/dexopt/baseline.prof
+- assets/dexopt/baseline.profm

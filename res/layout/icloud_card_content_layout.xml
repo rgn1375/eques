@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/card_top" android:background="@drawable/icloud_card_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_140" android:layout_marginStart="@dimen/dp_20" android:layout_marginEnd="@dimen/dp_20"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:padding="@dimen/dp_20" android:layout_width="match_parent" android:layout_height="@dimen/dp_140">
+        <ImageView android:id="@id/icloud_card_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icloud_club_card" />
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/icloud_e8bfa9" android:gravity="left" android:id="@id/icloud_date_duration_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="@string/icloud_none_def_des" android:layout_below="@id/icloud_card_des" />
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/icloud_e8bfa9" android:gravity="left" android:id="@id/icloud_date_expired_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2" android:text="@string/icloud_opened_expire_day" android:layout_below="@id/icloud_date_duration_tv" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/icloud_ffffff" android:gravity="center" android:id="@id/icloud_open_btn" android:background="@drawable/icloud_gradient_open_btn_style" android:layout_width="@dimen/dp_80" android:layout_height="@dimen/dp_26" android:text="@string/icloud_immediately_opened" android:layout_alignParentBottom="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icloud_logo" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/icloud_expired_tag_iv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icloud_expired_tag" android:layout_alignParentEnd="true" />
+</RelativeLayout>

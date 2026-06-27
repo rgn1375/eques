@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/main_empty_bg_color" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/lin_vl0" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_bind_process" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_14" android:layout_marginRight="@dimen/dp_14" android:src="@mipmap/img_set_wifi" />
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/service_cloud_plan_one" android:gravity="left" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_14" android:layout_marginTop="@dimen/dp_30" android:layout_marginRight="@dimen/dp_14" android:text="@string/e1_ap_hint1" />
+                    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/service_cloud_plan_one" android:gravity="left" android:id="@id/tv_wifi_name" android:layout_width="match_parent" android:layout_height="35.0dp" android:layout_marginLeft="@dimen/dp_14" android:layout_marginTop="@dimen/dp_10" android:layout_marginRight="@dimen/dp_14" android:text="@string/e1_ap_hint2" />
+                    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/service_cloud_plan_one" android:gravity="left" android:id="@id/tv_wifi_password" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_14" android:layout_marginTop="@dimen/dp_10" android:layout_marginRight="@dimen/dp_14" android:text="@string/e1_ap_hint3" />
+                    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/service_cloud_plan_one" android:gravity="left" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_14" android:layout_marginTop="@dimen/dp_14" android:layout_marginRight="@dimen/dp_14" android:text="@string/e1_ap_hint4" />
+                    <Button android:textSize="@dimen/sp_16" android:textColor="@color/white" android:id="@id/bind_process_auto_con_hotspot_btn_vl0" android:background="@drawable/nextstep_btn_shape_selector" android:layout_width="match_parent" android:layout_height="@dimen/dp_45" android:layout_marginLeft="@dimen/dp_50" android:layout_marginTop="@dimen/dp_30" android:layout_marginRight="@dimen/dp_50" android:text="@string/bind_process_btn_set_wifi" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/lin_progress" android:background="@drawable/low_bat_content_bg_style" android:paddingLeft="@dimen/dp_30" android:paddingRight="@dimen/dp_30" android:visibility="gone" android:layout_width="300.0dp" android:layout_height="150.0dp" android:layout_centerInParent="true">
+        <ProgressBar android:id="@id/progressBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:progressDrawable="@drawable/progressbar_style" style="?android:progressBarStyleHorizontal" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_8" android:text="@string/device_update_now" />
+    </LinearLayout>
+</RelativeLayout>

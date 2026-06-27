@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_dev_content_parent" android:background="@drawable/main_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:android_custom="http://schemas.android.com/apk/res-auto">
+    <com.eques.doorbell.ui.widget.CustomHaloView android:id="@id/haloView" android:layout_width="match_parent" android:layout_height="@dimen/dp_265" android:alpha="0.8" />
+    <RelativeLayout android:id="@id/rl_top_parent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_250">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linear_e1pro_wifi_ele_sw_parent" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linear_wifi_ele_status" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_lock_ele_parent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_20">
+                    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/d1_battery_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/e6_lock_ele_hint" />
+                    <ImageView android:layout_gravity="center" android:id="@id/iv_lock_ele_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:src="@drawable/e1pro_battery_1" android:contentDescription="@null" />
+                    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/d1_battery_color" android:layout_gravity="center" android:id="@id/tv_lock_ele_value" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:text="@string/fragment_device_item_battery_value" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/sp_12" android:textColor="@color/d1_battery_color" android:id="@id/tv_wifi_model" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/e1_wifi_con_status_one" android:drawableLeft="@drawable/e1pro_wifi_connect_tag" android:drawablePadding="@dimen/dp_5" />
+                <ImageView android:layout_gravity="center" android:id="@id/iv_ele_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:src="@drawable/e1pro_battery_1" android:contentDescription="@null" />
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/d1_battery_color" android:layout_gravity="center" android:id="@id/tv_battery_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:text="@string/fragment_device_item_battery_value" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linear_e1pro_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_3">
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/bind_lock_hint_font" android:layout_gravity="center" android:id="@id/tv_door_lock" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/e1pro_door_closed" android:drawableLeft="@drawable/e1pro_close_tag" android:drawablePadding="@dimen/dp_5" />
+                <View android:layout_gravity="center" android:id="@id/view_line" android:background="@color/praise_item_selector_default" android:layout_width="@dimen/dp_0_5" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_5" android:layout_marginTop="@dimen/dp_3" android:layout_marginRight="@dimen/dp_8" android:layout_marginBottom="@dimen/dp_3" />
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/bind_lock_hint_font" android:layout_gravity="center" android:id="@id/tv_main_spring_bolt_locked" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/e1pro_main_spring_bolt_locked" android:drawableLeft="@drawable/e1pro_spring_bolt_tag" android:drawablePadding="@dimen/dp_5" />
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/bind_lock_hint_font" android:layout_gravity="center" android:id="@id/tv_back_lock_locked" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:text="@string/e1pro_back_lock_locked" android:drawableLeft="@drawable/e1pro_spring_bolt_tag" android:drawablePadding="@dimen/dp_5" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/pir_tv_color" android:gravity="center" android:id="@id/tv_pir_state_e6" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_3" android:text="@string/fragment_device_item_pir_value" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linear_ele_pir_parent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linear_deviceElectricity" android:layout_width="@dimen/dp_100" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:id="@id/iv_batteryIcon" android:background="@drawable/e1pro_battery_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" />
+                <TextView android:textSize="@dimen/sp_14" android:layout_gravity="center" android:id="@id/tv_battery_def_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_3" android:layout_marginBottom="@dimen/dp_1" android:text="@string/fragment_device_item_battery_value" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/service_cloud_plan_two" android:id="@id/tv_protect_tag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_3" android:text="@string/e6_door_protect_status" android:drawableLeft="@drawable/e6_protect_state_tag" android:drawablePadding="@dimen/dp_5" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_3" android:layout_marginBottom="@dimen/dp_2">
+                <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/pir_tv_color" android:id="@id/tv_pirState" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:text="@string/fragment_device_item_pir_value" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/realy_smart_dev_parent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_below="@id/rl_top_parent">
+        <GridView android:gravity="center" android:id="@id/smart_dev_grid_view" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_25" android:layout_marginRight="@dimen/dp_25" android:listSelector="@android:color/transparent" android:verticalSpacing="@dimen/dp_5" android:numColumns="3" android:overScrollMode="never" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_lockDisShare" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:weightSum="2.0" android:layout_below="@id/rl_top_parent">
+        <View android:layout_width="0.0dp" android:layout_height="@dimen/dp_10" android:layout_weight="0.3" />
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_smartLock" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="0.7">
+            <ImageView android:layout_gravity="center" android:id="@id/iv_smartLock" android:background="@drawable/icon_mainfragment_openlock_bind" android:layout_width="@dimen/dp_52" android:layout_height="@dimen/dp_52" android:contentDescription="@null" android:elevation="@dimen/dp_3" />
+            <TextView android:textColor="@color/main_layout_tv_color" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_3" android:text="@string/buddy_type_lock" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_shareDev" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="0.7">
+            <TextView android:textSize="18.0sp" android:textColor="#333333" android:id="@id/tv_offline" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_14" android:text="@string/e6_save_ele_run_hint" />
+            <ImageView android:layout_gravity="center" android:id="@id/iv_shareDev" android:background="@drawable/icon_mainfragment_share" android:layout_width="@dimen/dp_52" android:layout_height="@dimen/dp_52" android:elevation="@dimen/dp_3" />
+            <TextView android:textColor="@color/main_layout_tv_color" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_3" android:text="@string/equipment_sharing_settings" />
+        </LinearLayout>
+        <View android:layout_width="0.0dp" android:layout_height="@dimen/dp_10" android:layout_weight="0.3" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/linear_monitorGrandpa" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_48" android:layout_below="@id/realy_custom">
+        <RelativeLayout android:id="@id/relay_monitorFather" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_10">
+            <RelativeLayout android:id="@id/relay_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/iv_deviceImage" android:background="@drawable/ic_devices_r22" android:layout_width="@dimen/dp_192" android:layout_height="@dimen/dp_192" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/iv_chargingBackground" android:background="@drawable/ic_devices_power_anim" android:visibility="gone" android:layout_width="@dimen/dp_192" android:layout_height="@dimen/dp_192" android:layout_centerInParent="true" android:contentDescription="@null" />
+                <ImageView android:id="@id/iv_style_circle" android:background="@drawable/icon_ele_circle_bg" android:visibility="gone" android:layout_width="@dimen/dp_195" android:layout_height="@dimen/dp_203" android:layout_centerInParent="true" android:contentDescription="@null" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <include layout="@layout/main_item_top_style_layout" />
+    <com.eques.doorbell.tools.CircularProgressBar android:layout_gravity="center" android:id="@id/circular_progressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android_custom:roundColor="@android:color/transparent" android_custom:roundProgressColor="@color/white" android_custom:roundWidth="@dimen/dp_3" />
+</RelativeLayout>

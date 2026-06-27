@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="@dimen/dp_210"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/main_mime_top_style" android:padding="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/sp_18" android:textStyle="bold" android:textColor="@color/black" android:ellipsize="end" android:id="@id/tv_order_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="14" android:singleLine="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/common_color_ff7316" android:id="@id/tv_order_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_wait" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <TextView android:textSize="@dimen/sp_12" android:textColor="#999999" android:id="@id/tv_create_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" />
+                <TextView android:textSize="@dimen/sp_12" android:textColor="#999999" android:id="@id/tv_use_time" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2" />
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_40" android:layout_marginRight="@dimen/dp_14" android:src="@drawable/arrow_icon_default" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <View android:background="@color/line_color" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:layout_marginTop="@dimen/dp_10" />
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10">
+            <TextView android:textSize="@dimen/sp_14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fact_pay_money" />
+            <TextView android:textSize="@dimen/sp_15" android:textStyle="bold" android:textColor="@color/common_color_ff7316" android:id="@id/tv_pay_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.00" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14">
+            <Button android:textSize="@dimen/sp_14" android:textColor="@color/white" android:id="@id/btn_pay" android:background="@drawable/btn_style_save_new" android:layout_width="@dimen/dp_80" android:layout_height="@dimen/dp_30" android:text="@string/pay_current" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

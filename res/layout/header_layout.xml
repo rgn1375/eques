@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingTop="15.0dp" android:paddingBottom="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:id="@id/tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下拉可以刷新！" />
+            <TextView android:id="@id/lastupdate_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_20" android:src="@drawable/pull_to_refresh_arrow" android:layout_toLeftOf="@id/layout" android:layout_centerVertical="true" android:contentDescription="@null" />
+        <ProgressBar android:id="@id/progress" android:visibility="gone" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_marginRight="@dimen/dp_20" android:layout_toLeftOf="@id/layout" android:layout_centerVertical="true" style="?android:progressBarStyleSmall" />
+    </RelativeLayout>
+</RelativeLayout>

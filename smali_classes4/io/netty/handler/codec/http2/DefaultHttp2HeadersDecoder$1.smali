@@ -1,0 +1,84 @@
+.class Lio/netty/handler/codec/http2/DefaultHttp2HeadersDecoder$1;
+.super Ljava/lang/Object;
+.source "DefaultHttp2HeadersDecoder.java"
+
+# interfaces
+.implements Lcom/twitter/hpack/HeaderListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lio/netty/handler/codec/http2/DefaultHttp2HeadersDecoder;->decodeHeaders(Lio/netty/buffer/ByteBuf;)Lio/netty/handler/codec/http2/Http2Headers;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lio/netty/handler/codec/http2/DefaultHttp2HeadersDecoder;
+
+.field final synthetic val$headers:Lio/netty/handler/codec/http2/Http2Headers;
+
+
+# direct methods
+.method constructor <init>(Lio/netty/handler/codec/http2/DefaultHttp2HeadersDecoder;Lio/netty/handler/codec/http2/Http2Headers;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lio/netty/handler/codec/http2/DefaultHttp2HeadersDecoder$1;->this$0:Lio/netty/handler/codec/http2/DefaultHttp2HeadersDecoder;
+
+    .line 2
+    .line 3
+    iput-object p2, p0, Lio/netty/handler/codec/http2/DefaultHttp2HeadersDecoder$1;->val$headers:Lio/netty/handler/codec/http2/Http2Headers;
+
+    .line 4
+    .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public addHeader([B[BZ)V
+    .locals 2
+
+    .line 1
+    iget-object p3, p0, Lio/netty/handler/codec/http2/DefaultHttp2HeadersDecoder$1;->val$headers:Lio/netty/handler/codec/http2/Http2Headers;
+
+    .line 2
+    .line 3
+    new-instance v0, Lio/netty/handler/codec/AsciiString;
+
+    .line 4
+    .line 5
+    const/4 v1, 0x0
+
+    .line 6
+    invoke-direct {v0, p1, v1}, Lio/netty/handler/codec/AsciiString;-><init>([BZ)V
+
+    .line 7
+    .line 8
+    .line 9
+    new-instance p1, Lio/netty/handler/codec/AsciiString;
+
+    .line 10
+    .line 11
+    invoke-direct {p1, p2, v1}, Lio/netty/handler/codec/AsciiString;-><init>([BZ)V
+
+    .line 12
+    .line 13
+    .line 14
+    invoke-interface {p3, v0, p1}, Lio/netty/handler/codec/http2/Http2Headers;->add(Lio/netty/handler/codec/AsciiString;Lio/netty/handler/codec/AsciiString;)Lio/netty/handler/codec/http2/Http2Headers;
+
+    .line 15
+    .line 16
+    .line 17
+    return-void
+.end method

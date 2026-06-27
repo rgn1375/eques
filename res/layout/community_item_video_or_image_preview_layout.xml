@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_community_item_video_image_parent" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" app:layout_constraintTop_toBottomOf="@id/tv_community_talk"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_none" android:background="@drawable/community_item_link_bg_style" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/iv_community_item_placeholder" android:layout_width="match_parent" android:layout_height="@dimen/dp_220" android:src="@drawable/community_placeholder" android:scaleType="fitXY" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:id="@id/iv_community_item_video_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/preview_play" app:layout_constraintBottom_toBottomOf="@id/iv_community_item_placeholder" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="@id/iv_community_item_placeholder" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" app:layout_constraintTop_toBottomOf="@id/cl_none" layout="@layout/community_item_bottom_layout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

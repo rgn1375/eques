@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rel_root" android:layout_width="match_parent" android:layout_height="@dimen/dp_190" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/banner_image" android:layout_width="match_parent" android:layout_height="@dimen/dp_140" android:layout_marginLeft="@dimen/dp_5" android:layout_marginRight="@dimen/dp_5" android:src="@drawable/bg_banner_one" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/img_banner_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icloud" android:layout_alignParentEnd="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/dp_120" android:layout_marginLeft="@dimen/dp_30" android:layout_marginTop="@dimen/dp_35">
+            <TextView android:textSize="@dimen/sp_24" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tv_banner_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_ui_cloud" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:id="@id/tv_banner_second_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="免费云存储时长仅3天" />
+            <TextView android:textSize="@dimen/sp_12" android:textColor="@color/white" android:id="@id/tv_banner_three_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lin_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10">
+                <Button android:textSize="@dimen/sp_14" android:textColor="@color/white" android:id="@id/btn_banner_update" android:background="@drawable/rounded_gradient_button_blue" android:layout_width="@dimen/dp_90" android:layout_height="@dimen/dp_30" android:layout_marginRight="@dimen/dp_5" android:text="立即升级" />
+                <Button android:textSize="@dimen/sp_14" android:textColor="@color/white" android:id="@id/btn_voice_set" android:background="@drawable/rounded_gradient_button_gray" android:visibility="gone" android:layout_width="@dimen/dp_80" android:layout_height="@dimen/dp_30" android:text="@string/animal_set_remind" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

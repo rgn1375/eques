@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_face_group_parent" android:background="@color/smart_group_bg_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_35"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_face_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:layout_marginBottom="@dimen/dp_6" android:src="@drawable/face_smart_group" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_marginStart="@dimen/dp_12" />
+    <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/bind_lock_hint_font" android:id="@id/tv_group_msg_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dev_alarm_group_hint_one" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_12" android:layout_toEndOf="@id/iv_face_group" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/group_arrow" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_marginEnd="@dimen/dp_16" android:layout_alignParentEnd="true" />
+    <View android:background="@color/interval_bg" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

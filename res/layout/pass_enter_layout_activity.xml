@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/rl_open_lock_parent" android:background="@drawable/e1pro_open_lock_bg" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_open_blurred_bg" android:background="@drawable/open_blurred_bg" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <View android:background="@drawable/e1pro_open_lock_bg" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:id="@id/iv_back_btn" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/close_open_lock_pass" />
+    <TextView android:textSize="18.0sp" android:textColor="#f6f7f9" android:gravity="center" android:id="@id/tv_open_lock_hint" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="输入开锁密码" android:layout_below="@id/iv_back_btn" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linear_enter_pass_parent" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:layout_below="@id/tv_open_lock_hint" android:layout_alignParentLeft="true">
+        <com.eques.doorbell.ui.view.PassEditTextView android:id="@id/et_text_view_circle" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:circleColor="#ffffff" app:circleRadius="6.0dp" app:height="15.0dp" app:isDrawCircle="true" app:isDrawLine="true" app:lineWidth="2.0px" app:spaceWidth="10.0dp" />
+    </LinearLayout>
+    <TableLayout android:gravity="center" android:id="@id/tb_num_key_parent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_below="@id/linear_enter_pass_parent" android:layout_alignParentLeft="true">
+        <TableRow android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/btn_num_01" android:text="1" style="@style/BtnNumStyle" />
+            <Button android:id="@id/btn_num_02" android:text="2" style="@style/BtnNumStyle" />
+            <Button android:id="@id/btn_num_03" android:text="3" style="@style/BtnNumStyle" />
+        </TableRow>
+        <TableRow android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/btn_num_04" android:text="4" style="@style/BtnNumStyle" />
+            <Button android:id="@id/btn_num_05" android:text="5" style="@style/BtnNumStyle" />
+            <Button android:id="@id/btn_num_06" android:text="6" style="@style/BtnNumStyle" />
+        </TableRow>
+        <TableRow android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/btn_num_07" android:text="7" style="@style/BtnNumStyle" />
+            <Button android:id="@id/btn_num_08" android:text="8" style="@style/BtnNumStyle" />
+            <Button android:id="@id/btn_num_09" android:text="9" style="@style/BtnNumStyle" />
+        </TableRow>
+        <TableRow android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textSize="25.0sp" android:textColor="#ffffff" android:visibility="invisible" android:layout_width="80.0dp" android:layout_height="80.0dp" android:layout_margin="7.0dp" />
+            <Button android:id="@id/btn_num_00" android:text="0" style="@style/BtnNumStyle" />
+            <ImageView android:id="@id/iv_num_delete" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clear_open_lock_pass" />
+        </TableRow>
+    </TableLayout>
+    <TextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_save_pass_submit" android:background="@drawable/key_submit_style" android:layout_width="match_parent" android:layout_height="@dimen/dp_45" android:layout_marginLeft="100.0dp" android:layout_marginRight="100.0dp" android:text="@string/ok" android:layout_above="@id/tv_open_lock_alarm_hint" />
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/tv_sketch_map_bg" android:gravity="center" android:id="@id/tv_open_lock_alarm_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_20" android:text="@string/open_lock_alarm_hint" android:drawableLeft="@drawable/alarm_error" android:drawablePadding="@dimen/dp_5" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/main_head_title_bar_v3_layout" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:background="#f5f5f5" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:id="@id/lin_empty_data" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="@dimen/sp_16" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_has_phone_call" android:drawableTop="@mipmap/voicecall_rec_none" android:drawablePadding="@dimen/dp_14" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rec_call_record" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/rel_date" android:background="@color/gray_transparent_half" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.prolificinteractive.materialcalendarview.MaterialCalendarView android:id="@id/cv_messageCalendarView" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/img_video_integral" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/video_banner" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

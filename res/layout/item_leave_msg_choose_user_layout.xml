@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingBottom="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/btn_style_white" android:padding="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="0.9">
+            <TextView android:textSize="@dimen/sp_18" android:textColor="@color/common_color_333333" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="This is title for leave msg" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/common_color_666666" android:id="@id/tv_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="This is details" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_choose" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="0.1">
+            <ImageView android:id="@id/iv_choose" android:visibility="gone" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@drawable/icon_alarm_checkbox_press" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

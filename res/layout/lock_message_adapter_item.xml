@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/relative_item" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/dove_gray" android:layout_width="@dimen/dp_1" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:layout_marginTop="@dimen/dp_40" android:layout_toRightOf="@id/left_view" android:layout_alignBottom="@id/relay_lockMsgContent" android:layout_alignParentTop="true" />
+    <View android:id="@id/left_view" android:layout_width="@dimen/dp_32" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/relay_lockMsgtitleView" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/relay_lockMsgDayView" android:layout_width="@dimen/dp_32" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10">
+            <TextView android:id="@id/tv_lockMsgTitleDate" android:layout_marginLeft="@dimen/dp_3" android:text="21月7" android:layout_centerVertical="true" style="@style/message_lockmsg_date_textstyle" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/relay_lockMsgContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:layout_marginTop="@dimen/dp_2" android:layout_toRightOf="@id/left_view">
+        <ImageView android:id="@id/iv_lockMsgIcon" android:background="@drawable/open_lock_type_password" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <RelativeLayout android:orientation="vertical" android:paddingBottom="@dimen/fiveteen" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:layout_marginTop="@dimen/dp_2" android:layout_toRightOf="@id/iv_lockMsgIcon">
+            <TextView android:id="@id/tv_lockMsgContentTime" android:text="16:55" style="@style/message_lockmsg_time_textstyle" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/linear_state_hint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_1" android:layout_marginRight="@dimen/dp_35" android:layout_below="@id/tv_lockMsgContentTime">
+                <TextView android:id="@id/message_lockmsg_hint_one" android:text="@string/openlock_message_content_one" style="@style/message_lockmsg_content_textstyle_one" />
+                <TextView android:id="@id/tv_lockMsgContent" android:paddingLeft="@dimen/dp_6" android:paddingTop="@dimen/dp_1" android:paddingRight="@dimen/dp_6" android:paddingBottom="@dimen/dp_1" android:layout_marginLeft="@dimen/dp_2" android:layout_marginRight="@dimen/dp_2" android:text="@string/openlock_message_content_two" android:layout_toRightOf="@id/message_lockmsg_hint_one" style="@style/message_lockmsg_content_textstyle_one" />
+                <TextView android:id="@id/message_lockmsg_hint_two" android:text="@string/openlock_message_content_three" android:layout_toRightOf="@id/tv_lockMsgContent" style="@style/message_lockmsg_content_textstyle_one" />
+            </RelativeLayout>
+            <TextView android:id="@id/tv_lockMsgContentNick" android:layout_marginTop="@dimen/dp_1" android:text="我家的小叮当" android:layout_below="@id/linear_state_hint" style="@style/message_lockmsg_content_nick_textstyle" />
+            <ImageView android:id="@id/iv_change_nickname_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_30" android:src="@drawable/change_user_lock_nickname" android:layout_below="@id/linear_state_hint" android:layout_alignBaseline="@id/linear_state_hint" />
+        </RelativeLayout>
+        <CheckBox android:id="@id/cb_lockMsgDelete" android:focusable="false" android:focusableInTouchMode="false" android:visibility="invisible" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_5" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/AlarmCheckboxTheme" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_community_item_bottom_parent" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:id="@id/ll_community_item_preview_count" android:layout_width="0.0dp" android:layout_height="@dimen/dp_30" app:layout_constraintHorizontal_weight="1.0" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/ll_community_item_comment_count" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/common_color_6c7b8a" android:gravity="center_vertical" android:id="@id/tv_community_item_preview_count" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="88" android:drawableStart="@drawable/community_msg_page_view" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/ll_community_item_comment_count" android:layout_width="0.0dp" android:layout_height="@dimen/dp_30" app:layout_constraintHorizontal_weight="1.0" app:layout_constraintLeft_toRightOf="@id/ll_community_item_preview_count" app:layout_constraintRight_toLeftOf="@id/ll_community_item_give_like_count" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/common_color_6c7b8a" android:gravity="center_vertical" android:id="@id/tv_community_item_comment_count" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="33" android:drawableStart="@drawable/community_comment" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/ll_community_item_give_like_count" android:layout_width="0.0dp" android:layout_height="@dimen/dp_30" app:layout_constraintHorizontal_weight="1.0" app:layout_constraintLeft_toRightOf="@id/ll_community_item_comment_count" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/common_color_6c7b8a" android:gravity="center_vertical" android:id="@id/tv_community_item_give_like_count" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="111" android:drawablePadding="@dimen/dp_2" android:drawableStart="@drawable/community_thumb_up" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

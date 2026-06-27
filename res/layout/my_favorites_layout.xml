@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/linlayout_rootView" android:layout_width="match_parent" android:layout_height="match_parent" xrefreshview:autoRefresh="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xrefreshview="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/linLayout_favoriteListIsNull" android:visibility="visible" layout="@layout/favorite_list_empty_view" />
+    <include android:id="@id/linLayout_openCloudSstorage" android:visibility="visible" layout="@layout/favorite_cloud_storage_none_layout" />
+    <RelativeLayout android:id="@id/rl_head_parent" android:background="@color/alarm_manager_tabitem_color_press" android:layout_width="match_parent" android:layout_height="@dimen/dp_50">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="2.0">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linlayout_favoritesMenuPopWindown" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/dp_12" android:textColor="@color/message_edit_font_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pir_alarm" android:drawablePadding="@dimen/dp_3" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linear_favoritesDatePopWindown" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/dp_12" android:textColor="@color/message_edit_font_color" android:gravity="center" android:id="@id/tv_favoritesDateText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="02-15" android:drawableRight="@drawable/drop_down_btn_data" android:drawablePadding="@dimen/dp_3" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/interval_bg" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/realy_parent_h" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.eques.doorbell.ui.view.SingleLayoutListView android:id="@id/singlelv_favoritesList" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dp_2" android:listSelector="@android:color/transparent" android:divider="@android:color/transparent" />
+        <include android:id="@id/favoritesList_empty_view" layout="@layout/empty_view_collect_list" />
+        <RelativeLayout android:id="@id/realay_editMenu" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_alignParentBottom="true">
+            <View android:background="@color/gray_line" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+            <TextView android:textSize="@dimen/dp_14" android:textColor="@color/settings_left_tv_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/cancel_collect_btn" android:drawableLeft="@drawable/icon_cancel_collect" android:drawablePadding="@dimen/dp_4" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

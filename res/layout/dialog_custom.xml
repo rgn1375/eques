@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/custom_dialog_share" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/linear_contentView" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp_18" android:textColor="#000" android:gravity="center" android:id="@id/tv_restinfo_pop_tel_content" android:padding="@dimen/dp_30" android:layout_width="match_parent" android:layout_height="match_parent" android:text="您确定要删除么?" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/dp_20" android:textColor="#287bdf" android:gravity="center" android:id="@id/dialog_textViewID" android:padding="@dimen/dp_15" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="确定" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/dp_20" android:textColor="#287bdf" android:gravity="center" android:id="@id/dialog_textViewID1" android:padding="@dimen/dp_15" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="取消" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

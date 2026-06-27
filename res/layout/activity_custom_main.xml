@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#f5f5f5" android:padding="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_help_guide" android:background="@drawable/btn_style_white_back" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" android:onClick="viewClick" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10">
+        <TextView android:textSize="16.0sp" android:textColor="#000000" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smart_lock_add_operating_manual_setting" android:drawableLeft="@mipmap/help_guide" android:drawablePadding="@dimen/dp_5" android:layout_centerVertical="true" />
+        <ImageView android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@drawable/arrow_icon_press" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_10" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_common_faq" android:background="@drawable/btn_style_white_back" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" android:layout_marginTop="@dimen/dp_10" android:onClick="viewClick" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10">
+        <TextView android:textSize="16.0sp" android:textColor="#000000" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_faq_menu" android:drawableLeft="@mipmap/qa" android:drawablePadding="@dimen/dp_5" android:layout_centerVertical="true" />
+        <ImageView android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@drawable/arrow_icon_press" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_10" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/btn_style_white_back" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_10">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_50">
+            <TextView android:textSize="16.0sp" android:textColor="#000000" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/custom_id" android:drawableLeft="@mipmap/parts" android:drawablePadding="@dimen/dp_5" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_main_dev_layout" android:paddingTop="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_product_list" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/lin_parent" android:background="#f5f5f5" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/top_nav_bar_layout" />
+    <LinearLayout android:orientation="vertical" android:id="@id/voice_lin" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="#778ca2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_14" android:text="@string/voice_connect_user" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/btn_style_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_14" android:layout_marginEnd="@dimen/dp_14">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rec_user" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/rel_create_new_user" android:background="@drawable/btn_style_white" android:paddingLeft="@dimen/dp_14" android:paddingRight="@dimen/dp_14" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_60">
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voice_service_add_user" android:drawableLeft="@mipmap/call_icon" android:drawablePadding="@dimen/dp_5" android:layout_centerVertical="true" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@mipmap/add_connect" android:drawablePadding="@dimen/dp_5" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/voip_lin" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="#778ca2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_14" android:text="@string/voip_connect_user" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/btn_style_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_14" android:layout_marginEnd="@dimen/dp_14">
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/rel_voip_user" android:background="@drawable/btn_style_white" android:paddingLeft="@dimen/dp_14" android:paddingRight="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="@dimen/dp_60">
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mine_voice_call" android:drawableLeft="@mipmap/call_icon" android:drawablePadding="@dimen/dp_5" android:layout_centerVertical="true" />
+                <TextView android:textColor="@color/login_666666" android:id="@id/tv_voip_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/arrow_icon_default" android:drawablePadding="@dimen/dp_5" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

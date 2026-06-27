@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dp" android:layout_marginTop="15.0dp" android:layout_marginRight="18.0dp">
+            <View android:layout_gravity="center_vertical" android:background="@color/four" android:layout_width="0.0dp" android:layout_height="0.5px" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/three" android:gravity="center_horizontal" android:id="@id/dlg_title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="视频下载" android:layout_weight="1.0" />
+            <View android:layout_gravity="center_vertical" android:background="@color/four" android:layout_width="0.0dp" android:layout_height="0.5px" android:layout_weight="1.0" />
+        </LinearLayout>
+        <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_marginBottom="18.0dp">
+            <TextView android:textSize="14.0sp" android:id="@id/dlg_msg1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:text="开始下载" />
+            <TextView android:textSize="14.0sp" android:id="@id/dlg_msg2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dp" android:text="MMMM" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <ProgressBar android:id="@id/progressBar1" android:layout_width="match_parent" android:layout_height="8.0dp" android:layout_marginLeft="18.0dp" android:layout_marginRight="18.0dp" android:layout_marginBottom="18.0dp" android:progress="100" android:secondaryProgress="0" android:progressDrawable="@drawable/dlg_progressbar" style="?android:progressBarStyleHorizontal" />
+        <Button android:textSize="14.0sp" android:layout_gravity="center_horizontal" android:id="@id/dlg_btn" android:background="@drawable/dlg_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="20.0dp" android:text="取消" />
+    </LinearLayout>
+</RelativeLayout>

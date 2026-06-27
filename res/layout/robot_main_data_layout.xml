@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/robot_f1eff0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:background="@android:color/transparent" android:padding="@dimen/dp_16" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/robot_main_data_top_layout" />
+            <include layout="@layout/robot_main_data_bottom_layout" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

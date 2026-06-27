@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/layoutRoot" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uilib="http://schemas.android.com/apk/res-auto">
+    <com.xm.ui.widget.ListSelectItem android:id="@id/lsi_extra_spinnet" android:layout_width="match_parent" android:layout_height="wrap_content" uilib:ImageRight1="@drawable/ic_unselected" uilib:ImageRight2="@drawable/ic_selected" uilib:ItemTitleColor="@color/default_normal_text_color" uilib:ItemTitleSize="@dimen/small_text_size" uilib:LineColor="@color/line_color" uilib:RightClickable="false" uilib:Title="dddddd" />
+</LinearLayout>

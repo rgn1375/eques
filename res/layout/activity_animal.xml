@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/constraint_parent" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/rel_parent" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/main_head_title_bar_v3_layout" />
+            <RelativeLayout android:id="@id/lin_video_parent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+                    <SurfaceView android:id="@id/surfaceview" android:layout_width="1.0dp" android:layout_height="1.0dp" />
+                    <TextureView android:id="@id/surfaceview_video" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </FrameLayout>
+                <ImageView android:id="@id/img_back_logo" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/img_anim_default" android:scaleType="centerCrop" />
+                <ImageView android:id="@id/img_play" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/anim_videoplay" android:scaleType="centerCrop" android:layout_centerInParent="true" android:onClick="viewClick" />
+                <ImageView android:id="@id/img_offline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/video_wifi_none" android:scaleType="centerCrop" android:layout_centerInParent="true" android:onClick="viewClick" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/lin_loading" android:background="@drawable/btn_style_black" android:padding="@dimen/dp_14" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <ImageView android:layout_gravity="center" android:id="@id/gf_videoLoadingGif" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_call_anim" />
+                    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:id="@id/tv_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/rel_failed_video" android:background="@color/black" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_poor_wifi" />
+                    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/white" android:id="@id/tv_get_fail_remind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_14" android:text="@string/animal_get_video_failed" />
+                    <TextView android:textSize="@dimen/sp_18" android:textColor="@color/blue" android:id="@id/img_again" android:background="@drawable/btn_style_blue_slide" android:paddingLeft="@dimen/dp_25" android:paddingTop="@dimen/dp_5" android:paddingRight="@dimen/dp_25" android:paddingBottom="@dimen/dp_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_14" android:text="@string/animal_get_video_again" android:onClick="viewClick" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_rec_time" android:background="@drawable/btn_half_coner_transport" android:paddingLeft="@dimen/dp_8" android:paddingRight="@dimen/dp_8" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:text="00:00:00" android:drawableLeft="@drawable/unread_icon" android:drawablePadding="@dimen/dp_3" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/lin_animal_group" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center_vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/login_666666" android:gravity="center" android:id="@id/tv_animal_catch" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/animal_menu_1" android:drawableTop="@mipmap/animal_new_photo" android:drawablePadding="@dimen/dp_3" android:layout_weight="1.0" android:onClick="viewClick" />
+                <TextView android:textColor="@color/login_666666" android:gravity="center" android:id="@id/tv_animal_video" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/animal_menu_2" android:drawableTop="@mipmap/animal_phone_off" android:drawablePadding="@dimen/dp_3" android:layout_weight="1.0" android:onClick="viewClick" />
+                <TextView android:textColor="@color/login_666666" android:gravity="center" android:id="@id/tv_animal_voice" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/animal_menu_3" android:drawableTop="@mipmap/animal_voice" android:drawablePadding="@dimen/dp_3" android:layout_weight="1.0" android:onClick="viewClick" />
+                <TextView android:textColor="@color/login_666666" android:gravity="center" android:id="@id/tv_animal_mute" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/animal_menu_4" android:drawableTop="@mipmap/animal_muteon" android:drawablePadding="@dimen/dp_3" android:layout_weight="1.0" android:onClick="viewClick" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5">
+                <TextView android:textColor="@color/login_666666" android:gravity="center" android:id="@id/tv_animal_rec" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/animal_menu_5" android:drawableTop="@mipmap/animal_feed_record" android:drawablePadding="@dimen/dp_3" android:layout_weight="1.0" android:onClick="viewClick" />
+                <TextView android:textColor="@color/login_666666" android:gravity="center" android:id="@id/tv_animal_alarm" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/animal_menu_6" android:drawableTop="@mipmap/animl_alarm_msg" android:drawablePadding="@dimen/dp_3" android:layout_weight="1.0" android:onClick="viewClick" />
+                <TextView android:textColor="@color/login_666666" android:gravity="center" android:id="@id/tv_animal_clock" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/animal_menu_7" android:drawableTop="@mipmap/feed_plan" android:drawablePadding="@dimen/dp_3" android:layout_weight="1.0" android:onClick="viewClick" />
+                <TextView android:textColor="@color/login_666666" android:gravity="center" android:id="@id/tv_animal_send_food" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/animal_menu_8" android:drawableTop="@mipmap/animal_feed" android:drawablePadding="@dimen/dp_3" android:layout_weight="1.0" android:onClick="viewClick" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

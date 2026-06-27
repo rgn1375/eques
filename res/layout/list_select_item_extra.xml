@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/extra_content" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SeekBar android:layout_gravity="center" android:id="@id/extra_seekbar" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SeekBar_Normal" />
+    <com.xm.ui.widget.rollerradiogroup.RollerRadioGroup android:layout_gravity="center" android:id="@id/extra_roller" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:background_use_selected_color="true" app:text_padding="10.0dp" />
+    <com.xm.ui.widget.listselectitem.extra.view.ExtraSpinner android:id="@id/extra_spinner" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</FrameLayout>

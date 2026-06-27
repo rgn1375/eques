@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_video_not_view_parent" android:background="@color/settings_left_tv_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/video_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_80" android:layout_centerHorizontal="true" android:alpha="0.3" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_30">
+        <TextView android:textSize="@dimen/sp_20" android:textColor="@color/white" android:id="@id/tv_dev_nick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="E100智能锁" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/iv_close_eco_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/e6_eco_mode_close" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_10" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_230" android:layout_centerHorizontal="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/e6_link_eco_mode" />
+        <TextView android:textSize="@dimen/sp_15" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_35" android:text="@string/e6_save_ele_run_video_hint" />
+    </LinearLayout>
+</RelativeLayout>

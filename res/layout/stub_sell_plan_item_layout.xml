@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_sell_plan_bg_style" android:background="@drawable/voice_plan_border_select_state_layout" android:layout_width="match_parent" android:layout_height="@dimen/dialog_btn_height">
+        <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/service_cloud_plan_two" android:gravity="start|center" android:id="@id/tv_service_duration" android:layout_width="@dimen/dp_60" android:layout_height="wrap_content" android:text="120个月" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_10" />
+        <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/service_cloud_plan_two" android:gravity="start|center" android:id="@id/tv_service_times" android:layout_width="@dimen/dp_65" android:layout_height="wrap_content" android:text="150000次" android:layout_centerVertical="true" android:layout_toEndOf="@id/tv_service_duration" />
+        <TextView android:textSize="@dimen/fontsize_ten" android:textColor="@color/white" android:gravity="start|center" android:id="@id/tv_service_promo_label" android:background="@drawable/service_promo_label_style" android:paddingTop="@dimen/dp_1" android:paddingBottom="@dimen/dp_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="限时特惠" android:layout_centerVertical="true" android:paddingStart="@dimen/dp_6" android:paddingEnd="@dimen/dp_6" android:layout_toEndOf="@id/tv_service_times" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginEnd="@dimen/dp_10" android:layout_alignParentEnd="true">
+            <LinearLayout android:gravity="start|bottom" android:orientation="horizontal" android:layout_width="@dimen/dp_70" android:layout_height="@dimen/dp_20">
+                <TextView android:textSize="@dimen/fontsize_twelve" android:textColor="@color/d1_no_con_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥" />
+                <TextView android:textSize="@dimen/fontsize_eighteenth" android:textColor="@color/d1_no_con_color" android:ellipsize="none" android:id="@id/tv_service_receipt_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="999.00" android:singleLine="true" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/fontsize_twelve" android:textColor="@color/service_cloud_plan_three" android:ellipsize="none" android:gravity="start|bottom" android:id="@id/tv_service_total_amount" android:layout_width="@dimen/dp_45" android:layout_height="@dimen/dp_20" android:layout_marginBottom="@dimen/dp_1" android:text="¥999.00" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_1" android:text="@string/add433dev_triggering_device_two" android:drawableBottom="@drawable/image_trigger" android:layout_weight="1.0" style="@style/alarm_device_two_level_textstyle" />
+    <TextView android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/add433dev_triggering_device_three" android:drawableBottom="@drawable/image_trigger_1" android:layout_weight="1.0" style="@style/alarm_device_two_level_textstyle" />
+    <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/red" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/add433dev_triggering_device_one" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_1">
+        <Button android:id="@id/btn_add433_TriDevOk" android:layout_margin="@dimen/dp_10" android:text="@string/ok" style="@style/btn_style_setting_one" />
+        <Button android:id="@id/btn_add433_TriDevCancel" android:layout_margin="@dimen/dp_10" android:text="@string/cancel" style="@style/btn_style_setting_three" />
+    </LinearLayout>
+</LinearLayout>

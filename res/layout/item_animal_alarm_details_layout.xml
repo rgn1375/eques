@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:paddingLeft="@dimen/dp_5" android:paddingRight="@dimen/dp_5" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/sp_14" android:textColor="#666666" android:gravity="center" android:id="@id/tv_animal_hours" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:layout_marginBottom="@dimen/dp_14" android:text="00:00" android:layout_weight="0.2" android:layout_marginStart="@dimen/dp_14" />
+    <RelativeLayout android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="0.1">
+        <View android:id="@id/view_top_line" android:background="#ffe6e6e6" android:layout_width="1.0dp" android:layout_height="match_parent" android:layout_above="@id/img_point" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/img_point" android:layout_width="5.0dp" android:layout_height="5.0dp" android:src="@drawable/btn_point_gray" android:layout_centerInParent="true" />
+        <View android:id="@id/view_bottom_line" android:background="#ffe6e6e6" android:layout_width="1.0dp" android:layout_height="match_parent" android:layout_below="@id/img_point" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:layout_marginBottom="@dimen/dp_14" android:layout_weight="0.7">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="#333333" android:id="@id/tv_animal_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_double_dev" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:layout_below="@id/tv_animal_content">
+            <TextView android:textColor="#4d7cfe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:layout_marginRight="@dimen/dp_5" android:text="@string/anim_left_hint" />
+            <TextView android:textColor="#666666" android:id="@id/tv_anim_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:layout_marginRight="@dimen/dp_10" android:text="0" />
+            <TextView android:textColor="#4d7cfe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:layout_marginRight="@dimen/dp_5" android:text="@string/anim_right_hint" />
+            <TextView android:textColor="#666666" android:id="@id/tv_anim_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/rel_animal_data" android:layout_width="@dimen/dp_80" android:layout_height="@dimen/dp_80" android:layout_alignParentRight="true">
+            <com.makeramen.roundedimageview.RoundedImageView android:id="@id/img_content" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_80" android:layout_centerInParent="true" app:riv_corner_radius_bottom_left="10.0dp" app:riv_corner_radius_bottom_right="10.0dp" app:riv_corner_radius_top_left="10.0dp" app:riv_corner_radius_top_right="10.0dp" />
+            <ImageView android:id="@id/iv_alarm_type" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/aplay" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/iv_alarm_video" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_14" android:layout_marginBottom="@dimen/dp_5" android:src="@mipmap/apic" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

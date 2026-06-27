@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8">
+        <TextView android:textSize="@dimen/fiveteen" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/tv_433deviceName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_10" android:singleLine="true" android:drawableLeft="@drawable/icon_to_alarm" android:drawablePadding="@dimen/dp_10" android:layout_weight="1.0" />
+        <ImageView android:id="@id/iv_set433DeviceSwitch" android:background="@mipmap/button_switch_on" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/footer" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linear_menuUpdateDevName" android:background="#c8c8c8" android:layout_width="match_parent" android:layout_height="@dimen/dp_65" android:layout_weight="1.0">
+            <TextView android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/update_device_name" android:drawableLeft="@drawable/icon_rename" android:drawablePadding="@dimen/dp_10" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linear_menuDel433Device" android:background="#dc2f2e" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+            <TextView android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/remove_equipment_settings" android:drawableLeft="@drawable/icon_delete" android:drawablePadding="@dimen/dp_10" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:background="#c8c8c8" android:layout_width="match_parent" android:layout_height="0.100000024dp" android:layout_marginLeft="@dimen/dp_30" android:layout_marginRight="@dimen/dp_30" android:layout_marginBottom="@dimen/dp_1" />
+</LinearLayout>

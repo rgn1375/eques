@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/ysf_card_float_send_button_tv" android:background="@drawable/ysf_bg_bot_product_detail_dialog" android:layout_width="220.0dp" android:layout_height="40.0dp" android:layout_margin="4.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

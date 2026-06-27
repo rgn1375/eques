@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="@dimen/dp_50"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/dp_14" android:paddingEnd="@dimen/dp_14">
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/robot_333333" android:gravity="center" android:id="@id/tv_sk_weak_sel_day" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="周一" />
+        <ImageView android:id="@id/iv_sk_weak_sel_tag" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/icon_alarm_checkbox_press" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

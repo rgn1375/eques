@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bind_process_pop_rounded_corners_bg" android:paddingBottom="@dimen/dp_5" android:layout_width="@dimen/dp_230" android:layout_height="@dimen/dp_260">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/service_cloud_plan_one" android:gravity="center" android:layout_width="match_parent" android:layout_height="@dimen/dp_45" android:text="@string/bind_process_network_select_hint" />
+        <View android:background="@color/view_divider_color" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_5" />
+        <ListView android:id="@id/lv_wifi_list" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:divider="@color/view_divider_color" android:dividerHeight="@dimen/dp_0_5" />
+    </LinearLayout>
+</LinearLayout>

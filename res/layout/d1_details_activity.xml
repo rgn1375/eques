@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/sv_details_parent" android:background="@color/settings_view_bg" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/rl_dev_office_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/linear_d1_nick_parent" android:layout_marginTop="@dimen/dp_15" style="@style/LinearLayoutParent">
+                    <ImageView android:src="@drawable/d1_edit_nick_set" style="@style/SetLeftIv" />
+                    <LinearLayout android:layout_marginLeft="@dimen/dp_35" style="@style/LinearLayoutParent">
+                        <TextView android:text="@string/equipment_nickname_settings" style="@style/SetLeftTvStyle" />
+                        <TextView android:id="@id/tv_d1_nick" android:text="D1" style="@style/SetRightTvStyle" />
+                        <ImageView style="@style/SetRightIndicatorIcon" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout style="@style/LinearLayoutParent">
+                    <ImageView android:src="@drawable/e1pro_wifi_model" style="@style/SetLeftIv" />
+                    <LinearLayout android:layout_marginLeft="@dimen/dp_35" style="@style/LinearLayoutParent">
+                        <TextView android:text="@string/e1pro_wifi_connect_model_set" style="@style/SetLeftTvStyle" />
+                        <TextView android:id="@id/tv_d1_network_nick" android:text="@string/e1pro_wifi_connect_model_set" style="@style/SetRightTvStyle" />
+                        <ImageView android:id="@id/iv_d1_network_quality" android:src="@drawable/icon_arrow_selector" style="@style/SetRightIndicatorIcon" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/linear_d1_pir_parent" android:layout_marginTop="@dimen/dp_15" style="@style/LinearLayoutParent">
+                    <ImageView android:src="@drawable/d1_pir_set" style="@style/SetLeftIv" />
+                    <LinearLayout android:layout_marginLeft="@dimen/dp_35" style="@style/LinearLayoutParent">
+                        <TextView android:text="@string/intelligent_body_detection_settings" style="@style/SetLeftTvStyle" />
+                        <TextView android:id="@id/tv_pir_status" android:text="已开启" style="@style/SetRightTvStyle" />
+                        <ImageView style="@style/SetRightIndicatorIcon" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/linear_bell_ring_parent" style="@style/LinearLayoutParent">
+                    <ImageView android:src="@drawable/d1_ring_set" style="@style/SetLeftIv" />
+                    <LinearLayout android:layout_marginLeft="@dimen/dp_35" style="@style/LinearLayoutParent">
+                        <TextView android:text="@string/door_ring_tone_settings" style="@style/SetLeftTvStyle" />
+                        <TextView android:id="@id/tv_bell_ring" android:text="铃声1" style="@style/SetRightTvStyle" />
+                        <ImageView style="@style/SetRightIndicatorIcon" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rl_bell_volume_parent" style="@style/LinearLayoutParent">
+                    <ImageView android:src="@drawable/d1_ring_volume_set" style="@style/SetLeftIv" />
+                    <LinearLayout android:layout_marginLeft="@dimen/dp_35" style="@style/LinearLayoutParent">
+                        <TextView android:text="@string/the_doorbell_of_volume_settings" style="@style/SetLeftTvStyle" />
+                        <TextView android:id="@id/tv_bell_volume" android:text="5级" style="@style/SetRightTvStyle" />
+                        <ImageView style="@style/SetRightIndicatorIcon" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rl_leave_msg" android:visibility="gone" style="@style/LinearLayoutParent">
+                    <ImageView android:src="@mipmap/leave_msg" style="@style/SetLeftIv" />
+                    <LinearLayout android:layout_marginLeft="@dimen/dp_35" style="@style/LinearLayoutParent">
+                        <TextView android:text="@string/indoor_msg" style="@style/SetLeftTvStyle" />
+                        <ImageView style="@style/SetRightIndicatorIcon" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rl_lock_manage" android:visibility="gone" style="@style/LinearLayoutParent">
+                    <ImageView android:src="@mipmap/user" style="@style/SetLeftIv" />
+                    <LinearLayout android:layout_marginLeft="@dimen/dp_35" style="@style/LinearLayoutParent">
+                        <TextView android:text="@string/lock_user_manage" style="@style/SetLeftTvStyle" />
+                        <ImageView style="@style/SetRightIndicatorIcon" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/linear_d1_temp_pass_parent" android:layout_marginTop="@dimen/dp_15" style="@style/LinearLayoutParent">
+                    <ImageView android:src="@drawable/e1pro_temporary_pass" style="@style/SetLeftIv" />
+                    <LinearLayout android:layout_marginLeft="@dimen/dp_35" style="@style/LinearLayoutParent">
+                        <TextView android:text="@string/temporary_password_settings" style="@style/SetLeftTvStyle" />
+                        <ImageView style="@style/SetRightIndicatorIcon" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/linear_no_close_remind_parent" android:layout_marginBottom="@dimen/dp_0_5" style="@style/LinearLayoutParent">
+                    <ImageView android:src="@drawable/e1pro_not_close_remind" style="@style/SetLeftIv" />
+                    <LinearLayout android:layout_marginLeft="@dimen/dp_35" style="@style/LinearLayoutParent">
+                        <TextView android:text="@string/open_door_reminder_settings" style="@style/SetLeftTvStyle" />
+                        <TextView android:id="@id/tv_no_close_remind" android:text="30秒" style="@style/SetRightTvStyle" />
+                        <ImageView style="@style/SetRightIndicatorIcon" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rl_wechat_parent" style="@style/LinearLayoutParent">
+                    <ImageView android:src="@drawable/e1pro_wechat" style="@style/SetLeftIv" />
+                    <LinearLayout android:layout_marginLeft="@dimen/dp_35" style="@style/LinearLayoutParent">
+                        <TextView android:text="@string/wechat_remind_settings" style="@style/SetLeftTvStyle" />
+                        <TextView android:text="@string/settings" style="@style/SetRightTvStyle" />
+                        <ImageView style="@style/SetRightIndicatorIcon" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rl_face_parent" style="@style/LinearLayoutParent">
+                    <ImageView android:src="@drawable/e1pro_faceid" style="@style/SetLeftIv" />
+                    <LinearLayout android:layout_marginLeft="@dimen/dp_35" style="@style/LinearLayoutParent">
+                        <TextView android:text="@string/mime_face_recognition_hint" style="@style/SetLeftTvStyle" />
+                        <ImageView style="@style/SetRightIndicatorIcon" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/linear_d1_door_upgrade_parent" android:layout_marginTop="@dimen/dp_15" style="@style/LinearLayoutParent">
+                    <ImageView android:src="@drawable/d1_upgrade_set" style="@style/SetLeftIv" />
+                    <LinearLayout android:layout_marginLeft="@dimen/dp_35" style="@style/LinearLayoutParent">
+                        <TextView android:text="@string/system_upgrade_settings" style="@style/SetLeftTvStyle" />
+                        <TextView android:textColor="@color/pir_sensitivity_hint" android:id="@id/tv_upgrade_status" android:background="@drawable/d1_upgrade_tv_style" android:text="@string/new_version_upgrade" style="@style/SetDevUpgradeStyle" />
+                        <ImageView style="@style/SetRightIndicatorIcon" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <TextView android:textSize="@dimen/sp_12" android:textColor="@color/settings_right_tv_color_two" android:id="@id/tv_current_dev_version" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_35" android:text="@string/current_device_version_settings" />
+                <RelativeLayout android:visibility="gone" android:layout_marginTop="@dimen/dp_15" style="@style/LinearLayoutParent">
+                    <ImageView android:src="@drawable/d1_reset_set" style="@style/SetLeftIndicatorIcon" />
+                    <LinearLayout android:layout_marginLeft="@dimen/dp_35" style="@style/LinearLayoutParent">
+                        <TextView android:text="@string/factory_data_reset_settings" style="@style/SetLeftTvStyle" />
+                        <ImageView style="@style/SetRightIndicatorIcon" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <Button android:id="@id/btn_reset_dev" android:layout_marginTop="@dimen/dp_25" android:text="@string/restart_btn" style="@style/btn_style_setting_restart" />
+            </LinearLayout>
+            <ImageView android:id="@id/dev_office_bg" android:background="@drawable/camera_tab_bar_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:alpha="0.7" />
+        </RelativeLayout>
+        <Button android:id="@id/btn_delete_dev" android:layout_marginTop="@dimen/dp_20" style="@style/btn_style_setting_delete" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_10">
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/settings_bottom_tv_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dev_mac" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/settings_bottom_tv_color" android:id="@id/tv_dev_mac" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textIsSelectable="true" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="@dimen/dp_30" />
+    </LinearLayout>
+</ScrollView>

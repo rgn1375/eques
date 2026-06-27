@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/lin_root" android:background="@drawable/paid_background" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/pay_view_group">
+        <include layout="@layout/main_head_title_bar_v3_layout" />
+        <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_80">
+                    <ImageView android:id="@id/img_dev_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:layout_marginBottom="@dimen/dp_14" android:src="@mipmap/newui_icloud_lock" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_14" android:layout_marginEnd="@dimen/dp_14" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toRightOf="@id/img_dev_logo">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/sp_18" android:textColor="@color/black" android:id="@id/tv_dev_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="可视智能锁" />
+                            <ImageView android:id="@id/img_logo_icloud" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/small_icloud" android:layout_marginStart="@dimen/dp_5" />
+                            <ImageView android:id="@id/img_logo_voicecall" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/small_voicecall" android:layout_marginStart="@dimen/dp_5" />
+                            <ImageView android:id="@id/img_logo_voip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/voip_voicecall" android:layout_marginStart="@dimen/dp_5" />
+                            <ImageView android:id="@id/img_logo_small_video" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/small_video" android:layout_marginStart="@dimen/dp_5" />
+                        </LinearLayout>
+                        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/login_666666" android:id="@id/tv_dev_service_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="暂未开通任何服务" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <com.zhouwei.mzbanner.MZBannerView android:id="@id/banner" android:layout_width="match_parent" android:layout_height="@dimen/dp_200" app:canLoop="false" app:indicatorAlign="center" app:middle_page_cover="true" app:open_mz_mode="true" />
+                <com.eques.doorbell.ui.view.AutoHeightScrollViewPager android:id="@id/view_page" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+    <View android:id="@id/view_mask" android:background="@color/transparent_half" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <Button android:textSize="@dimen/sp_18" android:textColor="@color/white" android:id="@id/btn_buy_service" android:background="@drawable/rounded_gradient_button_blue" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" android:layout_marginTop="@dimen/dp_14" android:layout_marginBottom="@dimen/dp_14" android:text="@string/paid_pay_open_cloud_new" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/dp_14" android:layout_marginEnd="@dimen/dp_14" />
+    <com.eques.doorbell.ui.view.PayViewGroup android:id="@id/pay_view_group" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

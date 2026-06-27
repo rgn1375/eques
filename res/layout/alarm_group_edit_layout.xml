@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_group_edit_parent" android:background="@color/help_problem_classify" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scroll_edit_content" android:background="@color/help_problem_classify_item" android:paddingBottom="@dimen/dp_22" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="@color/help_problem_classify" android:layout_width="match_parent" android:layout_height="@dimen/dp_10" />
+            <RelativeLayout android:paddingLeft="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="@dimen/dp_45">
+                <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/settings_left_tv_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dev_face_photo_show_eight" android:layout_centerVertical="true" />
+                <EditText android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/settings_right_hint_tv_color" android:textColorHint="@color/settings_right_hint_tv_color" android:gravity="right|center" android:id="@id/et_group_name" android:background="@android:color/transparent" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/dev_face_photo_show_eight" android:cursorVisible="false" android:maxLength="6" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/settings_right_hint_tv_color" android:gravity="right|center" android:id="@id/tv_group_name" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/dev_face_group_nick_hint" android:cursorVisible="false" android:maxLength="6" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="@color/edit_register_divider" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" />
+            <RelativeLayout android:id="@id/ll_group_label_content_parent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:layout_marginBottom="@dimen/dp_5">
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_group_hint_parent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <View android:layout_gravity="center_vertical" android:background="@color/default_clickable_color" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_1" />
+                    <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/news_type_tv_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:layout_marginRight="@dimen/dp_5" android:text="@string/group_face_nick_hint" />
+                    <View android:layout_gravity="center_vertical" android:background="@color/default_clickable_color" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_1" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/linear_group_label_content" android:background="@color/white" android:paddingLeft="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:layout_below="@id/ll_group_hint_parent" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_family_nick_parent" android:paddingLeft="@dimen/dp_10" android:paddingTop="@dimen/dp_5" android:paddingRight="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <View android:layout_gravity="center_vertical" android:background="@color/default_clickable_color" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_1" />
+                    <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/news_type_tv_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:layout_marginRight="@dimen/dp_5" android:text="@string/face_identify_family_nick" />
+                    <View android:layout_gravity="center_vertical" android:background="@color/default_clickable_color" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_1" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/fontsize_twelve" android:textColor="@color/settings_right_hint_tv_color" android:gravity="center" android:layout_gravity="center_horizontal" android:background="@drawable/group_family_nick_dashe_border" android:paddingTop="@dimen/dp_5" android:paddingBottom="@dimen/dp_5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_20" android:layout_marginTop="@dimen/dp_3" android:layout_marginRight="@dimen/dp_20" android:text="@string/face_identify_family_nick_style" />
+                <com.eques.doorbell.ui.widget.MyGridView android:id="@id/gv_family_nick_parent" android:background="@color/white" android:paddingLeft="@dimen/dp_20" android:paddingTop="@dimen/dp_16" android:paddingRight="@dimen/dp_20" android:paddingBottom="@dimen/dp_5" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@color/transparent" android:horizontalSpacing="@dimen/dp_8" android:verticalSpacing="@dimen/dp_8" android:numColumns="4" />
+            </LinearLayout>
+            <com.eques.doorbell.ui.widget.MyGridView android:id="@id/group_img_gridview" android:background="@color/white" android:paddingLeft="@dimen/dp_10" android:paddingTop="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:paddingBottom="@dimen/dp_20" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@color/transparent" android:horizontalSpacing="@dimen/dp_8" android:verticalSpacing="@dimen/dp_8" android:numColumns="3" />
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:background="@color/settings_view_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_45" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_btn_bottom_parent" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="3.0">
+            <RelativeLayout android:id="@id/rl_del_group" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/settings_left_tv_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notify_delete" android:drawableLeft="@drawable/group_del_bottom" android:drawablePadding="@dimen/dp_5" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_group_remind_set" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/settings_left_tv_color" android:id="@id/tv_push_remind_options" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/face_identify_not_remind" android:drawableLeft="@drawable/group_no_remind_bottom" android:drawablePadding="@dimen/dp_5" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:id="@id/rl_group_push_set" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/settings_left_tv_color" android:id="@id/tv_push_options" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/edit_group_push_set_hint" android:drawableLeft="@drawable/group_push_bottom" android:drawablePadding="@dimen/dp_5" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

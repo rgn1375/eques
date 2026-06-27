@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/help_problem_classify" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.eques.doorbell.ui.view.Navbar android:id="@id/nav_bar_view" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyc_help_guide_parent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dp_72" android:layout_below="@id/nav_bar_view" />
+    <View android:id="@id/line" android:background="@color/line_color" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:layout_above="@id/lin_online" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/lin_online" android:layout_width="match_parent" android:layout_height="@dimen/dp_72" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/online_service" android:drawableTop="@mipmap/service" android:drawablePadding="@dimen/dp_2" />
+        <TextView android:textSize="@dimen/sp_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/online_service_time" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/linear_wifi_parent" android:background="@color/home_bg_color" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/dp_10">
+        <TextView android:textSize="@dimen/tv_text_size" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/input_wifi_info" style="@style/nomal_text_style" />
+        <TextView android:textSize="@dimen/tv_text_size" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="@string/enter_wifi_account" style="@style/nomal_text_style" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/landing_interface_input_box" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5">
+            <EditText android:textSize="@dimen/tv_text_size" android:textColor="@color/edit_register_send" android:id="@id/et_wifiAccount" android:background="@android:color/transparent" android:paddingLeft="@dimen/dp_5" android:paddingRight="@dimen/dp_5" android:layout_height="match_parent" android:hint="@string/enter_wifi_account" android:singleLine="true" android:maxLength="32" android:layout_weight="1.0" style="@style/main_edittext_style" />
+            <Button android:id="@id/btn_wifiAccount" android:background="@drawable/input_wifiinfo_arrow_selector" android:padding="@dimen/dp_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_5" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/tv_text_size" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="@string/enter_password" style="@style/nomal_text_style" />
+        <EditText android:textSize="@dimen/tv_text_size" android:textColor="@color/black" android:id="@id/input_wulan_ps" android:background="@drawable/landing_interface_input_box" android:paddingLeft="@dimen/dp_5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:hint="@string/enter_password" android:singleLine="true" />
+        <Button android:id="@id/btn_sendwifi" android:layout_width="match_parent" android:layout_marginTop="@dimen/dp_20" android:text="@string/next_step" style="@style/nextStep_btn_style" />
+    </LinearLayout>
+</LinearLayout>

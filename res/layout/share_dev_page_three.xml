@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/linear_share_dev_three" android:background="@color/e1pro_details_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/linear_change_nick" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/previous_btn_size" android:layout_marginTop="@dimen/dp_20">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/standard_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_14" android:text="@string/personal_data_nick" />
+        <EditText android:textSize="@dimen/sp_14" android:textColor="@color/edTextColorHint" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/et_change_share_user_nickname" android:background="@null" android:padding="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_14" android:hint="@string/hint_change_share_dev_nickname_bt" android:singleLine="true" android:maxLength="20" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/linear_change_nick_e1pro" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:background="@color/white" android:paddingTop="@dimen/dp_8" android:paddingBottom="@dimen/dp_8" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_user_head_portrait" android:background="@drawable/eques_head_logo" android:layout_width="@dimen/dp_45" android:layout_height="@dimen/dp_45" android:layout_marginLeft="@dimen/dp_10" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/edTextColorHint" android:gravity="center_vertical" android:id="@id/tv_user_nick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:text="@string/personal_data_nick" android:layout_toRightOf="@id/iv_user_head_portrait" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/interval_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_5" />
+        <RelativeLayout android:background="@color/white" android:paddingTop="@dimen/dp_8" android:paddingBottom="@dimen/dp_8" android:layout_width="match_parent" android:layout_height="@dimen/share_dev_btn_size">
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/settings_left_tv_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:text="@string/e1pro_share_user_nick" android:layout_centerVertical="true" />
+            <EditText android:textSize="@dimen/sp_14" android:textColor="@color/edTextColorHint" android:gravity="right|center" android:id="@id/et_user_remark_name" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:hint="@string/e1pro_share_user_nick_add" android:singleLine="true" android:maxLength="20" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/interval_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_5" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/dp_70" android:layout_width="match_parent" android:layout_height="match_parent">
+        <Button android:textColor="@color/white" android:id="@id/btn_save_share_user_nickname" android:layout_marginLeft="@dimen/dp_50" android:layout_marginTop="@dimen/dp_20" android:layout_marginRight="@dimen/dp_50" android:text="@string/save_share_dev_nickname_bt" style="@style/btn_style_share_dev_qrcode" />
+        <Button android:id="@id/btn_cancel_share_user" android:layout_marginLeft="@dimen/dp_50" android:layout_marginTop="@dimen/dp_20" android:layout_marginRight="@dimen/dp_50" android:text="@string/cancel_share_dev_bt" style="@style/btn_style_share_user_setting" />
+    </LinearLayout>
+</LinearLayout>

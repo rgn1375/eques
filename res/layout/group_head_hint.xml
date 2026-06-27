@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/settings_left_tv_color" android:id="@id/tv_group_hint" android:paddingLeft="@dimen/dp_10" android:paddingTop="@dimen/dp_1" android:paddingBottom="@dimen/dp_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dev_face_photo_show_six" />
+    </RelativeLayout>
+</RelativeLayout>

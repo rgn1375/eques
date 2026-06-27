@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@id/lin_temp_count" android:background="@color/gray_transparent_half" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/btn_count_1" android:background="@drawable/btn_style_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_5" android:text="1次" />
+    <Button android:id="@id/btn_count_5" android:background="@drawable/btn_style_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_5" android:text="5次" />
+    <Button android:id="@id/btn_count_10" android:background="@drawable/btn_style_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_5" android:text="10次" />
+</LinearLayout>

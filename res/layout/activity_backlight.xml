@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/settings_view_bg" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.eques.doorbell.ui.view.Navbar android:id="@id/nav_bar_view" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_backlight_parent" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/titlebar_tv_color" android:gravity="center" android:id="@id/ll_backlight_hint" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10" android:text="@string/camera_effect_hint" />
+        <LinearLayout android:id="@id/ll_backlight" android:layout_width="match_parent" android:layout_height="@dimen/dp_48" android:layout_marginTop="@dimen/dp_10" style="@style/pir_page_layout_style">
+            <TextView android:id="@id/tv_backlight_status" android:text="@string/fragment_device_item_pir_open" style="@style/textView_btn_style" />
+            <CheckBox android:id="@id/cb_backlight" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_marginRight="@dimen/dp_15" style="@style/MySwitchTheme" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

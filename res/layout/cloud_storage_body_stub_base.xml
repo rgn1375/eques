@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/dp_15" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view_cutting_line" android:background="@color/settings_view_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_8" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/dp_28" android:layout_marginTop="@dimen/dp_5" android:layout_marginBottom="@dimen/dp_10">
+        <View android:background="@color/service_set_meal_hint" android:layout_width="@dimen/dp_5" android:layout_height="match_parent" />
+        <TextView android:textSize="@dimen/fontsize_eighteenth" android:textColor="@color/service_cloud_plan_one" android:gravity="center_vertical" android:id="@id/tv_set_meal_title" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_10" android:text="@string/service_show_plan_sel" style="@style/cloudStorageServicePlanTextStyleOne" />
+    </LinearLayout>
+    <LinearLayout style="@style/cloudStorageServicePlanLinearLayoutStyle">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_cloudstorage_serviceplan_two" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16">
+            <TextView android:id="@id/tv_cloud_save_year" android:text="@string/cloud_service_open_hint_one" style="@style/cloudStorageServicePlanTextStyleOne" />
+            <TextView android:id="@id/tv_cloud_save_year_hint" android:text="@string/cloud_service_open_hint_two" style="@style/cloudStorageServicePlanTextStyleTwo" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout style="@style/cloudStorageServicePlanLinearLayoutStyle">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_cloudstorage_serviceplan_three" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16">
+            <TextView android:id="@id/tv_cloud_circular_storage" android:text="@string/cloud_service_open_hint_three" style="@style/cloudStorageServicePlanTextStyleOne" />
+            <TextView android:id="@id/tv_cloud_circular_storage_hint" android:text="@string/cloud_service_open_hint_four" style="@style/cloudStorageServicePlanTextStyleTwo" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout style="@style/cloudStorageServicePlanLinearLayoutStyle">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_cloudstorage_serviceplan_four" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16">
+            <TextView android:text="@string/cloud_service_open_hint_five" style="@style/cloudStorageServicePlanTextStyleOne" />
+            <TextView android:text="@string/cloud_service_open_hint_six" style="@style/cloudStorageServicePlanTextStyleTwo" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout style="@style/cloudStorageServicePlanLinearLayoutStyle">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_cloudstorage_serviceplan_five" android:contentDescription="@null" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16">
+            <TextView android:text="@string/service_plan_support_multi_device_type" style="@style/cloudStorageServicePlanTextStyleOne" />
+            <TextView android:id="@id/tv_more_dev_hint" android:text="@string/cloud_service_open_hint_seven" style="@style/cloudStorageServicePlanTextStyleTwo" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

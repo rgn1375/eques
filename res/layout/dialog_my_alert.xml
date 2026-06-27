@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layoutRoot" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:item="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/bg_dialog_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/normal_text_size" android:textColor="@color/default_normal_text_color" android:gravity="center" android:id="@id/tv_dialog_tip" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        <com.xm.ui.widget.ButtonCheck android:id="@id/bc_notagain" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginBottom="10.0dp" android:layout_below="@id/tv_dialog_tip" android:layout_marginStart="20.0dp" item:NormalBkg="@drawable/ic_check_nor" item:SelectedBkg="@drawable/ic_check_sel" item:TextNormalColor="#c6c6c6" item:TextSelectedColor="#c6c6c6" item:TextSize="@dimen/normal_text_size" item:rightText="TR_NotAgain" />
+        <View android:id="@id/v_dialog_divider_1" android:background="@color/line_color" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_below="@id/bc_notagain" />
+        <LinearLayout android:gravity="center_horizontal" android:id="@id/ll_dialog" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_below="@id/v_dialog_divider_1">
+            <RelativeLayout android:gravity="center" android:id="@id/rl_dialog_negative" android:layout_width="0.0dp" android:layout_height="50.0dp" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/normal_text_size" android:textColor="@color/theme_color" android:gravity="center" android:id="@id/tv_dialog_negative" android:layout_width="match_parent" android:layout_height="match_parent" android:text="TR_Cancel" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <View android:id="@id/v_dialog_divider" android:background="@color/line_color" android:layout_width="1.0dp" android:layout_height="match_parent" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" android:layout_weight="0.0" />
+            <RelativeLayout android:gravity="center" android:id="@id/rl_dialog_positive" android:layout_width="0.0dp" android:layout_height="50.0dp" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/normal_text_size" android:textColor="@color/theme_color" android:gravity="center" android:id="@id/tv_dialog_positive" android:layout_width="match_parent" android:layout_height="match_parent" android:text="TR_Confirm" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

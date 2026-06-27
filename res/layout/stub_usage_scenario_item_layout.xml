@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="@dimen/dp_55"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_voice_service_type" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/voice_call_low_battery_alarm" />
+    <LinearLayout android:gravity="start|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginStart="@dimen/dp_20" android:layout_marginEnd="@dimen/dp_50" android:layout_toEndOf="@id/iv_voice_service_type">
+        <TextView android:textSize="@dimen/sp_18" android:textColor="@color/service_cloud_plan_two" android:id="@id/tv_service_type_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voice_call_low_battery_alarm" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/service_cloud_plan_three" android:ellipsize="end" android:id="@id/tv_service_support_dev" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voice_call_low_battery_apply_to_h5_t1" android:singleLine="true" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/service_cloud_plan_two" android:id="@id/tv_service_demo_video" android:background="@drawable/voice_usage_scenario_item_layout" android:paddingTop="@dimen/dp_4" android:paddingBottom="@dimen/dp_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voice_call_review" android:drawablePadding="@dimen/dp_3" android:layout_centerVertical="true" android:drawableStart="@drawable/voice_call_review_play_btn" android:paddingStart="@dimen/dp_6" android:paddingEnd="@dimen/dp_6" android:layout_alignParentEnd="true" />
+</RelativeLayout>

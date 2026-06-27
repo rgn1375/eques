@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/settings_view_bg" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/linear_details_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/rl_online" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/linear_updateDevName" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" android:layout_marginTop="@dimen/dp_15" style="@style/LinearLayoutParent">
+                    <TextView android:text="@string/equipment_nickname_settings" style="@style/textView_btn_style" />
+                    <TextView android:id="@id/tv_dev_detailsName" style="@style/setting_right_tv_color_style" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/icon_arrow_selector" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/linear_deviceIsOnLine" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@id/linear_NetworkSettings" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" android:layout_marginBottom="@dimen/dp_10" style="@style/LinearLayoutParent">
+                        <TextView android:text="@string/the_current_network_settings" style="@style/textView_btn_style" />
+                        <TextView android:ellipsize="marquee" android:id="@id/tv_wifiConfig" android:focusable="true" android:focusableInTouchMode="true" android:scrollHorizontally="true" android:marqueeRepeatLimit="marquee_forever" style="@style/setting_right_tv_color_style" />
+                        <ImageView android:id="@id/signal_icon" android:background="@drawable/signal_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/linear_doorbell_ring" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" style="@style/LinearLayoutParent">
+                        <TextView android:text="@string/door_ring_tone_settings" style="@style/textView_btn_style" />
+                        <TextView android:id="@id/tv_doorbell_ring" style="@style/setting_right_tv_color_style" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/icon_arrow_selector" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/linear_smart_monitor_switch" android:background="@drawable/dev_details_page_btn_style" android:visibility="gone" style="@style/LinearLayoutParent">
+                        <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/settings_left_tv_color" android:paddingLeft="@dimen/fiveteen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/intelligent_body_detection_settings" android:layout_weight="1.0" />
+                        <CheckBox android:id="@id/cb_alarm" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_marginRight="@dimen/dp_10" style="@style/MySwitchTheme" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/linear_setAlarm" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" style="@style/LinearLayoutParent">
+                        <TextView android:text="@string/intelligent_body_detection_settings" style="@style/textView_btn_style" />
+                        <TextView android:id="@id/tv_alarm_status" style="@style/setting_right_tv_color_style" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/icon_arrow_selector" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/linear_securityEquip" android:background="@drawable/dev_details_page_btn_style" android:visibility="gone" style="@style/LinearLayoutParent">
+                        <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/settings_left_tv_color" android:paddingLeft="@dimen/dp_15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alarm_device_list" android:layout_weight="1.0" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/icon_arrow_selector" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/linear_mute_time_setting" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/linear_mute_date" android:background="@color/white" android:visibility="visible" style="@style/LinearLayoutParent">
+                            <TextView android:textSize="15.0dp" android:textColor="@color/gray" android:paddingLeft="@dimen/dp_15" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/do_not_disturb_time" android:layout_weight="3.0" />
+                            <TextView android:textSize="15.0dp" android:textColor="@color/gray" android:gravity="right" android:id="@id/tv_mute_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_6" android:singleLine="true" android:layout_weight="1.0" />
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_10" android:src="@drawable/icon_arrow_selector" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/linear_mute_start_time" android:background="@color/white" android:visibility="visible" style="@style/LinearLayoutParent">
+                            <TextView android:textSize="15.0dp" android:textColor="@color/gray" android:paddingLeft="@dimen/dp_15" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/do_not_disturb_start" android:layout_weight="2.0" />
+                            <TextView android:textSize="15.0dp" android:textColor="@color/gray" android:gravity="right" android:id="@id/tv_mute_start_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_6" android:singleLine="true" android:layout_weight="1.0" />
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_10" android:src="@drawable/icon_arrow_selector" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/linear_mute_end_time" android:background="@color/white" android:visibility="visible" style="@style/LinearLayoutParent">
+                            <TextView android:textSize="15.0dp" android:textColor="@color/gray" android:paddingLeft="@dimen/dp_15" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/do_not_disturb_end" android:layout_weight="2.0" />
+                            <TextView android:textSize="15.0dp" android:textColor="@color/gray" android:gravity="right" android:id="@id/tv_mute_end_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_6" android:singleLine="true" android:layout_weight="1.0" />
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_10" android:src="@drawable/icon_arrow_selector" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/linear_doorbell_wallpaper" android:background="@drawable/dev_details_page_btn_style" android:visibility="gone" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_10" style="@style/LinearLayoutParent">
+                        <TextView android:text="@string/the_wallpaper_settings" style="@style/textView_btn_style" />
+                        <TextView style="@style/setting_right_tv_color_style" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/icon_arrow_selector" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/ll_wechat_parent" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" android:layout_marginBottom="@dimen/dp_0_5" style="@style/LinearLayoutParent">
+                        <TextView android:text="@string/wechat_remind_settings" style="@style/textView_btn_style" />
+                        <TextView android:text="@string/settings" style="@style/setting_right_tv_color_style" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/icon_arrow_selector" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/ll_face_parent" android:background="@drawable/dev_details_page_btn_style" android:visibility="visible" android:layout_marginBottom="@dimen/dp_0_5" style="@style/LinearLayoutParent">
+                        <TextView android:text="@string/mime_face_recognition_hint" style="@style/textView_btn_style" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/icon_arrow_selector" />
+                    </LinearLayout>
+                    <RelativeLayout android:id="@id/linear_upate" android:background="@drawable/dev_details_page_btn_style" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/dp_50">
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                            <TextView android:layout_width="wrap_content" android:text="@string/system_upgrade_settings" style="@style/textView_btn_style" />
+                            <TextView android:textSize="@dimen/fontsize_twelve" android:textColor="@color/settings_right_hint_tv_color" android:id="@id/tv_devVersion" android:paddingLeft="@dimen/dp_15" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/equip_current_version" />
+                        </LinearLayout>
+                        <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/white" android:id="@id/tv_update" android:background="@drawable/update_btn" android:paddingLeft="@dimen/dp_8" android:paddingRight="@dimen/dp_8" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:text="@string/device_need_update" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                        <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/settings_right_tv_color" android:gravity="right" android:id="@id/devNotUpdate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_10" android:text="@string/check_version_prompt_one" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <View android:background="@color/interval_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" />
+                <LinearLayout android:orientation="vertical" android:id="@id/linear_deviceNotOnLine" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:background="@color/white" android:visibility="visible" style="@style/LinearLayoutParent">
+                        <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/settings_left_tv_color" android:paddingLeft="@dimen/fiveteen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_status" android:layout_weight="1.0" />
+                        <TextView android:textSize="@dimen/fontsize_sixteen" android:textColor="@color/settings_right_tv_color" android:id="@id/tv_deviceOffline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_6" android:text="@string/not_online" />
+                        <ImageView android:id="@id/iv_arrowExtend" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_10" android:src="@drawable/icon_arrow_selector" />
+                    </LinearLayout>
+                    <View android:background="@color/interval_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" />
+                    <LinearLayout android:gravity="center_vertical" android:background="@color/white" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/settings_bottom_tv_color" android:gravity="center" android:id="@id/tv_deviceOffline_note" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_5" android:text="@string/device_details_not_online" />
+                    </LinearLayout>
+                </LinearLayout>
+                <Button android:id="@id/btn_restartDevice" android:layout_marginTop="@dimen/dp_30" style="@style/btn_style_setting_restart" />
+            </LinearLayout>
+            <ImageView android:id="@id/dev_notonline_bg" android:background="@drawable/camera_tab_bar_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:alpha="0.7" />
+        </RelativeLayout>
+        <Button android:id="@id/btn_restartShareDevice" android:visibility="gone" android:layout_marginTop="@dimen/dp_30" style="@style/btn_style_setting_restart" />
+        <Button android:id="@id/btn_delete_device" android:layout_marginTop="@dimen/dp_20" android:layout_alignParentBottom="true" style="@style/btn_style_setting_delete" />
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/settings_bottom_tv_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dev_mac" />
+                <TextView android:textSize="@dimen/fontsize_fourteen" android:textColor="@color/settings_bottom_tv_color" android:id="@id/tv_devId" android:layout_width="match_parent" android:layout_height="wrap_content" android:textIsSelectable="true" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:layout_width="match_parent" android:layout_height="@dimen/dp_30" />
+    </LinearLayout>
+</ScrollView>

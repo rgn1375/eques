@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="#f5f5f5" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/main_head_title_bar_v3_layout2" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_data" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:background="#f5f5f5" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_50">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_lock_msg_alarm_parent" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout2" android:background="#f5f5f5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_50">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_lock_msg_parent" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout android:id="@id/rel_empty" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/sp_16" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/e1pro_none_alarm_msg_hint" android:drawableTop="@drawable/cat_msg_none" android:drawablePadding="@dimen/dp_5" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

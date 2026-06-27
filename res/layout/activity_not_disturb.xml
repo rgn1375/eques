@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#f5f5f5" android:padding="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rel_start" android:background="@drawable/write_bg_border_gray" android:paddingRight="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="@dimen/dp_70" android:paddingStart="@dimen/dp_14">
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/supervisorycontrol_start_time" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/login_666666" android:gravity="center" android:id="@id/tv_start_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="22:00" android:drawableRight="@drawable/arrow_icon_default" android:drawablePadding="@dimen/dp_5" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rel_end" android:background="@drawable/write_bg_border_gray" android:paddingRight="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="@dimen/dp_70" android:layout_marginTop="@dimen/dp_14" android:paddingStart="@dimen/dp_14">
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/supervisorycontrol_end_time" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/login_666666" android:gravity="center" android:id="@id/tv_end_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="08:00" android:drawableRight="@drawable/arrow_icon_default" android:drawablePadding="@dimen/dp_5" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,1639 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="36" android:compileSdkVersionCodename="16" package="com.eques.doorbell" platformBuildVersionCode="36" platformBuildVersionName="16">
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <permission android:name="com.eques.doorbell.permission.JPUSH_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.eques.doorbell.permission.JPUSH_MESSAGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE "/>
+    <uses-permission android:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE"/>
+    <uses-permission android:name="com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE"/>
+    <uses-permission android:name="com.meizu.c2dm.permission.RECEIVE"/>
+    <permission android:name="com.eques.doorbell.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.eques.doorbell.permission.C2D_MESSAGE"/>
+    <permission android:name="com.eques.doorbell.permission.MIPUSH_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.eques.doorbell.permission.MIPUSH_RECEIVE"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.SET_DEBUG_APP"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.SET_TIME_ZONE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES"/>
+    <uses-permission android:name="android.permission.MASTER_CLEAR"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <permission android:name="com.eques.doorbell.permission.PROCESS_PUSH_MSG" android:protectionLevel="signature"/>
+    <permission android:name="com.eques.doorbell.permission.PUSH_WRITE_PROVIDER" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.eques.doorbell.permission.PROCESS_PUSH_MSG"/>
+    <uses-permission android:name="com.eques.doorbell.permission.PUSH_PROVIDER"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <permission android:name="com.eques.doorbell.permission.PUSH_PROVIDER" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA"/>
+    <queries>
+        <intent>
+            <action android:name="com.apptouch.intent.action.update_hms"/>
+        </intent>
+        <intent>
+            <action android:name="com.huawei.appmarket.intent.action.AppDetail"/>
+        </intent>
+        <package android:name="com.hisilicon.android.hiRMService"/>
+        <package android:name="com.ss.android.ugc.aweme"/>
+        <package android:name="com.ss.android.ugc.aweme.lite"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="com.hihonor.push.action.BIND_PUSH_SERVICE"/>
+        </intent>
+        <intent>
+            <action android:name="com.huawei.hms.core.aidlservice"/>
+        </intent>
+        <intent>
+            <action android:name="com.huawei.hms.core"/>
+        </intent>
+        <package android:name="com.huawei.hff"/>
+        <package android:name="com.huawei.hms"/>
+        <package android:name="com.huawei.hwid"/>
+    </queries>
+    <uses-permission android:name="com.asus.msa.SupplementaryDID.ACCESS"/>
+    <uses-permission android:name="com.eques.doorbell.openadsdk.permission.TT_PANGOLIN"/>
+    <permission android:name="com.eques.doorbell.openadsdk.permission.TT_PANGOLIN" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_APP_BADGE"/>
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="com.hihonor.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="com.meizu.flyme.permission.PUSH"/>
+    <uses-permission android:name="com.meizu.flyme.push.permission.RECEIVE"/>
+    <permission android:name="com.eques.doorbell.push.permission.MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.eques.doorbell.push.permission.MESSAGE"/>
+    <uses-permission android:name="com.vivo.notification.permission.BADGE_ICON"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <uses-permission android:name="com.hihonor.push.permission.READ_PUSH_NOTIFICATION_INFO"/>
+    <application android:allowBackup="false" android:allowNativeHeapPointerTagging="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="false" android:hardwareAccelerated="true" android:icon="@drawable/app_logo" android:label="@string/app_name" android:name="com.eques.doorbell.ui.activity.base.BaseAppApplication" android:networkSecurityConfig="@xml/network_security_config" android:requestLegacyExternalStorage="true" android:required="false" android:roundIcon="@drawable/app_logo" android:supportsRtl="true" android:theme="@style/BaseTheme" android:usesCleartextTraffic="true">
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.MsgSwitchSetActivity"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.AirCheckActivity"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.animal.AnimalClockV2Activity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.AnimalClockV2Activity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.custom.CustomMainActivity"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.DevWeatherSetActivity"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.PrivacyMaskActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.animal.DryActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.MijiaSwitchActivity"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.leavemsg.EditUserInfoActivity" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.leavemsg.ChooseRecUserActivity"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.leavemsg.LeaveMsgAddInfoActivity"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.leavemsg.LeaveMsgListActivity"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.leavemsg.StartRecG711Activity"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.animal.VideoRecAlarmActivity"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.animal.AnimSetWeightActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="false" android:keepScreenOn="true" android:launchMode="singleTop" android:name="com.eques.doorbell.ui.activity.animal.AnimNoVideoActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.AnimNoVideoActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.share.NewShareActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.NewShareActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.HtmlActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.HtmlActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.eques.doorbell.ui.activity.smartdev.DeeplinkActivity">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"/>
+                <data android:host="www.ecamzone.com"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.eques.doorbell.ui.activity.smartdev.GooglelinkActivity"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.LanguageActivity"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.ChangeDevIdActivity"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.smartdev.CountdownActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.CountdownActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.smartdev.SmartSetClockActivity" android:theme="@style/DialogInOutAnim_New">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.SmartSetClockActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.smartdev.SmartClockActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.SmartClockActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.smartdev.SmartDevDetailsActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.SmartDevDetailsActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.smartdev.SmartDevicesActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.SmartDevicesActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.voice_tel_service.voip.ModifyVoipPhoneActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.ModifyVoipPhoneActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.voice_tel_service.voip.ConnectActivity"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.voice_tel_service.voip.SetServiceActivity">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.ui.activity.SetServiceActivity"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.voice_tel_service.voip.CallRecordActivity"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.local.LocalFileListActivity"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.animal.NotDisturbActivity"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.LockModeVersionActivity"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.userguide.UserGuideDetailsActivity"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.userguide.UserGuideActivity"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.c110.AlarmC110Activity"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.GuardActivity"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.smart_lock.SmartLockAlmModeActivity"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.RecFaceActivity"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.split.SplitMuteActivity"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data android:name="APP_UUID" android:value="ac0b904671b54efb90dc528ebe981690"/>
+        <meta-data android:name="APP_KEY" android:value="0bf988e88ac04ce8a6f7f01dd32aaab0"/>
+        <meta-data android:name="APP_SECRET" android:value="1a52a960c0c043e0bac3ba13c658b425"/>
+        <meta-data android:name="APP_MOVECARD" android:value="6"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="true" android:launchMode="standard" android:name="com.eques.doorbell.ui.activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.eques.doorbell.ui.activity.SplashActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="android.max_aspect" android:value="2.1"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.login.view.LoginActivity" android:screenOrientation="portrait" android:theme="@style/LoginMainTheme" android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.LoginActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTop" android:name="com.eques.doorbell.ui.activity.login.register.view.EmailRegisterActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.RegisterEmailActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.device.tool.UpdateDeviceActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.UpdateDeviceActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.paidservice.PaidRePayActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.PaidRePayActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.devicemain.DevMainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.DevMainActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.devicemain.DevMsgDetailsActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.DevMsgDetailsActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.split.SplitDetailsActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTop" android:name="com.eques.doorbell.ui.activity.login.register.view.PhoneRegisterFirstActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.PhoneNumRegisterActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTop" android:name="com.eques.doorbell.ui.activity.login.register.view.PhoneRegisterSecondActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.PhoneNumRegisterTwoActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTop" android:name="com.eques.doorbell.ui.activity.login.forget_password.view.ForgetPasEmailFirstAc" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.ForgetPasEmailFirstAc"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTop" android:name="com.eques.doorbell.ui.activity.login.forget_password.view.ForgetPasEmailSecondAc" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.ForgetPasEmailSecondAc"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTop" android:name="com.eques.doorbell.ui.activity.login.forget_password.view.ForgetPasPhoneFirstAc" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.ForgetPasPhoneFirstAc"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTop" android:name="com.eques.doorbell.ui.activity.login.forget_password.view.ForgetPasPhoneSecondAc" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.ForgetPasPhoneSecondAc"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.home.MainHomeActivity" android:screenOrientation="portrait" android:theme="@style/AppBaseMainTheme">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.MainHomeActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="app" android:path="/open" android:scheme="eques"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTop" android:name="com.eques.doorbell.ui.activity.appsettings.service_agreement.ServerAgreementAndPrivacyPolicyActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.ServerAgreementAndPrivacyPolicyActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTop" android:name="com.eques.doorbell.ui.activity.ServiceAgreementActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.ServiceAgreementActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTop" android:name="com.eques.doorbell.ui.activity.appsettings.account_security.view.AccountSecurityActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.AccountSecurityActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.appsettings.change_pwd.ChangePwdActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.ChangePwdActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.WebViewE1Html5Activity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.WebViewE1Html5Activity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.fragment.MainFragment" android:screenOrientation="portrait" android:theme="@style/AppBaseMainTheme">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.MainFragment"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.ShareDevActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.ShareDevActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.eques.doorbell.ui.activity.LockMessageActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.eques.doorbell.ui.activity.LockAlarmActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.eques.doorbell.ui.activity.LockDetectionActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.personal_data.PersonalDataActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.binddev.CommonBindDev2Activity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.AddAnimlDeviceActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.animal.AnimalAlarmActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.AnimalAlarmActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.animal.AnimalSetCountActivity"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.split.SplitListActivity"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.animal.AnimalClockActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.AnimalClockActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.lockmanage.LockManageActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.LockManageActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.split.SplitMainActivity" android:theme="@style/VoiceTheme">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.SplitMainActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.paidservice.PaidActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.CloudV2BuyActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.paidservice.PaidEntryActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.CloudV2Activity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.animal.AnimalSettingActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.AnimalSettingActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.BindDevWaitActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.BindDevWaitActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="false" android:keepScreenOn="true" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.animal.AnimalActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.AnimalActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.ChangeNickActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.ChangeNickActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.voice_tel_service.VoiceServiceSetActivity">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.VoiceServiceSetActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.order.CloudOrderDetailActivity">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.CloudOrderDetailActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.order.CloudOrderActivity">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.CloudOrderActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.temp_password.TempPwdActivity" android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.TempPwdActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.temp_password.TempUnUsePwdActivity" android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.TempUnUsePwdActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.SupervisoryControlActivity" android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.SupervisoryControlActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.OpenRemoteButtonActivity" android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.OpenRemoteButtonActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.MainStoreActivity">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.MainStoreActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.Vl0SetLightActivity">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.Vl0SetLightActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.vl0.Vl0SetSafePwdActivity">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.Vl0SetSafePwdActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.bindaddnotifyphone.view.PhoneNumOperationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.PhoneNumOperationActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.BindEmailOneActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.BindEmailOneActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.BindEmailTwoActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.AddDeviceActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.M1ColorPickerActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.ShowCsjAdActivity" android:screenOrientation="portrait" android:theme="@style/DialogInOutAnim"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.PersonSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.appsettings.AppSettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.LeftAddDevActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.LeftAddDevActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.voice_tel_service.VoiceServiceTimeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.VoiceServiceTimeActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.filemanagement.PhotoPagerActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.WebView_Html5Activity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.WebView_Html5Activity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.SmartDevShowListActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.M1OrR700UpgradeAndRecover" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.MessageInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.VisitorsRecordActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.VisitorsRecordActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.visitors_record.VisitorsRecordActivityNew" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.filemanagement.SnapShotPicturesActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.SnapShotPicturesActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.eques.doorbell.ui.activity.AlarmImageShowActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.AlarmImageShowActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.PhotoBrowser" android:screenOrientation="portrait"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.InComingCallActivity" android:noHistory="true" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.InComingCallActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.VideoCallCaptureActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.VideoCallCaptureActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="false" android:keepScreenOn="true" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.VideoCallE6Activity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.VideoCallE6Activity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:launchMode="singleTop" android:name="com.alipay.sdk.app.H5PayActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.VoiceChatActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.PassWordUnLockActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.UnLockSuccessActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.login.switch_server.view.SwitchServerActivity" android:theme="@style/DialogInOutAnim_New">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.SwitchServerActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.eques.doorbell.ui.widget.mediaplay.MediaPlayMainActivity">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.MediaPlayMainActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.eques.doorbell.ui.widget.mediaplay.FaceMediaPlayActivity"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.fragment.NewMessageManagerFragment" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.NewMessageManagerFragment"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.CommunityShareEditActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.CommunityShareEditActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="true" android:foregroundServiceType="dataSync" android:name="com.eques.doorbell.ui.activity.service.DoorBellService">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:exported="false" android:name="com.eques.doorbell.tools.push.PushMessageReceiver">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE"/>
+                <category android:name="com.eques.doorbell"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.eques.doorbell.tools.push.PushService" android:process=":pushcore">
+            <intent-filter>
+                <action android:name="cn.jiguang.user.service.action"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:exported="false" android:name="com.eques.doorbell.tools.push.MyWakedResultReceiver">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.WakedReceiver"/>
+                <category android:name="com.eques.doorbell"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.eques.doorbell.tools.push.MyHmsMessageService">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="UMENG_APPKEY" android:value="594a064bcae7e71d15001256"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="mat_demo1"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.MarsBoxSettingManager" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.InvitationCodeActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.DiscloseActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.M1DevNetSetActivity" android:screenOrientation="portrait"/>
+        <provider android:authorities="com.eques.doorbell.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <provider android:authorities="com.eques.doorbell.TTFileProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.bytedance.sdk.openadsdk.TTFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <provider android:authorities="com.eques.doorbell.TTMultiProvider" android:exported="false" android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.FaceAlarmGroupActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.face_group_service.FaceAlarmGroupMainActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.IntegralActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.IntegralActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.IntegralDetailActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.IntegralDetailActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.face_group_service.AlarmPhotoGroupEditActivityNew" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.face_group_service.GroupImgShowActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.face_group_service.GroupPhotoActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.cloud_storage_service.MyFavoriteActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.cloud_storage_service.FavoriteCloudOpenServiceActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.cloud_storage_service.CloudOpenServiceActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.CloudOpenServiceActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.cloud_storage_service.FaceOpenServiceActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.FaceOpenServiceActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.eques.doorbell.wxapi.WXPayEntryActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.CloudStorageDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.eques.doorbell.ui.activity.CouponVerifyActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.CouponVerifyActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.LowBatteryDialogActivity" android:theme="@style/DialogInOutAnim_New">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.LowBatteryDialogActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.InterceptDialogActivity" android:theme="@style/DialogInOutAnim_New">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.InterceptDialogActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.HelpGuideActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.HelpGuideActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.HelpGuideActivitySecond" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.face_group_service.AlarmPhotoGroupRenameActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.CommunityGroupActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.CommunityGroupActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.youzanactivity.YouzanActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.YouzanActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.RemindSwActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.RemindSwActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.E1ProOpenLockPassActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.E1ProOpenLockPassActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.DialogBaseActivity" android:theme="@style/DialogInOutAnim" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.DialogBaseActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.E1ProMsgListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.E1ProMsgListActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.lock_bind_process.CommonBindProcessActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.CommonBindProcessActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.QrcodeScanningActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.QrcodeScanningActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.home.AddDevActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.AddDevActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.preview.PreviewImageActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.PreviewImageActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.preview.PreviewVideoActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.PreviewVideoActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.appsettings.AppAuthorityActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.AppAuthorityActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.ActivityBindTmall" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.ActivityBindTmall"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.ActivityUsingHelp" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.ActivityUsingHelp"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.voice_tel_service.view.VoiceServiceActivity" android:screenOrientation="portrait" android:theme="@style/VoiceTheme">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.VoiceServiceActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.cloud_storage_service.view.CloudServiceActivity" android:screenOrientation="portrait" android:theme="@style/CloudTheme">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.icloud.CloudServiceActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.face_service.view.FaceServiceActivity" android:screenOrientation="portrait" android:theme="@style/CloudTheme">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.FaceServiceActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.eques.doorbell.ui.activity.preview.IjkPlayerM3u8Activity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.IjkPlayerM3u8Activity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.eques.doorbell.ui.activity.dev_cloud_settings.view.DevSettingActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.DevSettingActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.eques.doorbell.ui.activity.voice_tel_service.view.AddNotifyContactActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.AddNotifyContactActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.c03.home.LiveVideoActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.LiveVideoActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.c03.home.BackSeeVideoActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.BackSeeVideoActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.c03.settings.C03SettingsActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.C03SettingsActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.eques.doorbell.ui.activity.c03.settings.C03BasicSetupActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.C03BasicSetupActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.eques.doorbell.ui.activity.c03.settings.C03SmartHomeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.C03SmartHomeActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.eques.doorbell.ui.activity.c03.settings.C03HighFunctionActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.C03HighFunctionActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.eques.doorbell.ui.activity.c03.settings.C03SdManagerActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.C03SdManagerActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.eques.doorbell.ui.activity.c03.settings.C03AboutDevActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.C03AboutDevActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.eques.doorbell.ui.activity.c03.settings.C03AllSettingsListSelectActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.C03AllSettingsListSelectActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.eques.doorbell.ui.activity.c03.settings.C03VideoModeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.C03VideoModeActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.c03.home.CloudServiceActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.CloudServiceActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.c03.home.AlarmMsgActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.AlarmMsgActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.eques.doorbell.ui.activity.c03.home.C03MessageInfoActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.C03MessageInfoActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.c03.C03AlarmImageShowActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.c03.C03PhotoPagerActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.c03.home.BackSeeVideoActivityTest" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.BackSeeVideoActivityTest"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.eques.doorbell.ui.activity.c03.home.BackSeeCloudVideoActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.BackSeeCloudVideoActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.eques.doorbell.ui.activity.c03.home.BackSeeLocalVideoActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.BackSeeLocalVideoActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.robot.RobotTest" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.RobotTest"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.appsettings.account_security.view.AccountRemoveActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.AccountRemoveActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.robot.robot_main.RobotMain" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.RobotMain"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.robot.robot_health_report.RobotDetails" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.RobotDetails"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.robot.robot_alone_capability_analysis.RobotAloneCapabilityAnalysis" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.RobotAloneCapabilityAnalysis"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.robot.robot_add_account.RobotAddAccount" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.RobotAddAccount"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.socket.socket_main.SocketMain" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.SocketMain"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.socket.socket_main.SocketTimingEtOrAddActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.SocketTimingEtOrAddActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.socket.socket_main.SocketTimingListActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.SocketTimingListActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.eques.doorbell.ui.activity.ChooseCityActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.ChooseCityActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.socket.socket_main.SocketTimingWeakSelActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.SocketTimingWeakSelActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.lamp.lamp_main.LampMain" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.LampMain"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.eques.doorbell.ui.activity.discountcoupon.DiscountCouponActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.DiscountCouponActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.eques.doorbell.ui.activity.userfeedback.UserFeedbackActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.UserFeedbackActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.eques.doorbell.ui.activity.dynamicmsg.DynamicMsgActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.DynamicMsgActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.eques.doorbell.ui.activity.comment_list.CommentsListActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.CommentsListActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.eques.doorbell.ui.activity.imgpreview.ImgPreviewActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.ImgPreviewActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.eques.doorbell.ui.activity.temp_password.TempPwdDetailsActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.TempPwdDetailsActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.eques.doorbell.ui.activity.voice_tel_service.VoiceTelServiceActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.VoiceTelServiceActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:enabled="true" android:exported="true" android:name="com.eques.doorbell.ui.activity.MyJpushCustomActivity" android:taskAffinity="test.example" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.eques.doorbell.ui.activity.smart_lock.SmartLockSettingActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.SmartLockSettingActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.eques.doorbell.ui.activity.SettingVoiceActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.SettingVoiceActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="false" android:name="com.eques.doorbell.ui.activity.service.WakeUpService"/>
+        <service android:enabled="true" android:name="com.eques.doorbell.tools.log.LogService"/>
+        <service android:enabled="false" android:name="com.qiyukf.nimlib.service.NimService$Aux" android:process=":core"/>
+        <activity android:name="com.yalantis.ucrop.UCropActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.DoorLeaveMsgActivity">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.DoorLeaveMsgActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.DoorBellDetailsActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.DoorBellDetailsActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.InputWifiInfoActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.InputWifiInfoActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.Add433DeviceActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.WallPaperActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.WallPaperPreviewSettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.WallPaperPreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.AddDoorBellAcitivty" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.AddDoorBellAcitivty"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.LoadingDoorbellActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.DoorbellLampSetInterface" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.DevAlarmSettingManager" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.DevAlarmSettingActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.DevAlarmSettingActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.R700DevAlarmSettingManager" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.eques.doorbell.ui.activity.R700DetailsActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.R700DetailsActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.t1aboutset.DistanceSensingSwitchActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.t1aboutset.FormatT1SDCard" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.t1aboutset.DisplaySetup" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.E1ProDetailsActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.E1ProDetailsActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.e1proaboutset.E1ProWifiModeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.E1ProWifiModeActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.eques.doorbell.ui.activity.e1proaboutset.E1ProTemporaryPassActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.E1ProTemporaryPassActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.e1proaboutset.E1ProUnlockRemindActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.E1ProUnlockRemindActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.t1aboutset.BindWechatActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.BindWechatActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.D1DetailsActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.D1DetailsActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.t1aboutset.IntelligentNightActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.IntelligentNightActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.e6aboutset.E6WorkModeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.E6WorkModeActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.h5aboutset.H5InfraredModeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.H5InfraredModeActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.h5aboutset.H5DebugModeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.H5DebugModeActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.eques.doorbell.ui.activity.t1aboutset.BacklightActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.BacklightActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.sina.weibo.sdk.web.WebActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.sina.weibo.sdk.share.ShareTransActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.eques.doorbell.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.sina.weibo.sdk.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/filepaths"/>
+        </provider>
+        <provider android:authorities="com.eques.doorbell.cn.fly.FlyProvider" android:exported="false" android:multiprocess="true" android:name="cn.fly.FlyProvider"/>
+        <activity android:exported="true" android:name="cn.fly.id.NFlyIDSYActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="cn.fly.id.app_lk"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="fly_id_ver" android:value="40000"/>
+        <activity android:exported="true" android:name="cn.fly.id.FlyIDActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="cn.fly.id.app_30000"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="true" android:name="cn.fly.id.FlyIDService">
+            <intent-filter>
+                <action android:name="cn.fly.intent.FLY_ID_SERVICE"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="true" android:name="cn.fly.FlyACService">
+            <intent-filter>
+                <action android:name="cn.fly.service.action.FLY_AC_SERVICE"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="true" android:name="com.mob.id.MobIDSYActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.mob.id.app_lk"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="true" android:name="com.mob.MobACService">
+            <intent-filter>
+                <action android:name="com.mob.service.action.MOB_AC_SERVICE"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="true" android:name="com.mob.id.MobIDActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.mob.id.app_30000"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="true" android:name="com.mob.id.MobIDService">
+            <intent-filter>
+                <action android:name="com.mob.intent.MOB_ID_SERVICE"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="mob_guard_version" android:value="30000"/>
+        <meta-data android:name="mob_id_ver" android:value="30000"/>
+        <activity android:exported="true" android:name="com.mob.guard.MobTranPullUpActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.mob.open.app_20000"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.mob.guard.MobTranPullLockActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.mob.open.app_lk"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="true" android:name="com.mob.guard.MobGuardPullUpService">
+            <intent-filter>
+                <action android:name="com.mob.intent.MOB_GUARD_SERVICE"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="tv.danmaku.ijk.media.example.activities.FileExplorerActivity" android:screenOrientation="user" android:theme="@style/AppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="tv.danmaku.ijk.media.example.activities.SampleMediaActivity" android:screenOrientation="user" android:theme="@style/AppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="tv.danmaku.ijk.media.example.activities.RecentMediaActivity" android:screenOrientation="user" android:theme="@style/AppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="tv.danmaku.ijk.media.example.activities.SettingsActivity" android:screenOrientation="user" android:theme="@style/AppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:label="@string/app_name" android:name="tv.danmaku.ijk.media.example.activities.VideoActivity" android:screenOrientation="user" android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="video/*"/>
+                <data android:mimeType="audio/*"/>
+                <data android:scheme="http"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="false" android:exported="false" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:name="tv.danmaku.ijk.media.example.services.MediaPlayerService"/>
+        <provider android:authorities="com.eques.doorbell.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.blankj.utilcode.util.UtilsTransActivity4MainProcess" android:theme="@style/ActivityTranslucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:multiprocess="true" android:name="com.blankj.utilcode.util.UtilsTransActivity" android:theme="@style/ActivityTranslucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <provider android:authorities="com.eques.doorbell.utilcode.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.blankj.utilcode.util.UtilsFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/util_code_provider_paths"/>
+        </provider>
+        <service android:exported="false" android:name="com.blankj.utilcode.util.MessengerUtils$ServerService">
+            <intent-filter>
+                <action android:name="com.eques.doorbell.messenger"/>
+            </intent-filter>
+        </service>
+        <receiver android:directBootAware="true" android:exported="true" android:name="com.huawei.hms.support.api.push.PushMsgReceiver" android:permission="com.eques.doorbell.permission.PROCESS_PUSH_MSG">
+            <intent-filter>
+                <action android:name="com.huawei.intent.action.PUSH_DELAY_NOTIFY"/>
+                <action android:name="com.huawei.intent.action.PUSH"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="true" android:exported="true" android:name="com.huawei.hms.support.api.push.PushReceiver" android:permission="com.eques.doorbell.permission.PROCESS_PUSH_MSG">
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.REGISTRATION"/>
+                <action android:name="com.huawei.android.push.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:enabled="true" android:exported="true" android:name="com.huawei.hms.support.api.push.service.HmsMsgService" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.huawei.push.msg.NOTIFY_MSG"/>
+                <action android:name="com.huawei.push.msg.PASSBY_MSG"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.eques.doorbell.huawei.push.provider" android:exported="true" android:name="com.huawei.hms.support.api.push.PushProvider" android:readPermission="com.eques.doorbell.permission.PUSH_PROVIDER" android:writePermission="com.eques.doorbell.permission.PUSH_WRITE_PROVIDER"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:push" android:value="push:6.11.0.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:push:push" android:value="1"/>
+        <activity android:exported="false" android:name="com.huawei.hms.support.api.push.TransActivity"/>
+        <meta-data android:name="availableHMSCoreInstaller" android:value="yes"/>
+        <provider android:authorities="com.eques.doorbell.hms.update.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.huawei.hms.update.provider.UpdateProvider"/>
+        <meta-data android:name="huawei_module_scankit_local" android:value="20900300"/>
+        <meta-data android:name="huawei_module_scankit_sdk_version" android:value="scanplus:2.9.0.300"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:scanplus" android:value="scanplus:2.9.0.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:scanplus:huawei_module_scankit" android:value="1"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:scanplus:hmscore" android:value="1"/>
+        <activity android:launchMode="singleTask" android:name="com.huawei.hms.hmsscankit.ScanKitActivity"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.bytedance.embedapplog.collector.Collector"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.core.activity.base.TTNativePageActivity" android:theme="@style/tt_landing_page" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.core.activity.base.TTWebPageActivity" android:theme="@style/tt_landing_page" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.core.activity.base.TTVideoWebPageActivity" android:theme="@style/tt_landing_page" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.core.activity.base.TTVideoScrollWebPageActivity" android:theme="@style/tt_landing_page" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.core.activity.base.TTDelegateActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.core.component.reward.activity.TTRewardVideoActivity" android:screenOrientation="portrait" android:theme="@style/tt_full_screen_no_animation"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.core.component.reward.activity.TTFullScreenVideoActivity" android:screenOrientation="portrait" android:theme="@style/tt_full_screen_no_animation"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.core.component.reward.activity.TTRewardVideoLandscapeActivity" android:screenOrientation="landscape" android:theme="@style/tt_full_screen_no_animation"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.core.component.reward.activity.TTFullScreenVideoLandscapeActivity" android:screenOrientation="landscape" android:theme="@style/tt_full_screen_no_animation"/>
+        <service android:exported="false" android:name="com.bytedance.sdk.openadsdk.core.multipro.aidl.BinderPoolService"/>
+        <meta-data android:name="ZEUS_PLUGIN_PANGLE" android:value="{                 apiVersionCode:6809,                 packageName:com.byted.pangle,                 minPluginVersion:6809,                 internalPath:'',                 internalVersionCode:6809             }"/>
+        <meta-data android:name="ZEUS_PLUGIN_com.byted.csj.ext" android:value="{apiVersionCode:999,packageName:com.byted.csj.ext,minPluginVersion:1000,maxPluginVersion:999999999,internalPath:'',internalVersionCode:-1, appKey:'',appSecretKey:''}"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|uiMode|screenSize" android:exported="false" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity_T" android:theme="@android:style/Theme.Translucent" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|uiMode|screenSize" android:exported="false" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Landscape_Activity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Activity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_SingleTask_Activity_T" android:theme="@android:style/Theme.Translucent" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_SingleTask_Activity" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <provider android:authorities="com.eques.doorbell.pangle.servermanager.downloader.com.bytedance.sdk.openadsdk.adhost" android:exported="false" android:name="com.bytedance.sdk.openadsdk.stub.server.DownloaderServerManager" android:process=":downloader"/>
+        <provider android:authorities="com.eques.doorbell.pangle.servermanager.main" android:exported="false" android:name="com.bytedance.sdk.openadsdk.stub.server.MainServerManager"/>
+        <provider android:authorities="com.eques.doorbell.pangle.provider.proxy.main" android:exported="false" android:name="com.bytedance.pangle.provider.MainProcessProviderProxy"/>
+        <provider android:authorities="com.eques.doorbell.pangle.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.bytedance.pangle.FileProvider"/>
+        <activity android:exported="false" android:name="com.ss.android.downloadlib.addownload.compliance.AppPrivacyPolicyActivity"/>
+        <activity android:exported="false" android:name="com.ss.android.downloadlib.addownload.compliance.AppDetailInfoActivity"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.ss.android.downloadlib.activity.TTDelegateActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.ss.android.downloadlib.activity.JumpKllkActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:exported="false" android:name="com.ss.android.downloadlib.core.download.DownloadReceiver"/>
+        <service android:exported="false" android:name="com.ss.android.socialbase.appdownloader.DownloadHandlerService" android:stopWithTask="true"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.ss.android.socialbase.appdownloader.view.DownloadTaskDeleteActivity" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.ss.android.socialbase.appdownloader.view.JumpUnknownSourceActivity" android:theme="@android:style/Theme.Dialog"/>
+        <service android:enabled="true" android:exported="false" android:name="com.ss.android.socialbase.appdownloader.RetryJobSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE" android:stopWithTask="true"/>
+        <service android:exported="false" android:name="com.ss.android.socialbase.downloader.downloader.IndependentProcessDownloadService" android:process=":downloader">
+            <intent-filter>
+                <action android:name="com.ss.android.socialbase.downloader.remote"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.ss.android.socialbase.downloader.notification.DownloadNotificationService" android:stopWithTask="true"/>
+        <service android:exported="false" android:name="com.ss.android.socialbase.downloader.downloader.DownloadService" android:stopWithTask="true"/>
+        <service android:exported="false" android:name="com.ss.android.socialbase.downloader.impls.DownloadHandleService" android:stopWithTask="true"/>
+        <service android:exported="false" android:name="com.ss.android.socialbase.downloader.downloader.SqlDownloadCacheService" android:stopWithTask="true"/>
+        <meta-data android:name="ZEUS_PLUGIN_LIVE" android:value="{                 apiVersionCode:2114,                 packageName:com.byted.live.lite,                 minPluginVersion:211400,                 maxPluginVersion:999999,                 isSupportLibIsolate:true             }"/>
+        <meta-data android:name="LIVE_API_VERSION_CODE" android:value="2114"/>
+        <activity android:exported="true" android:name="com.bytedance.android.openliveplugin.stub.activity.DouyinAuthorizeActivityProxy"/>
+        <activity android:exported="true" android:name="com.bytedance.android.openliveplugin.stub.activity.DouyinAuthorizeActivityLiveProcessProxy" android:process=":bytelive"/>
+        <provider android:authorities="com.eques.doorbell.bytedance.android.openliveplugin.process.server.LiveServerManager" android:exported="false" android:name="com.bytedance.android.openliveplugin.process.server.LiveServerManager" android:process=":bytelive"/>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode|colorMode" android:exported="false" android:name="com.bytedance.android.openliveplugin.stub.activity.StubActivity$Activity_Portrait" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode|colorMode" android:exported="false" android:name="com.bytedance.android.openliveplugin.stub.activity.StubActivity$Activity_Portrait2" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode|colorMode" android:exported="false" android:name="com.bytedance.android.openliveplugin.stub.activity.StubActivity$Activity_Portrait3" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode|colorMode" android:exported="false" android:name="com.bytedance.android.openliveplugin.stub.activity.StubActivity$Activity_Portrait4" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode|colorMode" android:exported="false" android:name="com.bytedance.android.openliveplugin.stub.activity.StubActivity$Activity_Portrait5" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.byted.live.lite.Activity_bytelive_singleTask4" android:process=":bytelive" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.byted.live.lite.Activity_bytelive_singleTop3" android:process=":bytelive" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.byted.live.lite.Activity_bytelive_singleTop2" android:process=":bytelive" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.byted.live.lite.Activity_bytelive_singleTop5" android:process=":bytelive" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.byted.live.lite.Activity_bytelive_singleTop4" android:process=":bytelive" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.byted.live.lite.Activity_bytelive_standard" android:process=":bytelive" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.byted.live.lite.Activity_bytelive_singleTop1" android:process=":bytelive" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.byted.live.lite.Activity_bytelive_singleTask1" android:process=":bytelive" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.byted.live.lite.Activity_bytelive_singleTop6" android:process=":bytelive" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.byted.live.lite.Activity_bytelive_singleTask2" android:process=":bytelive" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.byted.live.lite.Activity_bytelive_singleTask3" android:process=":bytelive" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.byted.live.lite.Activity_main_singleTask1" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.byted.live.lite.Activity_main_singleTask2" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.byted.live.lite.Activity_main_singleTask3" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.byted.live.lite.Activity_main_singleTask4" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.byted.live.lite.Activity_main_standard" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.byted.live.lite.Activity_main_singleTop1" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.byted.live.lite.Activity_main_singleTop2" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleInstance" android:name="com.byted.live.lite.Activity_main_singleInstance1" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.byted.live.lite.Activity_main_singleTop5" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.byted.live.lite.Activity_main_singleTop6" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.byted.live.lite.Activity_main_singleTop3" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.byted.live.lite.Activity_main_singleTop4" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleInstance" android:name="com.byted.live.lite.Activity_bytelive_singleInstance1" android:process=":bytelive" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <provider android:authorities="com.eques.doorbell.pangle.servermanager.bytelive.com.byted.live.lite" android:exported="false" android:name="com.byted.live.lite.ServerManager_bytelive" android:process=":bytelive"/>
+        <provider android:authorities="com.eques.doorbell.pangle.servermanager.push.com.byted.live.lite" android:exported="false" android:name="com.byted.live.lite.ServerManager_push" android:process=":push"/>
+        <provider android:authorities="com.eques.doorbell.pangle.servermanager.downloader.com.byted.live.lite" android:exported="false" android:name="com.byted.live.lite.ServerManager_downloader" android:process=":downloader"/>
+        <activity android:exported="false" android:name="com.bytedance.msdk.api.activity.TTDelegateActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:exported="false" android:name="com.bytedance.msdk.api.activity.TTTransparentActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:exported="false" android:name="com.bytedance.msdk.core.admanager.reward.rewardagain.GMRewardAgainDialogActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.xm.activity.device.monitor.view.XMMonitorActivity"/>
+        <activity android:name="com.xm.activity.device.devset.ability.view.XMDevAbilityActivity"/>
+        <activity android:name="com.xm.kotlin.account.login.view.XMLoginActivity"/>
+        <activity android:name="com.xm.kotlin.main.XMMainActivity"/>
+        <activity android:name="com.xm.kotlin.device.monitor.view.XMMonitorActivity"/>
+        <activity android:name="com.xm.kotlin.device.devset.ability.view.XMDevAbilityActivity"/>
+        <activity android:name="com.xm.activity.device.router.view.SetDevToRouterByQrCodeActivity"/>
+        <meta-data android:name="sdkVersion" android:value="3400"/>
+        <activity android:name="com.web.library.groups.webviewsdk.photo.ShowPhotoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.beizi.ad.AdActivity"/>
+        <activity android:exported="false" android:name="com.beizi.ad.internal.activity.BeiZiInterstitialActivity" android:theme="@style/BeiZiTheme.Transparent"/>
+        <activity android:exported="false" android:name="com.beizi.ad.internal.activity.DownloadAppInfoActivity"/>
+        <activity android:exported="false" android:name="com.beizi.ad.internal.activity.BeiZiDownloadDialogActivity" android:theme="@style/BeiZiTheme.Transparent"/>
+        <service android:exported="false" android:name="com.beizi.ad.DownloadService"/>
+        <activity android:exported="true" android:name="cn.jpush.android.ui.PopWinActivity" android:theme="@style/JPushDialogStyle">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="cn.jpush.android.ui.PopWinActivity"/>
+                <category android:name="com.eques.doorbell"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="true" android:name="cn.jpush.android.ui.PushActivity" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.eques.doorbell"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="false" android:name="cn.jpush.android.service.PushService" android:process=":pushcore">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER"/>
+                <action android:name="cn.jpush.android.intent.REPORT"/>
+                <action android:name="cn.jpush.android.intent.PushService"/>
+                <action android:name="cn.jpush.android.intent.PUSH_TIME"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:exported="false" android:name="cn.jpush.android.service.PushReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY"/>
+                <category android:name="com.eques.doorbell"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="cn.jpush.android.service.AlarmReceiver"/>
+        <receiver android:exported="false" android:name="cn.jpush.android.service.SchedulerReceiver"/>
+        <provider android:authorities="com.eques.doorbell.DataProvider" android:exported="false" android:name="cn.jpush.android.service.DataProvider" android:process=":pushcore"/>
+        <activity android:exported="true" android:name="cn.jpush.android.service.JNotifyActivity" android:taskAffinity="" android:theme="@style/JPushTheme">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.JNotifyActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.eques.doorbell"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="cn.android.service.JTransitActivity" android:taskAffinity="" android:theme="@style/JPushTheme">
+            <intent-filter>
+                <action android:name="cn.android.service.JTransitActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.eques.doorbell"/>
+            </intent-filter>
+        </activity>
+        <receiver android:exported="false" android:name="cn.jpush.android.asus.AsusPushMessageReceiver"/>
+        <meta-data android:name="JPUSH_CHANNEL" android:value="default_developer"/>
+        <meta-data android:name="JPUSH_APPKEY" android:value="36857ec05555de5a8192150c"/>
+        <provider android:authorities="com.eques.doorbell.jiguang.InitProvider" android:exported="false" android:name="cn.jpush.android.service.InitProvider" android:readPermission="com.eques.doorbell.permission.JPUSH_MESSAGE" android:writePermission="com.eques.doorbell.permission.JPUSH_MESSAGE"/>
+        <service android:exported="false" android:name="cn.jpush.android.service.JHonorService">
+            <intent-filter>
+                <action android:name="com.hihonor.push.action.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.hihonor.push.app_id" android:value="220665904"/>
+        <receiver android:exported="true" android:name="cn.jpush.android.service.PluginMeizuPlatformsReceiver" android:permission="com.meizu.flyme.permission.PUSH">
+            <intent-filter>
+                <action android:name="com.meizu.flyme.push.intent.MESSAGE"/>
+                <action android:name="com.meizu.flyme.push.intent.REGISTER.FEEDBACK"/>
+                <action android:name="com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK"/>
+                <action android:name="com.meizu.c2dm.intent.REGISTRATION"/>
+                <action android:name="com.meizu.c2dm.intent.RECEIVE"/>
+                <category android:name="com.eques.doorbell"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="MEIZU_APPKEY" android:value="MZ-c2d90545d2624e5ab716684ceec25909"/>
+        <meta-data android:name="MEIZU_APPID" android:value="MZ-114933"/>
+        <service android:exported="true" android:name="cn.jpush.android.service.PluginOppoPushService" android:permission="com.coloros.mcs.permission.SEND_MCS_MESSAGE">
+            <intent-filter>
+                <action android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.heytap.msp.push.service.CompatibleDataMessageCallbackService" android:permission="com.coloros.mcs.permission.SEND_MCS_MESSAGE">
+            <intent-filter>
+                <action android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.heytap.msp.push.service.DataMessageCallbackService" android:permission="com.heytap.mcs.permission.SEND_PUSH_MESSAGE">
+            <intent-filter>
+                <action android:name="com.heytap.mcs.action.RECEIVE_MCS_MESSAGE"/>
+                <action android:name="com.heytap.msp.push.RECEIVE_MCS_MESSAGE"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="OPPO_APPKEY" android:value="OP-6r9bY6171X4wkk0WS488g4408"/>
+        <meta-data android:name="OPPO_APPID" android:value="OP-3624491"/>
+        <meta-data android:name="OPPO_APPSECRET" android:value="OP-31E27d71bbc6AaC32f4000fD245cfa36"/>
+        <meta-data android:name="XIAOMI_APPID" android:value="MI-2882303761517539682"/>
+        <meta-data android:name="XIAOMI_APPKEY" android:value="MI-5951753960682"/>
+        <meta-data android:name="MIPUSH_SDK_VERSION_CODE" android:value="60001"/>
+        <meta-data android:name="MIPUSH_SDK_VERSION_NAME" android:value="6_0_1-C"/>
+        <service android:enabled="true" android:name="com.xiaomi.push.service.XMPushService" android:process=":pushcore"/>
+        <service android:enabled="true" android:exported="false" android:name="com.xiaomi.push.service.XMJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":pushcore"/>
+        <service android:enabled="true" android:exported="true" android:name="com.xiaomi.mipush.sdk.PushMessageHandler" android:permission="com.xiaomi.xmsf.permission.MIPUSH_RECEIVE"/>
+        <service android:enabled="true" android:name="com.xiaomi.mipush.sdk.MessageHandleService"/>
+        <receiver android:exported="false" android:name="com.xiaomi.push.service.receivers.PingReceiver" android:process=":pushcore">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="cn.jpush.android.service.PluginXiaomiPlatformsReceiver">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR"/>
+            </intent-filter>
+        </receiver>
+        <activity android:enabled="true" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleInstance" android:name="com.xiaomi.mipush.sdk.NotificationClickedActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <meta-data android:name="supportStyle" android:value="scene|voip"/>
+        </activity>
+        <receiver android:exported="false" android:name="cn.jpush.android.service.PluginVivoMessageReceiver">
+            <intent-filter>
+                <action android:name="com.vivo.pushclient.action.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="sdk_version_vivo" android:value="500"/>
+        <service android:exported="true" android:name="com.vivo.push.sdk.service.CommandClientService" android:permission="com.push.permission.UPSTAGESERVICE"/>
+        <meta-data android:name="local_iv" android:value="MzMsMzQsMzUsMzYsMzcsMzgsMzksNDAsNDEsMzIsMzgsMzcsMzYsMzUsMzQsMzMsI0AzNCwzMiwzMywzNywzMywzNCwzMiwzMywzMywzMywzNCw0MSwzNSwzNSwzMiwzMiwjQDMzLDM0LDM1LDM2LDM3LDM4LDM5LDQwLDQxLDMyLDM4LDM3LDMzLDM1LDM0LDMzLCNAMzQsMzIsMzMsMzcsMzMsMzQsMzIsMzMsMzMsMzMsMzQsNDEsMzUsMzIsMzIsMzI"/>
+        <meta-data android:name="com.vivo.push.support_monitor" android:value="1"/>
+        <meta-data android:name="com.vivo.push.api_key" android:value="fe45696b6b0376db742fce7ded4393c2"/>
+        <meta-data android:name="com.vivo.push.app_id" android:value="104228927"/>
+        <service android:name="com.qiyukf.nimlib.service.NimService" android:process=":core"/>
+        <receiver android:exported="false" android:name="com.qiyukf.nimlib.service.ResponseReceiver"/>
+        <service android:name="com.qiyukf.nimlib.service.ResponseService"/>
+        <provider android:authorities="com.eques.doorbell.unicorn.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.qiyukf.uikit.provider.UnicornProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/ysf_provider"/>
+        </provider>
+        <provider android:authorities="com.eques.doorbell.qiyukf.ipc.provider.preference" android:exported="false" android:name="com.qiyukf.nimlib.ipc.cp.provider.PreferenceContentProvider"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:icon="@drawable/ysf_action_bar_icon_transparent" android:name="com.qiyukf.unicorn.ui.activity.ServiceMessageActivity" android:screenOrientation="locked" android:theme="@style/ysf_window_theme" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.qiyukf.uikit.session.activity.WatchMessagePictureActivity" android:screenOrientation="locked" android:theme="@style/ysf_window_theme" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.qiyukf.uikit.session.activity.PickImageActivity" android:screenOrientation="locked" android:theme="@style/ysf_window_theme" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.qiyukf.uikit.common.media.picker.activity.PickerAlbumActivity" android:screenOrientation="locked" android:theme="@style/ysf_window_theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.qiyukf.uikit.common.media.picker.activity.PickerAlbumPreviewActivity" android:screenOrientation="locked" android:theme="@style/ysf_window_theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/ysf_input_panel_take" android:name="com.qiyukf.uikit.common.media.picker.activity.PreviewImageFromCameraActivity" android:screenOrientation="locked" android:theme="@style/ysf_window_theme" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/ysf_activity_file_download" android:name="com.qiyukf.unicorn.ui.activity.FileDownloadActivity" android:screenOrientation="locked" android:theme="@style/ysf_window_theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.qiyukf.unicorn.ui.activity.UrlImagePreviewActivity" android:screenOrientation="locked" android:theme="@style/ysf_window_theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.qiyukf.unicorn.ui.activity.CardPopupActivity" android:screenOrientation="locked" android:theme="@style/ysf_window_theme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.qiyukf.uikit.session.activity.CaptureVideoActivity" android:screenOrientation="locked" android:theme="@style/ysf_window_theme" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/ysf_video_play" android:name="com.qiyukf.uikit.session.activity.WatchVideoActivity" android:screenOrientation="locked" android:theme="@style/ysf_window_theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/ysf_leave_activity_label" android:launchMode="singleTop" android:name="com.qiyukf.unicorn.ui.activity.LeaveMessageActivity" android:theme="@style/ysf_leave_msg_theme" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/ysf_watch_picture_activity_label" android:name="com.qiyukf.unicorn.ui.activity.WatchPictureActivity" android:screenOrientation="locked" android:theme="@style/ysf_window_theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/ysf_leave_menu_activity_label" android:name="com.qiyukf.unicorn.ui.activity.LeaveMsgCustomFieldMenuActivity" android:theme="@style/ysf_leave_msg_theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/ysf_album_activity_label" android:name="com.qiyukf.unicorn.mediaselect.internal.ui.activity.AlbumPreviewActivity" android:screenOrientation="locked" android:theme="@style/ysf_window_theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/ysf_selected_preview_activity_label" android:name="com.qiyukf.unicorn.mediaselect.internal.ui.activity.SelectedPreviewActivity" android:screenOrientation="locked" android:theme="@style/ysf_window_theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/ysf_matiss_activity_label" android:name="com.qiyukf.unicorn.mediaselect.internal.ui.activity.MatisseActivity" android:screenOrientation="locked" android:theme="@style/ysf_window_theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/ysf_pick_file_activity_label" android:name="com.qiyukf.unicorn.fileselect.ui.activity.FilePickerActivity" android:screenOrientation="locked" android:theme="@style/ysf_window_theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/ysf_user_work_sheet_activity_label" android:name="com.qiyukf.unicorn.ui.activity.UserWorkSheetListActivity" android:screenOrientation="locked" android:theme="@style/ysf_window_theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/ysf_work_sheet_detail_activity_label" android:name="com.qiyukf.unicorn.ui.activity.WorkSheetDetailActivity" android:screenOrientation="locked" android:theme="@style/ysf_window_theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.qiyukf.unicorn.ui.activity.WorkSheetAttachListActivity" android:screenOrientation="locked" android:theme="@style/ysf_window_theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.qiyukf.unicorn.ui.activity.WorkSheetImagePreviewActivity" android:screenOrientation="locked" android:theme="@style/ysf_window_theme"/>
+        <service android:name="com.qiyukf.android.extension.servicekeeper.service.ipc.server.IPCCommunicationAndroidService"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.cmic.gen.sdk.view.GenLoginAuthActivity" android:screenOrientation="unspecified" android:theme="@style/ActivityDialogStyle"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="cn.jiguang.verifysdk.CtLoginActivity" android:screenOrientation="unspecified" android:theme="@style/ActivityDialogStyle"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="cn.jiguang.verifysdk.SmsLoginActivity" android:screenOrientation="unspecified" android:theme="@style/ActivityDialogStyle"/>
+        <meta-data android:name="com.hihonor.push.sdk_version" android:value="7.0.61.303"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.eques.doorbell.aaidinitprovider" android:exported="false" android:initOrder="500" android:name="com.huawei.hms.aaid.InitProvider"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:opendevice" android:value="opendevice:6.11.0.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:opendevice:push" android:value="1"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:base" android:value="base:6.9.0.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:base:hmscore" android:value="1"/>
+        <meta-data android:name="availableLoaded" android:value="yes"/>
+        <activity android:configChanges="locale|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|fontScale" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:name="com.huawei.hms.activity.BridgeActivity" android:screenOrientation="behind" android:theme="@style/Base_Translucent">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.huawei.hms.activity.EnableServiceActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.huawei.updatesdk.service.otaupdate.AppUpdateActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar"/>
+            <meta-data android:name="hnc-theme" android:value="androidhnext:style/Theme.Magic.Translucent.NoTitleBar"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.huawei.updatesdk.support.pm.PackageInstallerActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent"/>
+            <meta-data android:name="hnc-theme" android:value="androidhnext:style/Theme.Magic.Translucent"/>
+        </activity>
+        <provider android:authorities="com.eques.doorbell.updateSdk.fileProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.huawei.updatesdk.fileprovider.UpdateSdkFileProvider"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:dynamic-api" android:value="dynamic-api:1.0.23.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:dynamic-api:huawei_module_dynamicloader" android:value="9"/>
+        <provider android:authorities="com.eques.doorbell.MLInitializerProvider" android:exported="false" android:name="com.huawei.hms.mlsdk.common.provider.MLInitializerProvider"/>
+        <provider android:authorities="com.eques.doorbell.AGCInitializeProvider" android:exported="false" android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider"/>
+        <service android:exported="false" android:name="com.huawei.agconnect.core.ServiceDiscovery"/>
+        <meta-data android:name="componentverify_ag_cbg_root" android:value="@string/ag_sdk_cbg_root"/>
+        <meta-data android:name="com.huawei.hms.client.appid" android:value="appid=10779128"/>
+        <meta-data android:name="Mob-AppKey" android:value="12735e8a2e3ec"/>
+        <meta-data android:name="Mob-AppSecret" android:value="4faf3109d113fb12d33106fdb5924386"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.mob.tools.MobUIShell" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="cn.sharesdk.framework.loopshare.RestoreTempActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="cn.sharesdk.loopshare.LoopShareActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="cn.sharesdk.loop" android:scheme="ssdk12735e8a2e3ec"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="cn.sharesdk.wechat.utils.WechatHandlerActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity-alias android:exported="true" android:name="com.eques.doorbell.wxapi.WXEntryActivity" android:targetActivity="cn.sharesdk.wechat.utils.WechatHandlerActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="cn.sharesdk.tencent.qq.ReceiveActivity" android:noHistory="true">
+            <intent-filter>
+                <data android:scheme="tencent1103300483"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.tencent.tauth.AuthActivity" android:noHistory="true"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.tencent.connect.common.AssistActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.eques.doorbell.com.mob.MobProvider" android:exported="false" android:multiprocess="true" android:name="com.mob.MobProvider"/>
+        <provider android:authorities="com.eques.doorbell.cn.sharesdk.ShareSDKFileProvider" android:exported="false" android:grantUriPermissions="true" android:name="cn.sharesdk.framework.utils.ShareSDKFileProvider"/>
+    </application>
+    <queries>
+        <package android:name="com.tencent.mm"/>
+    </queries>
+</manifest>

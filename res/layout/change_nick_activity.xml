@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_18" android:layout_marginTop="@dimen/dp_40" android:layout_marginRight="@dimen/dp_18">
+        <EditText android:textColor="@color/edit_register_send" android:id="@id/et_nick_name" android:background="@drawable/edit_style_registration_default" android:paddingLeft="@dimen/dp_10" android:hint="@string/hint_change_share_dev_nickname_bt" android:maxLength="10" style="@style/register_ed_style" />
+        <TextView android:textSize="@dimen/fontsize_twelve" android:textColor="@color/edit_register_error" android:id="@id/tv_nick_error_hint" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:layout_marginTop="@dimen/dp_5" android:text="@string/forgot_passwd_by_phone_hint_five" />
+        <Button android:id="@id/btn_submit" android:layout_marginTop="@dimen/dp_20" android:layout_marginBottom="@dimen/dp_30" android:text="@string/save" style="@style/btn_style_lrfp_new" />
+    </LinearLayout>
+</LinearLayout>

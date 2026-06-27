@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="match_parent" android:layout_height="8.0dp" />
+    <include layout="@layout/ysf_include_divider" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp">
+        <ImageView android:id="@id/ysf_card_message_product_item_iv" android:layout_width="80.0dp" android:layout_height="80.0dp" android:scaleType="centerCrop" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="80.0dp" android:layout_marginLeft="8.0dp">
+            <TextView android:textSize="16.0sp" android:textColor="@color/ysf_black_222222" android:ellipsize="end" android:id="@id/ysf_card_message_product_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textSize="14.0sp" android:ellipsize="end" android:id="@id/ysf_card_message_product_item_desc" android:paddingTop="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+            <View android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff4000" android:id="@id/ysf_card_message_product_item_price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
